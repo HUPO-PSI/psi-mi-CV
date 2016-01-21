@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:01:2016 16:54
+date: 21:01:2016 15:31
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -12706,6 +12706,71 @@ synonym: "Protein Information Resource" EXACT PSI-MI-alternate []
 is_a: MI:1096 ! protein sequence databases
 created_by: ppm
 creation_date: 2016-01-20T16:48:10Z
+
+[Term]
+id: MI:2206
+name: observed nucleic acid chemical modification
+def: "Chemical modification observed on a nucleic acid molecule in the context of an interaction. Modifications involving full nucleotide substitutions/deletions are excluded from this definition." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "observed na chemical modification" EXACT PSI-MI-alternate []
+synonym: "observed nucleic acid chemical modification" EXACT PSI-MI-short []
+is_a: MI:0668 ! feature attribute name
+created_by: ppm
+creation_date: 2016-01-21T14:50:29Z
+
+[Term]
+id: MI:2207
+name: resulting nucleic acid chemical modification
+def: "Chemical modification observed on an RNA molecule resulting subsequently of an interaction. Modifications involving full nucleotide substitutions/deletions are excluded from this definition." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "resulting na chemical modification" EXACT PSI-MI-alternate []
+synonym: "resulting nucleic acid chemical modification" EXACT PSI-MI-short []
+is_a: MI:2206 ! observed nucleic acid chemical modification
+created_by: ppm
+creation_date: 2016-01-21T15:02:23Z
+
+[Term]
+id: MI:2208
+name: prerequisite-nucleic acid chemical modification
+def: "Chemical modification observed on a nucleic acid molecule required for an interaction to occur. Modifications involving full nucleotide substitutions/deletions are excluded from this definition." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "prerequisite-na chemical modification" EXACT PSI-MI-alternate []
+synonym: "prerequisite-nucleic acid chemical modification" EXACT PSI-MI-short []
+is_a: MI:2206 ! observed nucleic acid chemical modification
+created_by: ppm
+creation_date: 2016-01-21T15:12:35Z
+
+[Term]
+id: MI:2209
+name: nucleic acid chemical modification decreasing an interaction
+def: "Chemical modification observed on a nucleic acid molecule observed to decrease the strength or rate of an interaction. Modifications involving full nucleotide substitutions/deletions are excluded from this definition." [PMID:14755292]
+synonym: "na chemical modification decreasing" EXACT PSI-MI-short []
+synonym: "nucleic acid chemical modification decreasing an interaction" EXACT PSI-MI-alternate []
+is_a: MI:2206 ! observed nucleic acid chemical modification
+created_by: ppm
+creation_date: 2016-01-21T15:17:08Z
+
+[Term]
+id: MI:2210
+name: nucleic acid chemical modification disrupting an interaction
+def: "Chemical modification observed on a nucleic acid molecule observed to disrupt an interaction. Modifications involving full nucleotide substitutions/deletions are excluded from this definition." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "na chemical modification disrupting" EXACT PSI-MI-short []
+synonym: "nucleic acid chemical modification disrupting an interaction" EXACT PSI-MI-alternate []
+is_a: MI:2206 ! observed nucleic acid chemical modification
+created_by: ppm
+creation_date: 2016-01-21T15:18:52Z
+
+[Term]
+id: MI:2211
+name: nucleic acid chemical modification increasing an interaction
+def: "Chemical modification observed on a nucleic acid molecule observed to increase the strength or rate of an interaction. Modifications involving full nucleotide substitutions/deletions are excluded from this definition." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "na chemical modification increasing" EXACT PSI-MI-short []
+synonym: "nucleic acid chemical modification increasing an interaction" EXACT PSI-MI-alternate []
+is_a: MI:2206 ! observed nucleic acid chemical modification
+created_by: ppm
+creation_date: 2016-01-21T15:25:51Z
 
 [Typedef]
 id: contains
