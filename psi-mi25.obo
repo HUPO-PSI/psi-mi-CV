@@ -21,6 +21,7 @@ synonymtypedef: UniMod-interim "Interim label from UniMod" RELATED
 synonymtypedef: UniMod-label "Label (title) from UniMod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MI
+ontology: mi
 remark: Notes:
 remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
 remark: mapping an element of the PSI Molecular Interaction XML schema.
