@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 21:01:2016 15:31
+date: 02:02:2016 13:56
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -21,7 +21,6 @@ synonymtypedef: UniMod-interim "Interim label from UniMod" RELATED
 synonymtypedef: UniMod-label "Label (title) from UniMod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MI
-ontology: mi
 remark: Notes:
 remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
 remark: mapping an element of the PSI Molecular Interaction XML schema.
@@ -35,6 +34,7 @@ remark: The maintenance of this file is ensured by Sandra Orchard orchard@ebi.ac
 remark: coverage: This file collect controlled vocabularies describing different aspects of molecular interactions.
 remark: publisher: This file is published by the PSI MI working group see http://psidev.info/MI
 remark: CVversion: 2.5.5
+ontology: mi
 
 [Term]
 id: MI:0000
@@ -3974,7 +3974,7 @@ def: "SGD is a scientific database of the molecular biology and genetics of the 
 subset: PSI-MI_slim
 synonym: "SGD" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"S[0-9\]\{9}\"
-xref: search-url: "http://genome-www4.stanford.edu/cgi-bin/SGD/locus.pl?locus=${ac}"
+xref: search-url: "http://www.yeastgenome.org/locus/${ac}/overview"
 is_a: MI:1094 ! genome databases
 
 [Term]
@@ -12772,6 +12772,17 @@ synonym: "nucleic acid chemical modification increasing an interaction" EXACT PS
 is_a: MI:2206 ! observed nucleic acid chemical modification
 created_by: ppm
 creation_date: 2016-01-21T15:25:51Z
+
+[Term]
+id: MI:2212
+name: proteomexchange
+def: "The ProteomeXchange consortium was set up to provide a single point of submission of MS proteomics data to the main existing proteomics repositories, and to encourage the data exchange between them for optimal data dissemination. The data is actually hosted by consortium member databases like PeptideAtlas or PRIDE. \n\nhttp://www.proteomexchange.org" [PMID:25047258]
+subset: PSI-MI_slim
+synonym: "proteomexchange" EXACT PSI-MI-short []
+synonym: "ProteomExchange" EXACT PSI-MI-alternate []
+is_a: MI:0737 ! peptide sequence database
+created_by: ppm
+creation_date: 2016-02-02T13:52:54Z
 
 [Typedef]
 id: contains
