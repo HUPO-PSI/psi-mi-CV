@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:02:2016 13:56
+date: 11:02:2016 11:14
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -12783,6 +12783,16 @@ synonym: "ProteomExchange" EXACT PSI-MI-alternate []
 is_a: MI:0737 ! peptide sequence database
 created_by: ppm
 creation_date: 2016-02-02T13:52:54Z
+
+[Term]
+id: MI:2213
+name: super-resolution microscopy
+def: "Super-resolution microscopy is a form of light microscopy that allows images to be taken with a higher resolution than the diffraction limit. Several different methods can be used to achieve beyond-diffraction limit resolution and these can be broadly divided in two categories: \"true\" super-resolution techniques, which capture information contained in evanescent waves, and \"functional\" super-resolution techniques, which use clever experimental techniques and known limitations on the matter being imaged to reconstruct a super-resolution image." [PMID:14755292]
+synonym: "super resolution microscopy" EXACT PSI-MI-alternate []
+synonym: "super-resolution microscopy" EXACT PSI-MI-short []
+is_a: MI:0428 ! imaging technique
+created_by: ppm
+creation_date: 2016-02-11T11:10:32Z
 
 [Typedef]
 id: contains
