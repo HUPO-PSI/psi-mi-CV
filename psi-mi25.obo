@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:02:2016 11:14
+date: 16:02:2016 10:20
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -3486,6 +3486,7 @@ def: "partial protein sequence identification." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "partial id prot seq" EXACT PSI-MI-short []
 is_a: MI:0093 ! protein sequence identification
+is_a: MI:0659 ! experimental feature detection
 
 [Term]
 id: MI:0434
@@ -3598,7 +3599,7 @@ def: "PubMed is designed to provide access to citations from biomedical literatu
 subset: Drugable
 subset: PSI-MI_slim
 xref: id-validation-regexp:\"[0-9\]+\"
-xref: search-url: "http://europepmc.org/abstract/MED/${AC}"
+xref: search-url: "http://europepmc.org/abstract/MED/${ac}"
 is_a: MI:0445 ! literature database
 
 [Term]
