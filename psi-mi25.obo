@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:02:2016 10:20
+date: 15:03:2016 15:34
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -12794,6 +12794,20 @@ synonym: "super-resolution microscopy" EXACT PSI-MI-short []
 is_a: MI:0428 ! imaging technique
 created_by: ppm
 creation_date: 2016-02-11T11:10:32Z
+
+[Term]
+id: MI:2214
+name: signor
+def: "SIGNOR, the SIGnaling Network Open Resource, organizes and stores in a structured format signaling information published in the scientific literature. The captured information is stored as binary causative relationships between biological entities and can be represented graphically as activity flow. The signaling information is mapped to the human proteome even if the experimental evidence is based on experiments on mammalian model organisms." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "SIGnaling Network Open Resource" EXACT PSI-MI-alternate []
+synonym: "signaling network open resource" EXACT PSI-MI-alternate []
+synonym: "SIGNOR" EXACT PSI-MI-alternate []
+synonym: "signor" EXACT PSI-MI-short []
+xref: url:http\://signor.uniroma2.it/
+is_a: MI:1106 ! pathways database
+created_by: ppm
+creation_date: 2016-03-15T15:31:08Z
 
 [Typedef]
 id: contains
