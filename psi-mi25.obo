@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:03:2016 15:34
+date: 05:05:2016 15:06
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -12804,10 +12804,22 @@ synonym: "SIGnaling Network Open Resource" EXACT PSI-MI-alternate []
 synonym: "signaling network open resource" EXACT PSI-MI-alternate []
 synonym: "SIGNOR" EXACT PSI-MI-alternate []
 synonym: "signor" EXACT PSI-MI-short []
-xref: url:http\://signor.uniroma2.it/
+xref: search-url:http\://signor.uniroma2.it/RelationServlet?id=$\{ac}/
 is_a: MI:1106 ! pathways database
 created_by: ppm
 creation_date: 2016-03-15T15:31:08Z
+
+[Term]
+id: MI:2215
+name: barcode fusion genetics two hybrid
+def: "This method allows screening of a full matrix of protein pairs in a single multiplexed strain pool. A doubly engineered clone pool is prepared so that each clone bears two distinct DNA barcodes flanked by site specific recombination sequences. Positive bait-prey combinations allow activation of reporter genes and their respective barcodes undergo recombination, creating unique barcode combinations. Recombined barcode tags are then fused, extracted and sequenced for identification of interacting pairs." [PMID:27107012]
+synonym: "barcode fusion genetics two hybrid" EXACT PSI-MI-alternate []
+synonym: "bfg two hybrid" EXACT PSI-MI-alternate []
+synonym: "bfg-2h" EXACT PSI-MI-short []
+synonym: "BGF-2h" EXACT PSI-MI-alternate []
+is_a: MI:1113 ! two hybrid bait and prey pooling approach
+created_by: ppm
+creation_date: 2016-05-05T14:33:32Z
 
 [Typedef]
 id: contains
