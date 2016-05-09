@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:05:2016 15:06
+date: 09:05:2016 10:16
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -9908,7 +9908,7 @@ creation_date: 2012-06-07T05:20:20Z
 [Term]
 id: MI:1206
 name: renilla-n
-def: "The n-terminus of the renilla luciferase protein, fused to a protein of interest for use in the split renilla complementation assay." [PMID:12705589]
+def: "The n-terminus of the renilla luciferase protein, fused to a protein of interest for use in the split luciferase complementation assay." [PMID:12705589]
 subset: PSI-MI_slim
 synonym: "N-terminal fragment of renilla luciferase" RELATED []
 is_a: MI:0896 ! renilla luciferase protein tag
@@ -9919,7 +9919,7 @@ creation_date: 2012-06-07T05:26:34Z
 [Term]
 id: MI:1207
 name: renilla-c
-def: "The c-terminus of the renilla luciferase protein, fused to a protein of interest for use in the split renilla complementation assay." [PMID:12705589]
+def: "The c-terminus of the renilla luciferase protein, fused to a protein of interest for use in the split luciferase complementation assay." [PMID:12705589]
 synonym: "C-terminal fragment of renilla luciferase" EXACT []
 is_a: MI:0896 ! renilla luciferase protein tag
 is_a: MI:1215 ! bifc tag
@@ -9938,7 +9938,7 @@ creation_date: 2012-06-07T05:32:53Z
 [Term]
 id: MI:1209
 name: firefly-c
-def: "The c-terminus of the firefly luciferase protein, fused to a protein of interest for use in the split renilla complementation assay." [PMID:22070901]
+def: "The c-terminus of the firefly luciferase protein, fused to a protein of interest for use in the split luciferase complementation assay." [PMID:22070901]
 subset: PSI-MI_slim
 synonym: "C-terminal fragment of firefly luciferase" EXACT []
 is_a: MI:1208 ! firefly luciferase protein tag
@@ -9949,7 +9949,7 @@ creation_date: 2012-06-07T05:40:04Z
 [Term]
 id: MI:1210
 name: firefly-n
-def: "The n-terminus of the firefly luciferase protein, fused to a protein of interest for use in the split renilla complementation assay." [PMID:22070901]
+def: "The n-terminus of the firefly luciferase protein, fused to a protein of interest for use in the split luciferase complementation assay." [PMID:22070901]
 subset: PSI-MI_slim
 synonym: "N-terminal fragment of firefly luciferase" RELATED []
 is_a: MI:1208 ! firefly luciferase protein tag
@@ -12820,6 +12820,69 @@ synonym: "BGF-2h" EXACT PSI-MI-alternate []
 is_a: MI:1113 ! two hybrid bait and prey pooling approach
 created_by: ppm
 creation_date: 2016-05-05T14:33:32Z
+
+[Term]
+id: MI:2216
+name: deampylation assay
+def: "Measurement of de-AMPylation, the removal of a phosphodiester or phosphoramide ester of AMP from Tyr (RESID:AA0203), Lys (RESID:AA0227), Thr (RESID:AA0267), His (RESID:AA0371) and other amino\nacids." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "de-ampylation assay" EXACT PSI-MI-alternate []
+synonym: "de-AMPylation assay" EXACT PSI-MI-alternate []
+synonym: "deampylation assay" EXACT PSI-MI-short []
+synonym: "deAMPylation assay" EXACT PSI-MI-alternate []
+is_a: MI:0415 ! enzymatic study
+created_by: ppm
+creation_date: 2016-05-09T09:40:07Z
+
+[Term]
+id: MI:2217
+name: luciferase-c
+def: "The c-terminus of a luciferase protein, fused to a protein of interest for use in the split luciferase complementation assay." [PMID:22070901]
+subset: PSI-MI_slim
+synonym: "luciferase-c" EXACT PSI-MI-short []
+is_a: MI:1205 ! luciferase tag
+created_by: ppm
+creation_date: 2016-05-09T09:45:05Z
+
+[Term]
+id: MI:2218
+name: luciferase-n
+def: "The n-terminus of a luciferase protein, fused to a protein of interest for use in the split luciferase complementation assay." [PMID:22070901]
+subset: PSI-MI_slim
+synonym: "luciferase-n" EXACT PSI-MI-short []
+is_a: MI:1205 ! luciferase tag
+created_by: ppm
+creation_date: 2016-05-09T09:45:23Z
+
+[Term]
+id: MI:2219
+name: gaussia luciferase protein tag
+def: "Gaussia luciferase, is an enzyme from the crustacean Gaussia princeps catalyzing the oxidation of coelenterazine to coelenteramide  that produces light. Gaussia luciferase produces a blue light around the 480 nm range." [PMID:26025768]
+synonym: "gaussia luciferase" EXACT PSI-MI-short []
+synonym: "gaussia luciferase protein tag" EXACT PSI-MI-alternate []
+synonym: "GLuc tag" EXACT PSI-MI-alternate []
+synonym: "gluc tag" EXACT PSI-MOD-alternate []
+is_a: MI:1205 ! luciferase tag
+created_by: ppm
+creation_date: 2016-05-09T10:05:39Z
+
+[Term]
+id: MI:2220
+name: gaussia-c
+def: "The c-terminus of the gaussia luciferase protein, fused to a protein of interest for use in the split luciferase complementation assay." [PMID:17099704]
+synonym: "gaussia-c" EXACT PSI-MI-short []
+is_a: MI:2219 ! gaussia luciferase protein tag
+created_by: ppm
+creation_date: 2016-05-09T10:13:06Z
+
+[Term]
+id: MI:2221
+name: gaussia-n
+def: "The n-terminus of the gaussia luciferase protein, fused to a protein of interest for use in the split luciferase complementation assay." [PMID:17099704]
+synonym: "gaussia-n" EXACT PSI-MI-short []
+is_a: MI:2219 ! gaussia luciferase protein tag
+created_by: ppm
+creation_date: 2016-05-09T10:13:23Z
 
 [Typedef]
 id: contains
