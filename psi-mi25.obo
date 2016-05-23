@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 23:05:2016 12:59
+date: 23:05:2016 13:46
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -12905,6 +12905,16 @@ synonym: "quantitative  tagless  co - purification" EXACT PSI-MI-alternate []
 is_a: MI:0363 ! inferred by author
 created_by: ppm
 creation_date: 2016-05-17T10:36:05Z
+
+[Term]
+id: MI:2224
+name: chemical rna modification plus base pairing prediction
+def: "In this method predicted RNA-RNA pairings are tested by knocking down one of the two interacting RNAs and then experimentally determine if its presence is required for the other to be chemically modified." [PMID:10024243]
+subset: PSI-MI_slim
+synonym: "chemical rna modification plus base pairing prediction" EXACT PSI-MI-short []
+is_a: MI:0254 ! genetic interference
+created_by: ppm
+creation_date: 2016-05-23T13:32:07Z
 
 [Typedef]
 id: contains
