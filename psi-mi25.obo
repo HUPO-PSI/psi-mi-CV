@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 09:05:2016 10:16
+date: 23:05:2016 10:33
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -2178,7 +2178,7 @@ id: MI:0244
 name: reactome complex
 def: "Collection of functional complexes within Reactome - a knowledgebase of biological processes.\nhttp://www.reactome.org/. OSOLETE - this concept no longer exists within Reactome." [PMID:21067998]
 subset: PSI-MI_slim
-xref: id-validation-regexp:\"REACT_[0-9\]\{1\,5}\\.[0-9\]\{1\,3}|[0-9\]+\"
+xref: id-validation-regexp: "REACT_[0-9]{1,5}\\.[0-9]{1,3}|[0-9]+"
 xref: search-url: "http://www.reactome.org/cgi-bin/eventbrowser?ID=${ac}"
 is_obsolete: true
 
@@ -2187,7 +2187,7 @@ id: MI:0245
 name: reactome protein
 def: "Collection of protein within the Reactome database - a knowledgebase of biological processes.\nhttp://www.reactome.org/. OBSOLETE - this concept no longer exists within Reactome." [PMID:21067998]
 subset: PSI-MI_slim
-xref: id-validation-regexp:\"REACT_[0-9\]\{1\,4}\\.[0-9\]\{1\,3}|[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]|[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]-[0-9\]+|[A-Z\]\{3}[0-9\]\{5}|[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]-PRO_[0-9\]\{10}\"
+xref: id-validation-regexp: "REACT_[0-9]{1,4}\\.[0-9]{1,3}|[OPQ][0-9][A-Z0-9]{3}[0-9]|[OPQ][0-9][A-Z0-9]{3}[0-9]-[0-9]+|[A-Z]{3}[0-9]{5}|[OPQ][0-9][A-Z0-9]{3}[0-9]-PRO_[0-9]{10}"
 xref: search-url: "http://www.reactome.org/cgi-bin/link?SOURCE=UNIPROT&ID=${ac}"
 is_obsolete: true
 
@@ -2196,7 +2196,7 @@ id: MI:0246
 name: cabri
 def: "CABRI cell lines catalogue available at.\nhttp://www.cabri.org/" [PMID:14755292]
 subset: PSI-MI_slim
-xref: id-validation-regexp:\"[0-9\]+|ACC\\s[A-Z0-9\]+|ECACC\\s[A-Z0-9\]+|LMBP\\s[A-Z0-9\]+|ICLC\\s[A-Z0-9\]+|CIP-[0-9\]+|DSMZ_MUTZ\\\:ACC\\s[0-9\]+ \"
+xref: id-validation-regexp: "[0-9]+|ACC\\s[A-Z0-9]+|ECACC\\s[A-Z0-9]+|LMBP\\s[A-Z0-9]+|ICLC\\s[A-Z0-9]+|CIP-[0-9]+|DSMZ_MUTZ\\:ACC\\s[0-9]+"
 xref: search-url: "http://www.cabri.org/CABRI/srs-bin/wgetz?-e+-page+EntryPage+[$id]"
 is_a: MI:0473 ! participant database
 
@@ -2205,7 +2205,7 @@ id: MI:0247
 name: newt
 def: "New EBI Web Taxonomy.\nhttp://www.ebi.ac.uk/newt OBSOLETE: Consider remapping to uniprot taxonomy MI:0942" [PMID:14755292]
 subset: PSI-MI_slim
-xref: id-validation-regexp:\"[0-9\]+\"
+xref: id-validation-regexp: "[0-9]+"
 xref: search-url: "http://www.ebi.ac.uk/newt/display?search=${ac}"
 is_obsolete: true
 
@@ -2214,7 +2214,7 @@ id: MI:0248
 name: resid
 def: "The RESID Database of Protein Modifications is a comprehensive collection of annotations and structures for protein modifications including amino-terminal, carboxyl-terminal and peptide chain cross-link post-translational modifications.\nhttp://www.ebi.ac.uk/RESID/index.html" [PMID:14755292]
 subset: PSI-MI_slim
-xref: id-validation-regexp:\"AA[0-9\]\{4}\"
+xref: id-validation-regexp: "AA[0-9]{4}"
 xref: search-url: "http://srs.ebi.ac.uk/cgi-bin/wgetz?[resid-id:${ac}]+-e"
 is_a: MI:0447 ! feature database
 
@@ -2223,7 +2223,7 @@ id: MI:0249
 name: huge
 def: "A Database of Human Unidentified Gene-Encoded Large Proteins Analyzed by Kazusa Human cDNA Project.\nhttp://www.kazusa.or.jp/huge/" [PMID:14755292]
 subset: PSI-MI_slim
-xref: id-validation-regexp:\"KIAA[0-9\]\{4}[A-Z\]\{0\,1}\"
+xref: id-validation-regexp: "KIAA[0-9]{4}[A-Z]{0,1}"
 xref: search-url: "http://www.kazusa.or.jp/huge/gfpage/${ac}"
 is_a: MI:0683 ! sequence database
 
@@ -3595,10 +3595,10 @@ is_a: MI:0444 ! database citation
 [Term]
 id: MI:0446
 name: pubmed
-def: "PubMed is designed to provide access to citations from biomedical literature. The data can be found at both NCBI PubMed and Europe PubMed Central. \nhttp://www.ncbi.nlm.nih.gov/entrez/query.fcgi\nhttp://europepmc.org" [PMID:14755292]
+def: "PubMed is designed to provide access to citations from biomedical literature. The data can be found at both NCBI PubMed and Europe PubMed Central. \nhttp://www.ncbi.nlm.nih.gov/pubmed\nhttp://europepmc.org" [PMID:14755292]
 subset: Drugable
 subset: PSI-MI_slim
-xref: id-validation-regexp:\"[0-9\]+\"
+xref: id-validation-regexp: "[0-9]+"
 xref: search-url: "http://europepmc.org/abstract/MED/${ac}"
 is_a: MI:0445 ! literature database
 
@@ -3616,7 +3616,7 @@ name: gene ontology
 def: "The objective of Gene Ontology (GO) is to provide controlled vocabularies for the description of the molecular function, biological process and cellular component of gene products.\nhttp://www.ebi.ac.uk/GO" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "go" EXACT PSI-MI-short []
-xref: id-validation-regexp:\"GO\:[0-9\]\{7}\"
+xref: id-validation-regexp: "GO:[0-9]{7}"
 xref: search-url: "http://www.ebi.ac.uk/QuickGO/GTerm?id=${ac}"
 is_a: MI:0447 ! feature database
 is_a: MI:0461 ! interaction database
@@ -3627,7 +3627,7 @@ name: interpro
 def: "InterPro combines a number of databases (referred to as member databases) that use different methodologies and a varying degree of biological information on well-characterised proteins to derive protein signatures that predict family membership and domain composition of naive protein sequences.\nhttp://www.ebi.ac.uk/interpro/" [PMID:1252001]
 subset: PSI-MI_slim
 synonym: "InterPro" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"IPR[0-9\]\{6}\"
+xref: id-validation-regexp: "IPR[0-9]{6}"
 xref: search-url: "http://www.ebi.ac.uk/interpro/DisplayIproEntry?ac=${ac}"
 is_a: MI:0447 ! feature database
 
@@ -3637,7 +3637,7 @@ name: cdd
 def: "The Conserved Domain Database may be used to identify the conserved domains present in a protein sequence.\nhttp://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "CDD" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[0-9\]+\"
+xref: id-validation-regexp: "[0-9]+"
 is_a: MI:0447 ! feature database
 
 [Term]
@@ -3646,7 +3646,7 @@ name: pfam
 def: "Pfam is a large collection of multiple sequence alignments and hidden Markov models covering many common protein domains.\nhttp://www.sanger.ac.uk/Software/Pfam" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "Pfam" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"PF[0-9\]\{5}\"
+xref: id-validation-regexp: "PF[0-9]{5}"
 is_a: MI:0449 ! interpro
 
 [Term]
@@ -3655,7 +3655,7 @@ name: pirsf
 def: "PIRSF is a classification system based on evolutionary relationship of whole proteins.\nhttp://pir.georgetown.edu/pirwww/dbinfo/pirsf.shtml" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "PIRSF" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"PIRSF[0-9\]\{5}\"
+xref: id-validation-regexp: "PIRSF[0-9]{5}"
 is_a: MI:0449 ! interpro
 
 [Term]
@@ -3664,7 +3664,7 @@ name: prints
 def: "PRINTS is a compendium of protein fingerprints. A fingerprint is a group of conserved motifs used to characterise a protein family.\nhttp://umber.sbs.man.ac.uk/dbbrowser/PRINTS/" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "PRINTS" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"PR[0-9\]\{6}\"
+xref: id-validation-regexp: "PR[0-9]{6}"
 is_a: MI:0449 ! interpro
 
 [Term]
@@ -3673,7 +3673,7 @@ name: prodom
 def: "The ProDom protein domain database consists of an automatic compilation of homologous domains.\nhttp://protein.toulouse.inra.fr/prodom.html" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "ProDom" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"PD[0-9\]\{6}\"
+xref: id-validation-regexp: "PD[0-9]{6}"
 is_a: MI:0449 ! interpro
 
 [Term]
@@ -3682,7 +3682,7 @@ name: prosite
 def: "PROSITE is a database of protein families and domains. It consists of biologically significant sites, patterns and profiles.\nhttp://us.expasy.org/prosite/" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "Prosite" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"PS[0-9\]\{5}\"
+xref: id-validation-regexp: "PS[0-9]{5}"
 is_a: MI:0449 ! interpro
 
 [Term]
@@ -3691,7 +3691,7 @@ name: scop superfamily
 def: "SUPERFAMILY is a library of profile hidden Markov models that represent all proteins of known structure. The library is based on the SCOP classification of proteins: each model corresponds to a SCOP domain.\nhttp://supfam.mrc-lmb.cam.ac.uk/SUPERFAMILY/" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "SCOP superfamily" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[0-9\]+\"
+xref: id-validation-regexp: "[0-9]+"
 is_a: MI:0449 ! interpro
 
 [Term]
@@ -3700,7 +3700,7 @@ name: smart
 def: "SMART (a Simple Modular Architecture Research Tool) allows the identification and annotation of genetically mobile domains and the analysis of domain architectures.\nhttp://smart.embl-heidelberg.de/" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "SMART" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"SM[0-9\]\{5}\"
+xref: id-validation-regexp: "SM[0-9]{5}"
 is_a: MI:0449 ! interpro
 
 [Term]
@@ -3709,7 +3709,7 @@ name: tigrfams
 def: "TIGRFAMs is a collection of protein families, featuring curated multiple sequence alignments, Hidden Markov Models (HMMs) and annotation.\nhttp://www.tigr.org/TIGRFAMs" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "TIGRFAMs" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"TIGR[0-9\]+\"
+xref: id-validation-regexp: "TIGR[0-9]+"
 is_a: MI:0449 ! interpro
 
 [Term]
@@ -3718,7 +3718,7 @@ name: mmdb
 def: "MMDB (Molecular Modeling DataBase), is a subset of three-dimensional structures obtained from the Protein Data Bank.\nhttp://www.ncbi.nlm.nih.gov/Structure" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "MMDB" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[0-9\]+\"
+xref: id-validation-regexp: "[0-9]+"
 is_a: MI:0447 ! feature database
 is_a: MI:0461 ! interaction database
 
@@ -3729,7 +3729,7 @@ def: "The RCSB PDB provides a variety of tools and resources for studying the st
 subset: Drugable
 subset: PSI-MI_slim
 synonym: "PDB" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[0-9\][a-zA-Z0-9\]\{3}\"
+xref: id-validation-regexp: "[0-9][a-zA-Z0-9]{3}"
 xref: search-url: "http://www.pdb.org/pdb/explore/explore.do?structureId=${ac}"
 is_a: MI:0805 ! wwpdb
 
@@ -3748,7 +3748,7 @@ name: bind
 def: "The Biomolecular Interaction Network Database (BIND) is a collection of records documenting molecular interactions.\nhttp://www.blueprint.org/bind" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "BIND" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[0-9\]+\"
+xref: id-validation-regexp: "[0-9]+"
 is_a: MI:0461 ! interaction database
 is_a: MI:0489 ! source database
 
@@ -3770,7 +3770,7 @@ synonym: "CYGD" EXACT PSI-MI-alternate []
 synonym: "CYGD (MIPS)" EXACT PSI-MI-alternate []
 synonym: "MIPS" EXACT PSI-MI-alternate []
 synonym: "MPact" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[0-9\]+|[A-Z\]\{3}[0-9\]\{3}[A-Za-z\](-[A-Za-z\])?|[A-Z0-9\]+\\.[0-9\]+|YM[A-Z\][0-9\]\{3}[a-z\][0-9\]\"
+xref: id-validation-regexp: "[0-9]+|[A-Z]{3}[0-9]{3}[A-Za-z](-[A-Za-z])?|[A-Z0-9]+\\.[0-9]+|YM[A-Z][0-9]{3}[a-z][0-9]"
 is_a: MI:0489 ! source database
 is_a: MI:1094 ! genome databases
 is_a: MI:1106 ! pathways database
@@ -3781,8 +3781,8 @@ name: dip
 def: "The database of interacting protein (DIP) database stores experimentally determined interactions between proteins. It combines information from a variety of sources to create a single, consistent set of protein-protein interactions.\nhttp://dip.doe-mbi.ucla.edu/" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "DIP" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"DIP[0-9\]+[NE\]\"
-xref: search-url:<new xref> "http://identifiers.org/dip/"
+xref: id-validation-regexp: "DIP[0-9]+[NE]"
+xref: search-url: "http://identifiers.org/dip/"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 
@@ -3802,7 +3802,7 @@ subset: PSI-MI_slim
 synonym: "Genome Knowledge Base" EXACT PSI-MI-alternate []
 synonym: "GKB" EXACT PSI-MI-alternate []
 synonym: "Reactome" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"REACT_\\d+(\\.\\d+)?$\"
+xref: id-validation-regexp: "REACT_\\d+(\\.\\d+)?$"
 xref: search-url: "http://www.reactome.org/content/detail/${ac}"
 is_a: MI:1106 ! pathways database
 
@@ -3821,7 +3821,7 @@ name: intact
 def: "INTerAction database (IntAct) provides an open source database and toolkit for the storage, presentation and analysis of molecular interactions.\nhttp://www.ebi.ac.uk/intact" [PMID:14681455, PMID:19850723, PMID:22121220]
 subset: PSI-MI_slim
 synonym: "IntAct" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"EBI-[0-9\]+|IA\:[0-9\]+\"
+xref: id-validation-regexp: "EBI-[0-9]+|IA:[0-9]+"
 xref: search-url: "http://www.ebi.ac.uk/intact/query/${ac}"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
@@ -3833,7 +3833,7 @@ def: "KEGG (Kyoto Encyclopedia of Genes and Genomes) is a knowledge base for sys
 subset: Drugable
 subset: PSI-MI_slim
 synonym: "KEGG" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[a-zA-Z\]+\:[a-zA-Z\]+[0-9\]+\"
+xref: id-validation-regexp: "[a-zA-Z]+:[a-zA-Z]+[0-9]+"
 is_a: MI:0473 ! participant database
 is_a: MI:1106 ! pathways database
 
@@ -3843,7 +3843,7 @@ name: mint
 def: "The Moleculer INTeraction database (MINT) is a relational database designed to store interactions between biological molecules.\nhttp://mint.bio.uniroma2.it/mint/" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "MINT" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"MINT-[0-9\]+\"
+xref: id-validation-regexp: "MINT-[0-9]+"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 
@@ -3856,7 +3856,7 @@ synonym: "<new synonym>" RELATED []
 synonym: "e-MSD" EXACT []
 synonym: "MSD" RELATED []
 synonym: "PQS" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[0-9\][a-zA-Z0-9\]\{3}\"
+xref: id-validation-regexp: "[0-9][a-zA-Z0-9]{3}"
 xref: search-url: "http://www.ebi.ac.uk/pdbe/entry/pdb/${ac}"
 is_a: MI:0805 ! wwpdb
 
@@ -3876,7 +3876,7 @@ def: "A definitive, freely available database of Chemical compounds of Biologica
 subset: Drugable
 subset: PSI-MI_slim
 synonym: "ChEBI" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"CHEBI\:[0-9\]+\"
+xref: id-validation-regexp: "CHEBI:[0-9]+"
 xref: search-url: "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=${ac}"
 is_a: MI:2054 ! bioactive entity reference
 
@@ -3889,7 +3889,7 @@ synonym: "DDBJ" EXACT PSI-MI-alternate []
 synonym: "DDBJ/EMBL/GenBank" EXACT PSI-MI-alternate []
 synonym: "EMBL" EXACT PSI-MI-alternate []
 synonym: "GenBank" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[A-Z\][0-9\]\{5}|[A-Z\][0-9\]\{5}\\.[0-9\]+|[A-Z\]\{2}[0-9\]\{6}|[A-Z\]\{2}[0-9\]\{6}\\.[0-9\]+|[A-Z\]\{4}[0-9\]\{8}|[A-Z\]\{4}[0-9\]\{8}\\.[0-9\]+\"
+xref: id-validation-regexp: "[A-Z][0-9]{5}|[A-Z][0-9]{5}\\.[0-9]+|[A-Z]{2}[0-9]{6}|[A-Z]{2}[0-9]{6}\\.[0-9]+|[A-Z]{4}[0-9]{8}|[A-Z]{4}[0-9]{8}\\.[0-9]+"
 xref: search-url: "http://www.ebi.ac.uk/cgi-bin/dbfetch?db=EMBLSVA&id=${ac}"
 is_a: MI:0683 ! sequence database
 
@@ -3899,7 +3899,7 @@ name: ensembl
 def: "Ensembl is a joint project between the EMBL-EBI and the Wellcome Trust Sanger Institute that aims at developing a system that maintains automatic annotation of large eukaryotic genomes.\nhttp://www.ensembl.org" [PMID:15078858]
 subset: PSI-MI_slim
 synonym: "Ensembl" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"ENS[A-Z\]+[0-9\]\{11}|[A-Z\]\{3}[0-9\]\{3}[A-Za-z\](-[A-Za-z\])?|CG[0-9\]+|[A-Z0-9\]+\\.[0-9\]+|YM[A-Z\][0-9\]\{3}[a-z\][0-9\]\"
+xref: id-validation-regexp: "ENS[A-Z]+[0-9]{11}|[A-Z]{3}[0-9]{3}[A-Za-z](-[A-Za-z])?|CG[0-9]+|[A-Z0-9]+\\.[0-9]+|YM[A-Z][0-9]{3}[a-z][0-9]"
 is_a: MI:1094 ! genome databases
 
 [Term]
@@ -3909,7 +3909,7 @@ def: "LocusLink provides a single query interface to curated sequence and descri
 subset: PSI-MI_slim
 synonym: "Entrez gene/locuslink" EXACT PSI-MI-alternate []
 synonym: "entrezgene/locuslink" EXACT PSI-MI-short []
-xref: id-validation-regexp:\"[0-9\]+|[A-Z\]\{1\,2}_[0-9\]+|[A-Z\]\{1\,2}_[A-Z\]\{1\,4}[0-9\]+\"
+xref: id-validation-regexp: "[0-9]+|[A-Z]{1,2}_[0-9]+|[A-Z]{1,2}_[A-Z]{1,4}[0-9]+"
 is_a: MI:1109 ! gene database
 
 [Term]
@@ -3918,7 +3918,7 @@ name: flybase
 def: "FlyBase is a comprehensive database for information on the genetics and molecular biology of Drosophila.\nhttp://fbserver.gen.cam.ac.uk:7081/" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "FlyBase" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"FBgn[0-9\]\{7}\"
+xref: id-validation-regexp: "FBgn[0-9]{7}"
 xref: search-url: "http://flybase.net/cgi-bin/fbannq.html?acc=${ac}"
 is_a: MI:1094 ! genome databases
 
@@ -3928,7 +3928,7 @@ name: mgd/mgi
 def: "Mouse Genome Informatics (MGI) provides integrated access to data on the genetics, genomics, and biology of the laboratory mouse.\nhttp://www.informatics.jax.org/" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "MGD/MGI" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"MGI\:[0-9\]+\"
+xref: id-validation-regexp: "MGI:[0-9]+"
 is_a: MI:1094 ! genome databases
 
 [Term]
@@ -3937,7 +3937,7 @@ name: omim
 def: "Online Mendelian Inheritance in Man (OMIM) is a catalogue of human genes and genetic disorders, with links to literature references, sequence records, maps, and related databases.\nhttp://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=OMIM" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "OMIM" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[0-9\]+\"
+xref: id-validation-regexp: "[0-9]+"
 xref: search-url: "http://www.omim.org/entry/${ac}"
 is_a: MI:0683 ! sequence database
 
@@ -3947,7 +3947,7 @@ name: refseq
 def: "The Reference Sequence (RefSeq) collection aims to provide a comprehensive, integrated, non-redundant set of sequences, including genomic DNA, transcript (RNA), and protein products, for a number of organisms.\nhttp://www.ncbi.nlm.nih.gov/RefSeq/" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "Refseq" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[XNZ\][A-Z\]_[0-9\]+|[0-9\]+|[XNZ\][A-Z\]_[0-9\]+\\.[0-9\]+\"
+xref: id-validation-regexp: "[XNZ][A-Z]_[0-9]+|[0-9]+|[XNZ][A-Z]_[0-9]+\\.[0-9]+"
 is_a: MI:1096 ! protein sequence databases
 
 [Term]
@@ -3956,7 +3956,7 @@ name: rfam
 def: "Rfam is a large collection of multiple sequence alignments and covariance models covering many common non-coding RNA families.\nhttp://www.sanger.ac.uk/Software/Rfam/" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "rfam" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"RF[0-9\]\{5}\"
+xref: id-validation-regexp: "RF[0-9]{5}"
 is_a: MI:0683 ! sequence database
 
 [Term]
@@ -3965,7 +3965,7 @@ name: rgd
 def: "The Rat Genome Database (RGD) curates and integrates rat genetic and genomic data.\nhttp://rgd.mcw.edu/" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "RGD" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[0-9\]+\"
+xref: id-validation-regexp: "[0-9]+"
 is_a: MI:1094 ! genome databases
 
 [Term]
@@ -3974,7 +3974,7 @@ name: sgd
 def: "SGD is a scientific database of the molecular biology and genetics of the yeast Saccharomyces cerevisiae.\nhttp://www.yeastgenome.org/" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "SGD" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"S[0-9\]\{9}\"
+xref: id-validation-regexp: "S[0-9]{9}"
 xref: search-url: "http://www.yeastgenome.org/locus/${ac}/overview"
 is_a: MI:1094 ! genome databases
 
@@ -3984,7 +3984,7 @@ name: uniparc
 def: "UniProt Archive (UniParc) is part of UniProt project. It is a non-redundant archive of protein sequences derived from many sources.\nhttp://www.ebi.ac.uk/uniparc/" [PMID:14681372]
 subset: PSI-MI_slim
 synonym: "UniParc" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"UPI[A-F0-9\]\{10}\"
+xref: id-validation-regexp: "UPI[A-F0-9]{10}"
 xref: search-url: "http://www.ebi.uniprot.org/entry/${ac}"
 is_a: MI:1097 ! uniprot
 
@@ -3995,7 +3995,7 @@ def: "UniProt (Universal Protein Resource) is the world's most comprehensive cat
 subset: PSI-MI_slim
 synonym: "uniprotkb" EXACT PSI-MI-short []
 synonym: "UniProtKB" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-NR-Z\][0-9\]([A-Z\][A-Z0-9\]\{2}[0-9\])\{1\,2}-PRO_[0-9\]\{10}\"
+xref: id-validation-regexp: "[OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2}-PRO_[0-9]{10}"
 xref: search-url: "http://www.uniprot.org/uniprot/{ac}"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
@@ -4007,7 +4007,7 @@ name: wormbase
 def: "WormBase is the central worm database that houses the gene reports, locus reports, translation reports, expression pattern data and genome browser.\nhttp://www.wormbase.org/" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "WormBase" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"WBGene[0-9\]\{8}\"
+xref: id-validation-regexp: "WBGene[0-9]{8}"
 is_a: MI:1094 ! genome databases
 
 [Term]
@@ -4016,7 +4016,7 @@ name: psi-mi
 def: "PSI-MI." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "PSI-MI" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"MI\:[0-9\]\{4}\"
+xref: id-validation-regexp: "MI:[0-9]{4}"
 xref: search-url: "http://www.ebi.ac.uk/ontology-lookup/?termId=${ac}"
 is_a: MI:0444 ! database citation
 
@@ -4701,7 +4701,7 @@ name: digital object identifier
 def: "Identifier of a publication prior to pubmed indexing." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "doi" EXACT PSI-MI-short []
-xref: id-validation-regexp:\"\\d+.\\d+/[a-zA-Z0-9\\.\\\:\]+\"
+xref: id-validation-regexp: "\\d+.\\d+/[a-zA-Z0-9\\.\\:]+"
 xref: search-url: "http://dx.doi.org/${ac}"
 is_a: MI:0445 ! literature database
 
@@ -4712,7 +4712,7 @@ def: "Alliance for Cellular Signaling (AfCS -Nature) store yeast 2-hybrid Intera
 subset: PSI-MI_slim
 synonym: "AfCS" EXACT PSI-MI-alternate []
 synonym: "afcs" EXACT PSI-MI-short []
-xref: id-validation-regexp:\"[0-9\]+\"
+xref: id-validation-regexp: "[0-9]+"
 xref: search-url: "http://www.signaling-gateway.org/data/Y2H/cgi-bin/y2h_int.cgi?id=${ac}"
 is_a: MI:0461 ! interaction database
 is_a: MI:0489 ! source database
@@ -4789,7 +4789,7 @@ id: MI:0585
 name: intenz
 def: "IntEnz is the name for the Integrated relational Enzyme database and is the official version of the Enzyme Nomenclature. The Enzyme Nomenclature comprises recommendations of the Nomenclature Committee of the International Union of Bio chemistry and Molecular Biology (NC-IUBMB) on the nomenclature and classification of enzyme-catalysed reactions. IntEnz is supported by NC-IUBMB and contains enzyme data curated and approved by this committee. The database IntEnz is available at.\nhttp://www.ebi.ac.uk/intenz" [PMID:14681451]
 subset: PSI-MI_slim
-xref: id-validation-regexp:\"[0-6\]\{1}\\.(\\d+|-)\\.(\\d+|-)\\.(\\d+|-)\"
+xref: id-validation-regexp: "[0-6]{1}\\.(\\d+|-)\\.(\\d+|-)\\.(\\d+|-)"
 xref: search-url: "http://www.ebi.ac.uk/intenz/query?cmd=Search&q=${ac}&t=exact&fields=ec"
 is_a: MI:0461 ! interaction database
 
@@ -4915,7 +4915,7 @@ name: sequence ontology
 def: "The Sequence Ontology (SO) is a structured controlled vocabulary for the parts of a genomic annotation. SO provides a common set of terms and definitions that will facilitate the exchange, analysis and management of genomic data." [PMID:15892872]
 subset: PSI-MI_slim
 synonym: "so" EXACT PSI-MI-short []
-xref: id-validation-regexp:\"SO\:[0-9\]\{7}\"
+xref: id-validation-regexp: "SO:[0-9]{7}"
 is_a: MI:0447 ! feature database
 is_a: MI:0473 ! participant database
 
@@ -5507,7 +5507,7 @@ name: international protein index
 def: "IPI provides a top level guide to the main databases that describe the proteomes of higher eukaryotic organisms. IPI effectively maintains a database of cross references between the primary data sources, provides minimally redundant yet maximally complete sets of proteins for featured species (one sequence per transcript) and maintains stable identifiers (with incremental versioning) to allow the tracking of sequences in IPI between IPI releases. IPI is updated monthly in accordance with the latest data released by the primary data sources." [PMID:15221759]
 subset: PSI-MI_slim
 synonym: "ipi" EXACT PSI-MI-short []
-xref: id-validation-regexp:\"IPI[0-9\]+.[0-9\]+|IPI[0-9\]+\"
+xref: id-validation-regexp: "IPI[0-9]+.[0-9]+|IPI[0-9]+"
 is_a: MI:1096 ! protein sequence databases
 
 [Term]
@@ -6226,7 +6226,7 @@ def: "The Worldwide Protein Data Bank (wwPDB) consists of organizations that act
 subset: Drugable
 subset: PSI-MI_slim
 synonym: "wwPDB" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[0-9\][a-zA-Z0-9\]\{3}\"
+xref: id-validation-regexp: "[0-9][a-zA-Z0-9]{3}"
 xref: search-url: "http://www.pdbe.org/${ac}"
 is_a: MI:0447 ! feature database
 is_a: MI:0461 ! interaction database
@@ -6238,7 +6238,7 @@ name: pdbj
 def: "PDBj(Protein Data Bank Japan) maintains the database for the protein structures with financial assistance from the Institute for Bioinformatics Research and Development of Japan Science and Technology Corporation(BIRD-JST), collaborating with the Research Collaboration for Structural Bioinformatics(RCSB) and the MSD in the European Bioinformatics Institute(MSD-EBI) in EU. All three organizations serve as deposition, data processing and distribution sites.\nhttp://www.pdbj.org/" [PMID:12099029]
 subset: PSI-MI_slim
 synonym: "PDBj" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[0-9\][a-zA-Z0-9\]\{3}\"
+xref: id-validation-regexp: "[0-9][a-zA-Z0-9]{3}"
 xref: search-url: "http://pdbjs3.protein.osaka-u.ac.jp/xPSSS/DetailServlet?PDBID=${ac}&PAGEID=Summary"
 is_a: MI:0805 ! wwpdb
 
@@ -6596,7 +6596,7 @@ id: MI:0849
 name: ncbi taxonomy
 def: "The NCBI taxonomy database indexes over 55 000 organisms that are represented in the sequence databases with at least one nucleotide or protein sequence. The Taxonomy Browser can be used to view the taxonomic position or retrieve sequence and structural data for a particular organism or group of organisms. Searches of the NCBI taxonomy may be made on the basis of whole or partial organism names, and direct links to organisms commonly used in biological research are also provided. The Taxonomy Browser can also be used to display the number of nucleic acid sequences, protein sequences, and protein structures available for organisms included in the branch. From the data display for a particular organism, one can retrieve and download the sequence data for that organism, or protein 3D structure data if available.\nhttp://www.ncbi.nlm.nih.gov/Taxonomy/" [PMID:10592169]
 subset: PSI-MI_slim
-xref: id-validation-regexp:\"[0-9\]+\"
+xref: id-validation-regexp: "[0-9]+"
 xref: search-url: "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=${ac}&lvl=3&lin=f&keep=1&srchmode=1&unlock"
 is_a: MI:0473 ! participant database
 
@@ -6618,7 +6618,7 @@ synonym: "GenBank Protein GI" EXACT PSI-MI-alternate []
 synonym: "genbank protein gi" EXACT PSI-MI-alternate []
 synonym: "genbank_protein_gi" EXACT PSI-MI-short []
 synonym: "genpept id" EXACT []
-xref: id-validation-regexp:\"[0-9\]+\"
+xref: id-validation-regexp: "[0-9]+"
 xref: search-url: "http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=protein&cmd=Retrieve&dopt=Graphics&list_uids=${ac}"
 is_a: MI:0860 ! genbank indentifier
 
@@ -6630,7 +6630,7 @@ subset: PSI-MI_slim
 synonym: "genbank nucleotide" EXACT PSI-MI-alternate []
 synonym: "GenBank Nucleotide" EXACT PSI-MI-alternate []
 synonym: "genbank_nucl_gi" EXACT PSI-MI-short []
-xref: id-validation-regexp:\"[0-9\]+\"
+xref: id-validation-regexp: "[0-9]+"
 xref: search-url: "http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=nucleotide&cmd=Retrieve&dopt=Graphics&list_uids=$"
 is_a: MI:0860 ! genbank indentifier
 
@@ -6701,7 +6701,7 @@ id: MI:0860
 name: genbank indentifier
 def: " edit" [PMID:15078858]
 subset: PSI-MI_slim
-xref: id-validation-regexp:\"ENS[A-Z\]+[0-9\]\{11}\"
+xref: id-validation-regexp: "ENS[A-Z]+[0-9]{11}"
 is_a: MI:0683 ! sequence database
 
 [Term]
@@ -6964,7 +6964,7 @@ name: protein modification ontology
 def: "Catalogue of covalent modification of, or a change resulting in an alteration of the measured molecular mass of, a peptide or protein amino acid residue." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "psi-mod" EXACT PSI-MI-short []
-xref: id-validation-regexp:\"MOD\:[0-9\]\{5}\"
+xref: id-validation-regexp: "MOD:[0-9]{5}"
 is_a: MI:0447 ! feature database
 
 [Term]
@@ -7335,7 +7335,7 @@ name: uniprot taxonomy
 def: "Based on NCBO Taxonomy but adapted for UniProt\nhttp://www.uniprot.org/taxonomy/" [PMID:18836194]
 subset: PSI-MI_slim
 synonym: "uniprot taxon" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[0-9\]+\"
+xref: id-validation-regexp: "[0-9]+"
 xref: search-url: "http://www.uniprot.org/taxonomy/${ac}"
 is_a: MI:0473 ! participant database
 
@@ -7543,7 +7543,7 @@ def: "ChEMBL focuses on mapping the interactions of small molecules binding to t
 subset: Drugable
 subset: PSI-MI_slim
 synonym: "chembl" EXACT []
-xref: id-validation-regexp:\"[0-9\]+\"
+xref: id-validation-regexp: "[0-9]+"
 xref: search-url: "http://www.ebi.ac.uk/chembldb/index.php/compound/inspect/${ac}"
 is_a: MI:2054 ! bioactive entity reference
 created_by: orchard
@@ -7671,7 +7671,6 @@ name: tag visualisation by enzyme assay
 def: "The protein is expressed as a hybrid protein fused to a tag containing an enzyme activity e.g. peroxidase. Subsequence observation or measurement of enzyme activity is used to identify the presence of the molecule in an interaction." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "tag enzyme assay" EXACT PSI-MI-short []
-xref: XX:<new dbxref>
 is_a: MI:0866 ! tag visualisation
 created_by: orchard
 creation_date: 2010-04-21T03:18:09Z
@@ -8020,7 +8019,7 @@ id: MI:1015
 name: dictybase
 def: "dictyBase (http://dictybase.org) is the model organism database for Dictyostelium discoideum. It houses the complete genome sequence, ESTs and the entire body of literature relevant to Dictyostelium. This information is curated to provide accurate gene models and functional annotations, with the goal of fully annotating the genome." []
 subset: PSI-MI_slim
-xref: id-validation-regexp:\"DDB_G(0-9)\{7}\"
+xref: id-validation-regexp: "DDB_G(0-9){7}"
 is_a: MI:1094 ! genome databases
 created_by: orchard
 creation_date: 2010-07-29T01:19:40Z
@@ -8295,7 +8294,7 @@ id: MI:1043
 name: flannotator
 def: "A repository for collecting, storing and and searching the annotation of gene or protein expression patterns in Drosophila melongaster. CPTI (Cambridge Protein Trap Identifier)" [PMID:19126575]
 subset: PSI-MI_slim
-xref: id-validation-regexp:\"CPTO-[0-9\]\{6}\"
+xref: id-validation-regexp: "CPTO-[0-9]{6}"
 is_a: MI:0683 ! sequence database
 created_by: orchard
 creation_date: 2011-01-06T01:16:48Z
@@ -8313,9 +8312,8 @@ creation_date: 2011-02-11T01:33:28Z
 [Term]
 id: MI:1045
 name: curation content
-def: "Indicates source, depth and standards by which an entry has been  added to a database." []
+def: "Indicates source, depth and standards by which an entry has been  added to a database." [PMID:14755292]
 subset: PSI-MI_slim
-xref: PMID:14755292
 relationship: part_of MI:0000 ! molecular interaction
 created_by: orchard
 creation_date: 2011-03-11T01:16:55Z
@@ -8844,7 +8842,7 @@ def: "UniProt (Universal Protein Resource) is the world's most comprehensive cat
 subset: PSI-MI_slim
 synonym: "swiss-prot" EXACT PSI-MI-short []
 synonym: "UniProt" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-NR-Z\][0-9\]([A-Z\][A-Z0-9\]\{2}[0-9\])\{1\,2}-PRO_[0-9\]\{10}\"
+xref: id-validation-regexp: "[OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2}-PRO_[0-9]{10}"
 xref: search-url: "http://www.uniprot.org/uniprot/{ac}"
 is_a: MI:0486 ! uniprot knowledge base
 created_by: orchard
@@ -8857,7 +8855,7 @@ def: "UniProt (Universal Protein Resource) is the world's most comprehensive cat
 subset: PSI-MI_slim
 synonym: "trembl" EXACT PSI-MI-short []
 synonym: "UniProt" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-NR-Z\][0-9\]([A-Z\][A-Z0-9\]\{2}[0-9\])\{1\,2}-PRO_[0-9\]\{10}\"
+xref: id-validation-regexp: "[OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2}-PRO_[0-9]{10}"
 xref: search-url: "http://www.uniprot.org/uniprot/{ac}"
 is_a: MI:0486 ! uniprot knowledge base
 created_by: orchard
@@ -10971,8 +10969,8 @@ id: MI:1317
 name: eukaryotic linear motif resource
 def: "The ELM resource provides a database of curated short linear motif classes and instances, as well as a sequence analysis tool to detect putative short linear motif instances in query sequences. http://elm.eu.org/" [PMID:22110040]
 synonym: "elm" EXACT PSI-MI-short []
-xref: id-validation-regexp:\"[A-Za-z_0-9\]+$\"
-xref: search-url:http\://elm.eu.org/elms/elmPages/\{ac}.html
+xref: id-validation-regexp: "[A-Za-z_0-9]+$"
+xref: search-url: "http://elm.eu.org/elms/elmPages/{ac}.html"
 is_a: MI:0447 ! feature database
 created_by: orchard
 creation_date: 2013-10-22T09:49:10Z
@@ -11117,7 +11115,7 @@ name: evidence ontology
 def: "The Evidence Ontology (ECO) describes types of scientific evidence within the realm of biological research that can arise from laboratory experiments, computational methods, manual literature curation, and other means." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "ECO" RELATED []
-xref: id-validation-regexp:\"ECO\:\\d\{7}$\"
+xref: id-validation-regexp: "ECO:\\d{7}$"
 xref: search-url: "http://www.ebi.ac.uk/ontology-lookup/?termId=${ac}"
 is_a: MI:0461 ! interaction database
 created_by: orchard
@@ -11180,8 +11178,8 @@ name: efo
 def: "The Experimental Factor Ontology provides a systematic description of many experimental variables, combining parts of several biological ontologies to additional new terms." [pmid:20200009]
 subset: PSI-MI_slim
 synonym: "Experimental facto ontology" EXACT []
-xref: id-validation-regexp:\"\\d\{7}$\"
-xref: search-url:<new xref> "http://identifiers.org/efo/"
+xref: id-validation-regexp: "\\d{7}$"
+xref: search-url: "http://identifiers.org/efo/"
 is_a: MI:1336 ! experiment database
 created_by: orchard
 creation_date: 2014-01-20T11:58:47Z
@@ -11211,7 +11209,7 @@ id: MI:1340
 name: human orfeome collection
 def: "A central resource of single-colony, fully-sequenced cloned human ORFs which can be readily transferred to Gateway compatible destination vectors for various functional proteomics studies. This set of ORFs ranges in size from 75 to more than 10,000 base pairs, and contains over 1,000 ORFs from genes with multiple splice variants." [PMID:14755292]
 subset: PSI-MI_slim
-xref: search-url:<new xref>
+xref: search-url: "http://horfdb.dfci.harvard.edu/"
 is_a: MI:1096 ! protein sequence databases
 created_by: orchard
 creation_date: 2014-04-08T16:15:19Z
@@ -11282,7 +11280,7 @@ name: protein ontology
 def: "PRO provides an ontological representation of protein-related entities by explicitly defining them and showing the relationships between them. Each PRO term represents a distinct class of entities, including specific modified forms, orthologous isoforms, and protein complexes." [PMID:24270789]
 subset: PSI-MI_slim
 synonym: "PRO" RELATED []
-xref: id-validation-regexp:\"[0-9\]\{9}|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-[1-9\]+\"
+xref: id-validation-regexp: "[0-9]{9}|[A-Z][0-9][A-Z0-9]{3}[0-9]|[A-Z][0-9][A-Z0-9]{3}[0-9]-[1-9]+"
 xref: search-url: "http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id={ac}"
 is_a: MI:0461 ! interaction database
 created_by: orchard
@@ -11293,7 +11291,7 @@ id: MI:1348
 name: chembl target
 def: "ChEMBL focuses on mapping the interactions of small molecules binding to their macromolecular targets." []
 subset: PSI-MI_slim
-xref: regexp:CHEMBL\: [0-9\]+
+xref: regexp: "CHEMBL:[0-9]+"
 is_a: MI:0683 ! sequence database
 created_by: orchard
 creation_date: 2014-10-16T10:10:03Z
@@ -11312,7 +11310,7 @@ id: MI:1350
 name: orphanet
 def: "Orphanet is a reference portal for information on rare diseases and orphan drugs. Its aim is to help improve the diagnosis, care and treatment of patients with rare diseases." [PMID:<new dbxref>19058507]
 subset: PSI-MI_slim
-xref: regexp:^\\d+$
+xref: regexp: "^\\d+$"
 xref: search-url: "http://identifiers.org/orphanet/"
 is_a: MI:1336 ! experiment database
 created_by: orchard
@@ -11377,7 +11375,7 @@ id: MI:1357
 name: RNAcentral
 def: "Provides unified access to the ncRNA sequence data supplied by the expert databases." [PMID:25352543]
 subset: PSI-MI_slim
-xref: id-validation-regexp:\"/URS[0-9A-F\]\{10}/i\"
+xref: id-validation-regexp: "/URS[0-9A-F]{10}/i"
 xref: search-url: "http://rnacentral.org/rna/${ac}"
 is_a: MI:0683 ! sequence database
 created_by: orchard
@@ -12306,7 +12304,7 @@ def: "AspGD is an organized collection of genetic and molecular biological infor
 synonym: "Aspergillus Genome Database" EXACT PSI-MI-alternate []
 synonym: "aspgd" EXACT PSI-MI-short []
 synonym: "AspGD" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"ASPL[0-9\]\{10}\"
+xref: id-validation-regexp: "ASPL[0-9]{10}"
 xref: search-url: "http://www.aspergillusgenome.org/cgi-bin/locus.pl?dbid=${ac}"
 is_a: MI:0461 ! interaction database
 created_by: ppm
@@ -12319,7 +12317,7 @@ def: "Candida Genome Database is a resource for genomic sequence data and gene a
 synonym: "Candida Genome Database" EXACT PSI-MI-alternate []
 synonym: "cgd" EXACT PSI-MI-short []
 synonym: "CGD" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"(CAL|CAF)[0-9\]\{7}\"
+xref: id-validation-regexp: "(CAL|CAF)[0-9]{7}"
 xref: search-url: "http://www.candidagenome.org/cgi-bin/locus.pl?dbid=${ac}"
 is_a: MI:0461 ! interaction database
 created_by: ppm
@@ -12331,7 +12329,7 @@ name: ecoliwiki
 def: "Community annotation portal associated with PortEco (formerly EcoliHub, http://porteco.org/). It aims to generate community-based pages about\neverything related to non-pathogenic E. coli, its phages, plasmids, and\nmobile genetic elements.\nhttp://ecoliwiki.net/colipedia/" [PMID:22064863]
 synonym: "ecoliwiki" EXACT PSI-MI-short []
 synonym: "EcoliWiki" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[A-Za-z\]\{3\,4}\"
+xref: id-validation-regexp: "[A-Za-z]{3,4}"
 xref: search-url: "http://ecoliwiki.net/colipedia/${ac}"
 is_a: MI:0461 ! interaction database
 created_by: ppm
@@ -12343,7 +12341,7 @@ name: genedb
 def: "The GeneDB project is a core part of the Sanger Institute's Pathogen Genomics activities. Its primary goals are:\n-to provide reliable access to the latest sequence data and annotation/curation for the whole range of organisms sequenced by the Pathogen group.\n-to develop the website and other tools to aid the community in accessing and obtaining the maximum value from these data.\nGeneDB currently provides access to more than 40 genomes, at various stages of completion, from early access to partial genomes with automatic annotation through to complete genomes with extensive manual curation.\nwww.genedb.org" [PMID:22116062]
 synonym: "GeneDB" EXACT PSI-MI-alternate []
 synonym: "genedb" EXACT PSI-MI-short []
-xref: id-validation-regexp:\"((LmjF|LinJ|LmxM)\\.[0-9\]\{2}\\.[0-9\]\{4})|(PF3D7_[0-9\]\{7})|(Tb[0-9\]+\\.[A-Za-z0-9\]+\\.[0-9\]+)|(TcCLB\\.[0-9\]\{6}\\.[0-9\]+)\"
+xref: id-validation-regexp: "((LmjF|LinJ|LmxM)\\.[0-9]{2}\\.[0-9]{4})|(PF3D7_[0-9]{7})|(Tb[0-9]+\\.[A-Za-z0-9]+\\.[0-9]+)|(TcCLB\\.[0-9]{6}\\.[0-9]+)"
 xref: search-url: "www.genedb.org/gene/${ac}"
 is_a: MI:0461 ! interaction database
 created_by: ppm
@@ -12355,7 +12353,7 @@ name: gramene
 def: "Gramene is a curated, open-source, integrated data resource for comparative functional genomics in crops and model plant species. Gramene currently hosts annotated whole genomes in over two dozen plant species and partial assemblies for almost a dozen wild rice species in the Ensembl browser, genetic and physical maps with genes, ESTs and QTLs locations, genetic diversity data sets, structure-function analysis of proteins, plant pathways databases (BioCyc and Plant Reactome platforms), and descriptions of phenotypic traits and mutations.\nhttp://www.gramene.org" [PMID:24217918]
 synonym: "gramene" EXACT PSI-MI-short []
 synonym: "Gramene" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]\"
+xref: id-validation-regexp: "[A-Z][0-9][A-Z0-9]{3}[0-9]"
 xref: search-url: "http://tools.gramene.org/search?query=${ac}"
 is_a: MI:0461 ! interaction database
 created_by: ppm
@@ -12367,7 +12365,7 @@ name: pombase
 def: "PomBase is a comprehensive database for the fission yeast Schizosaccharomyces pombe, providing structural and functional annotation, literature curation and access to large-scale data sets. \nwww.pombase.org" [PMID:22039153]
 synonym: "pombase" EXACT PSI-MI-short []
 synonym: "PomBase" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"S\\w+(\\.)?\\w+(\\.)?\"
+xref: id-validation-regexp: "S\\w+(\\.)?\\w+(\\.)?"
 xref: search-url: "www.pombase.org/spombe/result/${ac}"
 is_a: MI:0461 ! interaction database
 created_by: ppm
@@ -12380,7 +12378,7 @@ def: "The Arabidopsis Genome Initiative comprises TAIR, TIGR and MIPS." []
 synonym: "agi_locuscode" EXACT PSI-MI-short []
 synonym: "AGI_LocusCode" EXACT PSI-MI-alternate []
 synonym: "Arabidopsis Genome Initiative" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"A[Tt\][MmCc0-5\][Gg\][0-9\]\{5}(\\.[0-9\]\{1})?\"
+xref: id-validation-regexp: "A[Tt][MmCc0-5][Gg][0-9]{5}(\\.[0-9]{1})?"
 xref: search-url: "http://arabidopsis.org/servlets/TairObject?type=locus&name=${ac}"
 is_a: MI:0461 ! interaction database
 created_by: ppm
@@ -12804,7 +12802,7 @@ synonym: "SIGnaling Network Open Resource" EXACT PSI-MI-alternate []
 synonym: "signaling network open resource" EXACT PSI-MI-alternate []
 synonym: "SIGNOR" EXACT PSI-MI-alternate []
 synonym: "signor" EXACT PSI-MI-short []
-xref: search-url:http\://signor.uniroma2.it/RelationServlet?id=$\{ac}/
+xref: search-url: "http://signor.uniroma2.it/RelationServlet?id=${ac}/"
 is_a: MI:1106 ! pathways database
 created_by: ppm
 creation_date: 2016-03-15T15:31:08Z
@@ -12883,6 +12881,31 @@ synonym: "gaussia-n" EXACT PSI-MI-short []
 is_a: MI:2219 ! gaussia luciferase protein tag
 created_by: ppm
 creation_date: 2016-05-09T10:13:23Z
+
+[Term]
+id: MI:2222
+name: inference by socio-affinity scoring
+def: "Socio-affinity index provides a single measure of the association between each pair of proteins based on an entire AP-MS dataset, considering both the spoke (when one protein retrieves another when tagged) and the matrix (when two proteins are retrieved by another) evidence, and the overall frequency of each protein in the data set." [PMID:16429126]
+subset: PSI-MI_slim
+synonym: "inference by socio-affinity scoring" EXACT PSI-MI-alternate []
+synonym: "socio-affinity index inference" EXACT PSI-MI-alternate []
+synonym: "socio-affinity inference" EXACT PSI-MI-alternate []
+synonym: "socioaffinity index scoring" EXACT PSI-MI-alternate []
+synonym: "socioaffinity inference" EXACT PSI-MI-short []
+is_a: MI:0363 ! inferred by author
+created_by: ppm
+creation_date: 2016-05-13T16:16:06Z
+
+[Term]
+id: MI:2223
+name: inference by quantitative co-purification
+def: "This method measures co-purification of proteins through several orthogonal purification steps, deriving a set of correlation measures that are then computationally weighted and combined to infer interacting pairs." [PMID:27099342]
+subset: PSI-MI_slim
+synonym: "inference by quantitative co-purification" EXACT PSI-MI-short []
+synonym: "quantitative  tagless  co - purification" EXACT PSI-MI-alternate []
+is_a: MI:0363 ! inferred by author
+created_by: ppm
+creation_date: 2016-05-17T10:36:05Z
 
 [Typedef]
 id: contains
