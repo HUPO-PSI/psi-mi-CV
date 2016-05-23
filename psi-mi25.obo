@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 23:05:2016 10:33
+date: 23:05:2016 12:59
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -7398,7 +7398,6 @@ subset: PSI-MI_slim
 synonym: "gdp_gtp exchange" EXACT PSI-MI-short []
 synonym: "gtp/gdp exchange" EXACT PSI-MI-alternate []
 synonym: "guanine nucleotide exchange assay" EXACT PSI-MI-alternate []
-is_a: MI:0401 ! biochemical
 is_a: MI:1036 ! nucleotide exchange assay
 
 [Term]
