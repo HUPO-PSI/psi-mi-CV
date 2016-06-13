@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:06:2016 16:03
+date: 13:06:2016 16:28
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -12931,13 +12931,25 @@ creation_date: 2016-06-13T15:47:30Z
 
 [Term]
 id: MI:2226
-name: mutation not affecting interaction
+name: mutation with no effect
 def: "A change in a sequence or structure in comparison to a reference entity due to a  insertion, deletion or substitution event that does not have any effect over an interaction when compared with the wild-type." [PMID:14577292]
 subset: PSI-MI_slim
-synonym: "mutation not affecting interaction" EXACT PSI-MI-short []
+synonym: "mutation not affecting interaction" EXACT PSI-MOD-alternate []
+synonym: "mutation with no effect" EXACT PSI-MI-short []
 is_a: MI:0118 ! mutation
 created_by: ppm
 creation_date: 2016-06-13T15:57:12Z
+
+[Term]
+id: MI:2227
+name: mutation causing an interaction
+def: "A change in a sequence or structure in comparison to a reference entity due to a  insertion, deletion or substitution event that enables an interaction when compared with the wild-type, which does not interact." [PMID:14755292]
+synonym: "mutation causing" EXACT PSI-MI-short []
+synonym: "mutation causing an interaction" EXACT PSI-MI-alternate []
+synonym: "mutation enabling interaction" EXACT PSI-MI-alternate []
+is_a: MI:0118 ! mutation
+created_by: ppm
+creation_date: 2016-06-13T16:25:47Z
 
 [Typedef]
 id: contains
