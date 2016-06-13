@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 23:05:2016 13:46
+date: 13:06:2016 16:03
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -12915,6 +12915,29 @@ synonym: "chemical rna modification plus base pairing prediction" EXACT PSI-MI-s
 is_a: MI:0254 ! genetic interference
 created_by: ppm
 creation_date: 2016-05-23T13:32:07Z
+
+[Term]
+id: MI:2225
+name: zinc
+def: "ZINC is a database of commercially available compounds for virtual screening. It uses publicly available bioactivity data to allow investigators to access chemical tools for biology.\n\nhttp://zinc15.docking.org/" [PMID:26479676]
+subset: PSI-MI_slim
+synonym: "ZINC" EXACT PSI-MI-alternate []
+synonym: "zinc" EXACT PSI-MI-short []
+xref: id-validation-regexp: "[0-9]*"
+xref: search-url: "http://zinc15.docking.org/substances/${ac}"
+is_a: MI:0461 ! interaction database
+created_by: ppm
+creation_date: 2016-06-13T15:47:30Z
+
+[Term]
+id: MI:2226
+name: mutation not affecting interaction
+def: "A change in a sequence or structure in comparison to a reference entity due to a  insertion, deletion or substitution event that does not have any effect over an interaction when compared with the wild-type." [PMID:14577292]
+subset: PSI-MI_slim
+synonym: "mutation not affecting interaction" EXACT PSI-MI-short []
+is_a: MI:0118 ! mutation
+created_by: ppm
+creation_date: 2016-06-13T15:57:12Z
 
 [Typedef]
 id: contains
