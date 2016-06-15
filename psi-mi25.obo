@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:06:2016 16:28
+date: 15:06:2016 14:02
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -5468,7 +5468,7 @@ name: imex
 def: "International Molecular Interaction Exchange." [PMID:22453911]
 subset: PSI-MI_slim
 synonym: "IMEx" EXACT PSI-MI-alternate []
-xref: search-url: "www.ebi.ac.uk/intact/imex/main.xhtml?query=${ac}"
+xref: search-url: "http://www.ebi.ac.uk/intact/imex/main.xhtml?query=${ac}"
 is_a: MI:0461 ! interaction database
 
 [Term]
