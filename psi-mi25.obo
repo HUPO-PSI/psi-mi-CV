@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:06:2016 14:02
+date: 20:06:2016 14:19
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -12697,7 +12697,7 @@ creation_date: 2016-01-20T16:25:10Z
 [Term]
 id: MI:2205
 name: pir
-def: "The PIR-International Protein Sequence Database (PIR-PSD) was the world's first database of classified and functionally annotated protein sequences that grew out of the Atlas of Protein Sequence and Structure (1965-1978) edited by Margaret Dayhoff. Produced and distributed by the Protein Information Resource in collaboration with MIPS (Munich Information Center for Protein Sequences) and JIPID (Japan International Protein Information Database), PIR-PSD has been the most comprehensive and expertly-curated protein sequence database in the public domain for over 20 years. In 2002, PIR joined EBI (European Bioinformatics Institute) and SIB (Swiss Institute of Bioinformatics) to form the UniProt consortium. PIR-PSD sequences and annotations have been integrated into UniProt Knowledgebase. Bi-directional cross-references between UniProt (UniProt Knowledgebase and/or UniParc) and PIR-PSD are established to allow easy tracking of former PIR-PSD entries. PIR-PSD unique sequences, reference citations, and experimentally-verified data can now be found in the relevant UniProt records. \n\nLegacy data can be found at \nhttp://pir.georgetown.edu/pirwww/dbinfo/pir_psd.shtml" [PMID:]
+def: "The PIR-International Protein Sequence Database (PIR-PSD) was the world's first database of classified and functionally annotated protein sequences that grew out of the Atlas of Protein Sequence and Structure (1965-1978) edited by Margaret Dayhoff. Produced and distributed by the Protein Information Resource in collaboration with MIPS (Munich Information Center for Protein Sequences) and JIPID (Japan International Protein Information Database), PIR-PSD has been the most comprehensive and expertly-curated protein sequence database in the public domain for over 20 years. In 2002, PIR joined EBI (European Bioinformatics Institute) and SIB (Swiss Institute of Bioinformatics) to form the UniProt consortium. PIR-PSD sequences and annotations have been integrated into UniProt Knowledgebase. Bi-directional cross-references between UniProt (UniProt Knowledgebase and/or UniParc) and PIR-PSD are established to allow easy tracking of former PIR-PSD entries. PIR-PSD unique sequences, reference citations, and experimentally-verified data can now be found in the relevant UniProt records. \n\nLegacy data can be found at \nhttp://pir.georgetown.edu/pirwww/dbinfo/pir_psd.shtml" []
 subset: PSI-MI_slim
 synonym: "pir" EXACT PSI-MI-short []
 synonym: "PIR" EXACT PSI-MI-alternate []
