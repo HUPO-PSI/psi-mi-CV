@@ -6754,7 +6754,7 @@ is_a: MI:0396 ! predetermined participant
 [Term]
 id: MI:0867
 name: tag visualisation by fluorescence
-def: "The protein is either expressed as a hybrid protein fused to a tag containing a fluorophore, such as green fluorescent protein, or a fluorophore has been chemically attached to the protein. Subsequence observation or measurement of fluorescence is used to identify the presence of the molecule in an interaction." [PMID:14755292]
+def: "The molecule is produced fused to a tag containing a fluorophore, such as GFP tagged to a recombinant protein, or a fluorophore has been chemically attached to the molecule. Subsequence observation or measurement of fluorescence is used to identify the presence of the molecule in an interaction." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "tag fluorescence" EXACT PSI-MI-short []
 is_a: MI:0866 ! tag visualisation
