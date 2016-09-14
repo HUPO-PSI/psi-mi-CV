@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:06:2016 14:19
+date: 14:09:2016 11:04
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -3973,7 +3973,8 @@ id: MI:0484
 name: sgd
 def: "SGD is a scientific database of the molecular biology and genetics of the yeast Saccharomyces cerevisiae.\nhttp://www.yeastgenome.org/" [PMID:14755292]
 subset: PSI-MI_slim
-synonym: "SGD" EXACT PSI-MI-alternate []
+synonym: "Saccharomyces Genome Database" EXACT PSI-MI-alternate []
+synonym: "SGD" EXACT PSI-MI-short []
 xref: id-validation-regexp: "S[0-9]{9}"
 xref: search-url: "http://www.yeastgenome.org/locus/${ac}/overview"
 is_a: MI:1094 ! genome databases
@@ -12950,6 +12951,18 @@ synonym: "mutation enabling interaction" EXACT PSI-MI-alternate []
 is_a: MI:0118 ! mutation
 created_by: ppm
 creation_date: 2016-06-13T16:25:47Z
+
+[Term]
+id: MI:2228
+name: ceitec
+def: "Interactions and complexes curated by scientists at the Central European Institute of Technology (CEITEC)." []
+synonym: "ceitec" EXACT PSI-MI-short []
+synonym: "CEITEC" EXACT PSI-MI-alternate []
+synonym: "Central European Institute of Technology" EXACT PSI-MI-alternate []
+xref: search-url: "www.ceitec.eu/"
+is_a: MI:0461 ! interaction database
+created_by: ppm
+creation_date: 2016-09-14T10:41:07Z
 
 [Typedef]
 id: contains
