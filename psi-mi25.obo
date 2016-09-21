@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:09:2016 11:04
+date: 21:09:2016 11:42
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -12963,6 +12963,24 @@ xref: search-url: "www.ceitec.eu/"
 is_a: MI:0461 ! interaction database
 created_by: ppm
 creation_date: 2016-09-14T10:41:07Z
+
+[Term]
+id: MI:2229
+name: nucleicacid-gene
+def: "Interaction between a nucleic acid and a gene region." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:1046 ! interacting molecules
+created_by: ppm
+creation_date: 2016-09-21T11:39:49Z
+
+[Term]
+id: MI:2230
+name: nucleicacid-nucleicacid
+def: "Interaction between a nucleic acid and a corresponding nucleic acid." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:1046 ! interacting molecules
+created_by: ppm
+creation_date: 2016-09-21T11:41:03Z
 
 [Typedef]
 id: contains
