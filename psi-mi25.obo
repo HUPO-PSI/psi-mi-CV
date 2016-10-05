@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 21:09:2016 11:42
+date: 05:10:2016 14:17
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -3276,6 +3276,8 @@ id: MI:0408
 name: disulfide bond
 def: "Covalent bond mediated by 2 sulfur atoms." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "disulfide bridge" EXACT PSI-MI-alternate []
+synonym: "SS-bond" EXACT PSI-MI-alternate []
 is_a: MI:0195 ! covalent binding
 
 [Term]
@@ -12981,6 +12983,18 @@ subset: PSI-MI_slim
 is_a: MI:1046 ! interacting molecules
 created_by: ppm
 creation_date: 2016-09-21T11:41:03Z
+
+[Term]
+id: MI:2231
+name: coexpression
+def: "This approach infers interacting pairs of proteins looking at expression data coming from transcript expression datasets. Co-expressed pairs of genes are ranked and predicted to be interacting proteins as well." []
+subset: PSI-MI_slim
+synonym: "co-expression" EXACT PSI-MI-alternate []
+synonym: "coexpression" EXACT PSI-MI-short []
+synonym: "coexpression prediction" EXACT PSI-MI-alternate []
+is_a: MI:0046 ! experimental knowledge based
+created_by: ppm
+creation_date: 2016-10-05T11:48:53Z
 
 [Typedef]
 id: contains
