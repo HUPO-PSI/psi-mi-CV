@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:10:2016 14:17
+date: 08:12:2016 15:21
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -7103,7 +7103,7 @@ id: MI:0914
 name: association
 def: "Interaction between molecules that may participate in formation of one, but possibly more, physical complexes. Often describes a set of molecules that are co-purified in a single pull-down or coimmunoprecipitation but might participate in formation of distinct physical complexes sharing a common bait." [PMID:14755292]
 subset: PSI-MI_slim
-is_a: MI:0190 ! interaction type
+is_a: MI:2232 ! molecular association
 
 [Term]
 id: MI:0915
@@ -12995,6 +12995,16 @@ synonym: "coexpression prediction" EXACT PSI-MI-alternate []
 is_a: MI:0046 ! experimental knowledge based
 created_by: ppm
 creation_date: 2016-10-05T11:48:53Z
+
+[Term]
+id: MI:2232
+name: molecular association
+def: "A particular way two or more molecules influence one another." []
+subset: PSI-MI_slim
+synonym: "molecular association" EXACT PSI-MI-short []
+is_a: MI:0190 ! interaction type
+created_by: ppm
+creation_date: 2016-12-08T15:17:45Z
 
 [Typedef]
 id: contains
