@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:12:2016 15:21
+date: 26:01:2017 15:38
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -4801,7 +4801,7 @@ id: MI:0586
 name: inhibitor
 def: "Molecule inhibiting an interaction by interacting with one or more of its participants." [PMID:14755292]
 subset: PSI-MI_slim
-is_a: MI:0500 ! biological role
+is_a: MI:2274 ! regulator
 
 [Term]
 id: MI:0587
@@ -6529,7 +6529,7 @@ id: MI:0840
 name: stimulator
 def: "Molecule stimulating an interaction by interacting with one or more of the participants." [PMID:14755292]
 subset: PSI-MI_slim
-is_a: MI:0500 ! biological role
+is_a: MI:2274 ! regulator
 
 [Term]
 id: MI:0841
@@ -11242,7 +11242,7 @@ name: enzyme regulator
 def: "Regulatory subunits of enzyme complexes can determine the activity level or specificity of catalytic subunits." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "enzyme complex regulatory subunit" BROAD []
-is_a: MI:0500 ! biological role
+is_a: MI:2274 ! regulator
 created_by: orchard
 creation_date: 2014-07-17T08:43:17Z
 
@@ -13005,6 +13005,465 @@ synonym: "molecular association" EXACT PSI-MI-short []
 is_a: MI:0190 ! interaction type
 created_by: ppm
 creation_date: 2016-12-08T15:17:45Z
+
+[Term]
+id: MI:2233
+name: causal interaction
+def: "Binary causative relationships between biological entities. CV terms belonging to this term allow the description of causal interactions using the current PSI-MI schema." [DOI:10.1142/S0219525908001465]
+subset: PSI-MI_slim
+synonym: "causal interaction" EXACT PSI-MI-short []
+is_a: MI:0000 ! molecular interaction
+created_by: ppm
+creation_date: 2017-01-19T13:17:37Z
+
+[Term]
+id: MI:2234
+name: causal statement
+def: "The effect of modulator entity A on a modulated entity B." [PMID:26467481]
+synonym: "causal statement" EXACT PSI-MI-short []
+is_a: MI:2233 ! causal interaction
+created_by: ppm
+creation_date: 2017-01-19T13:20:22Z
+
+[Term]
+id: MI:2235
+name: up-regulates
+def: "The effect of a modulator entity A on a modulated entity B that  increases the concentration and/or frequency and/or rate and/or extent of the molecular function of B." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "activates" NARROW []
+synonym: "up regulates" EXACT PSI-MI-alternate []
+synonym: "up-regulates" EXACT PSI-MI-short []
+is_a: MI:2234 ! causal statement
+created_by: ppm
+creation_date: 2017-01-19T13:47:54Z
+
+[Term]
+id: MI:2236
+name: up-regulates activity
+def: "The effect of a modulator entity A on a modulated entity B that  increases the frequency, rate or extent of the molecular function of B, an elemental biological activity occurring at the molecular level, such as catalysis or binding (GO:0044093)." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "activates activity" EXACT PSI-MI-alternate []
+synonym: "up-regulates activity" EXACT PSI-MI-short []
+xref: GO:GO\:0044093
+is_a: MI:2235 ! up-regulates
+created_by: ppm
+creation_date: 2017-01-19T13:50:43Z
+
+[Term]
+id: MI:2237
+name: up-regulates quantity
+def: "The effect of a modulator entity A on a modulated entity B that  increases the concentration of the modulated entity B." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "increases quantity" EXACT PSI-MI-alternate []
+synonym: "up-regulates quantity" EXACT PSI-MI-short []
+is_a: MI:2235 ! up-regulates
+created_by: ppm
+creation_date: 2017-01-19T13:53:41Z
+
+[Term]
+id: MI:2238
+name: up-regulates quantity by expression
+def: "The effect of a modulator entity A on a modulated entity B that  increases the concentration of the modulated entity B, by promoting its gene expression." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "increases quantity by expression" EXACT PSI-MI-alternate []
+synonym: "up-regulates quantity by expression" EXACT PSI-MI-short []
+is_a: MI:2237 ! up-regulates quantity
+created_by: ppm
+creation_date: 2017-01-19T13:56:00Z
+
+[Term]
+id: MI:2239
+name: up-regulates quantity by stabilization
+def: "The effect of a modulator entity A on a modulated entity B that  increases the concentration of the modulated entity B by preventing its degradation." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "increases quantity by stabilization" EXACT PSI-MI-alternate []
+synonym: "up-regulates quantity by stabilization" EXACT PSI-MI-short []
+is_a: MI:2237 ! up-regulates quantity
+created_by: ppm
+creation_date: 2017-01-19T13:58:03Z
+
+[Term]
+id: MI:2240
+name: down-regulates
+def: "The effect of a modulator entity A on a modulated entity B that  decreases the concentration and/or frequency and/or ate and/or extent of molecular function of B." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "down regulates" EXACT PSI-MI-alternate []
+synonym: "down-regulates" EXACT PSI-MI-short []
+is_a: MI:2234 ! causal statement
+created_by: ppm
+creation_date: 2017-01-19T14:00:20Z
+
+[Term]
+id: MI:2241
+name: down-regulates activity
+def: "The effect of a modulator entity A on a modulated entity B that  decreases the frequency, rate or extent of the molecular function of B, an elemental biological activity occurring at the molecular level, such as catalysis or binding (GO:0044093)." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "down-regulates activity" EXACT PSI-MI-short []
+synonym: "inhibits activity" EXACT PSI-MI-alternate []
+xref: GO:GO\:0044093
+is_a: MI:2240 ! down-regulates
+created_by: ppm
+creation_date: 2017-01-19T14:13:34Z
+
+[Term]
+id: MI:2242
+name: down-regulates quantity
+def: "The effect of a modulator entity A on a modulated entity B that  decreases the concentration of the modulated entity B." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "decreases quantity" EXACT PSI-MI-alternate []
+synonym: "down-regulates quantity" EXACT PSI-MI-short []
+is_a: MI:2240 ! down-regulates
+created_by: ppm
+creation_date: 2017-01-19T14:15:10Z
+
+[Term]
+id: MI:2243
+name: down-regulates quantity by repression
+def: "The effect of a modulator entity A on a modulated entity B that  decreases the concentration of the modulated entity B, by preventing its gene expression." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "Decrease quantity by expression" EXACT PSI-MI-alternate []
+synonym: "down-regulates quantity by repression" EXACT PSI-MI-short []
+is_a: MI:2242 ! down-regulates quantity
+created_by: ppm
+creation_date: 2017-01-19T14:25:28Z
+
+[Term]
+id: MI:2244
+name: down-regulates quantity by destabilization
+def: "The effect of a modulator entity A on a modulated entity B that  decreases the concentration of the modulated entity B by promoting its degradation." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "decrease quantity by stabilization" EXACT PSI-MI-alternate []
+synonym: "down-regulates quantity by destabilization" EXACT PSI-MI-short []
+is_a: MI:2242 ! down-regulates quantity
+created_by: ppm
+creation_date: 2017-01-19T14:28:52Z
+
+[Term]
+id: MI:2245
+name: causal regulatory mechanism
+def: "Type of relationship between entities involved in a causal interaction." [PMID:26467481]
+synonym: "causal regulatory mechanism" EXACT PSI-MI-short []
+is_a: MI:2233 ! causal interaction
+created_by: ppm
+creation_date: 2017-01-19T15:44:29Z
+
+[Term]
+id: MI:2246
+name: indirect causal regulation
+def: "The effect of a modulator entity A on a modulated entity B that  occurs when A is not immediately upstream of B." [PMID:15845847]
+subset: PSI-MI_slim
+synonym: "indirect" EXACT PSI-MI-alternate []
+synonym: "indirect causal regulation" EXACT PSI-MI-short []
+is_a: MI:2245 ! causal regulatory mechanism
+created_by: ppm
+creation_date: 2017-01-19T15:45:44Z
+
+[Term]
+id: MI:2247
+name: transcriptional regulation
+def: "Any process that modulates the frequency, rate or extent of the chemical reactions resulting in the transcription of DNA to RNA and gene activity regulation." [PMID:25428369]
+subset: PSI-MI_slim
+synonym: "transcriptional regulation" EXACT PSI-MI-short []
+is_a: MI:2246 ! indirect causal regulation
+created_by: ppm
+creation_date: 2017-01-19T15:47:39Z
+
+[Term]
+id: MI:2248
+name: translation regulation
+def: "Any process that modulates the frequency, rate or extent of the chemical reactions and pathways resulting in the formation of proteins by the translation of mRNA." [PMID:25428369]
+subset: PSI-MI_slim
+synonym: "translation regulation" EXACT PSI-MI-short []
+synonym: "translational regulation" EXACT PSI-MI-alternate []
+is_a: MI:2246 ! indirect causal regulation
+created_by: ppm
+creation_date: 2017-01-19T15:48:53Z
+
+[Term]
+id: MI:2249
+name: post transcriptional regulation
+def: "Any process that control gene expression at the RNA level, between the transcription and the translation of the gene." [PMID:25428369]
+subset: PSI-MI_slim
+synonym: "post transcriptional regulation" EXACT PSI-MI-short []
+synonym: "post-transcriptional regulation" EXACT PSI-MI-alternate []
+is_a: MI:2246 ! indirect causal regulation
+created_by: ppm
+creation_date: 2017-01-19T15:54:32Z
+
+[Term]
+id: MI:2250
+name: direct causal regulation
+def: "The effect of a modulator entity A on a modulated entity B that  occurs when A is immediately upstream of B." [PMID:15845847]
+subset: PSI-MI_slim
+synonym: "direct" EXACT PSI-MI-alternate []
+synonym: "direct causal regulation" EXACT PSI-MI-short []
+is_a: MI:2245 ! causal regulatory mechanism
+created_by: ppm
+creation_date: 2017-01-19T15:56:00Z
+
+[Term]
+id: MI:2251
+name: transcriptional regulation by direct binding of dbTF to DNA regulatory element
+def: "Direct binding of a DbTF to a DNA regulatory sequence that modulates the frequency, rate or extent of the chemical reactions resulting in the transcription of DNA to RNA and gene activity regulation." [PMID:25428369]
+subset: PSI-MI_slim
+is_a: MI:2250 ! direct causal regulation
+created_by: ppm
+creation_date: 2017-01-19T15:57:01Z
+
+[Term]
+id: MI:2252
+name: guanine nucleotide exchange factor reaction
+def: "The process mediated by guanine nucleotide exchange factors (GEFs) that catalyze the exchange of bound GDP with cytosolic GTP." [PMID:23303910]
+subset: PSI-MI_slim
+synonym: "GEF reaction" EXACT PSI-MOD-short []
+is_a: MI:2250 ! direct causal regulation
+created_by: ppm
+creation_date: 2017-01-19T16:13:36Z
+
+[Term]
+id: MI:2253
+name: gtpase-activating protein reaction
+def: "A family of cellular proteins able to increases the activity of a GTPase." [PMID:17173929]
+synonym: "GAP reaction" EXACT PSI-MI-short []
+synonym: "GTPase-Accelerating Protein reaction" EXACT PSI-MI-alternate []
+synonym: "RGS protein reaction" EXACT PSI-MI-alternate []
+is_a: MI:2250 ! direct causal regulation
+created_by: ppm
+creation_date: 2017-01-19T16:16:04Z
+
+[Term]
+id: MI:2254
+name: chemical activation reaction
+def: "The effect of a chemical compound that results in the activation or in an increased activation of a target molecule." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "chemical activation reaction" EXACT PSI-MI-short []
+is_a: MI:2250 ! direct causal regulation
+created_by: ppm
+creation_date: 2017-01-19T16:23:55Z
+
+[Term]
+id: MI:2255
+name: chemical inhibition reaction
+def: "The effect of a chemical compound that stops, prevents, or reduces the activity of a target molecule." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "chemical inhibition reaction" EXACT PSI-MI-short []
+is_a: MI:2250 ! direct causal regulation
+created_by: ppm
+creation_date: 2017-01-19T16:25:05Z
+
+[Term]
+id: MI:2256
+name: relocalization
+def: "Any process that modulates the frequency, rate or extent of any process in which a cell, a substance, or a cellular entity is transported to, or maintained in, a specific location." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "relocalization" EXACT PSI-MI-short []
+is_a: MI:2250 ! direct causal regulation
+created_by: ppm
+creation_date: 2017-01-19T16:26:15Z
+
+[Term]
+id: MI:2257
+name: small molecule catalysis reaction
+def: "The chemical reactions and pathways resulting in the formation, breakdown, modification of small molecules." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "small molecule catalysis reaction" EXACT PSI-MI-short []
+is_a: MI:2250 ! direct causal regulation
+created_by: ppm
+creation_date: 2017-01-19T16:27:34Z
+
+[Term]
+id: MI:2258
+name: xenobiotic
+def: "Molecule that encompasses any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer, etc., identifiable as a separately distinguishable entity, which is not physiologically part of a cell, tissue, organ, or organism." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "chemical" EXACT PSI-MI-alternate []
+synonym: "drug" EXACT PSI-MI-alternate []
+synonym: "xenobiotic" EXACT PSI-MI-short []
+is_a: MI:0328 ! small molecule
+created_by: ppm
+creation_date: 2017-01-19T16:46:33Z
+
+[Term]
+id: MI:2259
+name: causal interactor type
+def: "Entity involved in a causative relationship." [PMID:26467481]
+synonym: "causal interactor type" EXACT PSI-MI-short []
+is_a: MI:2233 ! causal interaction
+created_by: ppm
+creation_date: 2017-01-19T16:51:20Z
+
+[Term]
+id: MI:2260
+name: stimulus
+def: "Any detectable change in the internal or external environment of a cell, tissue, organ, or organism." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "stimulus" EXACT PSI-MI-short []
+is_a: MI:2259 ! causal interactor type
+created_by: ppm
+creation_date: 2017-01-19T16:52:44Z
+
+[Term]
+id: MI:2261
+name: phenotype
+def: "Cellular phenotype is the conglomerate of multiple cellular processes involving gene and protein expression that result in the elaboration of a cell's particular morphology and function." [PMID:19380745]
+subset: PSI-MI_slim
+synonym: "phenotype" EXACT PSI-MI-short []
+is_a: MI:2259 ! causal interactor type
+created_by: ppm
+creation_date: 2017-01-19T16:54:07Z
+
+[Term]
+id: MI:2262
+name: causal regulatory modification
+def: "The modification of a subsequence that regulates the concentration and/or frequency and/or rate and/or extent of the molecular function of an entity." [PMID:26467481]
+synonym: "causal regulatory modification" EXACT PSI-MI-short []
+is_a: MI:2233 ! causal interaction
+created_by: ppm
+creation_date: 2017-01-19T17:03:04Z
+
+[Term]
+id: MI:2263
+name: s-nitrosylation
+def: "Reaction that create a covalent bond between a nitrogen monoxide group and the thiol group of cysteine." [PMID:15688001]
+subset: PSI-MI_slim
+synonym: "s-nitrosylation" EXACT PSI-MI-short []
+is_a: MI:0414 ! enzymatic reaction
+created_by: ppm
+creation_date: 2017-01-19T17:11:46Z
+
+[Term]
+id: MI:2264
+name: tyrosinated residue
+def: "A protein modification that effectively add a tyrosine residues to the c-terminal end of alpha-tubulin." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "tyrosinated residue" EXACT PSI-MI-short []
+is_a: MI:2262 ! causal regulatory modification
+created_by: ppm
+creation_date: 2017-01-23T10:26:40Z
+
+[Term]
+id: MI:2265
+name: de-acetylated residue
+def: "A protein modification that effectively remove an acyl group from a protein." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "de-acetylated residue" EXACT PSI-MI-short []
+synonym: "deacetylated residue" EXACT PSI-MI-alternate []
+is_a: MI:2262 ! causal regulatory modification
+created_by: ppm
+creation_date: 2017-01-23T10:30:06Z
+
+[Term]
+id: MI:2266
+name: de-phosphorylated residue
+def: "A protein modification that effectively remove a phosphate group  from a protein by hydrolysis." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "de-phosphorylated residue" EXACT PSI-MI-short []
+synonym: "dephosphorylated residue" EXACT PSI-MI-alternate []
+is_a: MI:2262 ! causal regulatory modification
+created_by: ppm
+creation_date: 2017-01-23T10:32:50Z
+
+[Term]
+id: MI:2267
+name: de-sumoylated residue
+def: "A protein modification that effectively cleaves the G-K bond and releases SUMO proteins." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "de-sumoylated residue" EXACT PSI-MI-short []
+synonym: "desumoylated residue" EXACT PSI-MI-alternate []
+is_a: MI:2262 ! causal regulatory modification
+created_by: ppm
+creation_date: 2017-01-23T10:46:01Z
+
+[Term]
+id: MI:2268
+name: de-methylated residue
+def: "A protein modification that effectively removes one or more methyl groups from a protein." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "de-methylated residue" EXACT PSI-MI-short []
+synonym: "demethylated residue" EXACT PSI-MI-alternate []
+is_a: MI:2262 ! causal regulatory modification
+created_by: ppm
+creation_date: 2017-01-23T10:47:33Z
+
+[Term]
+id: MI:2269
+name: de-ubiquitinylated residue
+def: "A protein modification that effectively cleaves the G-K bond and releases ubiquitin or ubiquitin like proteins." [PMID:26467481]
+subset: PSI-MI_slim
+synonym: "de-ubiquitinylated residue" EXACT PSI-MI-short []
+synonym: "deubiquitinylated residue" EXACT PSI-MI-alternate []
+is_a: MI:2262 ! causal regulatory modification
+created_by: ppm
+creation_date: 2017-01-23T10:48:53Z
+
+[Term]
+id: MI:2270
+name: signalink
+def: "SignaLink 2.0 is a signaling pathway resource with multi-layered regulatory networks.\nhttp://signalink.org" [PMID:23331499]
+subset: PSI-MI_slim
+synonym: "SignaLink" EXACT PSI-MI-alternate []
+synonym: "signalink" EXACT PSI-MI-short []
+xref: url:http\://signalink.org
+is_a: MI:0461 ! interaction database
+created_by: ppm
+creation_date: 2017-01-23T11:41:20Z
+
+[Term]
+id: MI:2271
+name: edam
+def: "EDAM (EMBRACE Data And Methods) is an ontology of bioinformatics operations (tool, application, or workflow functions), types of data, topics (application domains), and data formats.\nhttp://edamontology.org/" [PMID:23479348]
+subset: PSI-MI_slim
+synonym: "edam" EXACT PSI-MI-short []
+synonym: "EDAM" EXACT PSI-MI-alternate []
+synonym: "EMBRACE Data And Methods" EXACT PSI-MI-alternate []
+xref: url:http\://edamontology.org/
+is_a: MI:0461 ! interaction database
+created_by: ppm
+creation_date: 2017-01-26T15:09:47Z
+
+[Term]
+id: MI:2272
+name: tyrosinylation
+def: "Reversible reaction that add a tyrosine residue to an amino-acid." []
+subset: PSI-MI_slim
+synonym: "tyrosinylation" EXACT PSI-MI-short []
+xref: GO:GO\:0018322
+is_a: MI:0414 ! enzymatic reaction
+created_by: ppm
+creation_date: 2017-01-26T15:21:43Z
+
+[Term]
+id: MI:2273
+name: tyrosination
+def: "Reversible reaction that add a tyrosine residues to the c-terminal end of alpha-tubulin." [PMID:10842328]
+subset: PSI-MI_slim
+synonym: "tyrosination" EXACT PSI-MI-short []
+xref: GO:GO\:0018166
+is_a: MI:2272 ! tyrosinylation
+created_by: ppm
+creation_date: 2017-01-26T15:22:39Z
+
+[Term]
+id: MI:2274
+name: regulator
+def: "Entity whose activity exerts an effect on the concentration, frequency, rate or extent of the target entity." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "modulator" EXACT PSI-MI-alternate []
+synonym: "regulator" EXACT PSI-MI-short []
+is_a: MI:0500 ! biological role
+created_by: ppm
+creation_date: 2017-01-26T15:29:51Z
+
+[Term]
+id: MI:2275
+name: regulator target
+def: "Entity whose concentration, frequency, rate or extent are regulated by the regulator entity." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "modulator target" EXACT PSI-MI-alternate []
+synonym: "regulator target" EXACT PSI-MI-short []
+is_a: MI:0500 ! biological role
+created_by: ppm
+creation_date: 2017-01-26T15:31:14Z
 
 [Typedef]
 id: contains
