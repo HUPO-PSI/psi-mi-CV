@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 26:01:2017 15:38
+date: 30:01:2017 11:23
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -7126,7 +7126,7 @@ id: MI:0917
 name: matrixdb
 def: "Knowledgebase of the extracellular matrix storing experimentally determined interactions involving extracellular biomolecules. It includes protein-protein, protein-polysaccharide, and protein-lipid interactions." [PMID:19147664]
 subset: PSI-MI_slim
-xref: search-url: "http://matrixdb.ibcp.fr/cgi-bin/current/newPort?type=biomolecule&value=${ac}"
+xref: search-url: "http://matrixdb.univ-lyon1.fr/cgi-bin/current/newPort?type=biomolecule&value=${ac}"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 
