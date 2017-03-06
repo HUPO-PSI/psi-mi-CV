@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:01:2017 11:23
+date: 06:03:2017 13:03
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -5216,6 +5216,8 @@ id: MI:0638
 name: prerequisite-ptm
 def: "Post translational modification required for an interaction to occur." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "prerequisite-ptm" EXACT PSI-MI-short []
+synonym: "required-ptm" EXACT PSI-MI-alternate []
 is_a: MI:0925 ! observed ptm
 
 [Term]
@@ -13464,6 +13466,15 @@ synonym: "regulator target" EXACT PSI-MI-short []
 is_a: MI:0500 ! biological role
 created_by: ppm
 creation_date: 2017-01-26T15:31:14Z
+
+[Term]
+id: MI:2276
+name: carbohydrate chemical modification
+def: "Chemical alterations occurring in the specific carbohydrate molecule involved in an interaction. The process can involve covalent modifications (i.e. sulfations) or other forms of chemical modification." [PMID:14755292]
+synonym: "carbohydrate chemical modification" EXACT PSI-MI-short []
+is_a: MI:0252 ! biological feature
+created_by: ppm
+creation_date: 2017-03-06T11:04:25Z
 
 [Typedef]
 id: contains
