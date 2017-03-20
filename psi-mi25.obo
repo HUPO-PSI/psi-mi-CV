@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:03:2017 13:03
+date: 20:03:2017 10:53
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -5216,16 +5216,20 @@ id: MI:0638
 name: prerequisite-ptm
 def: "Post translational modification required for an interaction to occur." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "prerequisite ptm" EXACT PSI-MI-alternate []
 synonym: "prerequisite-ptm" EXACT PSI-MI-short []
+synonym: "required ptm" EXACT PSI-MI-alternate []
 synonym: "required-ptm" EXACT PSI-MI-alternate []
-is_a: MI:0925 ! observed ptm
+is_a: MI:0925 ! observed-ptm
 
 [Term]
 id: MI:0639
 name: resulting-ptm
 def: "Post translational modification occurs subsequently to an interaction." [PMID:14755292]
 subset: PSI-MI_slim
-is_a: MI:0925 ! observed ptm
+synonym: "resulting ptm" EXACT PSI-MI-alternate []
+synonym: "resulting-ptm" EXACT PSI-MI-short []
+is_a: MI:0925 ! observed-ptm
 
 [Term]
 id: MI:0640
@@ -7190,9 +7194,11 @@ is_a: MI:1094 ! genome databases
 
 [Term]
 id: MI:0925
-name: observed ptm
+name: observed-ptm
 def: "Post translational modification observed on a protein in the context of an interaction." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "observed ptm" EXACT PSI-MI-alternate []
+synonym: "observed-ptm" EXACT PSI-MI-short []
 is_a: MI:0668 ! feature attribute name
 
 [Term]
@@ -10082,7 +10088,7 @@ name: ptm decreasing an interaction
 def: "Post translational modification on a protein observed to decrease the strength or rate of an interaction." [PMID:14744292]
 subset: PSI-MI_slim
 synonym: "decreasing-ptm" EXACT PSI-MI-short []
-is_a: MI:0925 ! observed ptm
+is_a: MI:0925 ! observed-ptm
 created_by: orchard
 creation_date: 2012-06-11T12:56:47Z
 
@@ -10092,7 +10098,7 @@ name: ptm increasing an interaction
 def: "Post translational modification on a protein observed to increase the strength or rate of an interaction." [PMID:14744292]
 subset: PSI-MI_slim
 synonym: "increasing-ptm" EXACT PSI-MI-short []
-is_a: MI:0925 ! observed ptm
+is_a: MI:0925 ! observed-ptm
 created_by: orchard
 creation_date: 2012-06-11T12:58:43Z
 
@@ -10102,7 +10108,7 @@ name: ptm disrupting an interaction
 def: "Post translational modification on a protein observed to disrupt the strength or rate of an interaction." [PMID:14744292]
 subset: PSI-MI_slim
 synonym: "disrupting-ptm" EXACT PSI-MI-short []
-is_a: MI:0925 ! observed ptm
+is_a: MI:0925 ! observed-ptm
 created_by: orchard
 creation_date: 2012-06-11T12:59:28Z
 
