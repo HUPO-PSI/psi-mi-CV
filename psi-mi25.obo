@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 23:03:2017 15:01
+date: 24:03:2017 10:19
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -4020,7 +4020,7 @@ def: "PSI-MI." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "PSI-MI" EXACT PSI-MI-alternate []
 xref: id-validation-regexp: "MI:[0-9]{4}"
-xref: search-url: "http://www.ebi.ac.uk/ontology-lookup/?termId=${ac}"
+xref: search-url: "http://www.ebi.ac.uk/ols/ontologies/mi/terms?obo_id=${ac}"
 is_a: MI:0444 ! database citation
 
 [Term]
@@ -7556,6 +7556,7 @@ synonym: "chembl" EXACT []
 xref: id-validation-regexp: "[0-9]+"
 xref: search-url: "http://www.ebi.ac.uk/chembldb/index.php/compound/inspect/${ac}"
 is_a: MI:2054 ! bioactive entity reference
+relationship: part_of MI:1349 ! chembl
 created_by: orchard
 creation_date: 2009-10-28T11:20:55Z
 
@@ -11189,7 +11190,7 @@ def: "The Experimental Factor Ontology provides a systematic description of many
 subset: PSI-MI_slim
 synonym: "Experimental facto ontology" EXACT []
 xref: id-validation-regexp: "\\d{7}$"
-xref: search-url: "http://identifiers.org/efo/"
+xref: search-url: "http://www.ebi.ac.uk/ols/ontologies/efo/terms?obo_id=${ac}"
 is_a: MI:1336 ! experiment database
 created_by: orchard
 creation_date: 2014-01-20T11:58:47Z
@@ -11302,7 +11303,9 @@ name: chembl target
 def: "ChEMBL focuses on mapping the interactions of small molecules binding to their macromolecular targets." []
 subset: PSI-MI_slim
 xref: regexp: "CHEMBL:[0-9]+"
+xref: search-url:<new xref> "http://www.ebi.ac.uk/chembldb/index.php/target/inspect/${ac}"
 is_a: MI:0683 ! sequence database
+relationship: part_of MI:1349 ! chembl
 created_by: orchard
 creation_date: 2014-10-16T10:10:03Z
 
@@ -11318,10 +11321,10 @@ creation_date: 2014-10-16T10:16:54Z
 [Term]
 id: MI:1350
 name: orphanet
-def: "Orphanet is a reference portal for information on rare diseases and orphan drugs. Its aim is to help improve the diagnosis, care and treatment of patients with rare diseases." [PMID:<new dbxref>19058507]
+def: "Orphanet is a reference portal for information on rare diseases and orphan drugs. Its aim is to help improve the diagnosis, care and treatment of patients with rare diseases." [PMID:19058507]
 subset: PSI-MI_slim
-xref: regexp: "^\\d+$"
-xref: search-url: "http://identifiers.org/orphanet/"
+xref: id-validation-regexp: "^\\d+$"
+xref: search-url: "http://www.ebi.ac.uk/ols/ontologies/ordo/terms?obo_id=${ac}"
 is_a: MI:1336 ! experiment database
 created_by: orchard
 creation_date: 2014-10-16T10:27:01Z
