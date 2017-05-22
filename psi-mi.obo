@@ -11127,7 +11127,7 @@ def: "The Evidence Ontology (ECO) describes types of scientific evidence within 
 subset: PSI-MI_slim
 synonym: "ECO" RELATED []
 xref: id-validation-regexp: "ECO:\\d{7}$"
-xref: search-url: "http://www.ebi.ac.uk/ontology-lookup/?termId=${ac}"
+xref: search-url: "http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=${ac}"
 is_a: MI:0461 ! interaction database
 created_by: orchard
 creation_date: 2014-01-08T12:48:33Z
