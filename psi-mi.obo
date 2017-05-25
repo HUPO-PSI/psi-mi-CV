@@ -12815,7 +12815,7 @@ synonym: "SIGnaling Network Open Resource" EXACT PSI-MI-alternate []
 synonym: "signaling network open resource" EXACT PSI-MI-alternate []
 synonym: "SIGNOR" EXACT PSI-MI-alternate []
 synonym: "signor" EXACT PSI-MI-short []
-xref: search-url: "http://signor.uniroma2.it/RelationServlet?id=${ac}/"
+xref: search-url: "http://signor.uniroma2.it/relation_result.php?id=${ac}/"
 is_a: MI:1106 ! pathways database
 created_by: ppm
 creation_date: 2016-03-15T15:31:08Z
