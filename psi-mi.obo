@@ -3854,7 +3854,6 @@ id: MI:0472
 name: pdbe
 def: "The Protein Data Bank in Europe - the European project for the collection, management and distribution of data about macromolecular structures, derived in part from the Protein Data Bank (PDB).\nhttp://www.ebi.ac.uk/pdbe/" [PMID:16381867]
 subset: PSI-MI_slim
-synonym: "<new synonym>" RELATED []
 synonym: "e-MSD" EXACT []
 synonym: "MSD" RELATED []
 synonym: "PQS" EXACT PSI-MI-alternate []
@@ -7225,7 +7224,6 @@ id: MI:0928
 name: filter trap assay
 def: "Biomolecules are mixed in a buffer and the resulting mixture is\npassed through a filter. Large\naggregates are retained on the filter and the pariticipants may then be identified." [PMID:10859365]
 subset: PSI-MI_slim
-synonym: "<new synonym>" RELATED []
 synonym: "filter binding" EXACT []
 synonym: "filter retardation assay" RELATED []
 synonym: "Filter retention assay" EXACT PSI-MI-alternate []
@@ -8040,7 +8038,6 @@ id: MI:1016
 name: fluorescence recovery after photobleaching
 def: "Slow rate of FRAP recovery when molecule is bound to another compared to inert, non-binding molecule taken as a measure of an interaction." [PMID:15695095, PMID:17711354]
 subset: PSI-MI_slim
-synonym: "<new synonym>" RELATED []
 synonym: "frap" EXACT PSI-MI-short []
 is_a: MI:0051 ! fluorescence technology
 created_by: orchard
@@ -8265,7 +8262,6 @@ id: MI:1039
 name: c-terminal range
 def: "The C-terminal region of a sequence, exact coordinates not available." [PMID:14760721]
 subset: PSI-MI_slim
-synonym: "<new synonym>" RELATED []
 synonym: "c-term range" EXACT PSI-MI-short []
 is_a: MI:0333 ! feature range status
 created_by: orchard
@@ -9697,7 +9693,6 @@ id: MI:1183
 name: nuclease footprinting
 def: "Binding of a molecule to a strand of nucleic acid protects that region of nucleic acid from the action of a nuclease. The protected region can subsequently be sequenced and the binding site identified." [PMID:7685766]
 subset: PSI-MI_slim
-synonym: "<new synonym>" RELATED []
 synonym: "nuclease protection" RELATED []
 is_a: MI:0605 ! enzymatic footprinting
 created_by: orchard
@@ -10313,7 +10308,7 @@ id: MI:1246
 name: ion mobility mass spectrometry of complexes
 def: "IM-MS analysis is performed by first ionizing the protein complex of interest followed by ion mobility separation according to their cross-section-to-charge (Q/z) ratio. After separation, ions are sampled by a mass spectrometer and analyzed according to their mass-to-charge (m/z) ratio. Combined knowledge of both Q/z and m/z can be used to infer the size and shape of the complex." [PMID:18600219]
 subset: PSI-MI_slim
-synonym: "<new synonym>iM-MS" RELATED []
+synonym: "iM-MS" RELATED []
 synonym: "ion mobility mass spec" EXACT PSI-MI-short []
 is_a: MI:0069 ! mass spectrometry studies of complexes
 created_by: orchard
@@ -10463,10 +10458,11 @@ creation_date: 2012-08-10T03:17:05Z
 
 [Term]
 id: MI:1262
-name: i2d
+name: iid
 def: "Interologous Interaction Database is an on-line database of known and predicted mammalian and eukaryotic protein-protein interactions." [PMID:19850753]
 subset: PSI-MI_slim
-synonym: "Interologous Interaction Database" EXACT []
+synonym: "Interologous Interaction Database" EXACT PSI-MI-alternate []
+synonym: "i2d" EXACT PSI-MI-alternate []
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 created_by: orchard
@@ -10554,7 +10550,6 @@ id: MI:1271
 name: enhancement
 def: "An effect in which the phenotype of one genetic perturbation is enhanced by a second perturbation to a severity/penetrance beyond (further from wild type) that expected by the superimposition or addition of effects of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab < E < wt\nOR\nwt < E < ab\nwhere 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
-synonym: "<new synonym>" RELATED []
 synonym: "Aggravating interaction" RELATED []
 is_a: MI:0933 ! negative genetic interaction
 created_by: orchard
@@ -12697,7 +12692,6 @@ id: MI:2204
 name: micro rna
 def: "A micro RNA (abbreviated miRNA) is a small non-coding RNA molecule (containing about 22 nucleotides) found in plants, animals, and some viruses, which functions in RNA silencing and post-transcriptional regulation of gene expression." [PMID:14744438, XX:<new dbxref>]
 subset: PSI-MI_slim
-synonym: "<new synonym>" RELATED []
 synonym: "micro RNA" EXACT PSI-MI-alternate []
 synonym: "micro-RNA" EXACT PSI-MI-alternate []
 synonym: "micro-rna" EXACT PSI-MI-alternate []
