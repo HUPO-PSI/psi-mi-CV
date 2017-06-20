@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 24:03:2017 10:19
+date: 20:06:2017 16:06
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -3916,11 +3916,11 @@ is_a: MI:1109 ! gene database
 [Term]
 id: MI:0478
 name: flybase
-def: "FlyBase is a comprehensive database for information on the genetics and molecular biology of Drosophila.\nhttp://fbserver.gen.cam.ac.uk:7081/" [PMID:14755292]
+def: "FlyBase is a comprehensive database for information on the genetics and molecular biology of Drosophila.\nhttp://flybase.org" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "FlyBase" EXACT PSI-MI-alternate []
-xref: id-validation-regexp: "FBgn[0-9]{7}"
-xref: search-url: "http://flybase.net/cgi-bin/fbannq.html?acc=${ac}"
+xref: id-validation-regexp: "FB[a-z]{2}[0-9]{7}"
+xref: search-url: "http://flybase.org/reports/${ac}"
 is_a: MI:1094 ! genome databases
 
 [Term]
@@ -10461,8 +10461,8 @@ id: MI:1262
 name: iid
 def: "Interologous Interaction Database is an on-line database of known and predicted mammalian and eukaryotic protein-protein interactions." [PMID:19850753]
 subset: PSI-MI_slim
-synonym: "Interologous Interaction Database" EXACT PSI-MI-alternate []
 synonym: "i2d" EXACT PSI-MI-alternate []
+synonym: "Interologous Interaction Database" EXACT PSI-MI-alternate []
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 created_by: orchard
@@ -13478,6 +13478,18 @@ synonym: "carbohydrate chemical modification" EXACT PSI-MI-short []
 is_a: MI:0252 ! biological feature
 created_by: ppm
 creation_date: 2017-03-06T11:04:25Z
+
+[Term]
+id: MI:2277
+name: Cr-two hybrid
+def: "This method uses Cre recombinase as a two-hybrid protein-protein interaction reporter that functions intracellularly to covalently and unidirectionally link interacting bait and prey plasmids via specialized loxP sites that flank the protein-coding sequences. The linked protein-coding sequences serve as interaction-identifying DNA molecules that enable massively multiplexed screening coupled with next-generation DNA sequencing to detect protein-protein interactions." []
+subset: PSI-MI_slim
+synonym: "cr-2h" EXACT PSI-MI-alternate []
+synonym: "cr-two hybrid" EXACT PSI-MI-short []
+synonym: "Cre recombinase two hybrid" EXACT PSI-MI-alternate []
+is_a: MI:1113 ! two hybrid bait and prey pooling approach
+created_by: ppm
+creation_date: 2017-06-20T15:57:41Z
 
 [Typedef]
 id: contains
