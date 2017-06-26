@@ -704,7 +704,7 @@ id: MI:0080
 name: partial DNA sequence identification by hybridization
 def: "Genes are recognised by hybridization of a probe with a fragment of the gene sequence." [PMID:14755292]
 subset: PSI-MI_slim
-synonym: "partial dna sequence" EXACT PSI-MI-short []
+synonym: "partial dna sequence hybrid" EXACT PSI-MI-short []
 is_a: MI:1180 ! partial DNA sequence identification
 
 [Term]
@@ -9662,7 +9662,7 @@ creation_date: 2012-06-07T01:47:03Z
 [Term]
 id: MI:1180
 name: partial DNA sequence identification
-def: "Identification of a part of a DNA sequence, usually then related to the full length sequence by alignment. Depending on the experimental design, nucleotide sequence can be determined before the interaction detection while building a collection of clones or after the selection of randomly generated clone.s" [PMID:14755292]
+def: "Identification of a part of a DNA sequence, usually then related to the full length sequence by alignment. Depending on the experimental design, nucleotide sequence can be determined before the interaction detection while building a collection of clones or after the selection of randomly generated clones." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "partial dna sequence" EXACT PSI-MI-short []
 is_a: MI:1179 ! partial nucleotide sequence identification
