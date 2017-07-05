@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:06:2017 16:06
+date: 05:07:2017 10:32
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -13490,6 +13490,16 @@ synonym: "Cre recombinase two hybrid" EXACT PSI-MI-alternate []
 is_a: MI:1113 ! two hybrid bait and prey pooling approach
 created_by: ppm
 creation_date: 2017-06-20T15:57:41Z
+
+[Term]
+id: MI:2278
+name: polymer chain length
+def: "Length of a repetitive polymer chain. Applicable to carbohydrates and other non-protein, non-nucleic acid polymers." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "polymer chain length" EXACT PSI-MI-short []
+is_a: MI:0666 ! participant attribute name
+created_by: ppm
+creation_date: 2017-07-05T10:27:19Z
 
 [Typedef]
 id: contains
