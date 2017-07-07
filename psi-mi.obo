@@ -1,5 +1,9 @@
 format-version: 1.2
+<<<<<<< HEAD
 date: 05:07:2017 10:32
+=======
+date: 20:06:2017 16:06
+>>>>>>> origin/master
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -13491,6 +13495,7 @@ is_a: MI:1113 ! two hybrid bait and prey pooling approach
 created_by: ppm
 creation_date: 2017-06-20T15:57:41Z
 
+<<<<<<< HEAD
 [Term]
 id: MI:2278
 name: polymer chain length
@@ -13501,6 +13506,8 @@ is_a: MI:0666 ! participant attribute name
 created_by: ppm
 creation_date: 2017-07-05T10:27:19Z
 
+=======
+>>>>>>> origin/master
 [Typedef]
 id: contains
 name: contains
