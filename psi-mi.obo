@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:07:2017 10:32
+date: 28:07:2017 09:46
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -13500,6 +13500,19 @@ synonym: "polymer chain length" EXACT PSI-MI-short []
 is_a: MI:0666 ! participant attribute name
 created_by: ppm
 creation_date: 2017-07-05T10:27:19Z
+
+[Term]
+id: MI:2279
+name: complex portal
+def: "The Complex Portal is a manually curated, encyclopaedic resource of macromolecular complexes from a number of key model organisms, entered into the IntAct molecular interaction database . Data includes protein-only complexes as well as protein-small molecule and protein-nucleic acid complexes. All complexes are derived from physical molecular interaction evidences extracted from the literature and cross-referenced in the entry, or by curator inference from information on homologs in closely related species or by inference from scientific background. All complexes are tagged with Evidence and Conclusion Ontology codes to indicate the type of evidence available for each entry." [PMID:25313161]
+subset: PSI-MI_slim
+synonym: "Complex Portal" EXACT PSI-MI-alternate []
+synonym: "complex portal" EXACT PSI-MI-short []
+xref: search-url: "http://www.ebi.ac.uk/complexportal/complex/${ac}"
+is_a: MI:0473 ! participant database
+is_a: MI:0461 ! interaction database
+created_by: ppm
+creation_date: 2017-07-28T09:34:45Z
 
 [Typedef]
 id: contains
