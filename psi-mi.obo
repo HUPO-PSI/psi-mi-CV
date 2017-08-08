@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:08:2017 14:43
+date: 08:08:2017 14:52
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -7715,9 +7715,10 @@ creation_date: 2010-04-26T10:36:41Z
 
 [Term]
 id: MI:0984
-name: deaminase assay
+name: deamination assay
 def: "The measurement of the removal of an amine group from a molecule." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "aminase assay" EXACT PSI-MI-alternate []
 synonym: "deamination" EXACT PSI-MI-short []
 is_a: MI:0415 ! enzymatic study
 created_by: orchard
@@ -13523,6 +13524,17 @@ synonym: "deamidation" EXACT PSI-MI-short []
 is_a: MI:0414 ! enzymatic reaction
 created_by: ppm
 creation_date: 2017-08-08T14:38:29Z
+
+[Term]
+id: MI:2281
+name: deamidation assay
+def: "Assay to measure the catalysis of the reaction: a monocarboxylic acid amide + H2O = a monocarboxylate + NH3." [GO:0004040]
+subset: PSI-MI_slim
+synonym: "amidase assay" EXACT PSI-MI-alternate []
+synonym: "deamidation" EXACT PSI-MI-short []
+is_a: MI:0415 ! enzymatic study
+created_by: ppm
+creation_date: 2017-08-08T14:49:09Z
 
 [Typedef]
 id: contains
