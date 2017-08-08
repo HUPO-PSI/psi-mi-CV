@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:07:2017 09:46
+date: 08:08:2017 14:43
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -1786,7 +1786,7 @@ is_a: MI:0414 ! enzymatic reaction
 [Term]
 id: MI:0193
 name: amidation reaction
-def: "Irreversible reaction that can affect A,R,N,D,C,Q,E,G,H,I,L,K,M,F,P,S,T,W,Y or V residues." [GO:0001519, PMID:14755292, RESID:AA0081, RESID:AA0082, RESID:AA0083, RESID:AA0084, RESID:AA0085, RESID:AA0086, RESID:AA0087, RESID:AA0088, RESID:AA0089, RESID:AA0090, RESID:AA0091, RESID:AA0092, RESID:AA0093, RESID:AA0094, RESID:AA0095, RESID:AA0096, RESID:AA0097, RESID:AA0098, RESID:AA0099, RESID:AA0100]
+def: "Irreversible reaction that can affect A,R,N,D,C,Q,E,G,H,I,L,K,M,F,P,S,T,W,Y or V residues. It involves the addition of an amide group from a glycine to the target residue." [GO:0001519, PMID:14755292, RESID:AA0081, RESID:AA0082, RESID:AA0083, RESID:AA0084, RESID:AA0085, RESID:AA0086, RESID:AA0087, RESID:AA0088, RESID:AA0089, RESID:AA0090, RESID:AA0091, RESID:AA0092, RESID:AA0093, RESID:AA0094, RESID:AA0095, RESID:AA0096, RESID:AA0097, RESID:AA0098, RESID:AA0099, RESID:AA0100]
 subset: PSI-MI_slim
 synonym: "amidation" EXACT PSI-MI-short []
 is_a: MI:0414 ! enzymatic reaction
@@ -13509,10 +13509,20 @@ subset: PSI-MI_slim
 synonym: "Complex Portal" EXACT PSI-MI-alternate []
 synonym: "complex portal" EXACT PSI-MI-short []
 xref: search-url: "http://www.ebi.ac.uk/complexportal/complex/${ac}"
-is_a: MI:0473 ! participant database
 is_a: MI:0461 ! interaction database
+is_a: MI:0473 ! participant database
 created_by: ppm
 creation_date: 2017-07-28T09:34:45Z
+
+[Term]
+id: MI:2280
+name: deamidation reaction
+def: "Reaction in which an amide functional group in the side chain of the amino acids asparagine or glutamine is removed or converted to another functional group. Typically, asparagine is converted to aspartic acid or isoaspartic acid and glutamine is converted to glutamic acid or pyroglutamic acid (5-oxoproline)." [PMID:2703484, PMID:3440704]
+subset: PSI-MI_slim
+synonym: "deamidation" EXACT PSI-MI-short []
+is_a: MI:0414 ! enzymatic reaction
+created_by: ppm
+creation_date: 2017-08-08T14:38:29Z
 
 [Typedef]
 id: contains
