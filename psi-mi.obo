@@ -2870,7 +2870,7 @@ def: "Cross reference pointing to a Gene Ontology -'cellular component' term." [
 subset: PSI-MI_slim
 synonym: "component" EXACT PSI-MI-short []
 synonym: "go component term" EXACT PSI-MI-alternate []
-xref: search-url: "http://www.ebi.ac.uk/QuickGO/GTerm?id=${ac}"
+xref: search-url: "https://www.ebi.ac.uk/QuickGO/term/${ac}"
 is_a: MI:0353 ! cross-reference type
 
 [Term]
@@ -2880,7 +2880,7 @@ def: "Cross reference pointing to a Gene Ontology -'molecular function' term." [
 subset: PSI-MI_slim
 synonym: "function" EXACT PSI-MI-short []
 synonym: "go function term" EXACT PSI-MI-alternate []
-xref: search-url: "http://www.ebi.ac.uk/QuickGO/GTerm?id=${ac}"
+xref: search-url: "https://www.ebi.ac.uk/QuickGO/term/${ac}"
 is_a: MI:0353 ! cross-reference type
 
 [Term]
@@ -2915,7 +2915,7 @@ def: "Cross reference pointing to a Gene Ontology -'cellular process' term." [PM
 subset: PSI-MI_slim
 synonym: "go process term" EXACT PSI-MI-alternate []
 synonym: "process" EXACT PSI-MI-short []
-xref: search-url: "http://www.ebi.ac.uk/QuickGO/GTerm?id=${ac}"
+xref: search-url: "https://www.ebi.ac.uk/QuickGO/term/${ac}"
 is_a: MI:0353 ! cross-reference type
 
 [Term]
@@ -3619,7 +3619,7 @@ def: "The objective of Gene Ontology (GO) is to provide controlled vocabularies 
 subset: PSI-MI_slim
 synonym: "go" EXACT PSI-MI-short []
 xref: id-validation-regexp: "GO:[0-9]{7}"
-xref: search-url: "http://www.ebi.ac.uk/QuickGO/GTerm?id=${ac}"
+xref: search-url: "https://www.ebi.ac.uk/QuickGO/term/${ac}"
 is_a: MI:0447 ! feature database
 is_a: MI:0461 ! interaction database
 
