@@ -7295,7 +7295,7 @@ def: "The Electron Microscopy Data Bank (EMDB) contains experimentally determine
 subset: PSI-MI_slim
 synonym: "Electron Microscopy Data Bank" EXACT PSI-MI-alternate []
 synonym: "eMDB" EXACT PSI-MI-short []
-xref: search-url: "http://www.pdbe.org/${ac}"
+xref: search-url: "www.ebi.ac.uk/pdbe/entry/emdb/${ac}"
 is_a: MI:0472 ! pdbe
 
 [Term]
