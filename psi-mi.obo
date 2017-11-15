@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:08:2017 14:08
+date: 15:11:2017 16:39
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -13545,6 +13545,17 @@ synonym: "complex-primary" EXACT PSI-MI-short []
 is_a: MI:0353 ! cross-reference type
 created_by: ppm
 creation_date: 2017-08-25T13:31:03Z
+
+[Term]
+id: MI:2283
+name: southwestern blotting
+def: "Southwestern blotting, is a lab technique which involves identifying and characterizing DNA-binding proteins by their ability to bind to specific oligonucleotide probes, generally radioactively labeled. The proteins are separated by gel electrophoresis and are subsequently transferred to nitrocellulose membranes similar to other types of blotting." [PMID:26404144]
+subset: PSI-MI_slim
+synonym: "southwestern blot" EXACT PSI-MI-short []
+synonym: "southwestern blotting" EXACT PSI-MI-alternate []
+is_a: MI:0047 ! far western blotting
+created_by: ppm
+creation_date: 2017-11-15T15:35:20Z
 
 [Typedef]
 id: contains
