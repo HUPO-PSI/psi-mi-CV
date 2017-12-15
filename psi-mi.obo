@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:11:2017 16:39
+date: 15:12:2017 11:13
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -1010,8 +1010,9 @@ relationship: part_of MI:0000 ! molecular interaction
 [Term]
 id: MI:0117
 name: binding-associated region
-def: "A region of a molecule identified as being involved in an interaction. This may or may not be a region of the protein in direct contact with the interacting partner." [PMID:14755292]
+def: "A region of a molecule or a component of a complex identified as being involved in an interaction. This may or may not be a region of the molecule in direct contact with the interacting partner." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "binding component" RELATED []
 synonym: "binding region" EXACT PSI-MI-short []
 synonym: "binding site" BROAD []
 is_a: MI:0252 ! biological feature
@@ -13556,6 +13557,17 @@ synonym: "southwestern blotting" EXACT PSI-MI-alternate []
 is_a: MI:0047 ! far western blotting
 created_by: ppm
 creation_date: 2017-11-15T15:35:20Z
+
+[Term]
+id: MI:2284
+name: complex component
+def: "Indicates that the cross-referenced molecule is a component of a containing complex." [PMID:25313161]
+subset: PSI-MI_slim
+synonym: "complex component" EXACT PSI-MI-short []
+synonym: "complex-component" EXACT PSI-MI-alternate []
+is_a: MI:0353 ! cross-reference type
+created_by: ppm
+creation_date: 2017-12-15T11:08:53Z
 
 [Typedef]
 id: contains
