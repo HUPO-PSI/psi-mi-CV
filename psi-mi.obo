@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:12:2017 11:13
+date: 25:01:2018 13:39
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -3902,6 +3902,7 @@ def: "Ensembl is a joint project between the EMBL-EBI and the Wellcome Trust San
 subset: PSI-MI_slim
 synonym: "Ensembl" EXACT PSI-MI-alternate []
 xref: id-validation-regexp: "ENS[A-Z]+[0-9]{11}|[A-Z]{3}[0-9]{3}[A-Za-z](-[A-Za-z])?|CG[0-9]+|[A-Z0-9]+\\.[0-9]+|YM[A-Z][0-9]{3}[a-z][0-9]"
+xref: search-url: "http://www.ensembl.org/Multi/Search/Results?q=${ac}"
 is_a: MI:1094 ! genome databases
 
 [Term]
@@ -8012,6 +8013,7 @@ id: MI:1013
 name: ensemblgenomes
 def: "Genome browser complementary to Ensembl which extends the search space across a broader taxonomic range.\nhttp://www.ensemblgenomes.org" [PMID:19884133]
 subset: PSI-MI_slim
+xref: search-url: "http://ensemblgenomes.org/search/eg/${ac}"
 is_a: MI:1094 ! genome databases
 created_by: orchard
 creation_date: 2010-05-06T08:09:20Z
