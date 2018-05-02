@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 25:01:2018 13:39
-saved-by: ppm
+date: 02:05:2018 15:27
+saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
 subsetdef: PSI-MI_slim "Subset of PSI-MI"
@@ -3843,7 +3843,7 @@ is_a: MI:1106 ! pathways database
 [Term]
 id: MI:0471
 name: mint
-def: "The Moleculer INTeraction database (MINT) is a relational database designed to store interactions between biological molecules.\nhttp://mint.bio.uniroma2.it/mint/" [PMID:14755292]
+def: "The Molecular INTeraction database (MINT) is a relational database designed to store interactions between biological molecules.\nhttp://mint.bio.uniroma2.it" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "MINT" EXACT PSI-MI-alternate []
 xref: id-validation-regexp: "MINT-[0-9]+"
@@ -13570,6 +13570,16 @@ synonym: "complex-component" EXACT PSI-MI-alternate []
 is_a: MI:0353 ! cross-reference type
 created_by: ppm
 creation_date: 2017-12-15T11:08:53Z
+
+[Term]
+id: MI:2285
+name: miRNA interference luciferase reporter assay
+def: "The method is based on the functional effect of the binding of the microRNA on the target (mRNA or LncRNA), which is the repression of the expression of the target. To validate a sequence as a direct target of a microRNA, a luciferase reporter gene carrying the wt candidate sequence or its mutated form is used, and the expression of the target is evaluated with a luciferase assay (ref: ; ). If the wt is significantly less expressed than the mutant, the binding occurs." [PMID:14697198, PMID:21431711]
+subset: PSI-MI_slim
+synonym: "miRNA interference luciferase assay" EXACT PSI-MI-short []
+is_a: MI:0255 ! post transcriptional interference
+created_by: pporras
+creation_date: 2018-05-02T15:22:12Z
 
 [Typedef]
 id: contains
