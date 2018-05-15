@@ -13574,7 +13574,7 @@ creation_date: 2017-12-15T11:08:53Z
 [Term]
 id: MI:2285
 name: miRNA interference luciferase reporter assay
-def: "The method is based on the functional effect of the binding of the microRNA on the target (mRNA or LncRNA), which is the repression of the expression of the target. To validate a sequence as a direct target of a microRNA, a luciferase reporter gene carrying the wt candidate sequence or its mutated form is used, and the expression of the target is evaluated with a luciferase assay (ref: ; ). If the wt is significantly less expressed than the mutant, the binding occurs." [PMID:14697198, PMID:21431711]
+def: "The method is based on the functional effect of the binding of the microRNA on the target (mRNA or LncRNA), which is the repression of the expression of the target. To validate a sequence as a direct target of a microRNA, a luciferase reporter gene carrying the wt candidate sequence or its mutated form is used, and the expression of the target is evaluated with a luciferase assay. If the wt is significantly less expressed than the mutant, the binding occurs." [PMID:14697198, PMID:21431711]
 subset: PSI-MI_slim
 synonym: "miRNA interference luciferase assay" EXACT PSI-MI-short []
 is_a: MI:0255 ! post transcriptional interference
