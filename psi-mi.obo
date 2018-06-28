@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:06:2018 15:03
+date: 28:06:2018 15:11
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -10467,6 +10467,7 @@ def: "Interologous Interaction Database is an on-line database of known and pred
 subset: PSI-MI_slim
 synonym: "i2d" EXACT PSI-MI-alternate []
 synonym: "Interologous Interaction Database" EXACT PSI-MI-alternate []
+xref: url:http\://iid.ophid.utoronto.ca/iid/
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 created_by: orchard
