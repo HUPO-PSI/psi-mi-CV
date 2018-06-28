@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:05:2018 15:27
+date: 28:06:2018 14:55
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -13150,8 +13150,9 @@ creation_date: 2017-01-19T14:28:52Z
 [Term]
 id: MI:2245
 name: causal regulatory mechanism
-def: "Type of relationship between entities involved in a causal interaction." [PMID:26467481]
+def: "Type of relationship between entities involved in a causal interaction. This term is to be used only to describe the effect of a modulator entity A on a modulated entity B when A is not immediately upstream of B." [PMID:26467481]
 synonym: "causal regulatory mechanism" EXACT PSI-MI-short []
+synonym: "indirect causal regulation" EXACT PSI-MI-alternate []
 is_a: MI:2233 ! causal interaction
 created_by: ppm
 creation_date: 2017-01-19T15:44:29Z
@@ -13163,7 +13164,7 @@ def: "The effect of a modulator entity A on a modulated entity B that  occurs wh
 subset: PSI-MI_slim
 synonym: "indirect" EXACT PSI-MI-alternate []
 synonym: "indirect causal regulation" EXACT PSI-MI-short []
-is_a: MI:2245 ! causal regulatory mechanism
+is_obsolete: true
 created_by: ppm
 creation_date: 2017-01-19T15:45:44Z
 
@@ -13173,7 +13174,7 @@ name: transcriptional regulation
 def: "Any process that modulates the frequency, rate or extent of the chemical reactions resulting in the transcription of DNA to RNA and gene activity regulation." [PMID:25428369]
 subset: PSI-MI_slim
 synonym: "transcriptional regulation" EXACT PSI-MI-short []
-is_a: MI:2246 ! indirect causal regulation
+is_a: MI:2245 ! causal regulatory mechanism
 created_by: ppm
 creation_date: 2017-01-19T15:47:39Z
 
@@ -13184,7 +13185,7 @@ def: "Any process that modulates the frequency, rate or extent of the chemical r
 subset: PSI-MI_slim
 synonym: "translation regulation" EXACT PSI-MI-short []
 synonym: "translational regulation" EXACT PSI-MI-alternate []
-is_a: MI:2246 ! indirect causal regulation
+is_a: MI:2245 ! causal regulatory mechanism
 created_by: ppm
 creation_date: 2017-01-19T15:48:53Z
 
@@ -13195,7 +13196,7 @@ def: "Any process that control gene expression at the RNA level, between the tra
 subset: PSI-MI_slim
 synonym: "post transcriptional regulation" EXACT PSI-MI-short []
 synonym: "post-transcriptional regulation" EXACT PSI-MI-alternate []
-is_a: MI:2246 ! indirect causal regulation
+is_a: MI:2245 ! causal regulatory mechanism
 created_by: ppm
 creation_date: 2017-01-19T15:54:32Z
 
@@ -13206,7 +13207,7 @@ def: "The effect of a modulator entity A on a modulated entity B that  occurs wh
 subset: PSI-MI_slim
 synonym: "direct" EXACT PSI-MI-alternate []
 synonym: "direct causal regulation" EXACT PSI-MI-short []
-is_a: MI:2245 ! causal regulatory mechanism
+is_obsolete: true
 created_by: ppm
 creation_date: 2017-01-19T15:56:00Z
 
@@ -13215,7 +13216,7 @@ id: MI:2251
 name: transcriptional regulation by direct binding of dbTF to DNA regulatory element
 def: "Direct binding of a DbTF to a DNA regulatory sequence that modulates the frequency, rate or extent of the chemical reactions resulting in the transcription of DNA to RNA and gene activity regulation." [PMID:25428369]
 subset: PSI-MI_slim
-is_a: MI:2250 ! direct causal regulation
+is_a: MI:2247 ! transcriptional regulation
 created_by: ppm
 creation_date: 2017-01-19T15:57:01Z
 
@@ -13225,7 +13226,7 @@ name: guanine nucleotide exchange factor reaction
 def: "The process mediated by guanine nucleotide exchange factors (GEFs) that catalyze the exchange of bound GDP with cytosolic GTP." [PMID:23303910]
 subset: PSI-MI_slim
 synonym: "GEF reaction" EXACT PSI-MOD-short []
-is_a: MI:2250 ! direct causal regulation
+is_a: MI:0414 ! enzymatic reaction
 created_by: ppm
 creation_date: 2017-01-19T16:13:36Z
 
@@ -13236,7 +13237,7 @@ def: "A family of cellular proteins able to increases the activity of a GTPase."
 synonym: "GAP reaction" EXACT PSI-MI-short []
 synonym: "GTPase-Accelerating Protein reaction" EXACT PSI-MI-alternate []
 synonym: "RGS protein reaction" EXACT PSI-MI-alternate []
-is_a: MI:2250 ! direct causal regulation
+is_obsolete: true
 created_by: ppm
 creation_date: 2017-01-19T16:16:04Z
 
@@ -13246,7 +13247,7 @@ name: chemical activation reaction
 def: "The effect of a chemical compound that results in the activation or in an increased activation of a target molecule." [PMID:26467481]
 subset: PSI-MI_slim
 synonym: "chemical activation reaction" EXACT PSI-MI-short []
-is_a: MI:2250 ! direct causal regulation
+is_obsolete: true
 created_by: ppm
 creation_date: 2017-01-19T16:23:55Z
 
@@ -13256,7 +13257,7 @@ name: chemical inhibition reaction
 def: "The effect of a chemical compound that stops, prevents, or reduces the activity of a target molecule." [PMID:26467481]
 subset: PSI-MI_slim
 synonym: "chemical inhibition reaction" EXACT PSI-MI-short []
-is_a: MI:2250 ! direct causal regulation
+is_obsolete: true
 created_by: ppm
 creation_date: 2017-01-19T16:25:05Z
 
@@ -13266,7 +13267,7 @@ name: relocalization
 def: "Any process that modulates the frequency, rate or extent of any process in which a cell, a substance, or a cellular entity is transported to, or maintained in, a specific location." [PMID:26467481]
 subset: PSI-MI_slim
 synonym: "relocalization" EXACT PSI-MI-short []
-is_a: MI:2250 ! direct causal regulation
+is_obsolete: true
 created_by: ppm
 creation_date: 2017-01-19T16:26:15Z
 
@@ -13276,7 +13277,7 @@ name: small molecule catalysis reaction
 def: "The chemical reactions and pathways resulting in the formation, breakdown, modification of small molecules." [PMID:26467481]
 subset: PSI-MI_slim
 synonym: "small molecule catalysis reaction" EXACT PSI-MI-short []
-is_a: MI:2250 ! direct causal regulation
+is_obsolete: true
 created_by: ppm
 creation_date: 2017-01-19T16:27:34Z
 
@@ -13295,7 +13296,7 @@ creation_date: 2017-01-19T16:46:33Z
 [Term]
 id: MI:2259
 name: causal interactor type
-def: "Entity involved in a causative relationship." [PMID:26467481]
+def: "Entity involved in a causative relationship. These terms have to be used as interactor types only if associated with causal statements." [PMID:26467481]
 synonym: "causal interactor type" EXACT PSI-MI-short []
 is_a: MI:2233 ! causal interaction
 created_by: ppm
@@ -13580,6 +13581,16 @@ synonym: "miRNA interference luciferase assay" EXACT PSI-MI-short []
 is_a: MI:0255 ! post transcriptional interference
 created_by: pporras
 creation_date: 2018-05-02T15:22:12Z
+
+[Term]
+id: MI:2286
+name: functional association
+def: "Binary relationship between biological entities when one of them modulates the other in terms of function, expression, degradation or stability of the other and the relationship between the partners cannot be ascertained as direct, so intermediate steps are implicitly present. This relation specifically does not imply a physical interaction between the entities involved." []
+subset: PSI-MI_slim
+synonym: "functional association" EXACT PSI-MI-short []
+is_a: MI:0190 ! interaction type
+created_by: pporras
+creation_date: 2018-06-27T15:24:40Z
 
 [Typedef]
 id: contains
