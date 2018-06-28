@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:06:2018 14:55
+date: 28:06:2018 15:03
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -13591,6 +13591,17 @@ synonym: "functional association" EXACT PSI-MI-short []
 is_a: MI:0190 ! interaction type
 created_by: pporras
 creation_date: 2018-06-27T15:24:40Z
+
+[Term]
+id: MI:2287
+name: identification by structure determination
+def: "Identity of the participant was established (or confirmed) by\nfitting its molecular model to the experimentally determined\nelectron density." []
+subset: PSI-MI_slim
+synonym: "identification by structure determination" EXACT PSI-MI-alternate []
+synonym: "structure determination" EXACT PSI-MI-short []
+is_a: MI:0661 ! experimental participant identification
+created_by: pporras
+creation_date: 2018-06-28T15:00:41Z
 
 [Typedef]
 id: contains
