@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:06:2018 15:11
+date: 28:06:2018 16:13
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -13596,13 +13596,24 @@ creation_date: 2018-06-27T15:24:40Z
 [Term]
 id: MI:2287
 name: identification by structure determination
-def: "Identity of the participant was established (or confirmed) by\nfitting its molecular model to the experimentally determined\nelectron density." []
+def: "Identity of the participant was established (or confirmed) by\nfitting its molecular model to the experimentally determined\nelectron density." [PMID:7877166]
 subset: PSI-MI_slim
 synonym: "identification by structure determination" EXACT PSI-MI-alternate []
 synonym: "structure determination" EXACT PSI-MI-short []
 is_a: MI:0661 ! experimental participant identification
 created_by: pporras
 creation_date: 2018-06-28T15:00:41Z
+
+[Term]
+id: MI:2288
+name: DAP-seq
+def: "DAP-seq is an in vitro TF-DNA binding assay in which a DAP-seq gDNA library is prepared by attaching a short DNA sequencing adaptor onto purified and fragmented gDNA. In a separate reaction, an affinity-purified TF is prepared by in vitro expression, bound to ligand-coupled beads, and washed to remove non-specific cellular components. The gDNA library is added to the affinity-bound TF and the unbound DNA is washed away. The bound fraction is eluted, amplified with PCR primers to introduce an indexed adaptor, and the DNA is sequenced." [PMID:27203113]
+subset: PSI-MI_slim
+synonym: "dap-seq" EXACT PSI-MI-short []
+synonym: "DNA affinity purification sequencing" EXACT PSI-MI-alternate []
+is_a: MI:0004 ! affinity chromatography technology
+created_by: pporras
+creation_date: 2018-06-28T16:09:45Z
 
 [Typedef]
 id: contains
