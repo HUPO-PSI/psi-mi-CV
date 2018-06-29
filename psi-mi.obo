@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:06:2018 16:13
+date: 29:06:2018 12:25
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -13217,7 +13217,7 @@ id: MI:2251
 name: transcriptional regulation by direct binding of dbTF to DNA regulatory element
 def: "Direct binding of a DbTF to a DNA regulatory sequence that modulates the frequency, rate or extent of the chemical reactions resulting in the transcription of DNA to RNA and gene activity regulation." [PMID:25428369]
 subset: PSI-MI_slim
-is_a: MI:2247 ! transcriptional regulation
+is_obsolete: true
 created_by: ppm
 creation_date: 2017-01-19T15:57:01Z
 
