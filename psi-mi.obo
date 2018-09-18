@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:09:2018 10:52
+date: 18:09:2018 09:53
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -13616,7 +13616,7 @@ creation_date: 2018-06-28T16:09:45Z
 
 [Term]
 id: MI:2289
-name: vitrotrap
+name: virotrap
 def: "The bait fused to a viral protein (e.g. HIV-1 GAG protein) allows the trapping of interaction partners (preys) within virus-like particles (VLPs) that bud from mammalian cells. Once the VLPs are enriched and purified, this technique allows the isolation of multimeric complexes as well as binary interactions and their subsequent identification by methods such as MS and western blots." [PMID:27122307]
 subset: PSI-MI_slim
 synonym: "viral particle co-purification" EXACT PSI-MI-alternate []
@@ -13688,6 +13688,229 @@ subset: PSI-MI_slim
 is_a: MI:0333 ! feature range status
 created_by: pporras
 creation_date: 2018-09-14T09:27:33Z
+
+[Term]
+id: MI:2297
+name: carbohydrate chemical modification causing an interaction
+def: "Chemical alterations occurring in the specific carbohydrate molecule involved in an interaction that enables an interaction when compared with the unaltered carbohydrate, which does not interact." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "carbohydrate chemical modification causing" EXACT PSI-MI-short []
+is_a: MI:2276 ! carbohydrate chemical modification
+created_by: pporras
+creation_date: 2018-09-14T09:45:20Z
+
+[Term]
+id: MI:2298
+name: carbohydrate chemical modification with no effect
+def: "Chemical alterations occurring in the specific carbohydrate molecule involved in an interaction that does not have any effect over an interaction when compared with the unaltered form." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "carbohydrate chemical modification not affecting interaction" EXACT PSI-MI-alternate []
+is_a: MI:2276 ! carbohydrate chemical modification
+created_by: pporras
+creation_date: 2018-09-14T09:49:02Z
+
+[Term]
+id: MI:2299
+name: carbohydrate chemical modification decreasing interaction
+def: "Chemical alterations occurring in the specific carbohydrate molecule involved in an interaction that decreases significantly interaction strength  or rate (in the case of interactions inferred from enzymatic reaction) when compared with the unaltered carbohydrate." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "carbohydrate chemical modification decreasing" EXACT PSI-MI-short []
+is_a: MI:2276 ! carbohydrate chemical modification
+created_by: pporras
+creation_date: 2018-09-14T09:53:05Z
+
+[Term]
+id: MI:2300
+name: carbohydrate chemical modification decreasing interaction rate
+def: "Chemical alterations occurring in the specific carbohydrate molecule involved in an interaction that decreases significantly interaction rate (in the case of interactions inferred from enzymatic reaction) when compared with the unaltered carbohydrate." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "carbohydrate chemical modification decreasing rate" EXACT PSI-MI-short []
+is_a: MI:2299 ! carbohydrate chemical modification decreasing interaction
+created_by: pporras
+creation_date: 2018-09-14T09:56:38Z
+
+[Term]
+id: MI:2301
+name: carbohydrate chemical modification decreasing interaction strength
+def: "Chemical alterations occurring in the specific carbohydrate molecule involved in an interaction that decreases significantly interaction strength when compared with the unaltered carbohydrate." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "carbohydrate chemical modification decreasing strength" EXACT PSI-MI-short []
+is_a: MI:2299 ! carbohydrate chemical modification decreasing interaction
+created_by: pporras
+creation_date: 2018-09-14T09:58:21Z
+
+[Term]
+id: MI:2302
+name: carbohydrate chemical modification disrupting interaction
+def: "Chemical alterations occurring in the specific carbohydrate molecule involved in an interaction that disrupts interaction strength  or rate (in the case of interactions inferred from enzymatic reaction) when compared with the unaltered carbohydrate." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "carbohydrate chemical modification disrupting" EXACT PSI-MI-short []
+is_a: MI:2299 ! carbohydrate chemical modification decreasing interaction
+created_by: pporras
+creation_date: 2018-09-14T10:03:25Z
+
+[Term]
+id: MI:2303
+name: carbohydrate chemical modification disrupting interaction strength
+def: "Chemical alterations occurring in the specific carbohydrate molecule involved in an interaction that disrupts interaction strength when compared with the unaltered carbohydrate." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "carbohydrate chemical modification disrupting strength" EXACT PSI-MI-short []
+is_a: MI:2302 ! carbohydrate chemical modification disrupting interaction
+created_by: pporras
+creation_date: 2018-09-14T10:06:44Z
+
+[Term]
+id: MI:2304
+name: carbohydrate chemical modification disrupting interaction rate
+def: "Chemical alterations occurring in the specific carbohydrate molecule involved in an interaction that disrupts interaction rate (in the case of interactions inferred from enzymatic reaction) when compared with the unaltered carbohydrate." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "carbohydrate chemical modification disrupting rate" EXACT PSI-MI-short []
+is_a: MI:2302 ! carbohydrate chemical modification disrupting interaction
+created_by: pporras
+creation_date: 2018-09-14T10:08:37Z
+
+[Term]
+id: MI:2305
+name: carbohydrate chemical modification increasing interaction
+def: "Chemical alterations occurring in the specific carbohydrate molecule involved in an interaction that increases significantly interaction strength  or rate (in the case of interactions inferred from enzymatic reaction) when compared with the unaltered carbohydrate." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "carbohydrate chemical modification increasing" EXACT PSI-MI-short []
+is_a: MI:2276 ! carbohydrate chemical modification
+created_by: pporras
+creation_date: 2018-09-14T10:11:37Z
+
+[Term]
+id: MI:2306
+name: carbohydrate chemical modification increasing interaction strength
+def: "Chemical alterations occurring in the specific carbohydrate molecule involved in an interaction that increases significantly interaction strength when compared with the unaltered carbohydrate." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "carbohydrate chemical modification increasing strength" EXACT PSI-MI-short []
+is_a: MI:2305 ! carbohydrate chemical modification increasing interaction
+created_by: pporras
+creation_date: 2018-09-14T10:22:03Z
+
+[Term]
+id: MI:2307
+name: carbohydrate chemical modification increasing interaction rate
+def: "Chemical alterations occurring in the specific carbohydrate molecule involved in an interaction that increases significantly interaction rate (in the case of interactions inferred from enzymatic reaction) when compared with the unaltered carbohydrate." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "carbohydrate chemical modification increasing rate" EXACT PSI-MI-short []
+is_a: MI:2305 ! carbohydrate chemical modification increasing interaction
+created_by: pporras
+creation_date: 2018-09-14T10:23:21Z
+
+[Term]
+id: MI:2308
+name: attached carbohydrate
+def: "Carbohydrate species chemically attached to proteins, or other organic molecules." [PMID:14755292]
+comment: Specific carbohydrate species can be represented through the MOD ontology and their representation escapes the scope of this CV.
+subset: PSI-MI_slim
+synonym: "attached glycan" EXACT PSI-MI-alternate []
+synonym: "glycosylation" EXACT PSI-MI-alternate []
+is_a: MI:0252 ! biological feature
+created_by: pporras
+creation_date: 2018-09-14T10:26:12Z
+
+[Term]
+id: MI:2309
+name: attached carbohydrate causing an interaction
+def: "Carbohydrate species chemically attached to proteins, or other organic molecules involved in an interaction that enables an interaction when compared with the non-glycosylated molecule, which does not interact." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "attached carbohydrate causing" EXACT PSI-MI-short []
+synonym: "glycosylation causing interaction" EXACT PSI-MI-alternate []
+is_a: MI:2308 ! attached carbohydrate
+created_by: pporras
+creation_date: 2018-09-14T10:37:41Z
+
+[Term]
+id: MI:2310
+name: attached carbohydrate with no effect
+def: "Carbohydrate species chemically attached to proteins, or other organic molecules involved in an interaction that has no effect over an interaction when compared with the non-glycosylated molecule, which does not interact." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "attached carbohydrate not affecting interaction" EXACT PSI-MI-alternate []
+synonym: "glycosylation with no effect" EXACT PSI-MI-alternate []
+is_a: MI:2308 ! attached carbohydrate
+created_by: pporras
+creation_date: 2018-09-14T10:40:12Z
+
+[Term]
+id: MI:2311
+name: attached carbohydrate decreasing interaction
+def: "Carbohydrate species chemically attached to proteins, or other organic molecules involved in an interaction that decreases significantly interaction strength  or rate (in the case of interactions inferred from enzymatic reaction) when compared with the non-glycosylated molecule." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "attached carbohydrate decreasing" EXACT PSI-MI-short []
+synonym: "glycosylation decreasing interaction" EXACT PSI-MI-alternate []
+is_a: MI:2308 ! attached carbohydrate
+created_by: pporras
+creation_date: 2018-09-14T10:42:27Z
+
+[Term]
+id: MI:2312
+name: attached carbohydrate increasing interaction
+def: "Carbohydrate species chemically attached to proteins, or other organic molecules involved in an interaction that increases significantly interaction strength  or rate (in the case of interactions inferred from enzymatic reaction) when compared with the non-glycosylated molecule." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "attached carbohydrate increasing" EXACT PSI-MI-short []
+synonym: "glycosylation increasing interaction" EXACT PSI-MI-alternate []
+is_a: MI:2308 ! attached carbohydrate
+created_by: pporras
+creation_date: 2018-09-14T10:46:39Z
+
+[Term]
+id: MI:2313
+name: attached carbohydrate increasing interaction strength
+def: "Carbohydrate species chemically attached to proteins, or other organic molecules involved in an interaction that increases significantly interaction strength when compared with the non-glycosylated molecule." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "attached carbohydrate increasing strength" EXACT PSI-MI-short []
+synonym: "glycosylation increasing strength" EXACT PSI-MI-alternate []
+is_a: MI:2312 ! attached carbohydrate increasing interaction
+created_by: pporras
+creation_date: 2018-09-14T10:47:14Z
+
+[Term]
+id: MI:2314
+name: attached carbohydrate increasing interaction rate
+def: "Carbohydrate species chemically attached to proteins, or other organic molecules involved in an interaction that increases significantly interaction rate (in the case of interactions inferred from enzymatic reaction) when compared with the non-glycosylated molecule." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "attached carbohydrate increasing rate" EXACT PSI-MI-short []
+synonym: "glycosylation increasing rate" EXACT PSI-MI-alternate []
+is_a: MI:2312 ! attached carbohydrate increasing interaction
+created_by: pporras
+creation_date: 2018-09-14T10:49:39Z
+
+[Term]
+id: MI:2315
+name: attached carbohydrate disrupting interaction rate
+def: "Carbohydrate species chemically attached to proteins, or other organic molecules involved in an interaction that disrupts interaction rate (in the case of interactions inferred from enzymatic reaction) when compared with the non-glycosylated molecule." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "attached carbohydrate disrupting rate" EXACT PSI-MI-short []
+synonym: "glycosylation disrupting rate" EXACT PSI-MI-alternate []
+is_a: MI:2311 ! attached carbohydrate decreasing interaction
+is_a: MI:2317 ! attached carbohydrate disrupting interaction
+created_by: pporras
+creation_date: 2018-09-14T10:50:23Z
+
+[Term]
+id: MI:2316
+name: attached carbohydrate disrupting interaction strength
+def: "Carbohydrate species chemically attached to proteins, or other organic molecules involved in an interaction that disrupts interaction strength when compared with the non-glycosylated molecule." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "attached carbohydrate disrupting strength" EXACT PSI-MI-short []
+synonym: "glycosylation disrupting strength" EXACT PSI-MI-alternate []
+is_a: MI:2311 ! attached carbohydrate decreasing interaction
+is_a: MI:2317 ! attached carbohydrate disrupting interaction
+created_by: pporras
+creation_date: 2018-09-14T10:51:06Z
+
+[Term]
+id: MI:2317
+name: attached carbohydrate disrupting interaction
+def: "Carbohydrate species chemically attached to proteins, or other organic molecules involved in an interaction that disrupts interaction strength or rate (in the case of interactions inferred from enzymatic reaction) when compared with the non-glycosylated molecule." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "attached carbohydrate disrupting" EXACT PSI-MI-short []
+synonym: "glycosylation disrupting interaction" EXACT PSI-MI-alternate []
+is_a: MI:2311 ! attached carbohydrate decreasing interaction
+created_by: pporras
+creation_date: 2018-09-18T09:11:58Z
 
 [Typedef]
 id: contains
