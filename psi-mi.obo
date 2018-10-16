@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:10:2018 14:04
+date: 16:10:2018 09:29
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -13933,6 +13933,16 @@ synonym: "surface adhesion force measurement" RELATED []
 is_a: MI:2318 ! force measurement
 created_by: pporras
 creation_date: 2018-10-11T13:44:53Z
+
+[Term]
+id: MI:2320
+name: aruk-ucl
+def: "The Alzheimer's Research UK Gene Ontology Project represents a collaboration between University College London, the European Bioinformatics Institute (EBI) and the University of Manchester, funded by Alzheimer's Research UK. This annotation group is a member of the IMEx Consortium.\n\nwww.ucl.ac.uk/functional-gene-annotation/neurological" []
+subset: PSI-MI_slim
+synonym: "Alzheimer's Research UK Gene Ontology Project" EXACT PSI-MI-alternate []
+is_a: MI:0461 ! interaction database
+created_by: pporras
+creation_date: 2018-10-16T09:26:24Z
 
 [Typedef]
 id: contains
