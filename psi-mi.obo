@@ -4845,7 +4845,7 @@ name: experiment description
 def: "The experimental condition text description, should contain information about the organisms hosting the interaction." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "experiment descripti" EXACT PSI-MI-short []
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:0665 ! experiment attribute name
 
 [Term]
 id: MI:0592
@@ -4903,7 +4903,7 @@ name: figure legend
 def: "Text pointing to a specific paper figure legend where the experimental evidences for an interaction are to be found." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0664 ! interaction attribute name
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:0665 ! experiment attribute name
 
 [Term]
 id: MI:0600
@@ -5017,7 +5017,7 @@ name: comment
 def: "Comment for public view. This attribute can be associated to interaction, experiment, CV term, an organism and any participant." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0664 ! interaction attribute name
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:0665 ! experiment attribute name
 is_a: MI:0666 ! participant attribute name
 is_a: MI:0667 ! controlled vocabulary attribute name
 is_a: MI:0668 ! feature attribute name
@@ -5037,7 +5037,7 @@ name: url
 def: "URL/Web address describing an experiment, an interaction, a Cv term or an organism." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0664 ! interaction attribute name
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:0665 ! experiment attribute name
 is_a: MI:0667 ! controlled vocabulary attribute name
 is_a: MI:0669 ! organism attribute name
 
@@ -5069,7 +5069,7 @@ name: caution
 def: "Warning about errors or grounds for confusion. Can be associated to an interaction, experiment, CV term or any participant." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0664 ! interaction attribute name
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:0665 ! experiment attribute name
 is_a: MI:0666 ! participant attribute name
 is_a: MI:0667 ! controlled vocabulary attribute name
 is_a: MI:0668 ! feature attribute name
@@ -5101,7 +5101,7 @@ id: MI:0622
 name: confidence-mapping
 def: "Description of confidence assessment method generally associated to the experiment." [PMID:14755292]
 subset: PSI-MI_slim
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:0665 ! experiment attribute name
 
 [Term]
 id: MI:0623
@@ -5137,7 +5137,7 @@ name: experiment modification
 def: "Modifications of the standard experimental method described in the CV." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "exp-modification" EXACT PSI-MI-short []
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:0665 ! experiment attribute name
 
 [Term]
 id: MI:0628
@@ -5153,7 +5153,7 @@ name: complex-properties
 def: "Information on the complex being annotated. Attribute generally associated to an interaction." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0664 ! interaction attribute name
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:0665 ! experiment attribute name
 
 [Term]
 id: MI:0630
@@ -5181,7 +5181,7 @@ id: MI:0633
 name: data-processing
 def: "Information about how the data was processed. This attribute is used mainly for large scale experiment." [PMID:14755292]
 subset: PSI-MI_slim
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:0665 ! experiment attribute name
 
 [Term]
 id: MI:0634
@@ -5434,7 +5434,7 @@ is_a: MI:0590 ! attribute name
 
 [Term]
 id: MI:0665
-name: experiment attibute name
+name: experiment attribute name
 def: "Attribute name of annotation associated to an experiment element." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "experiment att name" EXACT PSI-MI-short []
@@ -5486,14 +5486,14 @@ id: MI:0671
 name: antibodies
 def: "This annotation topic should contain information about antibodies when specific antibodies (monoclonal or polyclonal raised against specific regions of the proteins or purified in a specific manner) have been used." [PMID:14755292]
 subset: PSI-MI_slim
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:0665 ! experiment attribute name
 
 [Term]
 id: MI:0672
 name: library-used
 def: "This annotation topic will be used to store information about the cDNA library. If a name is available this should be reported along with a short description of the library." [PMID:14755292]
 subset: PSI-MI_slim
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:0665 ! experiment attribute name
 
 [Term]
 id: MI:0673
@@ -6827,7 +6827,7 @@ id: MI:0878
 name: author submitted
 def: "Data directly submitted by the authors to a database prior to publication." [PMID:14755292]
 subset: PSI-MI_slim
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:0665 ! experiment attribute name
 
 [Term]
 id: MI:0879
@@ -7653,7 +7653,7 @@ id: MI:0977
 name: no-imex-export
 def: "Prevents export of experiment and associated interactions to IMEx" [PMID:17893861]
 subset: PSI-MI_slim
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:0665 ! experiment attribute name
 created_by: orchard
 creation_date: 2010-04-21T02:49:48Z
 
@@ -8802,7 +8802,7 @@ def: "Attributes specific to the publication." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "bib attribute" EXACT PSI-MI-short []
 synonym: "publication attribute" EXACT []
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:0665 ! experiment attribute name
 created_by: orchard
 creation_date: 2011-07-05T12:55:21Z
 
