@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:10:2018 09:29
+date: 13:11:2018 15:57
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -689,6 +689,7 @@ def: "Identification of a nucleotide sequence. Depending on the experimental des
 subset: PSI-MI_slim
 synonym: "nucleotide sequence" EXACT PSI-MI-short []
 synonym: "sequence cloning" EXACT PSI-MI-alternate []
+is_a: MI:0659 ! experimental feature detection
 is_a: MI:0661 ! experimental participant identification
 
 [Term]
@@ -5933,6 +5934,7 @@ id: MI:0726
 name: reverse two hybrid
 def: "Yeast strains are generated in which expression of DB-X/AD-Y or DBPX hybrid proteins is toxic under particular conditions (negative selection). Under these conditions, dissociation of an interaction should provide a selective advantage thereby facilitating detection: a few growing yeast colonies in which DB-X/AD-Y (or DBPX/binding site) fail to interact should be identified among many nongrowing colonies containing interacting DB-X/AD-Y or DBPX/binding site." [PMID:8816797]
 subset: PSI-MI_slim
+is_a: MI:0003 ! feature detection method
 is_a: MI:0232 ! transcriptional complementation assay
 
 [Term]
@@ -13943,6 +13945,28 @@ synonym: "Alzheimer's Research UK Gene Ontology Project" EXACT PSI-MI-alternate 
 is_a: MI:0461 ! interaction database
 created_by: pporras
 creation_date: 2018-10-16T09:26:24Z
+
+[Term]
+id: MI:2321
+name: high-throughput sequencing
+def: "High-throughput (a.k.a. \"next-generation\") sequencing applies to  methods that allow for sequencing of genome-scale number of bases." [PMID:19900591]
+subset: PSI-MI_slim
+synonym: "next-generation sequencing" EXACT PSI-MI-alternate []
+synonym: "ngs sequencing" EXACT PSI-MI-short []
+is_a: MI:0078 ! nucleotide sequence identification
+created_by: pporras
+creation_date: 2018-11-13T14:59:35Z
+
+[Term]
+id: MI:2322
+name: Illumina dye sequencing
+def: "This method generates several billion bases of accurate nucleotide sequence per experiment at low cost. Single molecules of DNA are attached to a flat surface, amplified in situ and used as templates for synthetic sequencing with fluorescent reversible terminator deoxyribonucleotides. Images of the surface are analysed to generate high-quality sequence." [PMID:18987734]
+subset: PSI-MI_slim
+synonym: "illumina sequencing" EXACT PSI-MI-short []
+synonym: "solexa sequencing" EXACT PSI-MI-alternate []
+is_a: MI:2321 ! high-throughput sequencing
+created_by: pporras
+creation_date: 2018-11-13T15:23:38Z
 
 [Typedef]
 id: contains
