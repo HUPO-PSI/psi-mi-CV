@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:11:2018 15:57
+date: 30:11:2018 08:58
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -9884,6 +9884,8 @@ id: MI:1202
 name: one-strep-tag
 def: "Synthetic peptide tag (SAWSHPQFEK-(GGGS)2-SAWSHPQFEK)" [PMID:19688738]
 subset: PSI-MI_slim
+synonym: "<new synonym>" RELATED []
+synonym: "twin-strep-tag" EXACT PSI-MI-alternate []
 is_a: MI:0507 ! tag
 created_by: orchard
 creation_date: 2012-06-07T04:44:55Z
