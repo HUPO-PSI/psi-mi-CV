@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:11:2018 08:58
+date: 06:12:2018 14:54
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -283,7 +283,7 @@ id: MI:0029
 name: cosedimentation through density gradient
 def: "Sedimentation through a density gradient measures the sedimentation rate of a mixture of proteins through either a glycerol or sucrose gradient. Two interacting proteins will sediment mostly as a complex at concentrations above the binding constant. By varying the concentration of one or both of the complex constituents and taking into account the dilution of the species during sedimentation, one can reasonably accurately estimate the binding constant." [PMID:10410796]
 subset: PSI-MI_slim
-synonym: "density sedimentatio" EXACT PSI-MI-short []
+synonym: "density sedimentation" EXACT PSI-MI-short []
 is_a: MI:0027 ! cosedimentation
 
 [Term]
