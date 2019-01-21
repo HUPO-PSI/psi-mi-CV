@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:12:2018 14:54
+date: 21:01:2019 15:07
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -13331,6 +13331,7 @@ creation_date: 2017-01-19T16:54:07Z
 id: MI:2262
 name: causal regulatory modification
 def: "The modification of a subsequence that regulates the concentration and/or frequency and/or rate and/or extent of the molecular function of an entity." [PMID:26467481]
+comment: CAUTION: This is a temporary branch. These terms will be soon added in the PSI-MOD ontology and this branch will become obsolete.
 synonym: "causal regulatory modification" EXACT PSI-MI-short []
 is_a: MI:2233 ! causal interaction
 created_by: ppm
