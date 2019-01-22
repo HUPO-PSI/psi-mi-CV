@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 21:01:2019 15:07
+date: 22:01:2019 09:45
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -11272,8 +11272,10 @@ creation_date: 2014-07-17T08:47:44Z
 [Term]
 id: MI:1345
 name: rho tag
-def: "A 9-amino acid peptide representing C terminus of bovine rhodopsin widely used as an epitope tag. A number of anti-rhodopsin antibodies recognize this epitope." [PMID:12110672]
+def: "A 9-amino acid peptide representing C terminus of bovine rhodopsin widely used as an epitope tag. A number of anti-rhodopsin antibodies recognize this epitope." [PMID:12110672, PMID:24943310]
 subset: PSI-MI_slim
+synonym: "1D4 tag" EXACT PSI-MI-alternate []
+synonym: "rho1D4 tag" EXACT PSI-MI-alternate []
 is_a: MI:0507 ! tag
 created_by: orchard
 creation_date: 2014-09-19T14:24:43Z
@@ -13331,7 +13333,7 @@ creation_date: 2017-01-19T16:54:07Z
 id: MI:2262
 name: causal regulatory modification
 def: "The modification of a subsequence that regulates the concentration and/or frequency and/or rate and/or extent of the molecular function of an entity." [PMID:26467481]
-comment: CAUTION: This is a temporary branch. These terms will be soon added in the PSI-MOD ontology and this branch will become obsolete.
+comment: CAUTION: This is a temporary branch. These terms will be soon added in the PSI-MOD ontology and this branch will became obsolete.
 synonym: "causal regulatory modification" EXACT PSI-MI-short []
 is_a: MI:2233 ! causal interaction
 created_by: ppm
