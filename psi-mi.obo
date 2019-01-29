@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:01:2019 09:45
+date: 29:01:2019 13:39
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -3824,7 +3824,7 @@ id: MI:0469
 name: intact
 def: "INTerAction database (IntAct) provides an open source database and toolkit for the storage, presentation and analysis of molecular interactions.\nhttp://www.ebi.ac.uk/intact" [PMID:14681455, PMID:19850723, PMID:22121220]
 subset: PSI-MI_slim
-synonym: "IntAct" EXACT PSI-MI-alternate []
+synonym: "IntAct" EXACT PSI-MI-short []
 xref: id-validation-regexp: "EBI-[0-9]+|IA:[0-9]+"
 xref: search-url: "http://www.ebi.ac.uk/intact/query/${ac}"
 is_a: MI:0461 ! interaction database
