@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:01:2019 13:39
+date: 06:03:2019 13:41
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -6632,7 +6632,7 @@ synonym: "genbank_protein_gi" EXACT PSI-MI-short []
 synonym: "genpept id" EXACT []
 xref: id-validation-regexp: "[0-9]+"
 xref: search-url: "http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=protein&cmd=Retrieve&dopt=Graphics&list_uids=${ac}"
-is_a: MI:0860 ! genbank indentifier
+is_a: MI:0860 ! genbank identifier
 
 [Term]
 id: MI:0852
@@ -6644,7 +6644,7 @@ synonym: "GenBank Nucleotide" EXACT PSI-MI-alternate []
 synonym: "genbank_nucl_gi" EXACT PSI-MI-short []
 xref: id-validation-regexp: "[0-9]+"
 xref: search-url: "http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=nucleotide&cmd=Retrieve&dopt=Graphics&list_uids=$"
-is_a: MI:0860 ! genbank indentifier
+is_a: MI:0860 ! genbank identifier
 
 [Term]
 id: MI:0853
@@ -6710,7 +6710,7 @@ is_a: MI:2318 ! force measurement
 
 [Term]
 id: MI:0860
-name: genbank indentifier
+name: genbank identifier
 def: " edit" [PMID:15078858]
 subset: PSI-MI_slim
 xref: id-validation-regexp: "ENS[A-Z]+[0-9]{11}"
