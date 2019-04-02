@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:03:2019 13:41
+date: 02:04:2019 10:55
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -13972,6 +13972,29 @@ synonym: "solexa sequencing" EXACT PSI-MI-alternate []
 is_a: MI:2321 ! high-throughput sequencing
 created_by: pporras
 creation_date: 2018-11-13T15:23:38Z
+
+[Term]
+id: MI:2323
+name: kiss
+def: "KISS (KInase Substrate Sensor) is a protein complementation technology that allows in situ analysis of protein-protein interactions in intact mammalian cells. In this method, which is derived from MAPPIT (mammalian protein-protein interaction trap), the bait protein is coupled to the kinase domain of TYK2, while the prey protein is fused to a fragment of the gp130 cytokine receptor chain. Bait and prey interaction leads to phosphorylation of the gp130 anchor by TYK2, followed by recruitment and activation of STAT3, resulting in transcription of a STAT3-dependent reporter system. This approach enables the identification of interactions between proteins, including transmembrane and cytosolic proteins, and their modulation in response to physiological or pharmacological challenges." [PMID:25154561, PMID:29855964]
+subset: PSI-MI_slim
+synonym: "kinase substrate sensor" EXACT PSI-MI-alternate []
+synonym: "KISS" EXACT PSI-MI-alternate []
+synonym: "kiss" EXACT PSI-MI-short []
+is_a: MI:0090 ! protein complementation assay
+created_by: pporras
+creation_date: 2019-04-02T09:58:26Z
+
+[Term]
+id: MI:2324
+name: dbsnp
+def: "dbSNP contains human single nucleotide variations, microsatellites, and small-scale insertions and deletions along with publication, population frequency, molecular consequence, and genomic and RefSeq mapping information for both common variations and clinical mutations." [PMID:11125122]
+subset: PSI-MI_slim
+synonym: "dbSNP" EXACT PSI-MI-alternate []
+synonym: "dbsnp" EXACT PSI-MI-short []
+is_a: MI:0447 ! feature database
+created_by: pporras
+creation_date: 2019-04-02T10:52:06Z
 
 [Typedef]
 id: contains
