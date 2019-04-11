@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:04:2019 10:55
+date: 11:04:2019 14:18
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -13995,6 +13995,41 @@ synonym: "dbsnp" EXACT PSI-MI-short []
 is_a: MI:0447 ! feature database
 created_by: pporras
 creation_date: 2019-04-02T10:52:06Z
+
+[Term]
+id: MI:2325
+name: nanoluc luciferase protein tag
+def: "NanoLuc luciferase (Nluc) is a small (19 kDa), highly stable, ATP independent, bioluminescent protein derived from the luciferase complex of the deep-sea shrimp O. gracilirostris." [PMID:22894855]
+subset: PSI-MI_slim
+synonym: "NanoLuc" EXACT PSI-MI-alternate []
+synonym: "nanoluc luciferase" EXACT PSI-MI-alternate []
+synonym: "nluc" EXACT PSI-MI-short []
+synonym: "NLuc" EXACT PSI-MI-alternate []
+is_a: MI:1205 ! luciferase tag
+created_by: pporras
+creation_date: 2019-04-11T14:07:06Z
+
+[Term]
+id: MI:2326
+name: nanoluc-n
+def: "The n-terminus of the nanoluc luciferase protein, fused to a protein of interest for use in the split luciferase complementation assay." []
+subset: PSI-MI_slim
+synonym: "N-terminal fragment of nanoluc luciferase" EXACT PSI-MI-alternate []
+synonym: "nluc-n" EXACT PSI-MI-short []
+is_a: MI:2325 ! nanoluc luciferase protein tag
+created_by: pporras
+creation_date: 2019-04-11T14:14:54Z
+
+[Term]
+id: MI:2327
+name: nanoluc-c
+def: "The c-terminus of the nanoluc luciferase protein, fused to a protein of interest for use in the split luciferase complementation assay." []
+subset: PSI-MI_slim
+synonym: "C-terminal fragment of nanoluc luciferase" EXACT PSI-MI-alternate []
+synonym: "nluc-c" EXACT PSI-MI-short []
+is_a: MI:2325 ! nanoluc luciferase protein tag
+created_by: pporras
+creation_date: 2019-04-11T14:16:59Z
 
 [Typedef]
 id: contains
