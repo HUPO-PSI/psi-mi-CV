@@ -10208,7 +10208,7 @@ creation_date: 2012-08-10T08:45:50Z
 [Term]
 id: MI:1235
 name: thermal shift binding
-def: "Ligand binding to a target protein can stabilize a protein's native state, as shown in the increase of the bound protein's melting temperature. The midpoint of the melting curve of a protein will increase in the presence of ligands that bind more tightly to the native state than the unfolded state." [PMID: 22052482]
+def: "Ligand binding to a target protein can stabilize a protein's native state, as shown in the increase of the bound protein's melting temperature. The midpoint of the melting curve of a protein will increase in the presence of ligands that bind more tightly to the native state than the unfolded state." [PMID:22052482]
 subset: PSI-MI_slim
 synonym: "thermal shift" EXACT PSI-MI-short []
 synonym: "thermshift binding assay" RELATED []
@@ -10325,7 +10325,7 @@ creation_date: 2012-08-10T11:56:05Z
 [Term]
 id: MI:1247
 name: microscale thermophoresis
-def: "Measurement of the directed movement of particles in a microscopic temperature gradient. Any change of the hydration shell of biomolecules due to changes in their structure/conformation results in a relative change of movement along the temperature gradient and is used to determine binding affinities, binding kinetics and activity kinetics. Events such as the phosphorylation of a protein or the binding of small molecules to a target can be monitored." [PMID: 17164337]
+def: "Measurement of the directed movement of particles in a microscopic temperature gradient. Any change of the hydration shell of biomolecules due to changes in their structure/conformation results in a relative change of movement along the temperature gradient and is used to determine binding affinities, binding kinetics and activity kinetics. Events such as the phosphorylation of a protein or the binding of small molecules to a target can be monitored." [PMID:17164337]
 subset: PSI-MI_slim
 synonym: "mst" EXACT PSI-MI-short []
 is_a: MI:0013 ! biophysical
