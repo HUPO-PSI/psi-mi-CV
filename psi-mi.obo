@@ -9582,7 +9582,7 @@ creation_date: 2012-06-07T01:25:50Z
 [Term]
 id: MI:1172
 name: altered physicochemical compatibility
-def: "The addition of a PTM to an interaction interface affects the physicochemical compatibility of the binding site with its binding partner. This can either induce or enhance an interaction, or result in inhibition or even abrogation of an interaction. Multisite modification can mediate rheostatic regulation of the interaction." [PMID:22480932, XX:<new dbxref>]
+def: "The addition of a PTM to an interaction interface affects the physicochemical compatibility of the binding site with its binding partner. This can either induce or enhance an interaction, or result in inhibition or even abrogation of an interaction. Multisite modification can mediate rheostatic regulation of the interaction." [PMID:22480932]
 subset: PSI-MI_slim
 is_a: MI:0664 ! interaction attribute name
 is_a: MI:1170 ! pre-assembly response
@@ -10577,7 +10577,7 @@ creation_date: 2013-06-05T20:05:15Z
 [Term]
 id: MI:1273
 name: maximal epistasis
-def: "An effect in which individual perturbations of two different genes result in the same mutant phenotype to varying degrees of severity/penetrance and the resulting phenotype of their combination is equal in severity/penetrance to the most severe/penetrant of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab = a* < b < wt\nOR\nwt < b < a* = ab\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [:<new dbxref>, PMID:15833125]
+def: "An effect in which individual perturbations of two different genes result in the same mutant phenotype to varying degrees of severity/penetrance and the resulting phenotype of their combination is equal in severity/penetrance to the most severe/penetrant of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab = a* < b < wt\nOR\nwt < b < a* = ab\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
 is_a: MI:1272 ! positive epistasis
 is_a: MI:1284 ! quantitative epistasis
@@ -10635,7 +10635,7 @@ creation_date: 2013-06-05T20:31:30Z
 [Term]
 id: MI:1279
 name: unilateral enhancement
-def: "An effect in which the phenotype of one genetic perturbation is enhanced by a second perturbation (which, on its own, has no effect on the phenotype in question) to a severity/penetrance beyond (further from wild type) that of the original phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab < a < b = wt [E = a]\nOR\nwt = b < a < ab [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125, XX:<new dbxref>]
+def: "An effect in which the phenotype of one genetic perturbation is enhanced by a second perturbation (which, on its own, has no effect on the phenotype in question) to a severity/penetrance beyond (further from wild type) that of the original phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab < a < b = wt [E = a]\nOR\nwt = b < a < ab [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
 is_a: MI:1271 ! enhancement
 created_by: orchard
@@ -10644,7 +10644,7 @@ creation_date: 2013-06-05T20:33:13Z
 [Term]
 id: MI:1280
 name: mutual suppression
-def: "An effect in which individual perturbations of different genes result in the same mutant phenotype (but, perhaps, to varying degrees of severity/penetrance) and the resulting phenotype of their combination is less severe/penetrant than expected from the original phenotypes. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a* <= b < wt) AND (a* < ab <= wt) [E = a*]\nOR\n(wt < b <= a*) AND (wt <= ab < a*) [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125, XX:<new dbxref>]
+def: "An effect in which individual perturbations of different genes result in the same mutant phenotype (but, perhaps, to varying degrees of severity/penetrance) and the resulting phenotype of their combination is less severe/penetrant than expected from the original phenotypes. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a* <= b < wt) AND (a* < ab <= wt) [E = a*]\nOR\n(wt < b <= a*) AND (wt <= ab < a*) [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
 is_a: MI:0796 ! suppression
 created_by: orchard
@@ -11232,7 +11232,7 @@ creation_date: 2014-04-08T16:15:19Z
 [Term]
 id: MI:1341
 name: set member
-def: "Indicates that this protein is a member of a set of proteins with similar sequence and/or function." [PMID:14755292, XX:<new dbxref>]
+def: "Indicates that this protein is a member of a set of proteins with similar sequence and/or function." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0353 ! cross-reference type
 created_by: orchard
@@ -11365,7 +11365,7 @@ creation_date: 2015-01-28T10:23:06Z
 [Term]
 id: MI:1354
 name: lipase assay
-def: "Cleavage (hydrolysis) of a lipid molecule." [PMID:14760721, XX:<new dbxref>]
+def: "Cleavage (hydrolysis) of a lipid molecule." [PMID:14760721]
 subset: PSI-MI_slim
 is_a: MI:0990 ! cleavage assay
 created_by: orchard
@@ -12701,7 +12701,7 @@ creation_date: 2015-08-11T17:22:38Z
 [Term]
 id: MI:2204
 name: micro rna
-def: "A micro RNA (abbreviated miRNA) is a small non-coding RNA molecule (containing about 22 nucleotides) found in plants, animals, and some viruses, which functions in RNA silencing and post-transcriptional regulation of gene expression." [PMID:14744438, XX:<new dbxref>]
+def: "A micro RNA (abbreviated miRNA) is a small non-coding RNA molecule (containing about 22 nucleotides) found in plants, animals, and some viruses, which functions in RNA silencing and post-transcriptional regulation of gene expression." [PMID:14744438]
 subset: PSI-MI_slim
 synonym: "micro RNA" EXACT PSI-MI-alternate []
 synonym: "micro-RNA" EXACT PSI-MI-alternate []
