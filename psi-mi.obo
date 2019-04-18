@@ -7829,7 +7829,7 @@ creation_date: 2010-04-26T12:39:30Z
 [Term]
 id: MI:0995
 name: depalmitoylase assay
-def: "Measures the removal of S-palmitoyl-L-cysteine, N6-palmitoyl-L-lysine, O-palmitoyl-L-threonine or O-palmitoyl-L-serine, which are cleaved and return C,K,T or S residues." [PMID:<new dbxref>14760721]
+def: "Measures the removal of S-palmitoyl-L-cysteine, N6-palmitoyl-L-lysine, O-palmitoyl-L-threonine or O-palmitoyl-L-serine, which are cleaved and return C,K,T or S residues." [PMID:14760721]
 subset: PSI-MI_slim
 synonym: "depalmitoylation assay" EXACT PSI-MI-short []
 is_a: MI:0991 ! lipoprotein cleavage assay
@@ -8379,7 +8379,7 @@ creation_date: 2011-03-11T01:25:29Z
 [Term]
 id: MI:1051
 name: evidence
-def: "Binary pair is defined by a single piece of experimental evidence." [PMID:<new dbxref>14755292]
+def: "Binary pair is defined by a single piece of experimental evidence." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:1050 ! interaction representation
 created_by: orchard
@@ -8424,7 +8424,7 @@ creation_date: 2011-03-11T01:35:12Z
 [Term]
 id: MI:1056
 name: text-mining
-def: "The data has been entered into the database following extraction from the literature by a computational process." [PMID:<new dbxref>14755292]
+def: "The data has been entered into the database following extraction from the literature by a computational process." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:1053 ! data source
 created_by: orchard
@@ -8469,7 +8469,7 @@ creation_date: 2011-03-11T01:42:35Z
 [Term]
 id: MI:1061
 name: matrix expansion
-def: "Complex n-ary data has been expanded to binary using the spoke model. This assumes that all molecules in the complex interact with each other." [PMID:<new dbxref>14755292]
+def: "Complex n-ary data has been expanded to binary using the spoke model. This assumes that all molecules in the complex interact with each other." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:1059 ! complex expansion
 created_by: orchard
@@ -8478,7 +8478,7 @@ creation_date: 2011-03-11T01:45:52Z
 [Term]
 id: MI:1062
 name: bipartite expansion
-def: "Complex n-ary data has been expanded to binary using the bipartite model. This assumes that all molecules in the complex interact with a single externally designated entity." [PMID:<new dbxref>14755292]
+def: "Complex n-ary data has been expanded to binary using the bipartite model. This assumes that all molecules in the complex interact with a single externally designated entity." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:1059 ! complex expansion
 created_by: orchard
@@ -9142,7 +9142,7 @@ creation_date: 2012-01-03T01:19:22Z
 [Term]
 id: MI:1127
 name: putative self interaction
-def: "Interaction between two or more regions of possibly the same molecule but it is also possible that the observation is due to an interaction between two identical molecules." [PMID:<new dbxref>14755292]
+def: "Interaction between two or more regions of possibly the same molecule but it is also possible that the observation is due to an interaction between two identical molecules." [PMID:14755292]
 comment: The corresponding experimental role should be self/putative self. Not to be used for autocatalysis, when the additional biological role self/putative self will supply this information.
 subset: PSI-MI_slim
 is_a: MI:0407 ! direct interaction
