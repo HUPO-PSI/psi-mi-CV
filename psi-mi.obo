@@ -7829,7 +7829,7 @@ creation_date: 2010-04-26T12:39:30Z
 [Term]
 id: MI:0995
 name: depalmitoylase assay
-def: "Measures the removal of S-palmitoyl-L-cysteine, N6-palmitoyl-L-lysine, O-palmitoyl-L-threonine or O-palmitoyl-L-serine, which are cleaved and return C,K,T or S residues." [PMID:<new dbxref>14760721]
+def: "Measures the removal of S-palmitoyl-L-cysteine, N6-palmitoyl-L-lysine, O-palmitoyl-L-threonine or O-palmitoyl-L-serine, which are cleaved and return C,K,T or S residues." [PMID:14760721]
 subset: PSI-MI_slim
 synonym: "depalmitoylation assay" EXACT PSI-MI-short []
 is_a: MI:0991 ! lipoprotein cleavage assay
@@ -8379,7 +8379,7 @@ creation_date: 2011-03-11T01:25:29Z
 [Term]
 id: MI:1051
 name: evidence
-def: "Binary pair is defined by a single piece of experimental evidence." [PMID:<new dbxref>14755292]
+def: "Binary pair is defined by a single piece of experimental evidence." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:1050 ! interaction representation
 created_by: orchard
@@ -8424,7 +8424,7 @@ creation_date: 2011-03-11T01:35:12Z
 [Term]
 id: MI:1056
 name: text-mining
-def: "The data has been entered into the database following extraction from the literature by a computational process." [PMID:<new dbxref>14755292]
+def: "The data has been entered into the database following extraction from the literature by a computational process." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:1053 ! data source
 created_by: orchard
@@ -8469,7 +8469,7 @@ creation_date: 2011-03-11T01:42:35Z
 [Term]
 id: MI:1061
 name: matrix expansion
-def: "Complex n-ary data has been expanded to binary using the spoke model. This assumes that all molecules in the complex interact with each other." [PMID:<new dbxref>14755292]
+def: "Complex n-ary data has been expanded to binary using the spoke model. This assumes that all molecules in the complex interact with each other." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:1059 ! complex expansion
 created_by: orchard
@@ -8478,7 +8478,7 @@ creation_date: 2011-03-11T01:45:52Z
 [Term]
 id: MI:1062
 name: bipartite expansion
-def: "Complex n-ary data has been expanded to binary using the bipartite model. This assumes that all molecules in the complex interact with a single externally designated entity." [PMID:<new dbxref>14755292]
+def: "Complex n-ary data has been expanded to binary using the bipartite model. This assumes that all molecules in the complex interact with a single externally designated entity." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:1059 ! complex expansion
 created_by: orchard
@@ -9142,7 +9142,7 @@ creation_date: 2012-01-03T01:19:22Z
 [Term]
 id: MI:1127
 name: putative self interaction
-def: "Interaction between two or more regions of possibly the same molecule but it is also possible that the observation is due to an interaction between two identical molecules." [PMID:<new dbxref>14755292]
+def: "Interaction between two or more regions of possibly the same molecule but it is also possible that the observation is due to an interaction between two identical molecules." [PMID:14755292]
 comment: The corresponding experimental role should be self/putative self. Not to be used for autocatalysis, when the additional biological role self/putative self will supply this information.
 subset: PSI-MI_slim
 is_a: MI:0407 ! direct interaction
@@ -9582,7 +9582,7 @@ creation_date: 2012-06-07T01:25:50Z
 [Term]
 id: MI:1172
 name: altered physicochemical compatibility
-def: "The addition of a PTM to an interaction interface affects the physicochemical compatibility of the binding site with its binding partner. This can either induce or enhance an interaction, or result in inhibition or even abrogation of an interaction. Multisite modification can mediate rheostatic regulation of the interaction." [PMID:22480932, XX:<new dbxref>]
+def: "The addition of a PTM to an interaction interface affects the physicochemical compatibility of the binding site with its binding partner. This can either induce or enhance an interaction, or result in inhibition or even abrogation of an interaction. Multisite modification can mediate rheostatic regulation of the interaction." [PMID:22480932]
 subset: PSI-MI_slim
 is_a: MI:0664 ! interaction attribute name
 is_a: MI:1170 ! pre-assembly response
@@ -10208,7 +10208,7 @@ creation_date: 2012-08-10T08:45:50Z
 [Term]
 id: MI:1235
 name: thermal shift binding
-def: "Ligand binding to a target protein can stabilize a protein's native state, as shown in the increase of the bound protein's melting temperature. The midpoint of the melting curve of a protein will increase in the presence of ligands that bind more tightly to the native state than the unfolded state." [PMID: 22052482]
+def: "Ligand binding to a target protein can stabilize a protein's native state, as shown in the increase of the bound protein's melting temperature. The midpoint of the melting curve of a protein will increase in the presence of ligands that bind more tightly to the native state than the unfolded state." [PMID:22052482]
 subset: PSI-MI_slim
 synonym: "thermal shift" EXACT PSI-MI-short []
 synonym: "thermshift binding assay" RELATED []
@@ -10325,7 +10325,7 @@ creation_date: 2012-08-10T11:56:05Z
 [Term]
 id: MI:1247
 name: microscale thermophoresis
-def: "Measurement of the directed movement of particles in a microscopic temperature gradient. Any change of the hydration shell of biomolecules due to changes in their structure/conformation results in a relative change of movement along the temperature gradient and is used to determine binding affinities, binding kinetics and activity kinetics. Events such as the phosphorylation of a protein or the binding of small molecules to a target can be monitored." [PMID: 17164337]
+def: "Measurement of the directed movement of particles in a microscopic temperature gradient. Any change of the hydration shell of biomolecules due to changes in their structure/conformation results in a relative change of movement along the temperature gradient and is used to determine binding affinities, binding kinetics and activity kinetics. Events such as the phosphorylation of a protein or the binding of small molecules to a target can be monitored." [PMID:17164337]
 subset: PSI-MI_slim
 synonym: "mst" EXACT PSI-MI-short []
 is_a: MI:0013 ! biophysical
@@ -10577,7 +10577,7 @@ creation_date: 2013-06-05T20:05:15Z
 [Term]
 id: MI:1273
 name: maximal epistasis
-def: "An effect in which individual perturbations of two different genes result in the same mutant phenotype to varying degrees of severity/penetrance and the resulting phenotype of their combination is equal in severity/penetrance to the most severe/penetrant of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab = a* < b < wt\nOR\nwt < b < a* = ab\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [:<new dbxref>, PMID:15833125]
+def: "An effect in which individual perturbations of two different genes result in the same mutant phenotype to varying degrees of severity/penetrance and the resulting phenotype of their combination is equal in severity/penetrance to the most severe/penetrant of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab = a* < b < wt\nOR\nwt < b < a* = ab\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
 is_a: MI:1272 ! positive epistasis
 is_a: MI:1284 ! quantitative epistasis
@@ -10635,7 +10635,7 @@ creation_date: 2013-06-05T20:31:30Z
 [Term]
 id: MI:1279
 name: unilateral enhancement
-def: "An effect in which the phenotype of one genetic perturbation is enhanced by a second perturbation (which, on its own, has no effect on the phenotype in question) to a severity/penetrance beyond (further from wild type) that of the original phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab < a < b = wt [E = a]\nOR\nwt = b < a < ab [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125, XX:<new dbxref>]
+def: "An effect in which the phenotype of one genetic perturbation is enhanced by a second perturbation (which, on its own, has no effect on the phenotype in question) to a severity/penetrance beyond (further from wild type) that of the original phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab < a < b = wt [E = a]\nOR\nwt = b < a < ab [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
 is_a: MI:1271 ! enhancement
 created_by: orchard
@@ -10644,7 +10644,7 @@ creation_date: 2013-06-05T20:33:13Z
 [Term]
 id: MI:1280
 name: mutual suppression
-def: "An effect in which individual perturbations of different genes result in the same mutant phenotype (but, perhaps, to varying degrees of severity/penetrance) and the resulting phenotype of their combination is less severe/penetrant than expected from the original phenotypes. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a* <= b < wt) AND (a* < ab <= wt) [E = a*]\nOR\n(wt < b <= a*) AND (wt <= ab < a*) [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125, XX:<new dbxref>]
+def: "An effect in which individual perturbations of different genes result in the same mutant phenotype (but, perhaps, to varying degrees of severity/penetrance) and the resulting phenotype of their combination is less severe/penetrant than expected from the original phenotypes. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a* <= b < wt) AND (a* < ab <= wt) [E = a*]\nOR\n(wt < b <= a*) AND (wt <= ab < a*) [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
 is_a: MI:0796 ! suppression
 created_by: orchard
@@ -11232,7 +11232,7 @@ creation_date: 2014-04-08T16:15:19Z
 [Term]
 id: MI:1341
 name: set member
-def: "Indicates that this protein is a member of a set of proteins with similar sequence and/or function." [PMID:14755292, XX:<new dbxref>]
+def: "Indicates that this protein is a member of a set of proteins with similar sequence and/or function." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0353 ! cross-reference type
 created_by: orchard
@@ -11365,7 +11365,7 @@ creation_date: 2015-01-28T10:23:06Z
 [Term]
 id: MI:1354
 name: lipase assay
-def: "Cleavage (hydrolysis) of a lipid molecule." [PMID:14760721, XX:<new dbxref>]
+def: "Cleavage (hydrolysis) of a lipid molecule." [PMID:14760721]
 subset: PSI-MI_slim
 is_a: MI:0990 ! cleavage assay
 created_by: orchard
@@ -12701,7 +12701,7 @@ creation_date: 2015-08-11T17:22:38Z
 [Term]
 id: MI:2204
 name: micro rna
-def: "A micro RNA (abbreviated miRNA) is a small non-coding RNA molecule (containing about 22 nucleotides) found in plants, animals, and some viruses, which functions in RNA silencing and post-transcriptional regulation of gene expression." [PMID:14744438, XX:<new dbxref>]
+def: "A micro RNA (abbreviated miRNA) is a small non-coding RNA molecule (containing about 22 nucleotides) found in plants, animals, and some viruses, which functions in RNA silencing and post-transcriptional regulation of gene expression." [PMID:14744438]
 subset: PSI-MI_slim
 synonym: "micro RNA" EXACT PSI-MI-alternate []
 synonym: "micro-RNA" EXACT PSI-MI-alternate []
