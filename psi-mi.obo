@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 23:04:2019 10:40
+date: 23:04:2019 13:58
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -14035,11 +14035,23 @@ creation_date: 2019-04-11T14:16:59Z
 id: MI:2328
 name: snap tag
 def: "The SNAP-tag protein is an engineered version of the ubiquitous mammalian enzyme AGT, encoded in humans by the O-6-methylguanine-DNA methyltransferase (MGMT) gene. The tag is a 182 residues polypeptide with self-labeling activity that accepts O6-benzylguanine derivatives." [PMID:12725859]
+subset: PSI-MI_slim
 synonym: "snap tag" EXACT PSI-MI-short []
 synonym: "SNAP tag" EXACT PSI-MI-alternate []
 is_a: MI:0507 ! tag
 created_by: pporras
 creation_date: 2019-04-23T10:19:29Z
+
+[Term]
+id: MI:2329
+name: hydrophobic interaction chromatography
+def: "Hydrophobic interaction chromatography (HIC) separates proteins according to differences in their surface hydrophobicity by utilizing a reversible interaction between these proteins and the hydrophobic surface of a HIC matrix." [PMID:27730562]
+subset: PSI-MI_slim
+synonym: "hic" EXACT PSI-MI-short []
+synonym: "HIC" EXACT PSI-MI-alternate []
+is_a: MI:0091 ! chromatography technology
+created_by: pporras
+creation_date: 2019-04-23T13:40:51Z
 
 [Typedef]
 id: contains
