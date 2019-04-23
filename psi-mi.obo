@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:04:2019 14:18
+date: 23:04:2019 10:40
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -14030,6 +14030,16 @@ synonym: "nluc-c" EXACT PSI-MI-short []
 is_a: MI:2325 ! nanoluc luciferase protein tag
 created_by: pporras
 creation_date: 2019-04-11T14:16:59Z
+
+[Term]
+id: MI:2328
+name: snap tag
+def: "The SNAP-tag protein is an engineered version of the ubiquitous mammalian enzyme AGT, encoded in humans by the O-6-methylguanine-DNA methyltransferase (MGMT) gene. The tag is a 182 residues polypeptide with self-labeling activity that accepts O6-benzylguanine derivatives." [PMID:12725859]
+synonym: "snap tag" EXACT PSI-MI-short []
+synonym: "SNAP tag" EXACT PSI-MI-alternate []
+is_a: MI:0507 ! tag
+created_by: pporras
+creation_date: 2019-04-23T10:19:29Z
 
 [Typedef]
 id: contains
