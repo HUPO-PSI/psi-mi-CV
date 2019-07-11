@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 23:04:2019 13:58
+date: 11:07:2019 16:39
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -137,7 +137,7 @@ is_a: MI:0090 ! protein complementation assay
 [Term]
 id: MI:0012
 name: bioluminescence resonance energy transfer
-def: "In this variation of the FRET assay the donor fluorophore is replaced by a luciferase (typically Renilla luciferase). In the presence of its substrate, the luciferase catalyses a bioluminescent reaction that excites the acceptor fluorophore through a resonance energy transfer mechanism. As with FRET the energy transfer occurs only if the protein fused to the luciferase and the one fused to the acceptor fluorophore are in close proximity (10-100 Angstrom)." [PMID:9874787, PMID:10725388]
+def: "In this variation of the FRET assay the donor fluorophore is replaced by a luciferase (typically Renilla luciferase). In the presence of its substrate, the luciferase catalyses a bioluminescent reaction that excites the acceptor fluorophore through a resonance energy transfer mechanism. As with FRET the energy transfer occurs only if the protein fused to the luciferase and the one fused to the acceptor fluorophore are in close proximity (10-100 Angstrom)." [PMID:10725388, PMID:9874787]
 subset: PSI-MI_slim
 synonym: "BRET" EXACT PSI-MI-alternate []
 synonym: "bret" EXACT PSI-MI-short []
@@ -332,7 +332,7 @@ is_a: MI:0400 ! affinity technology
 [Term]
 id: MI:0035
 name: docking
-def: "Predicts the structure of a molecular complex from the unbound structures of its components. The initial approach in the majority of docking procedures is based largely on the 'rigid-body' assumption, whereby the proteins are treated as solid objects. Initial scoring of a complex is based on geometric fit or surface complementarity. This generally requires some knowledge of the binding site to limit the number of solutions." [PMID:9631301, PMID:11478868]
+def: "Predicts the structure of a molecular complex from the unbound structures of its components. The initial approach in the majority of docking procedures is based largely on the 'rigid-body' assumption, whereby the proteins are treated as solid objects. Initial scoring of a complex is based on geometric fit or surface complementarity. This generally requires some knowledge of the binding site to limit the number of solutions." [PMID:11478868, PMID:9631301]
 subset: PSI-MI_slim
 is_a: MI:0105 ! structure based prediction
 is_a: MI:0577 ! feature prediction from structure
@@ -611,7 +611,7 @@ is_a: MI:0659 ! experimental feature detection
 [Term]
 id: MI:0069
 name: mass spectrometry studies of complexes
-def: "Mass spectrometric approaches to the study of macromolecular complexes permits the identification of subunit stoichiometry and transient associations. By preserving complexes intact in the mass spectrometer, mass measurement can be used for monitoring changes in different experimental conditions, or to investigate how variations of collision energy affect their dissociation." [PMID:12504676, PMID:12057199]
+def: "Mass spectrometric approaches to the study of macromolecular complexes permits the identification of subunit stoichiometry and transient associations. By preserving complexes intact in the mass spectrometer, mass measurement can be used for monitoring changes in different experimental conditions, or to investigate how variations of collision energy affect their dissociation." [PMID:12057199, PMID:12504676]
 subset: PSI-MI_slim
 synonym: "ms of complexes" EXACT PSI-MI-short []
 is_a: MI:0943 ! detection by mass spectrometry
@@ -675,7 +675,7 @@ is_a: MI:0577 ! feature prediction from structure
 [Term]
 id: MI:0077
 name: nuclear magnetic resonance
-def: "Nuclear magnetic resonance (NMR) is an effect whereby magnetic nuclei in a magnetic field absorb and re-emit electromagnetic (EM) energy. Certain atomic nuclei, and in particular hydrogen, have a magnetic moment or spin; i.e., they have an intrinsic magnetisation, like a bar magnet. The spin aligns along the strong magnetic field, but can be changed to a misaligned excited state in response to applied radio frequency (RF) pulses of electromagnetic radiation. When the excited hydrogen nuclei relax to their aligned state, they emit RF radiation, which can be measured and displayed as a spectrum. The nature of the emitted radiation depends on the environment of each hydrogen nucleus, and if one nucleus is excited, it will influence the absorption and emission of radiation by other nuclei that lie close to it. It is consequently possible, by an ingenious elaboration of the basic NMR technique known as two-dimensional NMR, to distinguish the signals from hydrogen nuclei in different amino acid residues and to identify and measure the small shifts in these signals that occur when these hydrogen nuclei lie close enough to interact: the size of such a shift reveals the distance between the interacting pair of hydrogen atoms. In this way NMR can give information about the distances between the parts of the interacting molecule. NMR provides information about interacting atoms thereby permitting to obtain information about macromolecular structure and molecular interactions." [PMID:12120505, PMID:12062432]
+def: "Nuclear magnetic resonance (NMR) is an effect whereby magnetic nuclei in a magnetic field absorb and re-emit electromagnetic (EM) energy. Certain atomic nuclei, and in particular hydrogen, have a magnetic moment or spin; i.e., they have an intrinsic magnetisation, like a bar magnet. The spin aligns along the strong magnetic field, but can be changed to a misaligned excited state in response to applied radio frequency (RF) pulses of electromagnetic radiation. When the excited hydrogen nuclei relax to their aligned state, they emit RF radiation, which can be measured and displayed as a spectrum. The nature of the emitted radiation depends on the environment of each hydrogen nucleus, and if one nucleus is excited, it will influence the absorption and emission of radiation by other nuclei that lie close to it. It is consequently possible, by an ingenious elaboration of the basic NMR technique known as two-dimensional NMR, to distinguish the signals from hydrogen nuclei in different amino acid residues and to identify and measure the small shifts in these signals that occur when these hydrogen nuclei lie close enough to interact: the size of such a shift reveals the distance between the interacting pair of hydrogen atoms. In this way NMR can give information about the distances between the parts of the interacting molecule. NMR provides information about interacting atoms thereby permitting to obtain information about macromolecular structure and molecular interactions." [PMID:12062432, PMID:12120505]
 subset: PSI-MI_slim
 synonym: "NMR" EXACT PSI-MI-alternate []
 synonym: "nmr" EXACT PSI-MI-short []
@@ -3194,7 +3194,7 @@ is_a: MI:0661 ! experimental participant identification
 [Term]
 id: MI:0397
 name: two hybrid array
-def: "Two-hybrid screening can be done in a colony array format, in which each colony expresses a defined pair of proteins. Because the particular protein pair expressed in each colony is defined by its position in the array, positive signals identify interacting proteins without further characterization, thus obviating the need for DNA purification and sequencing. The interrogation of a two-hybrid colony array usually involves a mating strategy in which every DNA binding domain hybrid (the bait) is tested against all activation domain hybrids (the preys) in a grid pattern. Arrays usually use full-length open reading frames." [PMID:11827624, PMID:10688190]
+def: "Two-hybrid screening can be done in a colony array format, in which each colony expresses a defined pair of proteins. Because the particular protein pair expressed in each colony is defined by its position in the array, positive signals identify interacting proteins without further characterization, thus obviating the need for DNA purification and sequencing. The interrogation of a two-hybrid colony array usually involves a mating strategy in which every DNA binding domain hybrid (the bait) is tested against all activation domain hybrids (the preys) in a grid pattern. Arrays usually use full-length open reading frames." [PMID:10688190, PMID:11827624]
 subset: PSI-MI_slim
 is_a: MI:0018 ! two hybrid
 
@@ -4153,7 +4153,7 @@ is_a: MI:0803 ! expression level alteration
 [Term]
 id: MI:0507
 name: tag
-def: "Small molecules, peptides or full proteins that can be used as label as they confer some property that facilitates identification purification and monitoring to the labelled molecule." [PMID:14755292]
+def: "Small molecules, peptides or full proteins that can be used as label as they confer some property that facilitates identification purification and monitoring to the labeled molecule." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0505 ! experimental feature
 
@@ -4779,7 +4779,7 @@ id: MI:0583
 name: fluorescence donor
 def: "Fluorophore which emits electromagnetic radiation of given wavelength." [PMID:14755292]
 subset: PSI-MI_slim
-is_a: MI:0495 ! experimental role
+is_a: MI:2334 ! luminescence donor
 
 [Term]
 id: MI:0584
@@ -4787,7 +4787,7 @@ name: fluorescence acceptor
 def: "Fluorophore able to absorb the electromagnetic radiation at given wavelength from a specific donor fluorophore, the re-emission of its own characteristic fluorescence." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "fluorescence accept" EXACT PSI-MI-short []
-is_a: MI:0495 ! experimental role
+is_a: MI:2335 ! luminescence acceptor
 
 [Term]
 id: MI:0585
@@ -6751,10 +6751,10 @@ is_a: MI:0473 ! participant database
 [Term]
 id: MI:0865
 name: fluorescence acceptor donor pair
-def: "Pair of fluorophores attached to the same molecule used in a fret  experiment to observe the details of conformational  changes ." [PMID:14755292]
+def: "Pair of fluorophores attached to the same molecule used in a fret  experiment to observe the details of conformational  changes." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "fret pair" EXACT PSI-MI-short []
-is_a: MI:0495 ! experimental role
+is_a: MI:2336 ! luminescence acceptor donor pair
 
 [Term]
 id: MI:0866
@@ -7142,14 +7142,14 @@ is_a: MI:0973 ! imex source
 [Term]
 id: MI:0918
 name: donor
-def: "Molecule which emits electrons or ions that are transfered to an acceptor molecule." [PMID:14755292]
+def: "Molecule which emits active chemical groups, electrons or ions that are transfered to an acceptor molecule." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0500 ! biological role
 
 [Term]
 id: MI:0919
 name: acceptor
-def: "Molecule able to receive electrons or ions from a donor molecule." [PMID:14755292]
+def: "Molecule able to receive active chemical groups, electrons or ions from a donor molecule." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0500 ! biological role
 
@@ -7337,7 +7337,7 @@ is_a: MI:0939 ! fluorescein label
 [Term]
 id: MI:0941
 name: competitor
-def: "Binds to the bait molecule in competition with other prey molecules, for example at a shared binding site." [PMID:14755292]
+def: "Binds to an interacting molecule in competition with other interaction candidates, for example at a shared binding site." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "competitor" EXACT PSI-MI-short []
 is_a: MI:0500 ! biological role
@@ -14052,6 +14052,83 @@ synonym: "HIC" EXACT PSI-MI-alternate []
 is_a: MI:0091 ! chromatography technology
 created_by: pporras
 creation_date: 2019-04-23T13:40:51Z
+
+[Term]
+id: MI:2330
+name: sumo tag
+def: "Covalent attachment of the small ubiquitin-like modifier (SUMO) protein as a fusion protein." [PMID:19107426]
+subset: PSI-MI_slim
+synonym: "sumo tag" EXACT PSI-MI-short []
+synonym: "SUMO tag" EXACT PSI-MI-alternate []
+is_a: MI:0240 ! fusion protein
+created_by: pporras
+creation_date: 2019-07-11T15:50:31Z
+
+[Term]
+id: MI:2331
+name: phage library
+def: "A bacteriophage library of genes encoding proteins or peptides fused to a phage coat protein that are expressed on the surface of the phage virion." [PMID:9661810]
+subset: PSI-MI_slim
+is_a: MI:0342 ! sample process
+created_by: pporras
+creation_date: 2019-07-11T15:54:51Z
+
+[Term]
+id: MI:2332
+name: g1 spin label
+def: "Paramagnetic molecule formed by a gadolinium complex based on 4-mercaptomethyl-dipicolinic acid (4MMDPA) attached to a cysteine side chain." [PMID:25438671]
+synonym: "g1 spin label" EXACT PSI-MI-short []
+synonym: "g1-spin label" EXACT PSI-MI-alternate []
+synonym: "Gd3+-4MMDPA tag" EXACT PSI-MI-alternate []
+is_a: MI:0845 ! spin label
+created_by: pporras
+creation_date: 2019-07-11T16:04:14Z
+
+[Term]
+id: MI:2333
+name: mutation with complex effect
+def: "A change in a sequence or structure in comparison to a reference entity due to a  insertion, deletion or substitution event that has a complex effect over the interaction when compared with the wild-type. A complex effect is such that cannot be described in increasing, decreasing, causing, disrupting or no effect terms." []
+subset: PSI-MI_slim
+is_a: MI:0118 ! mutation
+created_by: pporras
+creation_date: 2019-07-11T16:17:45Z
+
+[Term]
+id: MI:2334
+name: luminescence donor
+def: "Fluorophore or luminiscence source which emits electromagnetic radiation of given wavelength." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:0495 ! experimental role
+created_by: pporras
+creation_date: 2019-07-11T16:26:29Z
+
+[Term]
+id: MI:2335
+name: luminescence acceptor
+def: "Fluorophore able to absorb the electromagnetic radiation at given wavelength from a specific luminescence donor, the re-emission of its own characteristic fluorescence. The luminescence donor may or may not be a fluorphore it self." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "luminescence accept" EXACT PSI-MI-short []
+is_a: MI:0495 ! experimental role
+created_by: pporras
+creation_date: 2019-07-11T16:26:47Z
+
+[Term]
+id: MI:2336
+name: luminescence acceptor donor pair
+def: "Pair of luminescence donor-fluorophore or fluorophores attached to the same molecule used in a bret or fret  experiment to observe the details of conformational  changes." [PMID:14755292]
+synonym: "luminescence acceptor-donor pair" EXACT PSI-MI-alternate []
+is_a: MI:0495 ! experimental role
+created_by: pporras
+creation_date: 2019-07-11T16:27:09Z
+
+[Term]
+id: MI:2337
+name: chemiluminiscence donor
+def: "Luminiscence source which emits electromagnetic radiation of given wavelength through a chemical process." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:2334 ! luminescence donor
+created_by: pporras
+creation_date: 2019-07-11T16:37:54Z
 
 [Typedef]
 id: contains
