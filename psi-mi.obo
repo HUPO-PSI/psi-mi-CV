@@ -11309,7 +11309,7 @@ name: chembl target
 def: "ChEMBL focuses on mapping the interactions of small molecules binding to their macromolecular targets." []
 subset: PSI-MI_slim
 xref: regexp: "CHEMBL:[0-9]+"
-xref: search-url:<new xref> "http://www.ebi.ac.uk/chembldb/index.php/target/inspect/${ac}"
+xref: search-url: "http://www.ebi.ac.uk/chembldb/index.php/target/inspect/${ac}"
 is_a: MI:0683 ! sequence database
 relationship: part_of MI:1349 ! chembl
 created_by: orchard
