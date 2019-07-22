@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:07:2019 16:39
+date: 22:07:2019 13:52
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -2232,7 +2232,7 @@ is_a: MI:0683 ! sequence database
 [Term]
 id: MI:0250
 name: gene
-def: "interactor for genetic interaction." [PMID:14755292, SO:0000704]
+def: "A genomic region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions." [PMID:14755292, SO:0000704]
 subset: PSI-MI_slim
 is_a: MI:0313 ! interactor type
 
@@ -3291,11 +3291,12 @@ is_obsolete: true
 
 [Term]
 id: MI:0410
-name: electron tomography
-def: "Electron tomography is a general method for three-dimensional (3D) reconstruction of single, transparent objects from a series of projection images (i.e. from a tilt series) recorded with a transmission electron microscope. It offers the opportunity to obtain 3D information on structural cellular arrangements with a high resolution." [PMID:12160704]
+name: 3D electron microscopy
+def: "Three-dimensional (3D) reconstruction of single, transparent objects from a collection of projection images recorded with a transmission electron microscope. It offers the opportunity to obtain 3D information on structural cellular arrangements with a high resolution." [PMID:12160704]
 subset: PSI-MI_slim
+synonym: "3D-EM" EXACT PSI-MI-short []
 synonym: "electron tomog" EXACT PSI-MI-short []
-is_a: MI:0040 ! electron microscopy
+is_a: MI:0020 ! transmission electron microscopy
 
 [Term]
 id: MI:0411
@@ -4784,7 +4785,7 @@ is_a: MI:2334 ! luminescence donor
 [Term]
 id: MI:0584
 name: fluorescence acceptor
-def: "Fluorophore able to absorb the electromagnetic radiation at given wavelength from a specific donor fluorophore, the re-emission of its own characteristic fluorescence." [PMID:14755292]
+def: "Fluorophore able to absorb the electromagnetic radiation at given wavelength from a specific donor fluorophore, then re-emiting its own characteristic fluorescence." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "fluorescence accept" EXACT PSI-MI-short []
 is_a: MI:2335 ! luminescence acceptor
@@ -8851,7 +8852,7 @@ creation_date: 2011-07-06T08:14:40Z
 [Term]
 id: MI:1098
 name: uniprot/swiss-prot
-def: "UniProt (Universal Protein Resource) is the world's most comprehensive catalogue of information on proteins. It is a central repository of protein sequence and function created by joining the information contained in Swiss-Prot, TrEMBL, and PIR.\nhttp://www.uniprot.org. UniProtKB/Swiss-Prot is manually curated which means that the information in each entry is annotated and reviewed by a curator" [PMID:14681372, PMID:21447597]
+def: "UniProt (Universal Protein Resource) is the world's most comprehensive catalogue of information on proteins. It is a central repository of protein sequence and function created by joining the information contained in Swiss-Prot, TrEMBL, and PIR. UniProtKB/Swiss-Prot is manually curated which means that the information in each entry is annotated and reviewed by a curator. \nhttp://www.uniprot.org" [PMID:14681372, PMID:21447597]
 subset: PSI-MI_slim
 synonym: "swiss-prot" EXACT PSI-MI-short []
 synonym: "UniProt" EXACT PSI-MI-alternate []
@@ -8864,7 +8865,7 @@ creation_date: 2011-07-06T08:17:34Z
 [Term]
 id: MI:1099
 name: uniprot/trembl
-def: "UniProt (Universal Protein Resource) is the world's most comprehensive catalogue of information on proteins. It is a central repository of protein sequence and function created by joining the information contained in Swiss-Prot, TrEMBL, and PIR.\nhttp://www.uniprot.org. The records in UniProtKB/TrEMBL are automatically generated and are enriched with automatic annotation and classification." [PMID:14681372, PMID:21447597]
+def: "UniProt (Universal Protein Resource) is the world's most comprehensive catalogue of information on proteins. It is a central repository of protein sequence and function created by joining the information contained in Swiss-Prot, TrEMBL, and PIR. The records in UniProtKB/TrEMBL are automatically generated and are enriched with automatic annotation and classification.\nhttp://www.uniprot.org" [PMID:14681372, PMID:21447597]
 subset: PSI-MI_slim
 synonym: "trembl" EXACT PSI-MI-short []
 synonym: "UniProt" EXACT PSI-MI-alternate []
@@ -14105,7 +14106,7 @@ creation_date: 2019-07-11T16:26:29Z
 [Term]
 id: MI:2335
 name: luminescence acceptor
-def: "Fluorophore able to absorb the electromagnetic radiation at given wavelength from a specific luminescence donor, the re-emission of its own characteristic fluorescence. The luminescence donor may or may not be a fluorphore it self." [PMID:14755292]
+def: "Fluorophore able to absorb the electromagnetic radiation at given wavelength from a specific luminescence donor, then re-emit its own characteristic fluorescence. The luminescence donor may or may not be a fluorophore it self." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "luminescence accept" EXACT PSI-MI-short []
 is_a: MI:0495 ! experimental role
@@ -14129,6 +14130,45 @@ subset: PSI-MI_slim
 is_a: MI:2334 ! luminescence donor
 created_by: pporras
 creation_date: 2019-07-11T16:37:54Z
+
+[Term]
+id: MI:2338
+name: electron tomography
+def: "Three-dimensional (3D) reconstruction of single, transparent objects from a series of projection images from a tilt series recorded with a transmission electron microscope." [PMID:12160704]
+subset: PSI-MI_slim
+synonym: "3D-EM-tomo" EXACT PSI-MI-short []
+is_a: MI:0410 ! 3D electron microscopy
+created_by: pporras
+creation_date: 2019-07-17T13:23:36Z
+
+[Term]
+id: MI:2339
+name: electron microscopy 3D single particle reconstruction
+def: "Three-dimensional (3D) reconstruction of single, transparent objects from a collection of images of randomly oriented particles recorded with a transmission electron microscope." [PMID:12160704]
+subset: PSI-MI_slim
+synonym: "3D-EM-single" EXACT PSI-MI-short []
+is_a: MI:0410 ! 3D electron microscopy
+created_by: pporras
+creation_date: 2019-07-22T13:39:03Z
+
+[Term]
+id: MI:2340
+name: electron microscopy 3D helical reconstruction
+def: "Three-dimensional (3D) reconstruction of helical objects from a collection of fiber images recorded with a transmission electron microscope." [PMID:12160704]
+subset: PSI-MI_slim
+synonym: "3D-EM-helical" EXACT PSI-MI-short []
+is_a: MI:0410 ! 3D electron microscopy
+created_by: pporras
+creation_date: 2019-07-22T13:40:56Z
+
+[Term]
+id: MI:2341
+name: luminescence transmitter
+def: "Fluorophore able to absorb the electromagnetic radiation at given wavelength from a specific luminescence donor and then act as a donor via re-emission of its own characteristic fluorescence. The luminescence donor may or may not be a fluorophore itself." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:0495 ! experimental role
+created_by: pporras
+creation_date: 2019-07-22T13:51:08Z
 
 [Typedef]
 id: contains
