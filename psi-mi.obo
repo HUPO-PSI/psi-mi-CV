@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:07:2019 13:52
+date: 30:07:2019 16:21
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -14169,6 +14169,28 @@ subset: PSI-MI_slim
 is_a: MI:0495 ! experimental role
 created_by: pporras
 creation_date: 2019-07-22T13:51:08Z
+
+[Term]
+id: MI:2342
+name: partial identity match
+def: "Reference to the corresponding object in another database. Correspondence  is partial, so the objects are similar but explicitly not identical." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "partial match" EXACT PSI-MI-short []
+synonym: "similar object in an external resource" EXACT PSI-MI-alternate []
+is_a: MI:0353 ! cross-reference type
+created_by: pporras
+creation_date: 2019-07-30T15:05:43Z
+
+[Term]
+id: MI:2343
+name: genomic coordinates
+def: "Coordinates of a reference DNA sequence in the genome, providing information about the chromosome name, start and end of the sequence, optionally including the strand as well if it applies." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "genomic coord" EXACT PSI-MI-short []
+is_a: MI:0666 ! participant attribute name
+is_a: MI:0668 ! feature attribute name
+created_by: pporras
+creation_date: 2019-07-30T16:06:16Z
 
 [Typedef]
 id: contains
