@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:08:2019 08:57
+date: 28:10:2019 17:48
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -30,7 +30,7 @@ remark: The PSI MI schema defines short labels for controlled vocabulary terms
 remark: short labels are reported as PSI-MI-short synonyms that are created when a term is more than 20 characteres long.
 remark: The last accession number used in this file is stored in a separate file,
 remark: psi-mi.lastac. It MUST be updated when this file is updated.
-remark: The maintenance of this file is ensured by Sandra Orchard orchard@ebi.ac.uk and Luisa Montecchi Palazzi luisa@ebi.ac.uk
+remark: The maintenance of this file is ensured by Pablo Porras Millán pporras@ebi.ac.uk and Sandra Orchard orchard@ebi.ac.uk
 remark: coverage: This file collect controlled vocabularies describing different aspects of molecular interactions.
 remark: publisher: This file is published by the PSI MI working group see http://psidev.info/MI
 remark: CVversion: 2.5.5
@@ -6266,7 +6266,7 @@ is_a: MI:0982 ! electrophoretic mobility-based method
 [Term]
 id: MI:0808
 name: comigration in sds page
-def: "Method allowing the detection of strong interactions between two molecules by their very close proximity or the overlap of their relative bands in a denaturing SDS gel." [PMID:14755292, PMID:16732283]
+def: "A method allowing the detection of strong interactions between two or more molecules as running, all of them, within a single band in a denaturing gel." [PMID:14755292, PMID:16732283]
 subset: PSI-MI_slim
 synonym: "comigration in sds" EXACT PSI-MI-short []
 is_a: MI:0807 ! comigration in gel electrophoresis
@@ -7300,7 +7300,7 @@ def: "The Electron Microscopy Data Bank (EMDB) contains experimentally determine
 subset: PSI-MI_slim
 synonym: "Electron Microscopy Data Bank" EXACT PSI-MI-alternate []
 synonym: "eMDB" EXACT PSI-MI-short []
-xref: search-url: "www.ebi.ac.uk/pdbe/entry/emdb/${ac}"
+xref: search-url: "https://www.ebi.ac.uk/pdbe/entry/emdb/${ac}"
 is_a: MI:0472 ! pdbe
 
 [Term]
@@ -12821,7 +12821,7 @@ synonym: "SIGnaling Network Open Resource" EXACT PSI-MI-alternate []
 synonym: "signaling network open resource" EXACT PSI-MI-alternate []
 synonym: "SIGNOR" EXACT PSI-MI-alternate []
 synonym: "signor" EXACT PSI-MI-short []
-xref: search-url: "http://signor.uniroma2.it/relation_result.php?id=${ac}/"
+xref: search-url: "http://signor.uniroma2.it/relation_result.php?id=${ac}"
 is_a: MI:1106 ! pathways database
 created_by: ppm
 creation_date: 2016-03-15T15:31:08Z
@@ -14191,6 +14191,16 @@ is_a: MI:0666 ! participant attribute name
 is_a: MI:0668 ! feature attribute name
 created_by: pporras
 creation_date: 2019-07-30T16:06:16Z
+
+[Term]
+id: MI:2344
+name: rhea
+def: "Rhea is an expert curated resource of biochemical reactions designed for the annotation of enzymes and genome-scale metabolic networks and models. Rhea uses the ChEBI (Chemical Entities of Biological Interest) ontology of small molecules to precisely describe reactions participants and their chemical structures. All reactions are balanced for mass and charge and are linked to source literature, metabolic resources and other functional vocabularies such as the enzyme classification of the NC-IUBMB." [PMID:    27980062]
+synonym: "Rhea" EXACT PSI-MI-alternate []
+xref: search-url: "https://www.rhea-db.org/reaction?id=${ac}"
+is_a: MI:0461 ! interaction database
+created_by: pporras
+creation_date: 2019-10-28T17:31:37Z
 
 [Typedef]
 id: contains
