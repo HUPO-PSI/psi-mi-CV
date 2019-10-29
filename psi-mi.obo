@@ -13138,7 +13138,7 @@ id: MI:2243
 name: down-regulates quantity by repression
 def: "The effect of a modulator entity A on a modulated entity B that  decreases the concentration of the modulated entity B, by preventing its gene expression." [PMID:26467481]
 subset: PSI-MI_slim
-synonym: "Decrease quantity by expression" EXACT PSI-MI-alternate []
+synonym: "Decrease quantity by repression" EXACT PSI-MI-alternate []
 synonym: "down-regulates quantity by repression" EXACT PSI-MI-short []
 is_a: MI:2242 ! down-regulates quantity
 created_by: ppm
@@ -13149,7 +13149,7 @@ id: MI:2244
 name: down-regulates quantity by destabilization
 def: "The effect of a modulator entity A on a modulated entity B that  decreases the concentration of the modulated entity B by promoting its degradation." [PMID:26467481]
 subset: PSI-MI_slim
-synonym: "decrease quantity by stabilization" EXACT PSI-MI-alternate []
+synonym: "decrease quantity by destabilization" EXACT PSI-MI-alternate []
 synonym: "down-regulates quantity by destabilization" EXACT PSI-MI-short []
 is_a: MI:2242 ! down-regulates quantity
 created_by: ppm
