@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:10:2019 17:21
+date: 14:11:2019 17:28
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -3826,7 +3826,8 @@ id: MI:0469
 name: intact
 def: "INTerAction database (IntAct) provides an open source database and toolkit for the storage, presentation and analysis of molecular interactions.\nhttp://www.ebi.ac.uk/intact" [PMID:14681455, PMID:19850723, PMID:22121220]
 subset: PSI-MI_slim
-synonym: "IntAct" EXACT PSI-MI-short []
+synonym: "IntAct" EXACT PSI-MI-alternate []
+synonym: "intact" EXACT PSI-MI-short []
 xref: id-validation-regexp: "EBI-[0-9]+|IA:[0-9]+"
 xref: search-url: "http://www.ebi.ac.uk/intact/query/${ac}"
 is_a: MI:0461 ! interaction database
@@ -7137,6 +7138,7 @@ id: MI:0917
 name: matrixdb
 def: "Knowledgebase of the extracellular matrix storing experimentally determined interactions involving extracellular biomolecules. It includes protein-protein, protein-polysaccharide, and protein-lipid interactions." [PMID:19147664]
 subset: PSI-MI_slim
+synonym: "MatrixDB" EXACT PSI-MI-alternate []
 xref: search-url: "http://matrixdb.univ-lyon1.fr/cgi-bin/current/newPort?type=biomolecule&value=${ac}"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
@@ -7629,6 +7631,7 @@ id: MI:0974
 name: innatedb
 def: "Human and mouse experimentally verified interactions and pathways involved in innate immunity." [PMID:18766178]
 subset: PSI-MI_slim
+synonym: "InnateDB" EXACT PSI-MI-alternate []
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 created_by: orchard
@@ -10045,7 +10048,7 @@ name: chromosome conformation capture assay
 def: "Chromosome conformation capture,[1] or 3C, is a high-throughput molecular biology technique used to analyze the organization of chromosomes in a cell's natural state. The basic 3C technique consists of cross-linking by addition of formaldehyde followed by addition of a restriction enzyme in excess to the cross-linked DNA, separating the non-cross-linked DNA from the cross-linked chromatin. A intramolecular ligation step using very low concentrations of DNA favors the ligation of relevant DNA fragments with the corresponding junctions instead of the ligation of random fragments. There are two major types of ligation junctions that are over-represented. One is the junction that forms between neighboring DNA fragments due to incomplete digestion, which represents about 20-30% of all junctions. This number is decreased by reducing the cross-linking stringency in the first step. The other type of junctions over-represented in this technique is the junction that forms when one end of the fragment ligates with the other end of the same fragment, and contributes up to 30% of all junctions formed. High temperature then results in the reversal of the previously formed cross-links. The resulting linear DNA fragment has specific restriction ends as well as a central restriction site corresponding to the site of ligation. The pool of these fragments is collectively referred to as the 3C library." [PMID:11847345]
 subset: PSI-MI_slim
 synonym: "chip-3c" EXACT PSI-MI-short []
-is_a: MI:0402 ! chromatin immunoprecipitation assay
+is_a: MI:0030 ! cross-linking study
 created_by: orchard
 creation_date: 2012-06-07T07:25:28Z
 
@@ -10084,6 +10087,7 @@ id: MI:1222
 name: mbinfo
 def: "MBInfo is a wiki based, multimedia, educational resource providing up to date reviews on topics relating to mechanobiology (http://www.mechanobio.info/)." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "MBInfo" EXACT PSI-MI-alternate []
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 created_by: orchard
@@ -10472,7 +10476,8 @@ id: MI:1262
 name: iid
 def: "Interologous Interaction Database is an on-line database of known and predicted mammalian and eukaryotic protein-protein interactions." [PMID:19850753]
 subset: PSI-MI_slim
-synonym: "i2d" EXACT PSI-MI-alternate []
+synonym: "I2D" EXACT PSI-MI-alternate []
+synonym: "IID" EXACT PSI-MI-alternate []
 synonym: "Interologous Interaction Database" EXACT PSI-MI-alternate []
 xref: url:http\://iid.ophid.utoronto.ca/iid/
 is_a: MI:0461 ! interaction database
@@ -10486,6 +10491,7 @@ name: molecular connections
 def: "Molecular Connections Private Limited is an in silico discovery Services Company  with expertise in drug-discovery, informatics and information technology. They perform pro bono work for the IMEx Consortium. http://www.molecularconnections.com" [PMID:22453911]
 subset: PSI-MI_slim
 synonym: "MolCon" RELATED []
+synonym: "Molecular Connections" EXACT PSI-MI-alternate []
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 created_by: orchard
@@ -10496,6 +10502,7 @@ id: MI:1264
 name: ntnu
 def: "Norwegian University of Science and Technology. www.ntnu.no/home." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "NTNU" EXACT PSI-MI-alternate []
 is_a: MI:0489 ! source database
 created_by: orchard
 creation_date: 2012-10-22T03:15:27Z
@@ -10613,7 +10620,9 @@ id: MI:1276
 name: opposing epistasis
 def: "An effect in which individual perturbations of two different genes result in opposite mutant phenotypes (traits measured on the same scale but each on opposing sides relative to the wild type phenotype), and the resulting phenotype of their combination is equal to that of only one of the perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a < wt < b) AND (ab = a OR ab = b) \nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
+xref: psi-mi:MI\:1285 "Obsolete, previously existing identical term identifier"
 is_a: MI:1275 ! neutral epistasis
+is_a: MI:1284 ! quantitative epistasis
 created_by: orchard
 creation_date: 2013-06-05T20:25:26Z
 
@@ -10694,7 +10703,7 @@ id: MI:1285
 name: opposing epistasis
 def: "An effect in which individual perturbations of two different genes result in opposite mutant phenotypes (traits measured on the same scale but each on opposing sides relative to the wild type phenotype), and the resulting phenotype of their combination is equal to that of only one of the perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a < wt < b) AND (ab = a OR ab = b) \nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
-is_a: MI:1284 ! quantitative epistasis
+is_obsolete: true
 created_by: orchard
 creation_date: 2013-06-05T20:51:51Z
 
@@ -11144,6 +11153,7 @@ id: MI:1332
 name: bhf-ucl
 def: "The Cardiovascular Gene Annotation Initiative represents a collaboration between University College London and the European Bioinformatics Institute (EBI), funded by the British Heart Foundation.  This annotation group is a member of the IMEx Consortium." [PMID:21419760]
 subset: PSI-MI_slim
+synonym: "BHF-UCL" EXACT PSI-MI-alternate []
 synonym: "Cardiovascular Gene Annotation Initiative" RELATED []
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
@@ -11174,7 +11184,8 @@ id: MI:1335
 name: hpidb
 def: "Host-pathogen database. HPIDB integrates experimental PPIs from several public databases into a single, non-redundant web accessible resource.  Manual curation is performed via the IntAct (ww.ebi.ac.uk/intact) curation interface.\nhttp://www.agbase.msstate.edu/hpi/main.html" [PMID:20946599]
 subset: PSI-MI_slim
-synonym: "Host Pathogen Interaction database" EXACT []
+synonym: "Host Pathogen Interaction database" EXACT PSI-MI-alternate []
+synonym: "HPIDB" EXACT PSI-MI-alternate []
 is_a: MI:0461 ! interaction database
 created_by: orchard
 creation_date: 2014-03-03T11:43:31Z
@@ -14231,7 +14242,7 @@ name: biorxiv
 def: "bioRxiv is a free online archive and distribution service for unpublished preprints in the life sciences, operated by Cold Spring Harbor Laboratory. Articles are not peer-reviewed, edited, or typeset before being posted online.\nhttp://biorxiv.org/" []
 subset: PSI-MI_slim
 synonym: "bioRxiv" EXACT PSI-MI-alternate []
-xref: id-validation-regexp: " \\d+.\\d+/[a-zA-Z0-9\\.\\:]+"
+xref: id-validation-regexp: "\\d+.\\d+/[a-zA-Z0-9\\.\\:]+"
 xref: search-url: "https://www.biorxiv.org/content/${ac}"
 is_a: MI:0445 ! literature database
 created_by: pporras
