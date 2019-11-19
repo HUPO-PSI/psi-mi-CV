@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:11:2019 17:28
+date: 19:11:2019 16:40
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -11144,7 +11144,7 @@ subset: PSI-MI_slim
 synonym: "ECO" RELATED []
 xref: id-validation-regexp: "ECO:\\d{7}$"
 xref: search-url: "http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=${ac}"
-is_a: MI:0461 ! interaction database
+is_a: MI:1336 ! experiment database
 created_by: orchard
 creation_date: 2014-01-08T12:48:33Z
 
@@ -13449,7 +13449,7 @@ synonym: "edam" EXACT PSI-MI-short []
 synonym: "EDAM" EXACT PSI-MI-alternate []
 synonym: "EMBRACE Data And Methods" EXACT PSI-MI-alternate []
 xref: url:http\://edamontology.org/
-is_a: MI:0461 ! interaction database
+is_a: MI:1336 ! experiment database
 created_by: ppm
 creation_date: 2017-01-26T15:09:47Z
 
