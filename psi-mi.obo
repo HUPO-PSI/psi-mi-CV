@@ -1055,8 +1055,8 @@ def: "Residue modification.\nOBSOLETE remap to MOD:00050." [PMID:11125103, RESID
 synonym: "(S)-2-(acetylamino)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "[A:ac]" EXACT PSI-MI-alternate []
 synonym: "AAC" EXACT PSI-MI-alternate []
-synonym: "acetylalanine" EXACT PSI-MI-alternate []
 synonym: "acetylalanine" EXACT PSI-MI-short []
+synonym: "acetylalanine" EXACT PSI-MI-alternate []
 synonym: "N-acetyl-L-alanine" EXACT PSI-MI-alternate []
 is_obsolete: true
 
@@ -1230,8 +1230,8 @@ name: n-acetyl-proline
 def: "Residue modification.\nOBSOLETE remap to MOD:00059." [PMID:11125103, RESID:AA0050]
 synonym: "(2S)-1-acetyl-2-pyrrolidinecarboxylic acid" EXACT PSI-MI-alternate []
 synonym: "[P:ac]" EXACT PSI-MI-alternate []
-synonym: "acetylproline" EXACT PSI-MI-alternate []
 synonym: "acetylproline" EXACT PSI-MI-short []
+synonym: "acetylproline" EXACT PSI-MI-alternate []
 synonym: "N-acetyl-L-proline" EXACT PSI-MI-alternate []
 synonym: "PAC" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -6152,7 +6152,7 @@ subset: PSI-MI_slim
 synonym: "aphenotypic negative genetic interaction" EXACT [] {comment="GIST synonym"}
 synonym: "synthetic genetic interaction (sensu inequality)" EXACT []
 synonym: "synthetic genetic interaction defined by inequality" EXACT []
-is_a: MI:0933 ! negative genetic interaction
+is_a: MI:0933 ! diverging genetic interaction
 is_a: MIPropose:0016 ! aphenotypic phenotype result
 
 [Term]
@@ -7293,15 +7293,11 @@ is_a: MIPropose:0001 ! multigenic phenotype result
 
 [Term]
 id: MI:0933
-name: negative genetic interaction
+name: diverging genetic interaction
 def: "An effect in which two genetic perturbations, when combined, result in a phenotype that is more severe/penetrant than expected given the phenotypes of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab < E <= wt\nOR\nwt <= E < ab\nwhere 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:14755292]
 subset: PSI-MI_slim
-synonym: "aggravating interaction" EXACT [PMID:19712041]
 synonym: "negative gen int" EXACT PSI-MI-short []
-synonym: "synergistic interaction" EXACT [PMID:19712041]
 is_a: MI:0208 ! genetic interaction (sensu unexpected)
-property_value: isDefinedBy "\"Negative genetic interactions describe double mutants whose phenotype is stronger than expected (66, 77) (Figure 1b).\"" xsd:string {xref="PMID:23808365"}
-property_value: isDefinedBy "\"Negative interactions (also called aggravating or synergistic interactions) describe double mutants exhibiting a more severe phenotype than expected, such as synthetic sickness or synthetic lethality (35, 49) (Figure 2a).\"" xsd:string {xref="PMID:19712041"}
 
 [Term]
 id: MI:0934
@@ -10598,7 +10594,7 @@ def: "An effect in which the phenotype of one genetic perturbation is enhanced b
 subset: PSI-MI_slim
 synonym: "aggravating interaction" RELATED []
 synonym: "enhancing negative genetic interaction" EXACT [] {comment="GIST synonym"}
-is_a: MI:0933 ! negative genetic interaction
+is_a: MI:0933 ! diverging genetic interaction
 is_a: MIPropose:0015 ! enhancement
 created_by: orchard
 creation_date: 2013-06-05T19:12:17Z
@@ -14347,12 +14343,14 @@ id: MIPropose:0004
 name: synthetic growth defect (sensu BioGRID)
 def: "\"Mutations/deletions in separate genes, each of which alone causes a minimal phenotype, but when combined in the same cell results in a significant growth defect under a given condition (e.g. PMID: 12871902, Fig. 8).\"" [https://wiki.thebiogrid.org/doku.php/experimental_systems]
 is_a: MI:0794 ! synthetic genetic interaction
+is_a: MIPropose:0029 ! negative genetic interaction
 
 [Term]
 id: MIPropose:0005
 name: synthetic lethality (sensu BioGRID)
 def: "\"Mutations/deletions in separate genes, each of which alone causes a minimal phenotype, but when combined in the same cell results in lethality under a given condition (e.g. PMID: 14690608).\"" [https://wiki.thebiogrid.org/doku.php/experimental_systems]
 is_a: MI:0794 ! synthetic genetic interaction
+is_a: MIPropose:0029 ! negative genetic interaction
 
 [Term]
 id: MIPropose:0006
@@ -14371,8 +14369,8 @@ is_a: MIPropose:0005 ! synthetic lethality (sensu BioGRID)
 id: MIPropose:0008
 name: negative genetic interaction (sensu BioGRID)
 def: "\"Mutations/deletions in separate genes, each of which alone causes a minimal phenotype, but when combined in the same cell results in a more severe fitness defect or lethality under a given condition (e.g. PMID: 20093466). This term is reserved for high or low throughput studies with scores.\"" [https://wiki.thebiogrid.org/doku.php/experimental_systems]
-synonym: "negative genetic interaction (sensu fitness)" EXACT []
-is_a: MI:0933 ! negative genetic interaction
+is_a: MI:0794 ! synthetic genetic interaction
+is_a: MIPropose:0029 ! negative genetic interaction
 
 [Term]
 id: MIPropose:0009
@@ -14397,12 +14395,14 @@ id: MIPropose:0012
 name: dosage lethality (sensu BioGRID)
 def: "\"Overexpression/increased dosage of one gene causes lethality in a strain that is mutated/deleted for another gene (e.g. PMID: 10805723, Fig. 3).\"" [https://wiki.thebiogrid.org/doku.php/experimental_systems]
 is_a: MI:0794 ! synthetic genetic interaction
+is_a: MIPropose:0029 ! negative genetic interaction
 
 [Term]
 id: MIPropose:0013
 name: dosage growth defect (sensu BioGRID)
 def: "\"Overexpression/increased dosage of one gene causes a growth defect in a strain that is mutated/deleted for another gene (e.g. PMID: 15166139).\"" [https://wiki.thebiogrid.org/doku.php/experimental_systems]
 is_a: MI:0794 ! synthetic genetic interaction
+is_a: MIPropose:0029 ! negative genetic interaction
 
 [Term]
 id: MIPropose:0014
@@ -14505,6 +14505,17 @@ def: "A transphenotypic suppression in which the double genetic perturbation phe
 synonym: "transphenotypic suppressing neutral genetic interaction" EXACT [] {comment="GIST synonym"}
 is_a: MI:0932 ! neutral multigenic phenotype result
 is_a: MIPropose:0025 ! transphenotypic suppression
+
+[Term]
+id: MIPropose:0029
+name: negative genetic interaction
+def: "An effect in which two genetic perturbations, when combined, result in a fitness that is less than expected given the fitness resulting from the individual perturbations." []
+synonym: "aggravating interaction" BROAD [PMID:19712041]
+synonym: "negative gen int" EXACT PSI-MI-short []
+synonym: "synergistic interaction" BROAD [PMID:19712041]
+is_a: MI:0208 ! genetic interaction (sensu unexpected)
+property_value: isDefinedBy "\"Negative genetic interactions describe double mutants whose phenotype is stronger than expected (66, 77) (Figure 1b).\"" xsd:string {xref="PMID:23808365"}
+property_value: isDefinedBy "\"Negative interactions (also called aggravating or synergistic interactions) describe double mutants exhibiting a more severe phenotype than expected, such as synthetic sickness or synthetic lethality (35, 49) (Figure 2a).\"" xsd:string {xref="PMID:19712041"}
 
 [Typedef]
 id: contains
