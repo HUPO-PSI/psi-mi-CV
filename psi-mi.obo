@@ -1055,8 +1055,8 @@ def: "Residue modification.\nOBSOLETE remap to MOD:00050." [PMID:11125103, RESID
 synonym: "(S)-2-(acetylamino)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "[A:ac]" EXACT PSI-MI-alternate []
 synonym: "AAC" EXACT PSI-MI-alternate []
-synonym: "acetylalanine" EXACT PSI-MI-short []
 synonym: "acetylalanine" EXACT PSI-MI-alternate []
+synonym: "acetylalanine" EXACT PSI-MI-short []
 synonym: "N-acetyl-L-alanine" EXACT PSI-MI-alternate []
 is_obsolete: true
 
@@ -1596,8 +1596,8 @@ synonym: "[D:po]" EXACT PSI-MI-alternate []
 synonym: "beta-aspartyl phosphate" EXACT PSI-MI-alternate []
 synonym: "DPO" EXACT PSI-MI-alternate []
 synonym: "L-aspartic 4-phosphoric anhydride" EXACT PSI-MI-alternate []
-synonym: "phosphoaspartic acid" EXACT PSI-MI-alternate []
 synonym: "phosphoaspartic acid" EXACT PSI-MI-short []
+synonym: "phosphoaspartic acid" EXACT PSI-MI-alternate []
 is_obsolete: true
 
 [Term]
@@ -1910,6 +1910,7 @@ def: "An effect in which two genetic perturbations, when combined, result in a p
 subset: PSI-MI_slim
 synonym: "Fisher epistasis" EXACT [https://doi.org/10.1017/S0080456800012163, PMID:17510664]
 is_a: MIPropose:0001 ! multigenic phenotype result
+disjoint_from: MI:0932 ! neutral multigenic phenotype result
 property_value: isDefinedBy "\"A genetic interaction refers to an unexpected phenotype not easily explained by combining the effects of individual genetic variants (7).\"" xsd:string {xref="PMID:19712041"}
 property_value: isDefinedBy "\"A quantitative genetic interaction definition has two components: a quantitative phenotypic measure and a neutrality function that predicts the phenotype of an organism carrying two noninteracting mutations. Interaction is then defined by deviation of a double-mutant organism's phenotype from the expected neutral phenotype.\"" xsd:string {xref="PMID:18305163"}
 property_value: isDefinedBy "\"More generally, a genetic interaction can be defined as the difference between an experimentally measured double-mutant phenotype and an expected double-mutant phenotype, the latter of which is predicted from the combination of the single-mutant effects, assuming the mutations act independently.\"" xsd:string {xref="PMID:23808365"}
@@ -6149,7 +6150,7 @@ id: MI:0794
 name: synthetic genetic interaction
 def: "An effect in which two genetic perturbations, when combined, result in a mutant phenotype that is not observed (or minimally observed) as a result of any of the individual perturbations.\nwt = a = b = E (not=) ab" [PMID:15833125]
 subset: PSI-MI_slim
-synonym: "aphenotypic negative genetic interaction" EXACT [] {comment="GIST synonym"}
+synonym: "aphenotypic diverging genetic interaction" EXACT [] {comment="GIST synonym"}
 synonym: "synthetic genetic interaction (sensu inequality)" EXACT []
 synonym: "synthetic genetic interaction defined by inequality" EXACT []
 is_a: MI:0933 ! diverging genetic interaction
@@ -6164,7 +6165,7 @@ synonym: "asynthetic" EXACT PSI-MI-short []
 synonym: "asynthetic genetic interaction (sensu inequality)" EXACT PSI-MI-alternate []
 synonym: "coequal genetic interaction" EXACT [PMID:18305163]
 synonym: "isophenotypic masking genetic interaction" EXACT [] {comment="GIST synonym"}
-is_a: MI:0935 ! positive genetic interaction
+is_a: MI:0935 ! converging genetic interaction
 is_a: MIPropose:0021 ! isophenotypic phenotype result
 property_value: isDefinedBy "\"A, B, and the AB combination all have the same effect on the WT background (2 inequalities).\"" xsd:string {xref="PMID:15833125"}
 property_value: isDefinedBy "\"Another subtype of alleviating interaction, 'coequal' interaction, is defined by single- and double-mutant strains that exhibit fitness values that are indistinguishable from one another (19).\"" xsd:string {xref="PMID:18305163"}
@@ -6178,7 +6179,7 @@ subset: PSI-MI_slim
 synonym: "Alleviating interaction" RELATED []
 synonym: "suppression" EXACT PSI-MI-short []
 synonym: "suppressive genetic interaction (sensu inequality)" EXACT PSI-MI-alternate []
-is_a: MI:0935 ! positive genetic interaction
+is_a: MI:0935 ! converging genetic interaction
 
 [Term]
 id: MI:0797
@@ -7295,8 +7296,6 @@ is_a: MIPropose:0001 ! multigenic phenotype result
 id: MI:0933
 name: diverging genetic interaction
 def: "An effect in which two genetic perturbations, when combined, result in a phenotype that is more severe/penetrant than expected given the phenotypes of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab < E <= wt\nOR\nwt <= E < ab\nwhere 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:14755292]
-subset: PSI-MI_slim
-synonym: "negative gen int" EXACT PSI-MI-short []
 is_a: MI:0208 ! genetic interaction (sensu unexpected)
 
 [Term]
@@ -7309,15 +7308,9 @@ is_obsolete: true
 
 [Term]
 id: MI:0935
-name: positive genetic interaction
+name: converging genetic interaction
 def: "An effect in which two genetic perturbations, when combined, result in a phenotype that is less severe/penetrant than would be expected from the original phenotypes, in effect making the organism more \"wild type\" in character with regards to the phenotype in question. With respect to any single quantifiable phenotype, this may be expressed as an inequality as: \nE < ab <= wt\nOR\nwt <= ab < E\nwhere 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:14755292]
-subset: PSI-MI_slim
-synonym: "alleviating interaction" EXACT [PMID:19712041]
-synonym: "epistatic interaction" NARROW [] {NARROW="PMID:19712041", comment="This synonym has conflicts with other definitions of 'epistatic interaction'"}
-synonym: "positive gent int" EXACT PSI-MI-short []
 is_a: MI:0208 ! genetic interaction (sensu unexpected)
-property_value: isDefinedBy "\"Positive genetic interactions define double mutants whose phenotype is less severe than expected based on single-mutant phenotypes (30, 66, 87) (Figure 1c,d).\"" xsd:string {xref="PMID:23808365"}
-property_value: isDefinedBy "\"Positive interactions describe double mutants exhibiting a less severe phenotype than expected from the multiplicative model. Positive interactions have also been referred to as alleviating or epistatic interactions.\"" xsd:string {xref="PMID:19712041"}
 
 [Term]
 id: MI:0936
@@ -10593,7 +10586,7 @@ name: enhancement (sensu unexpected)
 def: "An effect in which the phenotype of one genetic perturbation is enhanced by a second perturbation to a severity/penetrance beyond (further from wild type) that expected by the superimposition or addition of effects of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab < E < wt\nOR\nwt < E < ab\nwhere 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
 synonym: "aggravating interaction" RELATED []
-synonym: "enhancing negative genetic interaction" EXACT [] {comment="GIST synonym"}
+synonym: "enhancing diverging genetic interaction" EXACT [] {comment="GIST synonym"}
 is_a: MI:0933 ! diverging genetic interaction
 is_a: MIPropose:0015 ! enhancement
 created_by: orchard
@@ -10601,11 +10594,11 @@ creation_date: 2013-06-05T19:12:17Z
 
 [Term]
 id: MI:1272
-name: positive epistasis
+name: converging epistasis
 def: "An effect in which individual perturbations of two different genes result in different mutant phenotypes (which are traits measured on the same quantitative scale but each significantly deviating, in the same direction, from wild type), and the resulting phenotype of their combination is equal to that of only one of the perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n((a* < b < wt) OR (wt < b < a*)) AND (ab = a OR ab = b)\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
-is_a: MI:0797 ! epistasis (sensu Bateson)
-is_a: MI:0935 ! positive genetic interaction
+is_a: MI:0935 ! converging genetic interaction
+is_a: MI:1284 ! quantitative epistasis
 is_a: MIPropose:0020 ! cisphenotypic phenotype result
 created_by: orchard
 creation_date: 2013-06-05T20:05:15Z
@@ -10616,8 +10609,7 @@ name: maximal epistasis
 def: "An effect in which individual perturbations of two different genes result in the same mutant phenotype to varying degrees of severity/penetrance and the resulting phenotype of their combination is equal in severity/penetrance to the most severe/penetrant of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab = a* < b < wt\nOR\nwt < b < a* = ab\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
 synonym: "cisphenotypic masking genetic interaction" EXACT [] {comment="GIST synonym"}
-is_a: MI:1272 ! positive epistasis
-is_a: MI:1284 ! quantitative epistasis
+is_a: MI:1272 ! converging epistasis
 created_by: orchard
 creation_date: 2013-06-05T20:11:27Z
 
@@ -10626,11 +10618,10 @@ id: MI:1274
 name: minimal epistasis
 def: "An effect in which individual perturbations of two different genes result in the same mutant phenotype to varying degrees of severity/penetrance and the resulting phenotype of their combination is equal in severity/penetrance to the least severe/penetrant of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na* < ab = b < wt\nOR\nwt < b = ab < a*\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
+synonym: "cisphenotypic semi-suppressing converging genetic interaction" EXACT [] {comment="GIST synonym"}
 synonym: "cisphenotypic semi-suppressing genetic interaction" EXACT [] {comment="GIST synonym"}
-synonym: "cisphenotypic semi-suppressing positive genetic interaction" EXACT [] {comment="GIST synonym"}
-is_a: MI:1272 ! positive epistasis
+is_a: MI:1272 ! converging epistasis
 is_a: MI:1282 ! cisphenotypic mutual suppression (partial)
-is_a: MI:1284 ! quantitative epistasis
 created_by: orchard
 creation_date: 2013-06-05T20:13:14Z
 
@@ -10669,7 +10660,7 @@ id: MI:1278
 name: mutual enhancement (sensu unexpected)
 def: "An effect in which individual perturbations of different genes result in the same mutant phenotype (but, perhaps, to varying degrees of severity/penetrance) and the resulting phenotype of their combination is more severe/penetrant (further from wild type) than expected by the superimposition or addition of effects of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab < a* <= b < wt [E = a*]\nOR\nwt < b <= a* < ab [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
-synonym: "cisphenotypic enhancing negative genetic interaction" EXACT [] {comment="GIST synonym"}
+synonym: "cisphenotypic enhancing diverging genetic interaction" EXACT [] {comment="GIST synonym"}
 is_a: MI:1271 ! enhancement (sensu unexpected)
 is_a: MIPropose:0020 ! cisphenotypic phenotype result
 created_by: orchard
@@ -10680,8 +10671,8 @@ id: MI:1279
 name: unilateral enhancement
 def: "An effect in which the phenotype of one genetic perturbation is enhanced by a second perturbation (which, on its own, has no effect on the phenotype in question) to a severity/penetrance beyond (further from wild type) that of the original phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab < a < b = wt [E = a]\nOR\nwt = b < a < ab [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
+synonym: "monophenotypic enhancing diverging genetic interaction" EXACT [] {comment="GIST synonym"}
 synonym: "monophenotypic enhancing genetic interaction" EXACT [] {comment="GIST synonym"}
-synonym: "monophenotypic enhancing negative genetic interaction" EXACT [] {comment="GIST synonym"}
 is_a: MI:1271 ! enhancement (sensu unexpected)
 is_a: MIPropose:0017 ! monophenotypic phenotype result
 created_by: orchard
@@ -10692,10 +10683,11 @@ id: MI:1280
 name: cisphenotypic mutual suppression
 def: "An effect in which individual perturbations of different genes result in the same mutant phenotype (but, perhaps, to varying degrees of severity/penetrance) and the resulting phenotype of their combination is less severe/penetrant than expected from the original phenotypes. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a* <= b < wt) AND (a* < ab <= wt) [E = a*]\nOR\n(wt < b <= a*) AND (wt <= ab < a*) [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
+synonym: "cisphenotypic suppressing converging genetic interaction" EXACT [] {comment="GIST synonym"}
 synonym: "cisphenotypic suppressing genetic interaction" EXACT [] {comment="GIST synonym"}
-synonym: "cisphenotypic suppressing positive genetic interaction" EXACT [] {comment="GIST synonym"}
 is_a: MI:0796 ! suppression (sensu unexpected)
 is_a: MIPropose:0020 ! cisphenotypic phenotype result
+is_a: MIPropose:0024 ! mutual suppression
 created_by: orchard
 creation_date: 2013-06-05T20:35:53Z
 
@@ -10714,10 +10706,10 @@ id: MI:1282
 name: cisphenotypic mutual suppression (partial)
 def: "An effect in which individual perturbations of different genes result in the same mutant phenotype (but, perhaps, to varying degrees of severity/penetrance) and the resulting phenotype of their combination is less severe/penetrant than expected, but not wild type. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a* <= b < wt) AND (a* < ab < wt) [E = a*]\nOR\n(wt < b <= a*) AND (wt < ab < a*) [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
+synonym: "cisphenotypic sub-suppressing converging genetic interaction" EXACT [] {comment="GIST synonym"}
 synonym: "cisphenotypic sub-suppressing genetic interaction" EXACT [] {comment="GIST synonym"}
-synonym: "cisphenotypic sub-suppressing positive genetic interaction" EXACT [] {comment="GIST synonym"}
 is_a: MI:1280 ! cisphenotypic mutual suppression
-is_a: MIPropose:0024 ! mutual suppression
+is_a: MI:1291 ! suppression (partial)
 created_by: orchard
 creation_date: 2013-06-05T20:39:12Z
 
@@ -10726,8 +10718,8 @@ id: MI:1283
 name: suppression-enhancement
 def: "An effect in which individual perturbations of different genes result in the same mutant phenotype to varying degrees of severity/penetrance and the resulting phenotype of their combination has a phenotype more severe/penetrant than the least severe/penetrant and less severe/penetrant than the most severe/penetrant of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na* < ab < b < wt [E = a*]\nOR\nwt < b < ab < a* [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
+synonym: "cisphenotypic inter-suppressing converging genetic interaction" EXACT [] {comment="GIST synonym"}
 synonym: "cisphenotypic inter-suppressing genetic interaction" EXACT [] {comment="GIST synonym"}
-synonym: "cisphenotypic inter-suppressing positive genetic interaction" EXACT [] {comment="GIST synonym"}
 is_a: MI:1282 ! cisphenotypic mutual suppression (partial)
 created_by: orchard
 creation_date: 2013-06-05T20:43:52Z
@@ -10743,7 +10735,7 @@ creation_date: 2013-06-05T20:47:35Z
 
 [Term]
 id: MI:1286
-name: over-suppression (sensu unexpected)
+name: surpassing genetic interaction
 def: "An effect in which the observed phenotype of a double perturbation is opposite (relative to the wild type phenotype) to that which is expected upon the double perturbation. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab < wt < E\nOR\nE < wt < ab\nwhere 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
 is_a: MI:0208 ! genetic interaction (sensu unexpected)
@@ -10756,7 +10748,7 @@ name: mutual over-suppression
 def: "An effect in which individual perturbations of different genes result in the same mutant phenotype (but, perhaps, to varying degrees of severity/penetrance) and the resulting phenotype of their combination is opposite (relative to wild type) to that expected from the original phenotypes. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na* <= b < wt < ab [E = a*]\nOR\nab < wt < b <= a* [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
 synonym: "cisphenotypic super-suppressing genetic interaction" EXACT [] {comment="GIST synonym"}
-is_a: MI:1286 ! over-suppression (sensu unexpected)
+is_a: MI:1286 ! surpassing genetic interaction
 is_a: MIPropose:0020 ! cisphenotypic phenotype result
 created_by: orchard
 creation_date: 2013-06-05T21:06:09Z
@@ -10767,7 +10759,7 @@ name: over-suppression-enhancement
 def: "An effect in which two individual perturbations result in opposite mutant phenotypes (relative to wild type) and their combination results in a phenotype that is more severe than the phenotype observed with the same directionality. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na < wt < b < ab\nOR\nab < a < wt < b\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
 synonym: "transphenotypic enhancing genetic interaction" EXACT [] {comment="GIST synonym"}
-is_a: MI:0208 ! genetic interaction (sensu unexpected)
+is_a: MI:1286 ! surpassing genetic interaction
 is_a: MIPropose:0022 ! transphenotypic phenotype result
 created_by: orchard
 creation_date: 2013-06-05T21:11:03Z
@@ -10777,7 +10769,8 @@ id: MI:1289
 name: phenotype bias
 def: "An effect when two individual perturbations result in opposite mutant phenotypes (relative to wild type) and their combination results in a phenotype that is intermediate to the individual mutant phenotypes, but greater or less than wild type. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a < wt < b) AND (a < ab < b) AND (ab != wt)\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
-is_a: MI:0208 ! genetic interaction (sensu unexpected)
+is_a: MIPropose:0002 ! genetic interaction (sensu phenotype modification)
+is_a: MIPropose:0022 ! transphenotypic phenotype result
 created_by: orchard
 creation_date: 2013-06-05T21:15:34Z
 
@@ -10806,8 +10799,8 @@ id: MI:1292
 name: unilateral suppression
 def: "An effect in which the perturbation of one gene, which has no effect on the phenotype in question, is combined with the perturbation of another gene, which causes the mutant phenotype in question, and results in the amelioration or lessening of the severity/penetrance of the mutant phenotype, in effect making the organism more \"wild type\" in character with regards to the phenotype in question. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na < ab <= b = wt [E = a]\nOR\nwt = b <= ab < a [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
+synonym: "monophenotypic suppressing converging genetic interaction" EXACT [] {comment="GIST synonym"}
 synonym: "monophenotypic suppressing genetic interaction" EXACT [] {comment="GIST synonym"}
-synonym: "monophenotypic suppressing positive genetic interaction" EXACT [] {comment="GIST synonym"}
 is_a: MI:0796 ! suppression (sensu unexpected)
 is_a: MIPropose:0017 ! monophenotypic phenotype result
 created_by: orchard
@@ -10818,8 +10811,8 @@ id: MI:1293
 name: unilateral suppression (complete)
 def: "An effect in which the perturbation of one gene, which has no effect on the phenotype in question, is combined with the perturbation of another gene, which causes the mutant phenotype in question, and results in the complete suppression (to wild type) of the mutant phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na < ab = b = wt [E = a]\nOR\nwt = b = ab < a [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
+synonym: "monophenotypic all-suppressing converging genetic interaction" EXACT [] {comment="GIST synonym"}
 synonym: "monophenotypic all-suppressing genetic interaction" EXACT [] {comment="GIST synonym"}
-synonym: "monophenotypic all-suppressing positive genetic interaction" EXACT [] {comment="GIST synonym"}
 is_a: MI:1292 ! unilateral suppression
 created_by: orchard
 creation_date: 2013-06-05T21:38:36Z
@@ -10829,8 +10822,8 @@ id: MI:1294
 name: unilateral suppression (partial)
 def: "An effect in which the perturbation of one gene, which has no effect on the phenotype in question, is combined with the perturbation of another gene, which causes the mutant phenotype in question, and results in the amelioration or lessening of the severity/penetrance of the mutant phenotype, in effect making the organism more, but not completely, \"wild type\" in character with regards to the phenotype in question. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na < ab < b = wt [E = a]\nOR\nwt = b < ab < a [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
+synonym: "monophenotypic sub-suppressing converging genetic interaction" EXACT [] {comment="GIST synonym"}
 synonym: "monophenotypic sub-suppressing genetic interaction" EXACT [] {comment="GIST synonym"}
-synonym: "monophenotypic sub-suppressing positive genetic interaction" EXACT [] {comment="GIST synonym"}
 is_a: MI:1292 ! unilateral suppression
 created_by: orchard
 creation_date: 2013-06-05T21:39:32Z
@@ -10841,7 +10834,7 @@ name: unilateral over-suppression
 def: "An effect in which the perturbation of one gene (which has no individual effect on the phenotype in question), when combined with a perturbation of another gene (which causes the phenotype in question), results in a mutant phenotype opposite (relative to wild type) to that of the original phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nE = a < b = wt < ab\nOR\nab < wt = b < a = E\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
 synonym: "monophenotypic super-suppressing genetic interaction" EXACT [] {comment="GIST synonym"}
-is_a: MI:1286 ! over-suppression (sensu unexpected)
+is_a: MI:1286 ! surpassing genetic interaction
 is_a: MIPropose:0017 ! monophenotypic phenotype result
 created_by: orchard
 creation_date: 2013-06-05T21:54:08Z
@@ -14356,8 +14349,7 @@ is_a: MIPropose:0029 ! negative genetic interaction
 id: MIPropose:0006
 name: positive genetic interaction (sensu BioGRID)
 def: "\"Mutations/deletions in separate genes, each of which alone causes a minimal phenotype, but when combined in the same cell results in a less severe fitness defect than expected under a given condition.(e.g. PMID: 20093466). This term is reserved for high or low throughput studies with scores.\"" [https://wiki.thebiogrid.org/doku.php/experimental_systems]
-synonym: "positive genetic interaction (sensu fitness)" EXACT []
-is_a: MI:0935 ! positive genetic interaction
+is_a: MIPropose:0030 ! positive genetic interaction
 
 [Term]
 id: MIPropose:0007
@@ -14382,13 +14374,13 @@ is_a: MIPropose:0014 ! suppression
 id: MIPropose:0010
 name: synthetic rescue (sensu BioGRID)
 def: "\"Mutation/deletion of one gene rescues the lethality or growth defect of a strain mutated/deleted for another gene (e.g. PMID: 14734533, Fig. 1).\"" [https://wiki.thebiogrid.org/doku.php/experimental_systems]
-is_a: MI:0796 ! suppression (sensu unexpected)
+is_a: MIPropose:0030 ! positive genetic interaction
 
 [Term]
 id: MIPropose:0011
 name: dosage rescue (sensu BioGRID)
 def: "\"Overexpression/increased dosage of one gene rescues the lethality or growth defect of a strain mutated/deleted for another gene (e.g. PMID: 12207708, Fig. 3).\"" [https://wiki.thebiogrid.org/doku.php/experimental_systems]
-is_a: MI:0796 ! suppression (sensu unexpected)
+is_a: MIPropose:0030 ! positive genetic interaction
 
 [Term]
 id: MIPropose:0012
@@ -14510,12 +14502,39 @@ is_a: MIPropose:0025 ! transphenotypic suppression
 id: MIPropose:0029
 name: negative genetic interaction
 def: "An effect in which two genetic perturbations, when combined, result in a fitness that is less than expected given the fitness resulting from the individual perturbations." []
+subset: PSI-MI_slim
 synonym: "aggravating interaction" BROAD [PMID:19712041]
 synonym: "negative gen int" EXACT PSI-MI-short []
 synonym: "synergistic interaction" BROAD [PMID:19712041]
-is_a: MI:0208 ! genetic interaction (sensu unexpected)
+is_a: MI:0933 ! diverging genetic interaction
 property_value: isDefinedBy "\"Negative genetic interactions describe double mutants whose phenotype is stronger than expected (66, 77) (Figure 1b).\"" xsd:string {xref="PMID:23808365"}
 property_value: isDefinedBy "\"Negative interactions (also called aggravating or synergistic interactions) describe double mutants exhibiting a more severe phenotype than expected, such as synthetic sickness or synthetic lethality (35, 49) (Figure 2a).\"" xsd:string {xref="PMID:19712041"}
+
+[Term]
+id: MIPropose:0030
+name: positive genetic interaction
+def: "An effect in which two genetic perturbations, when combined, result in a fitness that is greater than expected given the fitness resulting from the individual perturbations." []
+subset: PSI-MI_slim
+synonym: "alleviating interaction" BROAD [PMID:19712041]
+synonym: "positive gent int" EXACT PSI-MI-short []
+is_a: MI:0935 ! converging genetic interaction
+property_value: isDefinedBy "\"Positive genetic interactions define double mutants whose phenotype is less severe than expected based on single-mutant phenotypes (30, 66, 87) (Figure 1c,d).\"" xsd:string {comment="PMID:23808365"}
+property_value: isDefinedBy "\"Positive interactions describe double mutants exhibiting a less severe phenotype than expected from the multiplicative model. Positive interactions have also been referred to as alleviating or epistatic interactions.\"" xsd:string {xref="PMID:19712041"}
+
+[Term]
+id: MIPropose:0031
+name: cisphenotypic mutual suppression (complete)
+def: "An effect in which individual perturbations of different genes result in the same mutant phenotype (but, perhaps, to varying degrees of severity/penetrance) and the resulting phenotype of their combination is equivalent to the wild type phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a* <= b < wt) AND (ab = wt) [E = a*]\nOR\n(wt < b <= a*) AND (ab = wt) [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." []
+synonym: "cisphenotypic all-suppressing converging genetic interaction" EXACT [] {comment="GIST synonym"}
+synonym: "cisphenotypic all-suppressing genetic interaction" EXACT [] {comment="GIST synonym"}
+is_a: MI:1280 ! cisphenotypic mutual suppression
+is_a: MI:1281 ! mutual suppression (complete)
+
+[Term]
+id: MIPropose:0032
+name: cisphenotypic co-suppressing genetic interaction
+def: "An effect in which individual perturbations of different genes result in the same mutant phenotype but to varying degrees of severity/penetrance and the resulting phenotype of their combination is less severe/penetrant than both of the phenotypes resulting from the individual perturabtions. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na* < b < ab < wt [E = a*]\nOR\nwt < ab < b < a* [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." []
+is_a: MI:1282 ! cisphenotypic mutual suppression (partial)
 
 [Typedef]
 id: contains
