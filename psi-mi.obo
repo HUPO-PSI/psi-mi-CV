@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 19:11:2019 16:40
+date: 06:12:2019 14:35
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -3630,11 +3630,11 @@ is_a: MI:0461 ! interaction database
 [Term]
 id: MI:0449
 name: interpro
-def: "InterPro combines a number of databases (referred to as member databases) that use different methodologies and a varying degree of biological information on well-characterised proteins to derive protein signatures that predict family membership and domain composition of naive protein sequences.\nhttp://www.ebi.ac.uk/interpro/" [PMID:1252001]
+def: "InterPro combines a number of databases (referred to as member databases) that use different methodologies and a varying degree of biological information on well-characterised proteins to derive protein signatures that predict family membership and domain composition of naive protein sequences.\nhttps://www.ebi.ac.uk/interpro/" [PMID:1252001]
 subset: PSI-MI_slim
 synonym: "InterPro" EXACT PSI-MI-alternate []
 xref: id-validation-regexp: "IPR[0-9]{6}"
-xref: search-url: "http://www.ebi.ac.uk/interpro/DisplayIproEntry?ac=${ac}"
+xref: search-url: "https://www.ebi.ac.uk/interpro/entry/InterPro/${ac}"
 is_a: MI:0447 ! feature database
 
 [Term]
