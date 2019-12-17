@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 12:12:2019 16:40
+date: 17:12:2019 09:39
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -14271,6 +14271,20 @@ xref: search-url: "https://www.ncbi.nlm.nih.gov/clinvar/variation/${ac}"
 is_a: MI:0447 ! feature database
 created_by: pporras
 creation_date: 2019-10-30T17:16:41Z
+
+[Term]
+id: MI:2350
+name: empiar
+def: "EMPIAR, the Electron Microscopy Public Image Archive, is a public resource for raw, 2D electron microscopy images. The purpose of EMPIAR is to provide easy access to state-of-the-art raw data to facilitate methods development and validation, which will lead to better 3D structures. It complements the Electron Microscopy Data Bank (EMDB), where 3D volumes are stored, and uses the fault-tolerant Aspera platform for data transfers.\n\nhttps://www.ebi.ac.uk/pdbe/emdb/empiar/" [PMID:27067018]
+subset: PSI-MI_slim
+synonym: "Electron Microscopy Public Image Archive" EXACT PSI-MI-alternate []
+synonym: "EMPIAR" EXACT PSI-MI-alternate []
+synonym: "empiar" EXACT PSI-MI-short []
+xref: id-validation-regex: "EMPIAR-[0-9]{5}"
+xref: search-url: "https://dx.doi.org/10.6019/${ac}"
+is_a: MI:0936 ! emdb
+created_by: pporras
+creation_date: 2019-12-17T09:31:30Z
 
 [Typedef]
 id: contains
