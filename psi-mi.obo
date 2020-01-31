@@ -1055,8 +1055,8 @@ def: "Residue modification.\nOBSOLETE remap to MOD:00050." [PMID:11125103, RESID
 synonym: "(S)-2-(acetylamino)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "[A:ac]" EXACT PSI-MI-alternate []
 synonym: "AAC" EXACT PSI-MI-alternate []
-synonym: "acetylalanine" EXACT PSI-MI-alternate []
 synonym: "acetylalanine" EXACT PSI-MI-short []
+synonym: "acetylalanine" EXACT PSI-MI-alternate []
 synonym: "N-acetyl-L-alanine" EXACT PSI-MI-alternate []
 is_obsolete: true
 
@@ -1230,8 +1230,8 @@ name: n-acetyl-proline
 def: "Residue modification.\nOBSOLETE remap to MOD:00059." [PMID:11125103, RESID:AA0050]
 synonym: "(2S)-1-acetyl-2-pyrrolidinecarboxylic acid" EXACT PSI-MI-alternate []
 synonym: "[P:ac]" EXACT PSI-MI-alternate []
-synonym: "acetylproline" EXACT PSI-MI-alternate []
 synonym: "acetylproline" EXACT PSI-MI-short []
+synonym: "acetylproline" EXACT PSI-MI-alternate []
 synonym: "N-acetyl-L-proline" EXACT PSI-MI-alternate []
 synonym: "PAC" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -1596,8 +1596,8 @@ synonym: "[D:po]" EXACT PSI-MI-alternate []
 synonym: "beta-aspartyl phosphate" EXACT PSI-MI-alternate []
 synonym: "DPO" EXACT PSI-MI-alternate []
 synonym: "L-aspartic 4-phosphoric anhydride" EXACT PSI-MI-alternate []
-synonym: "phosphoaspartic acid" EXACT PSI-MI-short []
 synonym: "phosphoaspartic acid" EXACT PSI-MI-alternate []
+synonym: "phosphoaspartic acid" EXACT PSI-MI-short []
 is_obsolete: true
 
 [Term]
@@ -14338,7 +14338,6 @@ is_a: MIPropose:0015 ! genetic enhancement
 id: MIPropose:0004
 name: synthetic growth defect (sensu BioGRID)
 def: "\"Mutations/deletions in separate genes, each of which alone causes a minimal phenotype, but when combined in the same cell results in a significant growth defect under a given condition (e.g. PMID: 12871902, Fig. 8).\"" [https://wiki.thebiogrid.org/doku.php/experimental_systems]
-is_a: MI:0794 ! synthetic genetic interaction
 is_a: MIPropose:0029 ! negative genetic interaction
 
 [Term]
@@ -14364,7 +14363,6 @@ is_a: MIPropose:0005 ! synthetic lethality (sensu BioGRID)
 id: MIPropose:0008
 name: negative genetic interaction (sensu BioGRID)
 def: "\"Mutations/deletions in separate genes, each of which alone causes a minimal phenotype, but when combined in the same cell results in a more severe fitness defect or lethality under a given condition (e.g. PMID: 20093466). This term is reserved for high or low throughput studies with scores.\"" [https://wiki.thebiogrid.org/doku.php/experimental_systems]
-is_a: MI:0794 ! synthetic genetic interaction
 is_a: MIPropose:0029 ! negative genetic interaction
 
 [Term]
@@ -14383,6 +14381,7 @@ is_a: MIPropose:0030 ! positive genetic interaction
 id: MIPropose:0011
 name: dosage rescue (sensu BioGRID)
 def: "\"Overexpression/increased dosage of one gene rescues the lethality or growth defect of a strain mutated/deleted for another gene (e.g. PMID: 12207708, Fig. 3).\"" [https://wiki.thebiogrid.org/doku.php/experimental_systems]
+is_a: MIPropose:0014 ! genetic suppression
 is_a: MIPropose:0030 ! positive genetic interaction
 
 [Term]
@@ -14396,7 +14395,6 @@ is_a: MIPropose:0029 ! negative genetic interaction
 id: MIPropose:0013
 name: dosage growth defect (sensu BioGRID)
 def: "\"Overexpression/increased dosage of one gene causes a growth defect in a strain that is mutated/deleted for another gene (e.g. PMID: 15166139).\"" [https://wiki.thebiogrid.org/doku.php/experimental_systems]
-is_a: MI:0794 ! synthetic genetic interaction
 is_a: MIPropose:0029 ! negative genetic interaction
 
 [Term]
