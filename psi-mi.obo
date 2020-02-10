@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:12:2019 09:39
+date: 10:02:2020 12:02
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -14209,7 +14209,7 @@ creation_date: 2019-07-30T16:06:16Z
 [Term]
 id: MI:2344
 name: rhea
-def: "Rhea is an expert curated resource of biochemical reactions designed for the annotation of enzymes and genome-scale metabolic networks and models. Rhea uses the ChEBI (Chemical Entities of Biological Interest) ontology of small molecules to precisely describe reactions participants and their chemical structures. All reactions are balanced for mass and charge and are linked to source literature, metabolic resources and other functional vocabularies such as the enzyme classification of the NC-IUBMB." [PMID:    27980062]
+def: "Rhea is an expert curated resource of biochemical reactions designed for the annotation of enzymes and genome-scale metabolic networks and models. Rhea uses the ChEBI (Chemical Entities of Biological Interest) ontology of small molecules to precisely describe reactions participants and their chemical structures. All reactions are balanced for mass and charge and are linked to source literature, metabolic resources and other functional vocabularies such as the enzyme classification of the NC-IUBMB." [PMID:27980062]
 synonym: "Rhea" EXACT PSI-MI-alternate []
 xref: search-url: "https://www.rhea-db.org/reaction?id=${ac}"
 is_a: MI:0461 ! interaction database
