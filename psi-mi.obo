@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 10:02:2020 12:02
+date: 12:02:2020 14:29
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -4766,15 +4766,17 @@ is_a: MI:0919 ! acceptor
 [Term]
 id: MI:0581
 name: suppressor gene
-def: "Gene whose mutation suppress the phenotype associated to a suppressed mutation." [PMID:14755292]
+def: "A gene whose genetic perturbation suppresses the phenotype resulting from a different genetic perturbation." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "suppressor" EXACT PSI-MI-short []
 is_a: MI:0495 ! experimental role
 
 [Term]
 id: MI:0582
 name: suppressed gene
-def: "Gene whose mutation phenotype is suppressed by a given suppressor mutation." [PMID:14755292]
+def: "A gene whose genetic perturbation phenotype is suppressed by a different genetic perturbation." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "suppressed" EXACT PSI-MI-short []
 is_a: MI:0495 ! experimental role
 
 [Term]
@@ -14285,6 +14287,46 @@ xref: search-url: "https://dx.doi.org/10.6019/${ac}"
 is_a: MI:0936 ! emdb
 created_by: pporras
 creation_date: 2019-12-17T09:31:30Z
+
+[Term]
+id: MI:2351
+name: enhancer gene
+def: "A gene whose genetic perturbation enhances the phenotype resulting from a different genetic perturbation." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "enhancer" EXACT PSI-MI-short []
+is_a: MI:0495 ! experimental role
+created_by: pporras
+creation_date: 2020-02-12T14:19:39Z
+
+[Term]
+id: MI:2352
+name: enhanced gene
+def: "A gene whose genetic perturbation phenotype is enhanced by a different genetic perturbation." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "enhanced" EXACT PSI-MI-short []
+is_a: MI:0495 ! experimental role
+created_by: pporras
+creation_date: 2020-02-12T14:21:40Z
+
+[Term]
+id: MI:2353
+name: epistatic gene
+def: "A gene whose genetic perturbation masks the phenotype resulting from a different genetic perturbation." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "epistatic" EXACT PSI-MI-short []
+is_a: MI:0495 ! experimental role
+created_by: pporras
+creation_date: 2020-02-12T14:22:57Z
+
+[Term]
+id: MI:2354
+name: hypostatic gene
+def: "A gene whose genetic perturbation phenotype is masked by a different genetic perturbation." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "hypostatic" EXACT PSI-MI-short []
+is_a: MI:0495 ! experimental role
+created_by: pporras
+creation_date: 2020-02-12T14:24:11Z
 
 [Typedef]
 id: contains
