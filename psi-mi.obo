@@ -14548,7 +14548,7 @@ is_a: MIPropose:0016 ! aphenotypic phenotype result
 [Term]
 id: MIPropose:0034
 name: deleterious phenotype modification
-def: "A phenotype modification whereby introduction of a genetic perturbation in an organism results in, or enhances, a phenotype in an organism with another genetic perturbation." []
+def: "A phenotype modification whereby introduction of a genetic perturbation in an organism with another genetic perturbation results in, or enhances, a phenotype in that organism." []
 is_a: MIPropose:0002 ! genetic interaction (sensu phenotype modification)
 
 [Typedef]
