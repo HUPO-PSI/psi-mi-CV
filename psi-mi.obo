@@ -1055,8 +1055,8 @@ def: "Residue modification.\nOBSOLETE remap to MOD:00050." [PMID:11125103, RESID
 synonym: "(S)-2-(acetylamino)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "[A:ac]" EXACT PSI-MI-alternate []
 synonym: "AAC" EXACT PSI-MI-alternate []
-synonym: "acetylalanine" EXACT PSI-MI-short []
 synonym: "acetylalanine" EXACT PSI-MI-alternate []
+synonym: "acetylalanine" EXACT PSI-MI-short []
 synonym: "N-acetyl-L-alanine" EXACT PSI-MI-alternate []
 is_obsolete: true
 
@@ -1230,8 +1230,8 @@ name: n-acetyl-proline
 def: "Residue modification.\nOBSOLETE remap to MOD:00059." [PMID:11125103, RESID:AA0050]
 synonym: "(2S)-1-acetyl-2-pyrrolidinecarboxylic acid" EXACT PSI-MI-alternate []
 synonym: "[P:ac]" EXACT PSI-MI-alternate []
-synonym: "acetylproline" EXACT PSI-MI-alternate []
 synonym: "acetylproline" EXACT PSI-MI-short []
+synonym: "acetylproline" EXACT PSI-MI-alternate []
 synonym: "N-acetyl-L-proline" EXACT PSI-MI-alternate []
 synonym: "PAC" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -1735,8 +1735,8 @@ name: n6-(4-amino-2-hydroxybutyl)-lysine
 def: "Residue modification.\nOBSOLETE remap to MOD:00125." [PMID:11125103, RESID:AA0116]
 synonym: "(S,R)-2-amino-6-(4-amino-2-hydroxybutylamino)hexanoic acid" EXACT PSI-MI-alternate []
 synonym: "[K:hypu]" EXACT PSI-MI-alternate []
-synonym: "hypusine" EXACT PSI-MI-alternate []
 synonym: "hypusine" EXACT PSI-MI-short []
+synonym: "hypusine" EXACT PSI-MI-alternate []
 synonym: "KHY" EXACT PSI-MI-alternate []
 synonym: "N6-(4-amino-2-hydroxybutyl)-L-lysine" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -14338,7 +14338,7 @@ is_a: MIPropose:0015 ! genetic enhancement
 id: MIPropose:0004
 name: synthetic growth defect (sensu BioGRID)
 def: "Mutation of multiple genes in combination that results in a more severe growth defect than from individual mutation." []
-is_a: MIPropose:0034 ! deleterious phenotype modification
+is_a: MIPropose:0034 ! deleterious multigenic phenotype result
 
 [Term]
 id: MIPropose:0005
@@ -14357,13 +14357,13 @@ is_a: MIPropose:0014 ! genetic suppression
 id: MIPropose:0007
 name: synthetic haploinsufficiency (sensu BioGRID)
 def: "Genetic perturbations of multiple genes in combination that results in a more severe growth defect than each individual perturbation, when one mutation is hemizygous." []
-is_a: MIPropose:0034 ! deleterious phenotype modification
+is_a: MIPropose:0034 ! deleterious multigenic phenotype result
 
 [Term]
 id: MIPropose:0008
 name: negative genetic interaction (sensu BioGRID)
 def: "Genetic perturbation of multiple genes in combination that results in a more severe phenotypic defect (or lethality) than from individual viable perturbations. This term is reserved for high throughput studies with scores." []
-is_a: MIPropose:0034 ! deleterious phenotype modification
+is_a: MIPropose:0034 ! deleterious multigenic phenotype result
 
 [Term]
 id: MIPropose:0009
@@ -14396,7 +14396,7 @@ is_a: MIPropose:0029 ! negative genetic interaction
 id: MIPropose:0013
 name: dosage growth defect (sensu BioGRID)
 def: "Increased dosage of one gene causes a growth defect in (or enhances an existing growth defect of) a strain with perturbation of another gene." []
-is_a: MIPropose:0034 ! deleterious phenotype modification
+is_a: MIPropose:0034 ! deleterious multigenic phenotype result
 
 [Term]
 id: MIPropose:0014
@@ -14410,7 +14410,7 @@ id: MIPropose:0015
 name: genetic enhancement
 def: "A genetic phenotype modification whereby one genetic perturbation enhances, or exacerbates, the phenotype of another genetic perturbation. Note that this may be an expected result." []
 synonym: "enhancing genetic interaction" EXACT [] {comment="GIST nomenclature"}
-is_a: MIPropose:0034 ! deleterious phenotype modification
+is_a: MIPropose:0002 ! genetic interaction (sensu phenotype modification)
 
 [Term]
 id: MIPropose:0016
@@ -14547,9 +14547,9 @@ is_a: MIPropose:0016 ! aphenotypic phenotype result
 
 [Term]
 id: MIPropose:0034
-name: deleterious phenotype modification
+name: deleterious multigenic phenotype result
 def: "A phenotype modification whereby introduction of a genetic perturbation in an organism with another genetic perturbation results in, or enhances, a phenotype in that organism." []
-is_a: MIPropose:0002 ! genetic interaction (sensu phenotype modification)
+is_a: MIPropose:0001 ! multigenic phenotype result
 
 [Typedef]
 id: contains
