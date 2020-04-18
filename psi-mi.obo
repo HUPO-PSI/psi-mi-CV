@@ -1735,8 +1735,8 @@ name: n6-(4-amino-2-hydroxybutyl)-lysine
 def: "Residue modification.\nOBSOLETE remap to MOD:00125." [PMID:11125103, RESID:AA0116]
 synonym: "(S,R)-2-amino-6-(4-amino-2-hydroxybutylamino)hexanoic acid" EXACT PSI-MI-alternate []
 synonym: "[K:hypu]" EXACT PSI-MI-alternate []
-synonym: "hypusine" EXACT PSI-MI-short []
 synonym: "hypusine" EXACT PSI-MI-alternate []
+synonym: "hypusine" EXACT PSI-MI-short []
 synonym: "KHY" EXACT PSI-MI-alternate []
 synonym: "N6-(4-amino-2-hydroxybutyl)-L-lysine" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -10669,11 +10669,12 @@ creation_date: 2013-06-05T20:31:30Z
 
 [Term]
 id: MI:1279
-name: unilateral genetic enhancement
+name: monophenotypic genetic enhancement
 def: "An effect in which the phenotype of one genetic perturbation is enhanced by a second perturbation (which, on its own, has no effect on the phenotype in question) to a severity/penetrance beyond (further from wild type) that of the original phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab < a < b = wt [E = a]\nOR\nwt = b < a < ab [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
 synonym: "monophenotypic enhancing diverging genetic interaction" EXACT [] {comment="GIST nomenclature"}
 synonym: "monophenotypic enhancing genetic interaction" EXACT [] {comment="GIST nomenclature"}
+synonym: "unilateral genetic enhancement" EXACT []
 is_a: MI:1271 ! genetic enhancement (sensu unexpected)
 is_a: MIPropose:0017 ! monophenotypic phenotype result
 created_by: orchard
@@ -10797,11 +10798,12 @@ creation_date: 2013-06-05T21:36:07Z
 
 [Term]
 id: MI:1292
-name: unilateral genetic suppression
+name: monophenotypic genetic suppression
 def: "An effect in which the perturbation of one gene, which has no effect on the phenotype in question, is combined with the perturbation of another gene, which causes the mutant phenotype in question, and results in the amelioration or lessening of the severity/penetrance of the mutant phenotype, in effect making the organism more \"wild type\" in character with regards to the phenotype in question. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na < ab <= b = wt [E = a]\nOR\nwt = b <= ab < a [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
 synonym: "monophenotypic suppressing converging genetic interaction" EXACT [] {comment="GIST nomenclature"}
 synonym: "monophenotypic suppressing genetic interaction" EXACT [] {comment="GIST nomenclature"}
+synonym: "unilateral genetic suppression" EXACT []
 is_a: MI:0796 ! genetic suppression (sensu unexpected)
 is_a: MIPropose:0017 ! monophenotypic phenotype result
 created_by: orchard
@@ -10809,33 +10811,36 @@ creation_date: 2013-06-05T21:37:28Z
 
 [Term]
 id: MI:1293
-name: unilateral genetic suppression (complete)
+name: monophenotypic genetic suppression (complete)
 def: "An effect in which the perturbation of one gene, which has no effect on the phenotype in question, is combined with the perturbation of another gene, which causes the mutant phenotype in question, and results in the complete suppression (to wild type) of the mutant phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na < ab = b = wt [E = a]\nOR\nwt = b = ab < a [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
 synonym: "monophenotypic all-suppressing converging genetic interaction" EXACT [] {comment="GIST nomenclature"}
 synonym: "monophenotypic all-suppressing genetic interaction" EXACT [] {comment="GIST nomenclature"}
+synonym: "unilateral genetic suppression (complete)" EXACT []
 is_a: MI:1290 ! genetic suppression (complete)
-is_a: MI:1292 ! unilateral genetic suppression
+is_a: MI:1292 ! monophenotypic genetic suppression
 created_by: orchard
 creation_date: 2013-06-05T21:38:36Z
 
 [Term]
 id: MI:1294
-name: unilateral genetic suppression (partial)
+name: monophenotypic genetic suppression (partial)
 def: "An effect in which the perturbation of one gene, which has no effect on the phenotype in question, is combined with the perturbation of another gene, which causes the mutant phenotype in question, and results in the amelioration or lessening of the severity/penetrance of the mutant phenotype, in effect making the organism more, but not completely, \"wild type\" in character with regards to the phenotype in question. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na < ab < b = wt [E = a]\nOR\nwt = b < ab < a [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
 synonym: "monophenotypic sub-suppressing converging genetic interaction" EXACT [] {comment="GIST nomenclature"}
 synonym: "monophenotypic sub-suppressing genetic interaction" EXACT [] {comment="GIST nomenclature"}
-is_a: MI:1292 ! unilateral genetic suppression
+synonym: "unilateral genetic suppression (partial)" EXACT []
+is_a: MI:1292 ! monophenotypic genetic suppression
 created_by: orchard
 creation_date: 2013-06-05T21:39:32Z
 
 [Term]
 id: MI:1295
-name: unilateral genetic over-suppression
+name: monophenotypic genetic over-suppression
 def: "An effect in which the perturbation of one gene (which has no individual effect on the phenotype in question), when combined with a perturbation of another gene (which causes the phenotype in question), results in a mutant phenotype opposite (relative to wild type) to that of the original phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nE = a < b = wt < ab\nOR\nab < wt = b < a = E\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
 synonym: "monophenotypic super-suppressing genetic interaction" EXACT [] {comment="GIST nomenclature"}
+synonym: "unilateral genetic over-suppression" EXACT []
 is_a: MI:1286 ! surpassing genetic interaction
 is_a: MIPropose:0017 ! monophenotypic phenotype result
 is_a: MIPropose:0023 ! genetic over-suppression
@@ -14459,7 +14464,7 @@ id: MIPropose:0023
 name: genetic over-suppression
 def: "A genetic phenotype modification whereby introduction of one genetic perturbation to another genetic perturbation results in the opposite phenotype compared to the phenotype of the starting individual genetic perturbation. For example, one perturbation results in an increased quality phenotype and introduction of the second perturbation results in a decreased quality phenotype. Note that if the individual genetic perturbations have opposite phenotypes, this may be an expected result." []
 synonym: "super-suppressing genetic interaction" EXACT [] {comment="GIST nomenclature"}
-is_a: MIPropose:0002 ! genetic interaction (sensu phenotype modification)
+is_a: MIPropose:0014 ! genetic suppression
 
 [Term]
 id: MIPropose:0024
