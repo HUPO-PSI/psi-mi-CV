@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 12:02:2020 14:29
+date: 21:04:2020 10:16
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -3295,7 +3295,7 @@ name: 3D electron microscopy
 def: "Three-dimensional (3D) reconstruction of single, transparent objects from a collection of projection images recorded with a transmission electron microscope. It offers the opportunity to obtain 3D information on structural cellular arrangements with a high resolution." [PMID:12160704]
 subset: PSI-MI_slim
 synonym: "3D-EM" EXACT PSI-MI-short []
-synonym: "electron tomog" EXACT PSI-MI-short []
+synonym: "electron tomog" EXACT PSI-MI-alternate []
 is_a: MI:0020 ! transmission electron microscopy
 
 [Term]
