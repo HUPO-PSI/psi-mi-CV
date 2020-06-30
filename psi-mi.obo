@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 21:04:2020 10:16
+date: 30:06:2020 17:21
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -9369,7 +9369,7 @@ name: cooperative interaction
 def: "A set of molecular binding events that influence each other either positively or negatively through allostery or pre-assembly. In this context, covalent post-translational modifications are considered as binding events. CV terms that are part of this term allow the description of cooperative interactions using the current PSI-MI schema." [PMID:18641616]
 subset: PSI-MI_slim
 synonym: "cooperativity" EXACT []
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 created_by: orchard
 creation_date: 2012-06-07T12:21:30Z
 
@@ -9407,7 +9407,7 @@ creation_date: 2012-06-07T12:35:01Z
 id: MI:1153
 name: cooperative effect outcome
 def: "For an interaction that has a cooperative effect on a subsequent interaction, this term indicates whether this effect is positive or negative, i.e. whether the subsequent interaction is augmented or diminished." [PMID:18706817]
-relationship: part_of MI:1149 ! cooperative interaction
+is_a: MI:1149 ! cooperative interaction
 created_by: orchard
 creation_date: 2012-06-07T12:40:41Z
 
@@ -9435,7 +9435,7 @@ id: MI:1156
 name: cooperative mechanism
 def: "For an interaction that has a cooperative effect on a subsequent interaction, this term indicates the process that mediates this effect." [PMID:18641616]
 subset: PSI-MI_slim
-relationship: part_of MI:1149 ! cooperative interaction
+is_a: MI:1149 ! cooperative interaction
 created_by: orchard
 creation_date: 2012-06-07T12:46:30Z
 
@@ -9487,7 +9487,7 @@ id: MI:1161
 name: allosteric response
 def: "This term describes the effect of an allosteric binding event. It specifies which properties of the allosteric molecule are altered, i.e. whether the interaction alters either (a) binding or (b) catalytic properties of the allosteric molecule at a site distinct from the allosteric site." []
 subset: PSI-MI_slim
-relationship: part_of MI:1149 ! cooperative interaction
+is_a: MI:1149 ! cooperative interaction
 created_by: orchard
 creation_date: 2012-06-07T01:05:17Z
 
@@ -9515,7 +9515,7 @@ creation_date: 2012-06-07T01:09:07Z
 id: MI:1164
 name: allosteric mechanism
 def: "The process that mediates the allosteric response of a molecule upon allosteric post-translational modification or binding of an allosteric effector." []
-relationship: part_of MI:1149 ! cooperative interaction
+is_a: MI:1149 ! cooperative interaction
 created_by: orchard
 creation_date: 2012-06-07T01:10:45Z
 
@@ -9544,7 +9544,7 @@ id: MI:1167
 name: allostery type
 def: "This term indicates the chemical relationship between the two ligands whose binding is allosterically coupled." [PMID:18706817]
 subset: PSI-MI_slim
-relationship: part_of MI:1149 ! cooperative interaction
+is_a: MI:1149 ! cooperative interaction
 created_by: orchard
 creation_date: 2012-06-07T01:19:57Z
 
@@ -9573,7 +9573,7 @@ id: MI:1170
 name: pre-assembly response
 def: "This term describes the way in which preformation of a molecular complex has a non-allosteric cooperative effect on subsequent interactions of its components." [PMID:18641616]
 subset: PSI-MI_slim
-relationship: part_of MI:1149 ! cooperative interaction
+is_a: MI:1149 ! cooperative interaction
 created_by: orchard
 creation_date: 2012-06-07T01:24:42Z
 
@@ -10003,6 +10003,7 @@ name: n-venus
 def: "N-terminal region of the Venus fusion protein, created by the introduction of a point mutation into Aequorea-derived YFP, the substitution of leucine for phenylalanine at position 46 (F46L). This tag is used for split flurescence complementation assays." [PMID:22229727]
 subset: PSI-MI_slim
 is_a: MI:1135 ! venus fluorescent protein tag
+is_a: MI:1215 ! bifc tag
 created_by: orchard
 creation_date: 2012-06-07T06:33:51Z
 
@@ -10012,6 +10013,7 @@ name: c-venus
 def: "C-terminal region of the Venus fusion protein, created by the introduction of a point mutation into Aequorea-derived YFP, the substitution of leucine for phenylalanine at position 46 (F46L). This tag is used for split flurescence complementation assays." [PMID:22229727]
 subset: PSI-MI_slim
 is_a: MI:1135 ! venus fluorescent protein tag
+is_a: MI:1215 ! bifc tag
 created_by: orchard
 creation_date: 2012-06-07T06:39:30Z
 
@@ -14327,6 +14329,51 @@ synonym: "hypostatic" EXACT PSI-MI-short []
 is_a: MI:0495 ! experimental role
 created_by: pporras
 creation_date: 2020-02-12T14:24:11Z
+
+[Term]
+id: MI:2355
+name: adp deribosylase assay
+def: "Measurement of the substraction of one or more ADP-ribose moieties to molecules." [PMID:14760721]
+subset: PSI-MI_slim
+synonym: "adp deribosylase" EXACT PSI-MI-short []
+synonym: "adp deribosylation" RELATED []
+is_a: MI:0415 ! enzymatic study
+created_by: pporras
+creation_date: 2020-06-02T17:02:11Z
+
+[Term]
+id: MI:2356
+name: adp deribosylation reaction
+def: "Involves the substraction of one or more ADP-ribose moieties to proteins. Reaction that can affect Arg, Cys, Glu, Arg and Asn residues." [GO:0051725, PMID:14755292, RESID:AA0168, RESID:AA0169, RESID:AA0231, RESID:AA0237, RESID:AA0295]
+subset: PSI-MI_slim
+synonym: "adp de-ribosylation" EXACT PSI-MI-alternate []
+synonym: "adp deribosylation" EXACT PSI-MI-short []
+is_a: MI:0414 ! enzymatic reaction
+created_by: pporras
+creation_date: 2020-06-02T17:02:30Z
+
+[Term]
+id: MI:2357
+name: kcat/km
+def: "This parameter represents the rate of the reaction at negligible substrate concentration, indicating how the velocity varies according to how often enzyme and substrate combine." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "catalytic efficiency" EXACT PSI-MI-alternate []
+synonym: "kcat/km" EXACT PSI-MI-short []
+synonym: "specificity constant" EXACT PSI-MI-alternate []
+is_a: MI:0640 ! parameter type
+created_by: pporras
+creation_date: 2020-06-30T16:04:54Z
+
+[Term]
+id: MI:2358
+name: mirbase
+def: "A searchable database of published miRNA sequences and annotation. Each entry in the miRBase Sequence database represents a predicted hairpin portion of a miRNA transcript (termed mir in the database), with information on the location and sequence of the mature miRNA sequence (termed miR). Both hairpin and mature sequences are available for searching and browsing, and entries can also be retrieved by name, keyword, references and annotation. All sequence and annotation data are also available for download.\n\nHomepage: http://www.mirbase.org/" [PMID:30423142]
+subset: PSI-MI_slim
+synonym: "miRBASE" EXACT PSI-MI-alternate []
+xref: search-url: "http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=${ac}"
+is_a: MI:0461 ! interaction database
+created_by: pporras
+creation_date: 2020-06-30T17:05:08Z
 
 [Typedef]
 id: contains
