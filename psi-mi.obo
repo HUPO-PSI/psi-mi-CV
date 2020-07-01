@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:06:2020 17:21
+date: 01:07:2020 16:23
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -14374,6 +14374,27 @@ xref: search-url: "http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=${ac}"
 is_a: MI:0461 ! interaction database
 created_by: pporras
 creation_date: 2020-06-30T17:05:08Z
+
+[Term]
+id: MI:2359
+name: ds rna
+def: "RNA that consists of two base pairing strands. The 2 nucleotide chains are held together by hydrogen bonds between base pairs of nucleotides." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "double stranded ribonucleic acid" EXACT PSI-MI-alternate []
+is_a: MI:0320 ! ribonucleic acid
+created_by: pporras
+creation_date: 2020-07-01T16:15:22Z
+
+[Term]
+id: MI:2360
+name: beta gal tag
+def: "Protein is fused to beta-galactosidase, and the measure of this enzyme activity can be taken as indicative of presence of protein." [PMID:10459153]
+subset: PSI-MI_slim
+synonym: "beta gal tag" EXACT PSI-MI-short []
+synonym: "beta-galactosidase tag" EXACT PSI-MI-alternate []
+is_a: MI:0365 ! enzyme tag
+created_by: pporras
+creation_date: 2020-07-01T16:18:26Z
 
 [Typedef]
 id: contains
