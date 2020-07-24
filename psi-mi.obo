@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 01:07:2020 16:23
+date: 24:07:2020 16:35
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -3247,7 +3247,7 @@ is_a: MI:0190 ! interaction type
 [Term]
 id: MI:0404
 name: comigration in non denaturing gel electrophoresis
-def: "comigration by non denaturing gel electrophoresis." [PMID:14755292]
+def: "A method allowing the detection of strong interactions between two or more molecules as running, all of them, within a single band in a non-denaturing gel." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "comig non denat gel" EXACT PSI-MI-short []
 is_a: MI:0807 ! comigration in gel electrophoresis
@@ -6262,7 +6262,7 @@ is_a: MI:0805 ! wwpdb
 [Term]
 id: MI:0807
 name: comigration in gel electrophoresis
-def: "The interaction of two molecules is determine by their very close proximity or the overlap of their relative bands in a gel." [PMID:14755292]
+def: "The interaction of two or more molecules is determined by their very close proximity or the overlap of their respective bands in a gel." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "comigration in gel" EXACT PSI-MI-short []
 is_a: MI:0982 ! electrophoretic mobility-based method
@@ -10951,7 +10951,7 @@ creation_date: 2013-06-06T10:39:30Z
 [Term]
 id: MI:1312
 name: aut-page
-def: "Method allowing the detection of interactions between two molecules by their very close proximity or the overlap of their relative bands in a SDS gel containing urea as an additional denaturing agent." [PMID:12875839]
+def: "Method allowing the detection of interactions between two or more molecules by their very close proximity or the overlap of their respective bands in a SDS gel containing urea as an additional denaturing agent." [PMID:12875839]
 subset: PSI-MI_slim
 synonym: "acetic acid/urea/triton PAGE" RELATED []
 is_a: MI:0807 ! comigration in gel electrophoresis
