@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 24:07:2020 16:35
+date: 29:09:2020 15:22
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -7046,7 +7046,7 @@ id: MI:0905
 name: amplified luminescent proximity homogeneous assay
 def: "AlphaScreen relies on the use of Donor and Acceptor beads that are coated with a layer of hydrogel providing functional groups for bioconjugation. When a biological interaction between molecules brings the beads into proximity, a cascade of chemical reactions is initiated to produce a greatly amplified signal. Upon laser excitation, a photosensitizer in the Donor bead converts ambient oxygen to a more excited singlet state. The singlet state oxygen molecules diffuse across to react with a chemiluminescer in the Acceptor bead that further activates fluorophores contained within the same bead. The fluorophores subsequently emit light at 520-620 nm. In the absence of a specific biological interaction, the singlet state oxygen molecules produced by the Donor bead go undetected without the close proximity of the Acceptor bead. AlphaScreen has successfully been developed for enzyme assays (kinase, helicase, protease, ...), interaction assays (ligand/receptor, protein/protein, protein/DNA), immunoassays, and GPCR functional assays (cAMP, IP3)." [PMID:17092917]
 subset: PSI-MI_slim
-synonym: "alfa-screen" EXACT PSI-MI-short []
+synonym: "alpha-screen" EXACT PSI-MI-short []
 synonym: "AlphaScreen" EXACT PSI-MI-alternate []
 is_a: MI:0051 ! fluorescence technology
 
@@ -7232,7 +7232,7 @@ is_a: MI:0857 ! fluorescent dye label
 [Term]
 id: MI:0928
 name: filter trap assay
-def: "Biomolecules are mixed in a buffer and the resulting mixture is\npassed through a filter. Large\naggregates are retained on the filter and the pariticipants may then be identified." [PMID:10859365]
+def: "Biomolecules are mixed in a buffer and the resulting mixture is passed through a filter. Large aggregates are retained on the filter and the pariticipants may then be identified." [PMID:10859365]
 subset: PSI-MI_slim
 synonym: "filter binding" EXACT []
 synonym: "filter retardation assay" RELATED []
@@ -8740,7 +8740,7 @@ creation_date: 2011-07-05T11:06:47Z
 [Term]
 id: MI:1086
 name: equilibrium dialysis
-def: "Two chambers are separated by a dialysis membrane.  The molecular weight cut off\n(MWCO) of this membrane is\nchosen such that it will retain the\nreceptor component of the sample\n(the element which will bind\nthe ligand).\nA known concentration and volume\nof ligand is placed into one of\nthe chambers. The ligand is small\nenough to pass freely through the\nmembrane.\nA known concentration of receptor\nis then placed in the remaining\nchamber in an equivalent volume\nto that placed in the first chamber.\nAs the ligand diffuses across the\nmembrane some of it will bind to\nthe receptor and some will remain\nfree in solution. The higher the\naffinity of the interaction, the higher\nthe concentration of ligand that\nwill be bound at any time." [PMID:21609686]
+def: "Two chambers are separated by a dialysis membrane. The molecular weight cut off (MWCO) of this membrane is chosen such that it will retain the receptor component of the sample (the element which will bind the ligand). A known concentration and volume of ligand is placed into one of the chambers. The ligand is small enough to pass freely through the membrane. A known concentration of receptor is then placed in the remaining chamber in an equivalent volume to that placed in the first chamber. As the ligand diffuses across the membrane some of it will bind to the receptor and some will remain free in solution. The higher the affinity of the interaction, the higher the concentration of ligand that will be bound at any time." [PMID:21609686]
 synonym: "equilib. dialysis" EXACT PSI-MI-short []
 is_a: MI:0013 ! biophysical
 created_by: orchard
