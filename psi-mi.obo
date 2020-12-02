@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:09:2020 15:22
+date: 02:12:2020 11:43
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -6525,7 +6525,7 @@ is_a: MI:0640 ! parameter type
 [Term]
 id: MI:0838
 name: kelvin
-def: "A scale that measures an object's temperature over absolute zero, the theoretical coolest temperature where all molecular and atomic motion ceases. On the Kelvin scale, the freezing point of water is 273 (273 K = 0 o C = 32 o F)." [PMID:14755292]
+def: "The kelvin (K) is the SI unit of thermodynamic temperature. It is defined by taking the fixed numerical value of the Boltzmann constant k to be 1.380649×10-23 when expressed in the unit J·K-1, which is equal to kg·m2·s-2·K-1, where the kilogram, metre and second are defined in terms of h, c and caesium frequency. It is equivalent to -273.15°C / -459.67°F." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "K" EXACT PSI-MI-alternate []
 is_a: MI:0647 ! parameter unit
@@ -14395,6 +14395,50 @@ synonym: "beta-galactosidase tag" EXACT PSI-MI-alternate []
 is_a: MI:0365 ! enzyme tag
 created_by: pporras
 creation_date: 2020-07-01T16:18:26Z
+
+[Term]
+id: MI:2361
+name: Split Intein-Mediated Protein Ligation
+def: "Bait protein is fused to a standard protein fusion tag and an intein fragment, prey a with a different protein fusion tag and the complementary intein fragment. The bait and prey are co-expressed in a cell line where the association of bait and prey brings the intein fragments into close proximity, allowing them to reconstitute a fully functional intein, which then catalyzes its own excision and the concurrent ligation of the bait and the prey peptides (as well as the standard protein fusion tags). The resulting spliced protein can be resolved by regular western blot analysis due to its altered mobility, while the presence of the standard protein fusion tags allows visualization or purification of protein using regular biochemical techniques." [PMID:32415080]
+subset: PSI-MI_slim
+synonym: "simpl" EXACT PSI-MI-short []
+synonym: "SIMPL" EXACT PSI-MI-alternate []
+is_a: MI:0090 ! protein complementation assay
+created_by: pporras
+creation_date: 2020-12-02T11:31:51Z
+
+[Term]
+id: MI:2362
+name: ic tag
+def: "Intein C-terminal fragment tag, commonly used in SIMPL and related methods." []
+subset: PSI-MI_slim
+synonym: "IC tag" EXACT PSI-MI-alternate []
+synonym: "intein c-terminal fragment tag" EXACT PSI-MI-alternate []
+is_a: MI:0507 ! tag
+created_by: pporras
+creation_date: 2020-12-02T11:39:05Z
+
+[Term]
+id: MI:2363
+name: in tag
+def: "Intein N-terminal fragment tag, commonly used in SIMPL and related methods." []
+subset: PSI-MI_slim
+synonym: "IN tag" EXACT PSI-MI-alternate []
+synonym: "intein n-terminal fragment tag" EXACT PSI-MI-alternate []
+is_a: MI:0507 ! tag
+created_by: pporras
+creation_date: 2020-12-02T11:40:48Z
+
+[Term]
+id: MI:2364
+name: proximity
+def: "Coincident occurrence of molecules within very close proximity (in the nanometer range), detected through molecule-level resolution methodology, but from which a physical interaction among those molecules cannot be inferred." []
+subset: PSI-MI_slim
+synonym: "close-contact colocalization" EXACT PSI-MI-alternate []
+synonym: "neighbourhood interaction" EXACT PSI-MI-alternate []
+is_a: MI:0403 ! colocalization
+created_by: pporras
+creation_date: 2020-12-02T11:42:19Z
 
 [Typedef]
 id: contains
