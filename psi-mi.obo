@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:12:2020 11:43
+date: 07:12:2020 17:38
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -3849,8 +3849,9 @@ id: MI:0471
 name: mint
 def: "The Molecular INTeraction database (MINT) is a relational database designed to store interactions between biological molecules.\nhttp://mint.bio.uniroma2.it" [PMID:14755292]
 subset: PSI-MI_slim
-synonym: "MINT" EXACT PSI-MI-alternate []
+synonym: "MINT" EXACT PSI-MI-short []
 xref: id-validation-regexp: "MINT-[0-9]+"
+xref: search-url: "https://mint.bio.uniroma2.it/index.php/results-interactions/?id=${ac}"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 
@@ -14439,6 +14440,16 @@ synonym: "neighbourhood interaction" EXACT PSI-MI-alternate []
 is_a: MI:0403 ! colocalization
 created_by: pporras
 creation_date: 2020-12-02T11:42:19Z
+
+[Term]
+id: MI:2365
+name: fluorescent protein-protein interaction-visualization
+def: "FluoPPI system (Fluorescent Protein-Protein Interaction-visualization):-FLUOPPI utilises the formation of fluorescence foci whereby the interacting proteins of interest are genetically fused with either a tetramerizing fluorescent protein (FP-tag) or an assembly helper tag (Ash-tag). The incorporation of these tags onto a pair of interacting proteins  enables the formation of intensely bright foci when co-expressed in mammalian cells. In these foci the FP-tag induces the fused protein to form a tetramer that can now interact with up to 4 copies of the Ash-tagged partner protein. The cognate interacting protein also forms an oligomer through the Ash tag, which in turn can interact with multiple copies of the FP-fused partner protein. The potential of both constructs to interact with multiple copies of each other enable large foci incorporating the fluorescent protein to form, which can be clearly observed when imaging the cell." [PMID:31784573<new dbxref>]
+synonym: "fluoppi" EXACT PSI-MI-short []
+synonym: "FluoPPI" EXACT PSI-MI-alternate []
+is_a: MI:0428 ! imaging technique
+created_by: pporras
+creation_date: 2020-12-07T17:35:40Z
 
 [Typedef]
 id: contains
