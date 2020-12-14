@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:12:2020 14:01
+date: 07:12:2020 17:38
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -209,7 +209,7 @@ is_a: MI:0004 ! affinity chromatography technology
 [Term]
 id: MI:0020
 name: transmission electron microscopy
-def: "Microscopy technique in which a beam of electrons is transmitted through a sample to form an image. Samples can be purified molecules, for which no staining is required in order to detect interaction, or tissue/cells. In the latter case, during the treatment for microscope analysis a tissue section is incubated with high-specificity antibodies coupled to heavy metals (e.g. gold). Any tissue section can then be analysed by electron microscopy to localise the target proteins within the cell. This method supports very high resolution colocalisation of different molecules in a cell." [PMID:14755292]
+def: "During the treatment for microscope analysis a tissue section is incubated with high-specificity antibodies coupled to heavy metals (gold). Any tissue section can then be analysed by electron microscopy to localise the target proteins within the cell. This method supports very high resolution colocalisation of different molecules in a cell." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "tem" EXACT PSI-MI-short []
 is_a: MI:0040 ! electron microscopy
