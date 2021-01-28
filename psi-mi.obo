@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:12:2020 14:01
+date: 28:01:2021 14:20
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -8307,6 +8307,7 @@ name: pubmed central
 def: "PubMed Central is the US National Institute of Health free digital archive of biomedical and life science journals." [PMID:12519941]
 subset: PSI-MI_slim
 synonym: "pmc" EXACT PSI-MI-short []
+xref: search-url: "http://europepmc.org/abstract/PMC/${ac}"
 is_a: MI:0445 ! literature database
 created_by: orchard
 creation_date: 2010-12-08T01:20:48Z
