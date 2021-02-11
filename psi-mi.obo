@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:11:2019 17:28
+date: 28:01:2021 14:20
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -210,7 +210,7 @@ is_a: MI:0004 ! affinity chromatography technology
 [Term]
 id: MI:0020
 name: transmission electron microscopy
-def: "During the treatment for microscope analysis a tissue section is incubated with high-specificity antibodies coupled to heavy metals (gold). Any tissue section can then be analysed by electron microscopy to localise the target proteins within the cell. This method supports very high resolution colocalisation of different molecules in a cell." [PMID:14755292]
+def: "Microscopy technique in which a beam of electrons is transmitted through a sample to form an image. Samples can be purified molecules, for which no staining is required in order to detect interaction, or tissue/cells. In the latter case, during the treatment for microscope analysis a tissue section is incubated with high-specificity antibodies coupled to heavy metals (e.g. gold). Any tissue section can then be analysed by electron microscopy to localise the target proteins within the cell. This method supports very high resolution colocalisation of different molecules in a cell." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "tem" EXACT PSI-MI-short []
 is_a: MI:0040 ! electron microscopy
@@ -3253,7 +3253,7 @@ is_a: MI:0190 ! interaction type
 [Term]
 id: MI:0404
 name: comigration in non denaturing gel electrophoresis
-def: "comigration by non denaturing gel electrophoresis." [PMID:14755292]
+def: "A method allowing the detection of strong interactions between two or more molecules as running, all of them, within a single band in a non-denaturing gel." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "comig non denat gel" EXACT PSI-MI-short []
 is_a: MI:0807 ! comigration in gel electrophoresis
@@ -3301,7 +3301,7 @@ name: 3D electron microscopy
 def: "Three-dimensional (3D) reconstruction of single, transparent objects from a collection of projection images recorded with a transmission electron microscope. It offers the opportunity to obtain 3D information on structural cellular arrangements with a high resolution." [PMID:12160704]
 subset: PSI-MI_slim
 synonym: "3D-EM" EXACT PSI-MI-short []
-synonym: "electron tomog" EXACT PSI-MI-short []
+synonym: "electron tomog" EXACT PSI-MI-alternate []
 is_a: MI:0020 ! transmission electron microscopy
 
 [Term]
@@ -3636,11 +3636,11 @@ is_a: MI:0461 ! interaction database
 [Term]
 id: MI:0449
 name: interpro
-def: "InterPro combines a number of databases (referred to as member databases) that use different methodologies and a varying degree of biological information on well-characterised proteins to derive protein signatures that predict family membership and domain composition of naive protein sequences.\nhttp://www.ebi.ac.uk/interpro/" [PMID:1252001]
+def: "InterPro combines a number of databases (referred to as member databases) that use different methodologies and a varying degree of biological information on well-characterised proteins to derive protein signatures that predict family membership and domain composition of naive protein sequences.\nhttps://www.ebi.ac.uk/interpro/" [PMID:1252001]
 subset: PSI-MI_slim
 synonym: "InterPro" EXACT PSI-MI-alternate []
 xref: id-validation-regexp: "IPR[0-9]{6}"
-xref: search-url: "http://www.ebi.ac.uk/interpro/DisplayIproEntry?ac=${ac}"
+xref: search-url: "https://www.ebi.ac.uk/interpro/entry/InterPro/${ac}"
 is_a: MI:0447 ! feature database
 
 [Term]
@@ -3855,8 +3855,9 @@ id: MI:0471
 name: mint
 def: "The Molecular INTeraction database (MINT) is a relational database designed to store interactions between biological molecules.\nhttp://mint.bio.uniroma2.it" [PMID:14755292]
 subset: PSI-MI_slim
-synonym: "MINT" EXACT PSI-MI-alternate []
+synonym: "MINT" EXACT PSI-MI-short []
 xref: id-validation-regexp: "MINT-[0-9]+"
+xref: search-url: "https://mint.bio.uniroma2.it/index.php/results-interactions/?id=${ac}"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 
@@ -4772,15 +4773,17 @@ is_a: MI:0919 ! acceptor
 [Term]
 id: MI:0581
 name: suppressor gene
-def: "Gene whose mutation suppress the phenotype associated to a suppressed mutation." [PMID:14755292]
+def: "A gene whose genetic perturbation suppresses the phenotype resulting from a different genetic perturbation." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "suppressor" EXACT PSI-MI-short []
 is_a: MI:0495 ! experimental role
 
 [Term]
 id: MI:0582
 name: suppressed gene
-def: "Gene whose mutation phenotype is suppressed by a given suppressor mutation." [PMID:14755292]
+def: "A gene whose genetic perturbation phenotype is suppressed by a different genetic perturbation." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "suppressed" EXACT PSI-MI-short []
 is_a: MI:0495 ! experimental role
 
 [Term]
@@ -6277,7 +6280,7 @@ is_a: MI:0805 ! wwpdb
 [Term]
 id: MI:0807
 name: comigration in gel electrophoresis
-def: "The interaction of two molecules is determine by their very close proximity or the overlap of their relative bands in a gel." [PMID:14755292]
+def: "The interaction of two or more molecules is determined by their very close proximity or the overlap of their respective bands in a gel." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "comigration in gel" EXACT PSI-MI-short []
 is_a: MI:0982 ! electrophoretic mobility-based method
@@ -6540,7 +6543,7 @@ is_a: MI:0640 ! parameter type
 [Term]
 id: MI:0838
 name: kelvin
-def: "A scale that measures an object's temperature over absolute zero, the theoretical coolest temperature where all molecular and atomic motion ceases. On the Kelvin scale, the freezing point of water is 273 (273 K = 0 o C = 32 o F)." [PMID:14755292]
+def: "The kelvin (K) is the SI unit of thermodynamic temperature. It is defined by taking the fixed numerical value of the Boltzmann constant k to be 1.380649×10-23 when expressed in the unit J·K-1, which is equal to kg·m2·s-2·K-1, where the kilogram, metre and second are defined in terms of h, c and caesium frequency. It is equivalent to -273.15°C / -459.67°F." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "K" EXACT PSI-MI-alternate []
 is_a: MI:0647 ! parameter unit
@@ -7061,7 +7064,7 @@ id: MI:0905
 name: amplified luminescent proximity homogeneous assay
 def: "AlphaScreen relies on the use of Donor and Acceptor beads that are coated with a layer of hydrogel providing functional groups for bioconjugation. When a biological interaction between molecules brings the beads into proximity, a cascade of chemical reactions is initiated to produce a greatly amplified signal. Upon laser excitation, a photosensitizer in the Donor bead converts ambient oxygen to a more excited singlet state. The singlet state oxygen molecules diffuse across to react with a chemiluminescer in the Acceptor bead that further activates fluorophores contained within the same bead. The fluorophores subsequently emit light at 520-620 nm. In the absence of a specific biological interaction, the singlet state oxygen molecules produced by the Donor bead go undetected without the close proximity of the Acceptor bead. AlphaScreen has successfully been developed for enzyme assays (kinase, helicase, protease, ...), interaction assays (ligand/receptor, protein/protein, protein/DNA), immunoassays, and GPCR functional assays (cAMP, IP3)." [PMID:17092917]
 subset: PSI-MI_slim
-synonym: "alfa-screen" EXACT PSI-MI-short []
+synonym: "alpha-screen" EXACT PSI-MI-short []
 synonym: "AlphaScreen" EXACT PSI-MI-alternate []
 is_a: MI:0051 ! fluorescence technology
 
@@ -7247,7 +7250,7 @@ is_a: MI:0857 ! fluorescent dye label
 [Term]
 id: MI:0928
 name: filter trap assay
-def: "Biomolecules are mixed in a buffer and the resulting mixture is\npassed through a filter. Large\naggregates are retained on the filter and the pariticipants may then be identified." [PMID:10859365]
+def: "Biomolecules are mixed in a buffer and the resulting mixture is passed through a filter. Large aggregates are retained on the filter and the pariticipants may then be identified." [PMID:10859365]
 subset: PSI-MI_slim
 synonym: "filter binding" EXACT []
 synonym: "filter retardation assay" RELATED []
@@ -8320,6 +8323,7 @@ name: pubmed central
 def: "PubMed Central is the US National Institute of Health free digital archive of biomedical and life science journals." [PMID:12519941]
 subset: PSI-MI_slim
 synonym: "pmc" EXACT PSI-MI-short []
+xref: search-url: "http://europepmc.org/abstract/PMC/${ac}"
 is_a: MI:0445 ! literature database
 created_by: orchard
 creation_date: 2010-12-08T01:20:48Z
@@ -8754,7 +8758,7 @@ creation_date: 2011-07-05T11:06:47Z
 [Term]
 id: MI:1086
 name: equilibrium dialysis
-def: "Two chambers are separated by a dialysis membrane.  The molecular weight cut off\n(MWCO) of this membrane is\nchosen such that it will retain the\nreceptor component of the sample\n(the element which will bind\nthe ligand).\nA known concentration and volume\nof ligand is placed into one of\nthe chambers. The ligand is small\nenough to pass freely through the\nmembrane.\nA known concentration of receptor\nis then placed in the remaining\nchamber in an equivalent volume\nto that placed in the first chamber.\nAs the ligand diffuses across the\nmembrane some of it will bind to\nthe receptor and some will remain\nfree in solution. The higher the\naffinity of the interaction, the higher\nthe concentration of ligand that\nwill be bound at any time." [PMID:21609686]
+def: "Two chambers are separated by a dialysis membrane. The molecular weight cut off (MWCO) of this membrane is chosen such that it will retain the receptor component of the sample (the element which will bind the ligand). A known concentration and volume of ligand is placed into one of the chambers. The ligand is small enough to pass freely through the membrane. A known concentration of receptor is then placed in the remaining chamber in an equivalent volume to that placed in the first chamber. As the ligand diffuses across the membrane some of it will bind to the receptor and some will remain free in solution. The higher the affinity of the interaction, the higher the concentration of ligand that will be bound at any time." [PMID:21609686]
 synonym: "equilib. dialysis" EXACT PSI-MI-short []
 is_a: MI:0013 ! biophysical
 created_by: orchard
@@ -9383,7 +9387,7 @@ name: cooperative interaction
 def: "A set of molecular binding events that influence each other either positively or negatively through allostery or pre-assembly. In this context, covalent post-translational modifications are considered as binding events. CV terms that are part of this term allow the description of cooperative interactions using the current PSI-MI schema." [PMID:18641616]
 subset: PSI-MI_slim
 synonym: "cooperativity" EXACT []
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 created_by: orchard
 creation_date: 2012-06-07T12:21:30Z
 
@@ -9421,7 +9425,7 @@ creation_date: 2012-06-07T12:35:01Z
 id: MI:1153
 name: cooperative effect outcome
 def: "For an interaction that has a cooperative effect on a subsequent interaction, this term indicates whether this effect is positive or negative, i.e. whether the subsequent interaction is augmented or diminished." [PMID:18706817]
-relationship: part_of MI:1149 ! cooperative interaction
+is_a: MI:1149 ! cooperative interaction
 created_by: orchard
 creation_date: 2012-06-07T12:40:41Z
 
@@ -9449,7 +9453,7 @@ id: MI:1156
 name: cooperative mechanism
 def: "For an interaction that has a cooperative effect on a subsequent interaction, this term indicates the process that mediates this effect." [PMID:18641616]
 subset: PSI-MI_slim
-relationship: part_of MI:1149 ! cooperative interaction
+is_a: MI:1149 ! cooperative interaction
 created_by: orchard
 creation_date: 2012-06-07T12:46:30Z
 
@@ -9501,7 +9505,7 @@ id: MI:1161
 name: allosteric response
 def: "This term describes the effect of an allosteric binding event. It specifies which properties of the allosteric molecule are altered, i.e. whether the interaction alters either (a) binding or (b) catalytic properties of the allosteric molecule at a site distinct from the allosteric site." []
 subset: PSI-MI_slim
-relationship: part_of MI:1149 ! cooperative interaction
+is_a: MI:1149 ! cooperative interaction
 created_by: orchard
 creation_date: 2012-06-07T01:05:17Z
 
@@ -9529,7 +9533,7 @@ creation_date: 2012-06-07T01:09:07Z
 id: MI:1164
 name: allosteric mechanism
 def: "The process that mediates the allosteric response of a molecule upon allosteric post-translational modification or binding of an allosteric effector." []
-relationship: part_of MI:1149 ! cooperative interaction
+is_a: MI:1149 ! cooperative interaction
 created_by: orchard
 creation_date: 2012-06-07T01:10:45Z
 
@@ -9558,7 +9562,7 @@ id: MI:1167
 name: allostery type
 def: "This term indicates the chemical relationship between the two ligands whose binding is allosterically coupled." [PMID:18706817]
 subset: PSI-MI_slim
-relationship: part_of MI:1149 ! cooperative interaction
+is_a: MI:1149 ! cooperative interaction
 created_by: orchard
 creation_date: 2012-06-07T01:19:57Z
 
@@ -9587,7 +9591,7 @@ id: MI:1170
 name: pre-assembly response
 def: "This term describes the way in which preformation of a molecular complex has a non-allosteric cooperative effect on subsequent interactions of its components." [PMID:18641616]
 subset: PSI-MI_slim
-relationship: part_of MI:1149 ! cooperative interaction
+is_a: MI:1149 ! cooperative interaction
 created_by: orchard
 creation_date: 2012-06-07T01:24:42Z
 
@@ -10017,6 +10021,7 @@ name: n-venus
 def: "N-terminal region of the Venus fusion protein, created by the introduction of a point mutation into Aequorea-derived YFP, the substitution of leucine for phenylalanine at position 46 (F46L). This tag is used for split flurescence complementation assays." [PMID:22229727]
 subset: PSI-MI_slim
 is_a: MI:1135 ! venus fluorescent protein tag
+is_a: MI:1215 ! bifc tag
 created_by: orchard
 creation_date: 2012-06-07T06:33:51Z
 
@@ -10026,6 +10031,7 @@ name: c-venus
 def: "C-terminal region of the Venus fusion protein, created by the introduction of a point mutation into Aequorea-derived YFP, the substitution of leucine for phenylalanine at position 46 (F46L). This tag is used for split flurescence complementation assays." [PMID:22229727]
 subset: PSI-MI_slim
 is_a: MI:1135 ! venus fluorescent protein tag
+is_a: MI:1215 ! bifc tag
 created_by: orchard
 creation_date: 2012-06-07T06:39:30Z
 
@@ -10996,7 +11002,7 @@ creation_date: 2013-06-06T10:39:30Z
 [Term]
 id: MI:1312
 name: aut-page
-def: "Method allowing the detection of interactions between two molecules by their very close proximity or the overlap of their relative bands in a SDS gel containing urea as an additional denaturing agent." [PMID:12875839]
+def: "Method allowing the detection of interactions between two or more molecules by their very close proximity or the overlap of their respective bands in a SDS gel containing urea as an additional denaturing agent." [PMID:12875839]
 subset: PSI-MI_slim
 synonym: "acetic acid/urea/triton PAGE" RELATED []
 is_a: MI:0807 ! comigration in gel electrophoresis
@@ -11193,7 +11199,7 @@ subset: PSI-MI_slim
 synonym: "ECO" RELATED []
 xref: id-validation-regexp: "ECO:\\d{7}$"
 xref: search-url: "http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=${ac}"
-is_a: MI:0461 ! interaction database
+is_a: MI:1336 ! experiment database
 created_by: orchard
 creation_date: 2014-01-08T12:48:33Z
 
@@ -13498,7 +13504,7 @@ synonym: "EDAM" EXACT PSI-MI-alternate []
 synonym: "edam" EXACT PSI-MI-short []
 synonym: "EMBRACE Data And Methods" EXACT PSI-MI-alternate []
 xref: url:http\://edamontology.org/
-is_a: MI:0461 ! interaction database
+is_a: MI:1336 ! experiment database
 created_by: ppm
 creation_date: 2017-01-26T15:09:47Z
 
@@ -14055,6 +14061,7 @@ def: "dbSNP contains human single nucleotide variations, microsatellites, and sm
 subset: PSI-MI_slim
 synonym: "dbSNP" EXACT PSI-MI-alternate []
 synonym: "dbsnp" EXACT PSI-MI-short []
+xref: search-url: "https://www.ncbi.nlm.nih.gov/snp/${ac}"
 is_a: MI:0447 ! feature database
 created_by: pporras
 creation_date: 2019-04-02T10:52:06Z
@@ -14257,7 +14264,7 @@ creation_date: 2019-07-30T16:06:16Z
 [Term]
 id: MI:2344
 name: rhea
-def: "Rhea is an expert curated resource of biochemical reactions designed for the annotation of enzymes and genome-scale metabolic networks and models. Rhea uses the ChEBI (Chemical Entities of Biological Interest) ontology of small molecules to precisely describe reactions participants and their chemical structures. All reactions are balanced for mass and charge and are linked to source literature, metabolic resources and other functional vocabularies such as the enzyme classification of the NC-IUBMB." [PMID:    27980062]
+def: "Rhea is an expert curated resource of biochemical reactions designed for the annotation of enzymes and genome-scale metabolic networks and models. Rhea uses the ChEBI (Chemical Entities of Biological Interest) ontology of small molecules to precisely describe reactions participants and their chemical structures. All reactions are balanced for mass and charge and are linked to source literature, metabolic resources and other functional vocabularies such as the enzyme classification of the NC-IUBMB." [PMID:27980062]
 synonym: "Rhea" EXACT PSI-MI-alternate []
 xref: search-url: "https://www.rhea-db.org/reaction?id=${ac}"
 is_a: MI:0461 ! interaction database
@@ -14321,6 +14328,179 @@ created_by: pporras
 creation_date: 2019-10-30T17:16:41Z
 
 [Term]
+id: MI:2350
+name: empiar
+def: "EMPIAR, the Electron Microscopy Public Image Archive, is a public resource for raw, 2D electron microscopy images. The purpose of EMPIAR is to provide easy access to state-of-the-art raw data to facilitate methods development and validation, which will lead to better 3D structures. It complements the Electron Microscopy Data Bank (EMDB), where 3D volumes are stored, and uses the fault-tolerant Aspera platform for data transfers.\n\nhttps://www.ebi.ac.uk/pdbe/emdb/empiar/" [PMID:27067018]
+subset: PSI-MI_slim
+synonym: "Electron Microscopy Public Image Archive" EXACT PSI-MI-alternate []
+synonym: "EMPIAR" EXACT PSI-MI-alternate []
+synonym: "empiar" EXACT PSI-MI-short []
+xref: id-validation-regex: "EMPIAR-[0-9]{5}"
+xref: search-url: "https://dx.doi.org/10.6019/${ac}"
+is_a: MI:0936 ! emdb
+created_by: pporras
+creation_date: 2019-12-17T09:31:30Z
+
+[Term]
+id: MI:2351
+name: enhancer gene
+def: "A gene whose genetic perturbation enhances the phenotype resulting from a different genetic perturbation." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "enhancer" EXACT PSI-MI-short []
+is_a: MI:0495 ! experimental role
+created_by: pporras
+creation_date: 2020-02-12T14:19:39Z
+
+[Term]
+id: MI:2352
+name: enhanced gene
+def: "A gene whose genetic perturbation phenotype is enhanced by a different genetic perturbation." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "enhanced" EXACT PSI-MI-short []
+is_a: MI:0495 ! experimental role
+created_by: pporras
+creation_date: 2020-02-12T14:21:40Z
+
+[Term]
+id: MI:2353
+name: epistatic gene
+def: "A gene whose genetic perturbation masks the phenotype resulting from a different genetic perturbation." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "epistatic" EXACT PSI-MI-short []
+is_a: MI:0495 ! experimental role
+created_by: pporras
+creation_date: 2020-02-12T14:22:57Z
+
+[Term]
+id: MI:2354
+name: hypostatic gene
+def: "A gene whose genetic perturbation phenotype is masked by a different genetic perturbation." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "hypostatic" EXACT PSI-MI-short []
+is_a: MI:0495 ! experimental role
+created_by: pporras
+creation_date: 2020-02-12T14:24:11Z
+
+[Term]
+id: MI:2355
+name: adp deribosylase assay
+def: "Measurement of the substraction of one or more ADP-ribose moieties to molecules." [PMID:14760721]
+subset: PSI-MI_slim
+synonym: "adp deribosylase" EXACT PSI-MI-short []
+synonym: "adp deribosylation" RELATED []
+is_a: MI:0415 ! enzymatic study
+created_by: pporras
+creation_date: 2020-06-02T17:02:11Z
+
+[Term]
+id: MI:2356
+name: adp deribosylation reaction
+def: "Involves the substraction of one or more ADP-ribose moieties to proteins. Reaction that can affect Arg, Cys, Glu, Arg and Asn residues." [GO:0051725, PMID:14755292, RESID:AA0168, RESID:AA0169, RESID:AA0231, RESID:AA0237, RESID:AA0295]
+subset: PSI-MI_slim
+synonym: "adp de-ribosylation" EXACT PSI-MI-alternate []
+synonym: "adp deribosylation" EXACT PSI-MI-short []
+is_a: MI:0414 ! enzymatic reaction
+created_by: pporras
+creation_date: 2020-06-02T17:02:30Z
+
+[Term]
+id: MI:2357
+name: kcat/km
+def: "This parameter represents the rate of the reaction at negligible substrate concentration, indicating how the velocity varies according to how often enzyme and substrate combine." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "catalytic efficiency" EXACT PSI-MI-alternate []
+synonym: "kcat/km" EXACT PSI-MI-short []
+synonym: "specificity constant" EXACT PSI-MI-alternate []
+is_a: MI:0640 ! parameter type
+created_by: pporras
+creation_date: 2020-06-30T16:04:54Z
+
+[Term]
+id: MI:2358
+name: mirbase
+def: "A searchable database of published miRNA sequences and annotation. Each entry in the miRBase Sequence database represents a predicted hairpin portion of a miRNA transcript (termed mir in the database), with information on the location and sequence of the mature miRNA sequence (termed miR). Both hairpin and mature sequences are available for searching and browsing, and entries can also be retrieved by name, keyword, references and annotation. All sequence and annotation data are also available for download.\n\nHomepage: http://www.mirbase.org/" [PMID:30423142]
+subset: PSI-MI_slim
+synonym: "miRBASE" EXACT PSI-MI-alternate []
+xref: search-url: "http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=${ac}"
+is_a: MI:0461 ! interaction database
+created_by: pporras
+creation_date: 2020-06-30T17:05:08Z
+
+[Term]
+id: MI:2359
+name: ds rna
+def: "RNA that consists of two base pairing strands. The 2 nucleotide chains are held together by hydrogen bonds between base pairs of nucleotides." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "double stranded ribonucleic acid" EXACT PSI-MI-alternate []
+is_a: MI:0320 ! ribonucleic acid
+created_by: pporras
+creation_date: 2020-07-01T16:15:22Z
+
+[Term]
+id: MI:2360
+name: beta gal tag
+def: "Protein is fused to beta-galactosidase, and the measure of this enzyme activity can be taken as indicative of presence of protein." [PMID:10459153]
+subset: PSI-MI_slim
+synonym: "beta gal tag" EXACT PSI-MI-short []
+synonym: "beta-galactosidase tag" EXACT PSI-MI-alternate []
+is_a: MI:0365 ! enzyme tag
+created_by: pporras
+creation_date: 2020-07-01T16:18:26Z
+
+[Term]
+id: MI:2361
+name: Split Intein-Mediated Protein Ligation
+def: "Bait protein is fused to a standard protein fusion tag and an intein fragment, prey a with a different protein fusion tag and the complementary intein fragment. The bait and prey are co-expressed in a cell line where the association of bait and prey brings the intein fragments into close proximity, allowing them to reconstitute a fully functional intein, which then catalyzes its own excision and the concurrent ligation of the bait and the prey peptides (as well as the standard protein fusion tags). The resulting spliced protein can be resolved by regular western blot analysis due to its altered mobility, while the presence of the standard protein fusion tags allows visualization or purification of protein using regular biochemical techniques." [PMID:32415080]
+subset: PSI-MI_slim
+synonym: "simpl" EXACT PSI-MI-short []
+synonym: "SIMPL" EXACT PSI-MI-alternate []
+is_a: MI:0090 ! protein complementation assay
+created_by: pporras
+creation_date: 2020-12-02T11:31:51Z
+
+[Term]
+id: MI:2362
+name: ic tag
+def: "Intein C-terminal fragment tag, commonly used in SIMPL and related methods." []
+subset: PSI-MI_slim
+synonym: "IC tag" EXACT PSI-MI-alternate []
+synonym: "intein c-terminal fragment tag" EXACT PSI-MI-alternate []
+is_a: MI:0507 ! tag
+created_by: pporras
+creation_date: 2020-12-02T11:39:05Z
+
+[Term]
+id: MI:2363
+name: in tag
+def: "Intein N-terminal fragment tag, commonly used in SIMPL and related methods." []
+subset: PSI-MI_slim
+synonym: "IN tag" EXACT PSI-MI-alternate []
+synonym: "intein n-terminal fragment tag" EXACT PSI-MI-alternate []
+is_a: MI:0507 ! tag
+created_by: pporras
+creation_date: 2020-12-02T11:40:48Z
+
+[Term]
+id: MI:2364
+name: proximity
+def: "Coincident occurrence of molecules within very close proximity (in the nanometer range), detected through molecule-level resolution methodology, but from which a physical interaction among those molecules cannot be inferred." []
+subset: PSI-MI_slim
+synonym: "close-contact colocalization" EXACT PSI-MI-alternate []
+synonym: "neighbourhood interaction" EXACT PSI-MI-alternate []
+is_a: MI:0403 ! colocalization
+created_by: pporras
+creation_date: 2020-12-02T11:42:19Z
+
+[Term]
+id: MI:2365
+name: fluorescent protein-protein interaction-visualization
+def: "FluoPPI system (Fluorescent Protein-Protein Interaction-visualization):-FLUOPPI utilises the formation of fluorescence foci whereby the interacting proteins of interest are genetically fused with either a tetramerizing fluorescent protein (FP-tag) or an assembly helper tag (Ash-tag). The incorporation of these tags onto a pair of interacting proteins  enables the formation of intensely bright foci when co-expressed in mammalian cells. In these foci the FP-tag induces the fused protein to form a tetramer that can now interact with up to 4 copies of the Ash-tagged partner protein. The cognate interacting protein also forms an oligomer through the Ash tag, which in turn can interact with multiple copies of the FP-fused partner protein. The potential of both constructs to interact with multiple copies of each other enable large foci incorporating the fluorescent protein to form, which can be clearly observed when imaging the cell." [PMID:31784573<new dbxref>]
+synonym: "fluoppi" EXACT PSI-MI-short []
+synonym: "FluoPPI" EXACT PSI-MI-alternate []
+is_a: MI:0428 ! imaging technique
+created_by: pporras
+creation_date: 2020-12-07T17:35:40Z
+
 id: MI:2366
 name: multigenic phenotype result
 def: "The phenotype outcome resulting from two or more genetic perturbations to an organism, individually and in combination." []
