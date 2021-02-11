@@ -14501,6 +14501,7 @@ is_a: MI:0428 ! imaging technique
 created_by: pporras
 creation_date: 2020-12-07T17:35:40Z
 
+[Term]
 id: MI:2366
 name: multigenic phenotype result
 def: "The phenotype outcome resulting from two or more genetic perturbations to an organism, individually and in combination." []
