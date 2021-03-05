@@ -1230,8 +1230,8 @@ name: n-acetyl-proline
 def: "Residue modification.\nOBSOLETE remap to MOD:00059." [PMID:11125103, RESID:AA0050]
 synonym: "(2S)-1-acetyl-2-pyrrolidinecarboxylic acid" EXACT PSI-MI-alternate []
 synonym: "[P:ac]" EXACT PSI-MI-alternate []
-synonym: "acetylproline" EXACT PSI-MI-short []
 synonym: "acetylproline" EXACT PSI-MI-alternate []
+synonym: "acetylproline" EXACT PSI-MI-short []
 synonym: "N-acetyl-L-proline" EXACT PSI-MI-alternate []
 synonym: "PAC" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -1735,8 +1735,8 @@ name: n6-(4-amino-2-hydroxybutyl)-lysine
 def: "Residue modification.\nOBSOLETE remap to MOD:00125." [PMID:11125103, RESID:AA0116]
 synonym: "(S,R)-2-amino-6-(4-amino-2-hydroxybutylamino)hexanoic acid" EXACT PSI-MI-alternate []
 synonym: "[K:hypu]" EXACT PSI-MI-alternate []
-synonym: "hypusine" EXACT PSI-MI-short []
 synonym: "hypusine" EXACT PSI-MI-alternate []
+synonym: "hypusine" EXACT PSI-MI-short []
 synonym: "KHY" EXACT PSI-MI-alternate []
 synonym: "N6-(4-amino-2-hydroxybutyl)-L-lysine" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -1909,7 +1909,7 @@ name: genetic interaction (sensu unexpected)
 def: "An effect in which two genetic perturbations, when combined, result in a phenotype that does not appear to be merely explained by the superimposition or addition of effects of the original perturbations.\nab (not=) E" [PMID:16527956]
 subset: PSI-MI_slim
 synonym: "Fisher epistasis" EXACT [https://doi.org/10.1017/S0080456800012163, PMID:17510664]
-is_a: MI:2366 ! multigenic phenotype result
+is_a: MI:2402 ! genetic interaction
 property_value: isDefinedBy "\"A genetic interaction refers to an unexpected phenotype not easily explained by combining the effects of individual genetic variants (7).\"" xsd:string {xref="PMID:19712041"}
 property_value: isDefinedBy "\"A quantitative genetic interaction definition has two components: a quantitative phenotypic measure and a neutrality function that predicts the phenotype of an organism carrying two noninteracting mutations. Interaction is then defined by deviation of a double-mutant organism's phenotype from the expected neutral phenotype.\"" xsd:string {xref="PMID:18305163"}
 property_value: isDefinedBy "\"More generally, a genetic interaction can be defined as the difference between an experimentally measured double-mutant phenotype and an expected double-mutant phenotype, the latter of which is predicted from the combination of the single-mutant effects, assuming the mutations act independently.\"" xsd:string {xref="PMID:23808365"}
@@ -10668,7 +10668,7 @@ def: "An effect in which individual perturbations of different genes result in t
 subset: PSI-MI_slim
 synonym: "cisphenotypic enhancing diverging genetic interaction" EXACT []
 is_a: MI:1271 ! genetic enhancement (sensu unexpected)
-is_a: MI:2385 ! cisphenotypic phenotype result
+is_a: MI:2401 ! mutual genetic enhancement
 created_by: orchard
 creation_date: 2013-06-05T20:31:30Z
 
@@ -14511,7 +14511,7 @@ is_a: MI:2384 ! multiple perturbation phenotype result
 id: MI:2367
 name: genetic interaction (sensu phenotype modification)
 def: "A multigenic phenotype result in which the phenotype of a single genetic perturbation has been modified by the introduction of one or more additional genetic perturbations." []
-is_a: MI:2366 ! multigenic phenotype result
+is_a: MI:2402 ! genetic interaction
 
 [Term]
 id: MI:2368
@@ -14674,8 +14674,7 @@ name: mutual genetic enhancement (expected)
 def: "A genetic enhancement in which the double genetic perturbation phenotype is equivalent to the expected phenotype, according to some chosen neutrality function." []
 synonym: "cisphenotypic enhancing neutral genetic interaction" EXACT []
 is_a: MI:0932 ! neutral multigenic phenotype result
-is_a: MI:2380 ! genetic enhancement
-is_a: MI:2385 ! cisphenotypic phenotype result
+is_a: MI:2401 ! mutual genetic enhancement
 
 [Term]
 id: MI:2393
@@ -14734,6 +14733,27 @@ is_a: MI:2381 ! aphenotypic phenotype result
 id: MI:2399
 name: deleterious multigenic phenotype result
 def: "A phenotype modification whereby introduction of a genetic perturbation in an organism with another genetic perturbation results in, or enhances, a phenotype in that organism." []
+is_a: MI:2366 ! multigenic phenotype result
+
+[Term]
+id: MI:2400
+name: monophenotypic neutral multigenic phenotype result
+def: "A phenotype result in which only one of two perturbations results in the phenotype in question and the phenotype of the combined perturbations a and b result in the expected phenotype, namely the same phenotype as the single perturbation that exhibits that phenotype. The interpretation is that no interaction was observed between the two genes, for the indicated phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab = a ≠ wt = b [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." []
+is_a: MI:0932 ! neutral multigenic phenotype result
+is_a: MI:2382 ! monophenotypic phenotype result
+
+[Term]
+id: MI:2401
+name: mutual genetic enhancement
+def: "A phenotype result in which both of two genetic perturbations result in the phenotype in question and do so in the same manner compared to wild type (for example, both genetic perturbations result in an increased quality phenotype, or both genetic perturbations result in a decreased quality phenotype) and the resulting double genetic perturbation results in a phenotype that is more severe than the most severe single genetic perturbation phenotype. Note that this may be an expected result." []
+synonym: "cisphenotypic enhancing genetic interaction" EXACT []
+is_a: MI:2380 ! genetic enhancement
+is_a: MI:2385 ! cisphenotypic phenotype result
+
+[Term]
+id: MI:2402
+name: genetic interaction
+def: "A multigenic phenotype result in which (1) the phenotype of a single genetic perturbation has been modified by the introduction of one or more additional genetic perturbations AND/OR (2) an effect in which two genetic perturbations, when combined, result in a phenotype that does not appear to be merely explained by the superimposition or addition of effects of the original perturbations.\nab (not=) E" []
 is_a: MI:2366 ! multigenic phenotype result
 
 [Typedef]
