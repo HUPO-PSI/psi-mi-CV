@@ -9910,7 +9910,6 @@ id: MI:1202
 name: one-strep-tag
 def: "Synthetic peptide tag (SAWSHPQFEK-(GGGS)2-SAWSHPQFEK)" [PMID:19688738]
 subset: PSI-MI_slim
-synonym: "<new synonym>" RELATED []
 synonym: "twin-strep-tag" EXACT PSI-MI-alternate []
 is_a: MI:0507 ! tag
 created_by: orchard
@@ -14494,7 +14493,7 @@ creation_date: 2020-12-02T11:42:19Z
 [Term]
 id: MI:2365
 name: fluorescent protein-protein interaction-visualization
-def: "FluoPPI system (Fluorescent Protein-Protein Interaction-visualization):-FLUOPPI utilises the formation of fluorescence foci whereby the interacting proteins of interest are genetically fused with either a tetramerizing fluorescent protein (FP-tag) or an assembly helper tag (Ash-tag). The incorporation of these tags onto a pair of interacting proteins  enables the formation of intensely bright foci when co-expressed in mammalian cells. In these foci the FP-tag induces the fused protein to form a tetramer that can now interact with up to 4 copies of the Ash-tagged partner protein. The cognate interacting protein also forms an oligomer through the Ash tag, which in turn can interact with multiple copies of the FP-fused partner protein. The potential of both constructs to interact with multiple copies of each other enable large foci incorporating the fluorescent protein to form, which can be clearly observed when imaging the cell." [PMID:31784573<new dbxref>]
+def: "FluoPPI system (Fluorescent Protein-Protein Interaction-visualization):-FLUOPPI utilises the formation of fluorescence foci whereby the interacting proteins of interest are genetically fused with either a tetramerizing fluorescent protein (FP-tag) or an assembly helper tag (Ash-tag). The incorporation of these tags onto a pair of interacting proteins  enables the formation of intensely bright foci when co-expressed in mammalian cells. In these foci the FP-tag induces the fused protein to form a tetramer that can now interact with up to 4 copies of the Ash-tagged partner protein. The cognate interacting protein also forms an oligomer through the Ash tag, which in turn can interact with multiple copies of the FP-fused partner protein. The potential of both constructs to interact with multiple copies of each other enable large foci incorporating the fluorescent protein to form, which can be clearly observed when imaging the cell." [PMID:31784573]
 synonym: "FluoPPI" EXACT PSI-MI-alternate []
 synonym: "fluoppi" EXACT PSI-MI-short []
 is_a: MI:0428 ! imaging technique
