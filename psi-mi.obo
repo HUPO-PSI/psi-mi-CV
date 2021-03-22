@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:01:2021 14:20
+date: 22:03:2021 14:30
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -1910,10 +1910,10 @@ def: "An effect in which two genetic perturbations, when combined, result in a p
 subset: PSI-MI_slim
 synonym: "Fisher epistasis" EXACT [https://doi.org/10.1017/S0080456800012163, PMID:17510664]
 is_a: MI:2402 ! genetic interaction
-property_value: isDefinedBy "\"A genetic interaction refers to an unexpected phenotype not easily explained by combining the effects of individual genetic variants (7).\"" xsd:string {xref="PMID:19712041"}
-property_value: isDefinedBy "\"A quantitative genetic interaction definition has two components: a quantitative phenotypic measure and a neutrality function that predicts the phenotype of an organism carrying two noninteracting mutations. Interaction is then defined by deviation of a double-mutant organism's phenotype from the expected neutral phenotype.\"" xsd:string {xref="PMID:18305163"}
-property_value: isDefinedBy "\"More generally, a genetic interaction can be defined as the difference between an experimentally measured double-mutant phenotype and an expected double-mutant phenotype, the latter of which is predicted from the combination of the single-mutant effects, assuming the mutations act independently.\"" xsd:string {xref="PMID:23808365"}
-property_value: isDefinedBy "\"Two genes A and B 'genetically interact' when the phenotype generated as the result of mutations in both genes (double mutant ab) is unexpectedly not just a combination of the phenotypes of the two single mutants a and b.\"" xsd:string {xref="PMID:16527956"}
+property_value: isDefinedBy "\\"A genetic interaction refers to an unexpected phenotype not easily explained by combining the effects of individual genetic variants (7).\\"" xsd:string
+property_value: isDefinedBy "\\"A quantitative genetic interaction definition has two components: a quantitative phenotypic measure and a neutrality function that predicts the phenotype of an organism carrying two noninteracting mutations. Interaction is then defined by deviation of a double-mutant organism's phenotype from the expected neutral phenotype.\\"" xsd:string
+property_value: isDefinedBy "\\"More generally, a genetic interaction can be defined as the difference between an experimentally measured double-mutant phenotype and an expected double-mutant phenotype, the latter of which is predicted from the combination of the single-mutant effects, assuming the mutations act independently.\\"" xsd:string
+property_value: isDefinedBy "\\"Two genes A and B 'genetically interact' when the phenotype generated as the result of mutations in both genes (double mutant ab) is unexpectedly not just a combination of the phenotypes of the two single mutants a and b.\\"" xsd:string
 
 [Term]
 id: MI:0209
@@ -6169,9 +6169,9 @@ synonym: "coequal genetic interaction" EXACT [PMID:18305163]
 synonym: "isophenotypic masking genetic interaction" EXACT []
 is_a: MI:0935 ! converging genetic interaction
 is_a: MI:2386 ! isophenotypic phenotype result
-property_value: isDefinedBy "\"A, B, and the AB combination all have the same effect on the WT background (2 inequalities).\"" xsd:string {xref="PMID:15833125"}
-property_value: isDefinedBy "\"Another subtype of alleviating interaction, 'coequal' interaction, is defined by single- and double-mutant strains that exhibit fitness values that are indistinguishable from one another (19).\"" xsd:string {xref="PMID:18305163"}
-property_value: isDefinedBy "\"Lastly, we observed ten gene pairs for which the MMS sensitivity of the single- and double-deletion strains was statistically indistinguishable (Sxy = Sx = Sy). These interactions, which we call ‘coequal’, are related to‘complementary gene action’, ‘complementary epistasis’ or ‘asynthetic’ relationship types that have been previously described18,30,31.\"" xsd:string {xref="PMID:17206143"}
+property_value: isDefinedBy "\\"A, B, and the AB combination all have the same effect on the WT background (2 inequalities).\\"" xsd:string
+property_value: isDefinedBy "\\"Another subtype of alleviating interaction, 'coequal' interaction, is defined by single- and double-mutant strains that exhibit fitness values that are indistinguishable from one another (19).\\"" xsd:string
+property_value: isDefinedBy "\\"Lastly, we observed ten gene pairs for which the MMS sensitivity of the single- and double-deletion strains was statistically indistinguishable (Sxy = Sx = Sy). These interactions, which we call ‘coequal’, are related to‘complementary gene action’, ‘complementary epistasis’ or ‘asynthetic’ relationship types that have been previously described18,30,31.\\"" xsd:string
 
 [Term]
 id: MI:0796
@@ -14692,8 +14692,8 @@ synonym: "aggravating interaction" BROAD [PMID:19712041]
 synonym: "negative gen int" EXACT PSI-MI-short []
 synonym: "synergistic interaction" BROAD [PMID:19712041]
 is_a: MI:0933 ! diverging genetic interaction
-property_value: isDefinedBy "\"Negative genetic interactions describe double mutants whose phenotype is stronger than expected (66, 77) (Figure 1b).\"" xsd:string {xref="PMID:23808365"}
-property_value: isDefinedBy "\"Negative interactions (also called aggravating or synergistic interactions) describe double mutants exhibiting a more severe phenotype than expected, such as synthetic sickness or synthetic lethality (35, 49) (Figure 2a).\"" xsd:string {xref="PMID:19712041"}
+property_value: isDefinedBy "\\"Negative genetic interactions describe double mutants whose phenotype is stronger than expected (66, 77) (Figure 1b).\\"" xsd:string
+property_value: isDefinedBy "\\"Negative interactions (also called aggravating or synergistic interactions) describe double mutants exhibiting a more severe phenotype than expected, such as synthetic sickness or synthetic lethality (35, 49) (Figure 2a).\\"" xsd:string
 
 [Term]
 id: MI:2395
@@ -14703,8 +14703,8 @@ subset: PSI-MI_slim
 synonym: "alleviating interaction" BROAD [PMID:19712041]
 synonym: "positive gent int" EXACT PSI-MI-short []
 is_a: MI:0935 ! converging genetic interaction
-property_value: isDefinedBy "\"Positive genetic interactions define double mutants whose phenotype is less severe than expected based on single-mutant phenotypes (30, 66, 87) (Figure 1c,d).\"" xsd:string {comment="PMID:23808365"}
-property_value: isDefinedBy "\"Positive interactions describe double mutants exhibiting a less severe phenotype than expected from the multiplicative model. Positive interactions have also been referred to as alleviating or epistatic interactions.\"" xsd:string {xref="PMID:19712041"}
+property_value: isDefinedBy "\\"Positive genetic interactions define double mutants whose phenotype is less severe than expected based on single-mutant phenotypes (30, 66, 87) (Figure 1c,d).\\"" xsd:string
+property_value: isDefinedBy "\\"Positive interactions describe double mutants exhibiting a less severe phenotype than expected from the multiplicative model. Positive interactions have also been referred to as alleviating or epistatic interactions.\\"" xsd:string
 
 [Term]
 id: MI:2396
@@ -14754,6 +14754,19 @@ id: MI:2402
 name: genetic interaction
 def: "A multigenic phenotype result in which (1) the phenotype of a single genetic perturbation has been modified by the introduction of one or more additional genetic perturbations AND/OR (2) an effect in which two genetic perturbations, when combined, result in a phenotype that does not appear to be merely explained by the superimposition or addition of effects of the original perturbations.\nab (not=) E" []
 is_a: MI:2366 ! multigenic phenotype result
+
+[Term]
+id: MI:2403
+name: bira tag
+def: "E. coli BirA* biotin ligase tag used in BioID experiments. This generally refers to a promiscuous mutant version of the biotin ligase with an R118H mutation." [PMID:22412018]
+subset: PSI-MI_slim
+synonym: "bira biotin ligase tag" EXACT PSI-MI-alternate []
+synonym: "bira tag" EXACT PSI-MI-short []
+synonym: "BirA* biotin ligase tag" EXACT PSI-MI-alternate []
+synonym: "BirA* tag" EXACT PSI-MI-alternate []
+is_a: MI:0507 ! tag
+created_by: pporras
+creation_date: 2021-03-22T14:27:04Z
 
 [Typedef]
 id: contains
