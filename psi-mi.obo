@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:03:2021 14:30
+date: 15:04:2021 17:357
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -52,7 +52,7 @@ def: "Method to determine the interaction." [PMID:14755292]
 subset: Drugable
 subset: PSI-MI_slim
 synonym: "interaction detect" EXACT PSI-MI-short []
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0002
@@ -61,7 +61,7 @@ def: "Method to determine the molecules involved in the interaction." [PMID:1475
 subset: PSI-MI_slim
 synonym: "participant detection" EXACT PSI-MI-alternate []
 synonym: "participant ident" EXACT PSI-MI-short []
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0003
@@ -69,7 +69,7 @@ name: feature detection method
 def: "Method to determine the features of the proteins involved in the interaction." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "feature detection" EXACT PSI-MI-short []
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0004
@@ -1007,7 +1007,7 @@ id: MI:0116
 name: feature type
 def: "Property of a subsequence that may interfere with the binding of a molecule." [PMID:14755292]
 subset: PSI-MI_slim
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0117
@@ -1769,7 +1769,7 @@ id: MI:0190
 name: interaction type
 def: "Connection between molecule." [PMID:14755292]
 subset: PSI-MI_slim
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0191
@@ -2439,7 +2439,7 @@ def: "Descriptor of type of nomenclature used to describe interactor." [PMID:147
 subset: Drugable
 subset: PSI-MI_slim
 synonym: "CvAliasType" EXACT PSI-MI-alternate []
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0301
@@ -2546,7 +2546,7 @@ def: "Molecular species involved in the interaction." [PMID:14755292]
 subset: Drugable
 subset: PSI-MI_slim
 synonym: "participant type" EXACT PSI-MI-alternate []
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0314
@@ -2714,7 +2714,7 @@ subset: PSI-MI_slim
 synonym: "CvFuzzyType" EXACT PSI-MI-alternate []
 synonym: "endStatus" EXACT PSI-MI-alternate []
 synonym: "startStatus" EXACT PSI-MI-alternate []
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0334
@@ -2822,7 +2822,7 @@ name: experimental preparation
 def: "Set of terms to describe the participant experimental treatment and status. This term groups a number of orthologous short controlled vocabularies delivery method, expression level, molecular source, and sample process. Each participant can then be annotated with a maximum of 4 terms selected from each short list." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "experimental prep" EXACT PSI-MI-short []
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0348
@@ -2869,7 +2869,7 @@ subset: PSI-MI_slim
 synonym: "CvXrefQualifier" EXACT PSI-MI-alternate []
 synonym: "refType" EXACT PSI-MI-alternate []
 synonym: "xref type" EXACT PSI-MI-short []
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0354
@@ -3592,7 +3592,7 @@ name: database citation
 def: "Database citation list names of databases commonly used to cross reference interaction data." [PMID:14755292]
 subset: Drugable
 subset: PSI-MI_slim
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0445
@@ -4083,7 +4083,7 @@ id: MI:0495
 name: experimental role
 def: "Role played by the participant within the experiment." [PMID:14755292]
 subset: PSI-MI_slim
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0496
@@ -4119,7 +4119,7 @@ id: MI:0500
 name: biological role
 def: "Physiological role of an interactor in a cell or in vivo environment, which is reproduced in the current experiment." [PMID:14755292]
 subset: PSI-MI_slim
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0501
@@ -4850,7 +4850,7 @@ def: "Collection of topics describing the free text stored as an attribute value
 subset: Drugable
 subset: PSI-MI_slim
 synonym: "CvTopic" EXACT PSI-MI-alternate []
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0591
@@ -5251,7 +5251,7 @@ name: parameter type
 def: "Parameter for enzymatic or binding kinetic studies." [PMID:14755292]
 subset: Drugable
 subset: PSI-MI_slim
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0641
@@ -5306,7 +5306,7 @@ id: MI:0647
 name: parameter unit
 def: "Controlled vocabulary for kinetic constant units." [PMID:14755292]
 subset: PSI-MI_slim
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0648
@@ -7473,20 +7473,20 @@ id: MI:0954
 name: curation quality
 def: "An assessment of the depth and extent to which a paper has been curated" [PMID:17893861]
 subset: PSI-MI_slim
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0955
 name: curation depth
 def: "Assessment of the depth to which a paper has been curated" [PMID:17893861]
-relationship: part_of MI:0954 ! curation quality
+is_a: MI:0954 ! curation quality
 
 [Term]
 id: MI:0956
 name: curation coverage
 def: "Assessment to the extent of interactions captured in this paper" [PMID:17893861]
 subset: PSI-MI_slim
-relationship: part_of MI:0954 ! curation quality
+is_a: MI:0954 ! curation quality
 
 [Term]
 id: MI:0957
@@ -7582,7 +7582,7 @@ synonym: "chembl" EXACT []
 xref: id-validation-regexp: "[0-9]+"
 xref: search-url: "http://www.ebi.ac.uk/chembldb/index.php/compound/inspect/${ac}"
 is_a: MI:2054 ! bioactive entity reference
-relationship: part_of MI:1349 ! chembl
+is_a: MI:1349 ! chembl
 created_by: orchard
 creation_date: 2009-10-28T11:20:55Z
 
@@ -8353,7 +8353,7 @@ id: MI:1045
 name: curation content
 def: "Indicates source, depth and standards by which an entry has been  added to a database." [PMID:14755292]
 subset: PSI-MI_slim
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 created_by: orchard
 creation_date: 2011-03-11T01:16:55Z
 
@@ -8526,7 +8526,7 @@ def: "A method used to derive a numerical or empirical measure of confidence in 
 subset: PSI-MI_slim
 synonym: "confidence" EXACT PSI-MI-short []
 synonym: "scoring system" EXACT []
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 created_by: orchard
 creation_date: 2011-07-05T07:13:57Z
 
@@ -9397,7 +9397,7 @@ name: affected interaction
 def: "For an interaction that has a cooperative effect on a subsequent interaction, this term indicates which subsequent interaction is affected. The affected interaction is identified by referring to its interaction id." [PMID:18641616]
 subset: PSI-MI_slim
 is_a: MI:0664 ! interaction attribute name
-relationship: part_of MI:1149 ! cooperative interaction
+is_a: MI:1149 ! cooperative interaction
 created_by: orchard
 creation_date: 2012-06-07T12:26:42Z
 
@@ -9417,7 +9417,7 @@ def: "This value quantifies the cooperative effect of an interaction on a subseq
 subset: PSI-MI_slim
 synonym: "cooperative coupling" EXACT []
 is_a: MI:0664 ! interaction attribute name
-relationship: part_of MI:1149 ! cooperative interaction
+is_a: MI:1149 ! cooperative interaction
 created_by: orchard
 creation_date: 2012-06-07T12:35:01Z
 
@@ -9485,7 +9485,7 @@ def: "A molecule whose binding or catalytic properties at one site are altered b
 subset: PSI-MI_slim
 is_a: MI:0500 ! biological role
 is_a: MI:0664 ! interaction attribute name
-relationship: part_of MI:1149 ! cooperative interaction
+is_a: MI:1149 ! cooperative interaction
 created_by: orchard
 creation_date: 2012-06-07T12:55:09Z
 
@@ -9496,7 +9496,7 @@ def: "A ligand that elicits an allosteric response upon binding to a target mole
 subset: PSI-MI_slim
 is_a: MI:0500 ! biological role
 is_a: MI:0664 ! interaction attribute name
-relationship: part_of MI:1149 ! cooperative interaction
+is_a: MI:1149 ! cooperative interaction
 created_by: orchard
 creation_date: 2012-06-07T12:57:50Z
 
@@ -9643,7 +9643,7 @@ subset: PSI-MI_slim
 synonym: "allosteric ptm" EXACT PSI-MI-short []
 is_a: MI:0252 ! biological feature
 is_a: MI:0664 ! interaction attribute name
-relationship: part_of MI:1149 ! cooperative interaction
+is_a: MI:1149 ! cooperative interaction
 created_by: orchard
 creation_date: 2012-06-07T01:33:16Z
 
@@ -11379,7 +11379,7 @@ subset: PSI-MI_slim
 xref: regexp: "CHEMBL:[0-9]+"
 xref: search-url: "http://www.ebi.ac.uk/chembldb/index.php/target/inspect/${ac}"
 is_a: MI:0683 ! sequence database
-relationship: part_of MI:1349 ! chembl
+is_a: MI:1349 ! chembl
 created_by: orchard
 creation_date: 2014-10-16T10:10:03Z
 
@@ -13096,7 +13096,7 @@ name: causal interaction
 def: "Binary causative relationships between biological entities. CV terms belonging to this term allow the description of causal interactions using the current PSI-MI schema." [DOI:10.1142/S0219525908001465]
 subset: PSI-MI_slim
 synonym: "causal interaction" EXACT PSI-MI-short []
-relationship: part_of MI:0000 ! molecular interaction
+is_a: MI:0000 ! molecular interaction
 created_by: ppm
 creation_date: 2017-01-19T13:17:37Z
 
@@ -14767,33 +14767,3 @@ synonym: "BirA* tag" EXACT PSI-MI-alternate []
 is_a: MI:0507 ! tag
 created_by: pporras
 creation_date: 2021-03-22T14:27:04Z
-
-[Typedef]
-id: contains
-name: contains
-namespace: PSI-MOD
-def: "'Entity A' contains 'Entity B' implies that 'Entity B' is a part of the structure of 'Entity A'." [PubMed:18688235]
-comment: The inverse relationship to "part of".
-is_transitive: true
-
-[Typedef]
-id: derives_from
-name: derives from
-namespace: PSI-MOD
-def: "'Entity A' derives_from 'Entity B' implies that 'Entity A' is chemically derived from 'Entity B'." [PubMed:18688235]
-is_transitive: true
-
-[Typedef]
-id: has_functional_parent
-name: has functional parent
-namespace: PSI-MOD
-def: "'Entity A' has_functional_parent 'Entity B' implies that 'Entity B' has at least one chacteristic group from which 'Entity A' can be derived by functional modification." [PubMed:18688235]
-comment: This relationship indicates that the formula and mass of the child are not inherited from the mass of the parent.
-is_transitive: true
-
-[Typedef]
-id: part_of
-name: part of
-def: "'Entity A' part_of 'Entity B' implies that 'Entity A' is a part of the structure of 'Entity B'." [PubMed:18688235]
-is_transitive: true
-
