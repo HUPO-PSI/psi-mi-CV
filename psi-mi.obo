@@ -1230,8 +1230,8 @@ name: n-acetyl-proline
 def: "Residue modification.\nOBSOLETE remap to MOD:00059." [PMID:11125103, RESID:AA0050]
 synonym: "(2S)-1-acetyl-2-pyrrolidinecarboxylic acid" EXACT PSI-MI-alternate []
 synonym: "[P:ac]" EXACT PSI-MI-alternate []
-synonym: "acetylproline" EXACT PSI-MI-alternate []
 synonym: "acetylproline" EXACT PSI-MI-short []
+synonym: "acetylproline" EXACT PSI-MI-alternate []
 synonym: "N-acetyl-L-proline" EXACT PSI-MI-alternate []
 synonym: "PAC" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -1596,8 +1596,8 @@ synonym: "[D:po]" EXACT PSI-MI-alternate []
 synonym: "beta-aspartyl phosphate" EXACT PSI-MI-alternate []
 synonym: "DPO" EXACT PSI-MI-alternate []
 synonym: "L-aspartic 4-phosphoric anhydride" EXACT PSI-MI-alternate []
-synonym: "phosphoaspartic acid" EXACT PSI-MI-short []
 synonym: "phosphoaspartic acid" EXACT PSI-MI-alternate []
+synonym: "phosphoaspartic acid" EXACT PSI-MI-short []
 is_obsolete: true
 
 [Term]
@@ -14522,7 +14522,7 @@ is_a: MI:2380 ! genetic enhancement
 id: MI:2369
 name: synthetic growth defect (sensu BioGRID)
 def: "Mutation of multiple genes in combination that results in a more severe growth defect than from individual mutation." []
-is_a: MI:2399 ! deleterious multigenic phenotype result
+is_a: MI:2402 ! genetic interaction
 
 [Term]
 id: MI:2370
@@ -14541,13 +14541,13 @@ is_a: MI:2379 ! genetic suppression
 id: MI:2372
 name: synthetic haploinsufficiency (sensu BioGRID)
 def: "Genetic perturbations of multiple genes in combination that results in a more severe growth defect than each individual perturbation, when one mutation is hemizygous." []
-is_a: MI:2399 ! deleterious multigenic phenotype result
+is_a: MI:2402 ! genetic interaction
 
 [Term]
 id: MI:2373
 name: negative genetic interaction (sensu BioGRID)
 def: "Genetic perturbation of multiple genes in combination that results in a more severe phenotypic defect (or lethality) than from individual viable perturbations. This term is reserved for high throughput studies with scores." []
-is_a: MI:2399 ! deleterious multigenic phenotype result
+is_a: MI:2402 ! genetic interaction
 
 [Term]
 id: MI:2374
