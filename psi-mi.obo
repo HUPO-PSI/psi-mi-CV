@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:04:2021 17:357
+date: 15:04:2021 22:57
 saved-by: pporras
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -1055,8 +1055,8 @@ def: "Residue modification.\nOBSOLETE remap to MOD:00050." [PMID:11125103, RESID
 synonym: "(S)-2-(acetylamino)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "[A:ac]" EXACT PSI-MI-alternate []
 synonym: "AAC" EXACT PSI-MI-alternate []
-synonym: "acetylalanine" EXACT PSI-MI-alternate []
 synonym: "acetylalanine" EXACT PSI-MI-short []
+synonym: "acetylalanine" EXACT PSI-MI-alternate []
 synonym: "N-acetyl-L-alanine" EXACT PSI-MI-alternate []
 is_obsolete: true
 
@@ -1735,8 +1735,8 @@ name: n6-(4-amino-2-hydroxybutyl)-lysine
 def: "Residue modification.\nOBSOLETE remap to MOD:00125." [PMID:11125103, RESID:AA0116]
 synonym: "(S,R)-2-amino-6-(4-amino-2-hydroxybutylamino)hexanoic acid" EXACT PSI-MI-alternate []
 synonym: "[K:hypu]" EXACT PSI-MI-alternate []
-synonym: "hypusine" EXACT PSI-MI-alternate []
 synonym: "hypusine" EXACT PSI-MI-short []
+synonym: "hypusine" EXACT PSI-MI-alternate []
 synonym: "KHY" EXACT PSI-MI-alternate []
 synonym: "N6-(4-amino-2-hydroxybutyl)-L-lysine" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -7581,8 +7581,8 @@ subset: PSI-MI_slim
 synonym: "chembl" EXACT []
 xref: id-validation-regexp: "[0-9]+"
 xref: search-url: "http://www.ebi.ac.uk/chembldb/index.php/compound/inspect/${ac}"
-is_a: MI:2054 ! bioactive entity reference
 is_a: MI:1349 ! chembl
+is_a: MI:2054 ! bioactive entity reference
 created_by: orchard
 creation_date: 2009-10-28T11:20:55Z
 
@@ -14767,3 +14767,15 @@ synonym: "BirA* tag" EXACT PSI-MI-alternate []
 is_a: MI:0507 ! tag
 created_by: pporras
 creation_date: 2021-03-22T14:27:04Z
+
+[Term]
+id: MI:2404
+name: Oxidase
+def: "Enxymatic Oxido-reductions where only O2 is an acceptor of hydrogen or electrons" [PMID:31273118]
+subset: PSI-MI_slim
+synonym: "oxidase" EXACT [] {comment="PSI-MI-alternate"}
+synonym: "oxidase" EXACT [] {comment="PSI-MI-short"}
+is_a: MI:0979 ! oxidoreductase assay
+created_by: Licata
+creation_date: 2021-07-05T23:48:40Z
+
