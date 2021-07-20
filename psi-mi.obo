@@ -14768,14 +14768,16 @@ is_a: MI:0507 ! tag
 created_by: pporras
 creation_date: 2021-03-22T14:27:04Z
 
+
 [Term]
 id: MI:2404
 name: Oxidase
 def: "Enxymatic Oxido-reductions where only O2 is an acceptor of hydrogen or electrons" [PMID:31273118]
 subset: PSI-MI_slim
-synonym: "oxidase" EXACT [] {comment="PSI-MI-alternate"}
-synonym: "oxidase" EXACT [] {comment="PSI-MI-short"}
+synonym: "oxidase" EXACT PSI-MI-alternate []
+synonym: "oxidase" EXACT PSI-MI-short [] 
 is_a: MI:0979 ! oxidoreductase assay
 created_by: Licata
 creation_date: 2021-07-05T23:48:40Z
+
 
