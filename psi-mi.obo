@@ -1735,8 +1735,8 @@ name: n6-(4-amino-2-hydroxybutyl)-lysine
 def: "Residue modification.\nOBSOLETE remap to MOD:00125." [PMID:11125103, RESID:AA0116]
 synonym: "(S,R)-2-amino-6-(4-amino-2-hydroxybutylamino)hexanoic acid" EXACT PSI-MI-alternate []
 synonym: "[K:hypu]" EXACT PSI-MI-alternate []
-synonym: "hypusine" EXACT PSI-MI-short []
 synonym: "hypusine" EXACT PSI-MI-alternate []
+synonym: "hypusine" EXACT PSI-MI-short []
 synonym: "KHY" EXACT PSI-MI-alternate []
 synonym: "N6-(4-amino-2-hydroxybutyl)-L-lysine" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -7318,11 +7318,11 @@ is_a: MI:0208 ! genetic interaction (sensu unexpected)
 [Term]
 id: MI:0936
 name: emdb
-def: "The Electron Microscopy Data Bank (EMDB) contains experimentally determined three-dimensional maps and associated experimental data and files." [PMID:14643225]
+def: "The Electron Microscopy Data Bank (EMDB) contains experimentally determined three-dimensional maps and associated experimental data and files.\nhttps://www.ebi.ac.uk/emdb" [PMID:14643225]
 subset: PSI-MI_slim
 synonym: "Electron Microscopy Data Bank" EXACT PSI-MI-alternate []
 synonym: "eMDB" EXACT PSI-MI-short []
-xref: search-url: "https://www.ebi.ac.uk/pdbe/entry/emdb/${ac}"
+xref: search-url: "https://www.ebi.ac.uk/emdb/${ac}"
 is_a: MI:0472 ! pdbe
 
 [Term]
@@ -14329,13 +14329,13 @@ creation_date: 2019-10-30T17:16:41Z
 [Term]
 id: MI:2350
 name: empiar
-def: "EMPIAR, the Electron Microscopy Public Image Archive, is a public resource for raw, 2D electron microscopy images. The purpose of EMPIAR is to provide easy access to state-of-the-art raw data to facilitate methods development and validation, which will lead to better 3D structures. It complements the Electron Microscopy Data Bank (EMDB), where 3D volumes are stored, and uses the fault-tolerant Aspera platform for data transfers.\n\nhttps://www.ebi.ac.uk/pdbe/emdb/empiar/" [PMID:27067018]
+def: "EMPIAR, the Electron Microscopy Public Image Archive, is a public resource for raw, 2D electron microscopy images. The purpose of EMPIAR is to provide easy access to state-of-the-art raw data to facilitate methods development and validation, which will lead to better 3D structures. It complements the Electron Microscopy Data Bank (EMDB), where 3D volumes are stored, and uses the fault-tolerant Aspera platform for data transfers.\n\nhttps://www.ebi.ac.uk/empiar" [PMID:27067018]
 subset: PSI-MI_slim
 synonym: "Electron Microscopy Public Image Archive" EXACT PSI-MI-alternate []
 synonym: "EMPIAR" EXACT PSI-MI-alternate []
 synonym: "empiar" EXACT PSI-MI-short []
 xref: id-validation-regex: "EMPIAR-[0-9]{5}"
-xref: search-url: "https://dx.doi.org/10.6019/${ac}"
+xref: search-url: "https://www.ebi.ac.uk/empiar/${ac}"
 is_a: MI:0936 ! emdb
 created_by: pporras
 creation_date: 2019-12-17T09:31:30Z
@@ -14768,16 +14768,14 @@ is_a: MI:0507 ! tag
 created_by: pporras
 creation_date: 2021-03-22T14:27:04Z
 
-
 [Term]
 id: MI:2404
 name: Oxidase
 def: "Enxymatic Oxido-reductions where only O2 is an acceptor of hydrogen or electrons" [PMID:31273118]
 subset: PSI-MI_slim
+synonym: "oxidase" EXACT PSI-MI-short []
 synonym: "oxidase" EXACT PSI-MI-alternate []
-synonym: "oxidase" EXACT PSI-MI-short [] 
 is_a: MI:0979 ! oxidoreductase assay
 created_by: Licata
 creation_date: 2021-07-05T23:48:40Z
-
 
