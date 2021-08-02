@@ -14770,7 +14770,7 @@ creation_date: 2021-03-22T14:27:04Z
 
 [Term]
 id: MI:2404
-name: Oxidase
+name: oxidase
 def: "Enxymatic Oxido-reductions where only O2 is an acceptor of hydrogen or electrons" [PMID:31273118]
 subset: PSI-MI_slim
 synonym: "oxidase" EXACT PSI-MI-short []
