@@ -14786,7 +14786,6 @@ def: "Circular RNAs are stable circular transcripts generated when a pre-mRNA un
 subset: PSI-MI_slim
 synonym: "circRNA" EXACT PSI-MI-short []
 is_a: MI:0320 ! ribonucleic acid
-property_value: http://purl.org/dc/elements/1.1/date 2021-12-15T10:06:10Z xsd:dateTime
 created_by: Licata
 creation_date: 2021-12-15T11:55:10Z
 
