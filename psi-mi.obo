@@ -1230,8 +1230,8 @@ name: n-acetyl-proline
 def: "Residue modification.\nOBSOLETE remap to MOD:00059." [PMID:11125103, RESID:AA0050]
 synonym: "(2S)-1-acetyl-2-pyrrolidinecarboxylic acid" EXACT PSI-MI-alternate []
 synonym: "[P:ac]" EXACT PSI-MI-alternate []
-synonym: "acetylproline" EXACT PSI-MI-short []
 synonym: "acetylproline" EXACT PSI-MI-alternate []
+synonym: "acetylproline" EXACT PSI-MI-short []
 synonym: "N-acetyl-L-proline" EXACT PSI-MI-alternate []
 synonym: "PAC" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -14773,9 +14773,20 @@ id: MI:2404
 name: oxidase assay
 def: "Enzymatic oxido-reductions where only O2 is an acceptor of hydrogen or electrons" [PMID:31273118]
 subset: PSI-MI_slim
-synonym: "oxidase" EXACT PSI-MI-short []
 synonym: "oxidase" EXACT PSI-MI-alternate []
+synonym: "oxidase" EXACT PSI-MI-short []
 is_a: MI:0979 ! oxidoreductase assay
 created_by: Licata
 creation_date: 2021-07-05T23:48:40Z
+
+[Term]
+id: MI:2405
+name: circular RNA
+def: "Circular RNAs are stable circular transcripts generated when a pre-mRNA undergoes “backsplicing” to join a splice donor to an upstream splice acceptor. They can originate from exons, introns or lncRNAs." [PMID:23446348]
+subset: PSI-MI_slim
+synonym: "circRNA" EXACT PSI-MI-short []
+is_a: MI:0320 ! ribonucleic acid
+property_value: http://purl.org/dc/elements/1.1/date 2021-12-15T10:06:10Z xsd:dateTime
+created_by: Licata
+creation_date: 2021-12-15T11:55:10Z
 
