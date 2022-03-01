@@ -1055,8 +1055,8 @@ def: "Residue modification.\nOBSOLETE remap to MOD:00050." [PMID:11125103, RESID
 synonym: "(S)-2-(acetylamino)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "[A:ac]" EXACT PSI-MI-alternate []
 synonym: "AAC" EXACT PSI-MI-alternate []
-synonym: "acetylalanine" EXACT PSI-MI-short []
 synonym: "acetylalanine" EXACT PSI-MI-alternate []
+synonym: "acetylalanine" EXACT PSI-MI-short []
 synonym: "N-acetyl-L-alanine" EXACT PSI-MI-alternate []
 is_obsolete: true
 
@@ -14773,8 +14773,8 @@ id: MI:2404
 name: oxidase assay
 def: "Enzymatic oxido-reductions where only O2 is an acceptor of hydrogen or electrons" [PMID:31273118]
 subset: PSI-MI_slim
-synonym: "oxidase" EXACT PSI-MI-alternate []
 synonym: "oxidase" EXACT PSI-MI-short []
+synonym: "oxidase" EXACT PSI-MI-alternate []
 is_a: MI:0979 ! oxidoreductase assay
 created_by: Licata
 creation_date: 2021-07-05T23:48:40Z
@@ -14788,4 +14788,14 @@ synonym: "circRNA" EXACT PSI-MI-short []
 is_a: MI:0320 ! ribonucleic acid
 created_by: Licata
 creation_date: 2021-12-15T11:55:10Z
+
+[Term]
+id: MI_2406
+name: ribozyme
+def: "Ribozymes (ribonucleic acid enzymes) are folded catalytic RNA molecules that perform important biological functions." [PMID:34415304]
+subset: PSI-MI_slim
+synonym: "ribozyme" EXACT [] {comment="PSI-MI-short"}
+is_a: MI:0500 ! biological role
+created_by: Licata
+creation_date: 2022-03-01T16:49:20Z
 
