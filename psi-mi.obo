@@ -14794,7 +14794,7 @@ id: MI_2406
 name: ribozyme
 def: "Ribozymes (ribonucleic acid enzymes) are folded catalytic RNA molecules that perform important biological functions." [PMID:34415304]
 subset: PSI-MI_slim
-synonym: "ribozyme" EXACT [] {comment="PSI-MI-short"}
+synonym: "ribozyme" EXACT PSI-MI-short []
 is_a: MI:0500 ! biological role
 created_by: Licata
 creation_date: 2022-03-01T16:49:20Z
