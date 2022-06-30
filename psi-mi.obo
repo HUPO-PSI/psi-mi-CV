@@ -14790,7 +14790,7 @@ created_by: Licata
 creation_date: 2021-12-15T11:55:10Z
 
 [Term]
-id: MI_2406
+id: MI:2406
 name: ribozyme
 def: "Ribozymes (ribonucleic acid enzymes) are folded catalytic RNA molecules that perform important biological functions." [PMID:34415304]
 subset: PSI-MI_slim
@@ -14800,28 +14800,28 @@ created_by: Licata
 creation_date: 2022-03-01T16:49:20Z
 
 [Term]
-id: MI_2407
+id: MI:2407
 name: Uberon
 def: "Uberon is an integrated cross-species anatomy ontology representing a variety of entities classified according to traditional anatomical criteria such as structure, function and developmental lineage. \nhttps://www.ebi.ac.uk/ols/ontologies/uberon" [PMID:22293552]
 subset: PSI-MI_slim
 is_a: MI:0473 ! participant database
 
 [Term]
-id: MI_2408
+id: MI:2408
 name: CoVoc Coronavirus Vocabulary
 def: "The COVID-19 Vocabulary (COVoc) is an ontology containing terms related to the research of the COVID-19 pandemic. This includes host organisms, pathogenicity, gene and gene products, barrier gestures, treatments and more.\nhttps://www.ebi.ac.uk/ols/ontologies/COVOC" []
 subset: PSI-MI_slim
 is_a: MI:0473 ! participant database
 
 [Term]
-id: MI_2409
+id: MI:2409
 name: Plant Ontology
 def: "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.\nhttps://www.ebi.ac.uk/ols/ontologies/po" [PMID:23220694]
 subset: PSI-MI_slim
 is_a: MI:0473 ! participant database
 
 [Term]
-id: MI_2410
+id: MI:2410
 name: mondo
 def: "A semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology.\nhttps://www.ebi.ac.uk/ols/ontologies/mondo" [PMID:31701156]
 subset: PSI-MI_slim
