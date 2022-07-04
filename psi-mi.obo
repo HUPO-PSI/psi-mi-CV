@@ -14831,5 +14831,5 @@ subset: PSI-MI_slim
 is_a: MI:0473 ! participant database
 created_by: Licata
 creation_date: 2022-06-30T16:05:45Z
-has_synonym_type: mondo {has_synonym_type="PSI-MI-alternate"}
+synonym: "mondo" EXACT PSI-MI-alternate []
 
