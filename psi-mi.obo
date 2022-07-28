@@ -14840,7 +14840,7 @@ created_by: Licata
 creation_date: 2022-06-30T16:05:45Z
 
 [Term]
-id: MI:2411
+id: MI_2411
 name: mac tag
 def: "The protein of interest is expressed as a fusion to a MAC-tag, which contains a twin-strep affinity tag and BirA* in one construct, requires generation of only one isogenic cell line and allows one-step protein purification by Strep-Tactin matrix for both AP–MS and BioID pipelines." [PMID:32778839]
 subset: PSI-MI_slim
