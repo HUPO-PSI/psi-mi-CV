@@ -3793,8 +3793,8 @@ name: dip
 def: "The database of interacting protein (DIP) database stores experimentally determined interactions between proteins. It combines information from a variety of sources to create a single, consistent set of protein-protein interactions.\nhttp://dip.doe-mbi.ucla.edu/" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "DIP" EXACT PSI-MI-alternate []
-xref: id-validation-regexp: "DIP[0-9]+[NE]"
-xref: search-url: "http://identifiers.org/dip/"
+xref: id-validation-regexp: "DIP[:-]?[0-9]+[NE]"
+xref: search-url: "http://identifiers.org/dip/${ac}"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 
