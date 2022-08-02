@@ -3814,7 +3814,7 @@ subset: PSI-MI_slim
 synonym: "Genome Knowledge Base" EXACT PSI-MI-alternate []
 synonym: "GKB" EXACT PSI-MI-alternate []
 synonym: "Reactome" EXACT PSI-MI-alternate []
-xref: id-validation-regexp: "REACT_\\d+(\\.\\d+)?$"
+xref: id-validation-regexp: "((R-[A-Z]{3}-\\d+)|(REACT_\\d+))(\\.\\d+)?$"
 xref: search-url: "http://www.reactome.org/content/detail/${ac}"
 is_a: MI:1106 ! pathways database
 
@@ -4000,7 +4000,7 @@ def: "UniProt Archive (UniParc) is part of UniProt project. It is a non-redundan
 subset: PSI-MI_slim
 synonym: "UniParc" EXACT PSI-MI-alternate []
 xref: id-validation-regexp: "UPI[A-F0-9]{10}"
-xref: search-url: "http://www.ebi.uniprot.org/entry/${ac}"
+xref: search-url: "https://www.uniprot.org/uniparc/${ac}/entry"
 is_a: MI:1097 ! uniprot
 
 [Term]
@@ -4011,7 +4011,7 @@ subset: PSI-MI_slim
 synonym: "UniProtKB" EXACT PSI-MI-alternate []
 synonym: "uniprotkb" EXACT PSI-MI-short []
 xref: id-validation-regexp: "(([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})(-PRO_[0-9]{10})?)"
-xref: search-url: "http://www.uniprot.org/uniprot/${ac}"
+xref: search-url: "https://www.uniprot.org/uniprotkb/${ac}/entry"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 is_a: MI:1097 ! uniprot
@@ -8882,7 +8882,7 @@ subset: PSI-MI_slim
 synonym: "swiss-prot" EXACT PSI-MI-short []
 synonym: "UniProt" EXACT PSI-MI-alternate []
 xref: id-validation-regexp: "(([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})(-PRO_[0-9]{10})?)"
-xref: search-url: "http://www.uniprot.org/uniprot/${ac}"
+xref: search-url: "https://www.uniprot.org/uniprotkb/${ac}/entry"
 is_a: MI:0486 ! uniprot knowledge base
 created_by: orchard
 creation_date: 2011-07-06T08:17:34Z
@@ -8895,7 +8895,7 @@ subset: PSI-MI_slim
 synonym: "trembl" EXACT PSI-MI-short []
 synonym: "UniProt" EXACT PSI-MI-alternate []
 xref: id-validation-regexp: "(([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})(-PRO_[0-9]{10})?)"
-xref: search-url: "http://www.uniprot.org/uniprot/${ac}"
+xref: search-url: "https://www.uniprot.org/uniprotkb/${ac}/entry"
 is_a: MI:0486 ! uniprot knowledge base
 created_by: orchard
 creation_date: 2011-07-06T08:20:24Z
