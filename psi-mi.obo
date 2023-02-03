@@ -1596,8 +1596,8 @@ synonym: "[D:po]" EXACT PSI-MI-alternate []
 synonym: "beta-aspartyl phosphate" EXACT PSI-MI-alternate []
 synonym: "DPO" EXACT PSI-MI-alternate []
 synonym: "L-aspartic 4-phosphoric anhydride" EXACT PSI-MI-alternate []
-synonym: "phosphoaspartic acid" EXACT PSI-MI-alternate []
 synonym: "phosphoaspartic acid" EXACT PSI-MI-short []
+synonym: "phosphoaspartic acid" EXACT PSI-MI-alternate []
 is_obsolete: true
 
 [Term]
@@ -14773,8 +14773,8 @@ id: MI:2404
 name: oxidase assay
 def: "Enzymatic oxido-reductions where only O2 is an acceptor of hydrogen or electrons" [PMID:31273118]
 subset: PSI-MI_slim
-synonym: "oxidase" EXACT PSI-MI-short []
 synonym: "oxidase" EXACT PSI-MI-alternate []
+synonym: "oxidase" EXACT PSI-MI-short []
 is_a: MI:0979 ! oxidoreductase assay
 created_by: Licata
 creation_date: 2021-07-05T23:48:40Z
