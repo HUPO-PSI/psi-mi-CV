@@ -14855,8 +14855,7 @@ id: MI_2412
 name: membrane two hybrid
 def: "Protein complementation methods specifically developed to assay for interactions of membrane proteins with both cytosolic or membrane-bound partners." [PMID:24658140]
 subset: PSI-MI_slim
-synonym: "MAMTH" EXACT [] {EXACT="PSI-MI-short"}
-synonym: "MYH" EXACT [] {EXACT="PSI-MI-alternate"}
+synonym: "MTH" EXACT [] {EXACT="PSI-MI-short"}
 is_a: MI:0232 ! transcriptional complementation assay
 created_by: Licata
 creation_date: 2022-02-03T16:27:45Z
