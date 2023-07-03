@@ -599,6 +599,7 @@ id: MI:0067
 name: light scattering
 def: "Dynamic and static laser light scattering probes the size, shape, and structure of biological macromolecules or of their assemblies. A beam is focused on an optically clear cylindrical cell containing the sample. Most of the light passes directly through the sample. A small portion of the light is scattered; the scattered light intensity containing information about the scattering particle is detected at an angle (typically in the range 15-180degrees) from the direction of the incident beam." [PMID:9013660]
 subset: PSI-MI_slim
+is_a: MI:0013 ! biophysical
 is_a: MI_2422 ! Mass photometry
 
 [Term]
@@ -1055,8 +1056,8 @@ def: "Residue modification.\nOBSOLETE remap to MOD:00050." [PMID:11125103, RESID
 synonym: "(S)-2-(acetylamino)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "[A:ac]" EXACT PSI-MI-alternate []
 synonym: "AAC" EXACT PSI-MI-alternate []
-synonym: "acetylalanine" EXACT PSI-MI-alternate []
 synonym: "acetylalanine" EXACT PSI-MI-short []
+synonym: "acetylalanine" EXACT PSI-MI-alternate []
 synonym: "N-acetyl-L-alanine" EXACT PSI-MI-alternate []
 is_obsolete: true
 
@@ -14773,8 +14774,8 @@ id: MI:2404
 name: oxidase assay
 def: "Enzymatic oxido-reductions where only O2 is an acceptor of hydrogen or electrons" [PMID:31273118]
 subset: PSI-MI_slim
-synonym: "oxidase" EXACT PSI-MI-alternate []
 synonym: "oxidase" EXACT PSI-MI-short []
+synonym: "oxidase" EXACT PSI-MI-alternate []
 is_a: MI:0979 ! oxidoreductase assay
 created_by: Licata
 creation_date: 2021-07-05T23:48:40Z
