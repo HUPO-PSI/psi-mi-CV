@@ -14861,16 +14861,6 @@ created_by: Licata
 creation_date: 2023-07-03T15:55:10Z
 
 [Term]
-id: MI:2423
-name: RNAcentral
-def: "RNAcentral is a comprehensive database of non-coding RNA sequences that represents all types of ncRNA from a broad range of organisms." [PMID:33106848]
-subset: PSI-MI_slim
-synonym: "RNAcentral" EXACT PSI-MI-short []
-is_a: MI:0473 ! participant database
-created_by: Licata
-creation_date: 2023-12-07T13:44:44Z
-
-[Term]
 id: MI_2412
 name: membrane two hybrid
 def: "Protein complementation methods specifically developed to assay for interactions of membrane proteins with both cytosolic or membrane-bound partners." [PMID:24658140]
