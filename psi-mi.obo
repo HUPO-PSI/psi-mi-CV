@@ -14851,16 +14851,6 @@ created_by: Licata
 creation_date: 2022-07-28T16:04:45Z
 
 [Term]
-id: MI:2422
-name: Mass photometry
-def: "Mass photometry measures mass at the single molecule level in solution and enables the quantification of protein–protein interactions in solution with sufficient sensitivity to accurately determine stoichiometry and rate of reactions." [PMID:32167227]
-subset: PSI-MI_slim
-synonym: "mass photometry" EXACT PSI-MI-short []
-is_a: MI:0067 ! light scattering
-created_by: Licata
-creation_date: 2023-07-03T15:55:10Z
-
-[Term]
 id: MI_2412
 name: membrane two hybrid
 def: "Protein complementation methods specifically developed to assay for interactions of membrane proteins with both cytosolic or membrane-bound partners." [PMID:24658140]
