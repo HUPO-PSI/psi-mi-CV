@@ -1596,8 +1596,8 @@ synonym: "[D:po]" EXACT PSI-MI-alternate []
 synonym: "beta-aspartyl phosphate" EXACT PSI-MI-alternate []
 synonym: "DPO" EXACT PSI-MI-alternate []
 synonym: "L-aspartic 4-phosphoric anhydride" EXACT PSI-MI-alternate []
-synonym: "phosphoaspartic acid" EXACT PSI-MI-alternate []
 synonym: "phosphoaspartic acid" EXACT PSI-MI-short []
+synonym: "phosphoaspartic acid" EXACT PSI-MI-alternate []
 is_obsolete: true
 
 [Term]
@@ -14855,9 +14855,9 @@ id: MI:2421
 name: subtilist
 def: "SubtiList is the reference database dedicated to the genome of Bacillus subtilis, the paradigm of Gram-positive endospore-forming bacteria.\nhttp://genolist.pasteur.fr/SubtiList/" [PMID:11752255]
 subset: PSI-MI_slim
+synonym: "Subtilist" EXACT PSI-MI-short []
 is_a: MI:1094 ! genome databases
 created_by: Licata
-has_synonym_type: Subtilist {http://purl.obolibrary.org/obo/mi#PSI-MI-short="PSI-MI-short"}
 
 [Term]
 id: MI:2422
@@ -14867,6 +14867,7 @@ subset: PSI-MI_slim
 synonym: "mass photometry" EXACT PSI-MI-short []
 is_a: MI:0067 ! light scattering
 created_by: Licata
+creation_date: 2023-19-07T11:18:35Z
 
 [Term]
 id: MI_2412
