@@ -971,7 +971,7 @@ synonym: "membrane yeast two-hybrid" RELATED []
 synonym: "myth" RELATED []
 synonym: "split-ubiquitin" RELATED []
 synonym: "ub reconstruction" EXACT PSI-MI-short []
-is_a: MI_2412 ! membrane two hybrid
+is_a: MI:2412 ! membrane two hybrid
 
 [Term]
 id: MI:0113
@@ -1735,8 +1735,8 @@ name: n6-(4-amino-2-hydroxybutyl)-lysine
 def: "Residue modification.\nOBSOLETE remap to MOD:00125." [PMID:11125103, RESID:AA0116]
 synonym: "(S,R)-2-amino-6-(4-amino-2-hydroxybutylamino)hexanoic acid" EXACT PSI-MI-alternate []
 synonym: "[K:hypu]" EXACT PSI-MI-alternate []
-synonym: "hypusine" EXACT PSI-MI-short []
 synonym: "hypusine" EXACT PSI-MI-alternate []
+synonym: "hypusine" EXACT PSI-MI-short []
 synonym: "KHY" EXACT PSI-MI-alternate []
 synonym: "N6-(4-amino-2-hydroxybutyl)-L-lysine" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -11082,7 +11082,7 @@ name: membrane yeast two hybrid
 def: "Traditional yeast two hybrid assays are not suitable for the analysis of membrane proteins, as they require the interactions to occur in the nucleus. Methods have been specifically developed to assay for interactions of membrane proteins with both cytosolic or membrane-bound partners." [PMID:2261051]
 subset: PSI-MI_slim
 synonym: "MYTH" EXACT []
-is_a: MI_2412 ! membrane two hybrid
+is_a: MI:2412 ! membrane two hybrid
 created_by: orchard
 creation_date: 2014-01-08T10:14:46Z
 
@@ -11093,7 +11093,7 @@ def: "Upon interaction of N-terminal generated Ire1p-fusions, the Ire1p kinase d
 subset: PSI-MI_slim
 synonym: "endoplasmic reticulum membrane yeast-two hybrid" RELATED []
 synonym: "ER-MYTH" RELATED []
-is_a: MI_2412 ! membrane two hybrid
+is_a: MI:2412 ! membrane two hybrid
 created_by: orchard
 creation_date: 2014-01-08T10:17:38Z
 
@@ -14773,8 +14773,8 @@ id: MI:2404
 name: oxidase assay
 def: "Enzymatic oxido-reductions where only O2 is an acceptor of hydrogen or electrons" [PMID:31273118]
 subset: PSI-MI_slim
-synonym: "oxidase" EXACT PSI-MI-short []
 synonym: "oxidase" EXACT PSI-MI-alternate []
+synonym: "oxidase" EXACT PSI-MI-short []
 is_a: MI:0979 ! oxidoreductase assay
 created_by: Licata
 creation_date: 2021-07-05T23:48:40Z
@@ -14851,6 +14851,16 @@ created_by: Licata
 creation_date: 2022-07-28T16:04:45Z
 
 [Term]
+id: MI:2412
+name: membrane two hybrid
+def: "Protein complementation methods specifically developed to assay for interactions of membrane proteins with both cytosolic or membrane-bound partners." [PMID:24658140]
+subset: PSI-MI_slim
+synonym: "MTH" EXACT [] {EXACT="PSI-MI-short"}
+is_a: MI:0232 ! transcriptional complementation assay
+created_by: Licata
+creation_date: 2022-02-03T16:27:45Z
+
+[Term]
 id: MI:2421
 name: subtilist
 def: "SubtiList is the reference database dedicated to the genome of Bacillus subtilis, the paradigm of Gram-positive endospore-forming bacteria.\nhttp://genolist.pasteur.fr/SubtiList/" [PMID:11752255]
@@ -14868,16 +14878,6 @@ synonym: "mass photometry" EXACT PSI-MI-short []
 is_a: MI:0067 ! light scattering
 created_by: Licata
 creation_date: 2023-19-07T11:18:35Z
-
-[Term]
-id: MI_2412
-name: membrane two hybrid
-def: "Protein complementation methods specifically developed to assay for interactions of membrane proteins with both cytosolic or membrane-bound partners." [PMID:24658140]
-subset: PSI-MI_slim
-synonym: "MTH" EXACT [] {EXACT="PSI-MI-short"}
-is_a: MI:0232 ! transcriptional complementation assay
-created_by: Licata
-creation_date: 2022-02-03T16:27:45Z
 
 [Term]
 id: MI_2413
