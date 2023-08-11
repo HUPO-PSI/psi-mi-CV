@@ -14963,5 +14963,5 @@ subset: PSI-MI_slim
 synonym: "mass photometry" EXACT PSI-MI-short []
 is_a: MI:0067 ! light scattering
 created_by: Licata
-creation_date: 2023-19-07T11:18:50Z
+creation_date: 2023-19-07T11:19:50Z
 
