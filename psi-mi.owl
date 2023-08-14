@@ -47443,6 +47443,63 @@ http://genolist.pasteur.fr/SubtiList/</owl:annotatedTarget>
         <owl:annotatedTarget>mass photometry</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-short"/>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_2423 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2423">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0353"/>
+        <oboInOwl:created_by>Licata</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>reference to the gene producing this interactor.</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>gene reference</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:2423</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label xml:lang="en">gene ref</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2423"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>reference to the gene producing this interactor.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:14755292</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2423"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>gene reference</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-short"/>
+    </owl:Axiom>
+    <rdf:Description>
+        <mi:PSI-MI_slim></mi:PSI-MI_slim>
+    </rdf:Description>
+    <rdf:Description>
+        <mi:PSI-MI-short></mi:PSI-MI-short>
+    </rdf:Description>
+    <rdf:Description>
+        <mi:PSI-MI-short>
+            <rdf:Description/>
+        </mi:PSI-MI-short>
+    </rdf:Description>
+    <rdf:Description>
+        <mi:PSI-MI-short>
+            <rdf:Description/>
+        </mi:PSI-MI-short>
+    </rdf:Description>
+    <rdf:Description>
+        <mi:PSI-MI-short>
+            <rdf:Description/>
+        </mi:PSI-MI-short>
+    </rdf:Description>
+    <rdf:Description>
+        <mi:PSI-MI-short></mi:PSI-MI-short>
+    </rdf:Description>
+    <rdf:Description>
+        <mi:PSI-MI-short></mi:PSI-MI-short>
+    </rdf:Description>
+    <rdf:Description>
+        <mi:PSI-MI-short></mi:PSI-MI-short>
+    </rdf:Description>
 </rdf:RDF>
 
 
