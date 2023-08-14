@@ -1596,8 +1596,8 @@ synonym: "[D:po]" EXACT PSI-MI-alternate []
 synonym: "beta-aspartyl phosphate" EXACT PSI-MI-alternate []
 synonym: "DPO" EXACT PSI-MI-alternate []
 synonym: "L-aspartic 4-phosphoric anhydride" EXACT PSI-MI-alternate []
-synonym: "phosphoaspartic acid" EXACT PSI-MI-short []
 synonym: "phosphoaspartic acid" EXACT PSI-MI-alternate []
+synonym: "phosphoaspartic acid" EXACT PSI-MI-short []
 is_obsolete: true
 
 [Term]
@@ -1735,8 +1735,8 @@ name: n6-(4-amino-2-hydroxybutyl)-lysine
 def: "Residue modification.\nOBSOLETE remap to MOD:00125." [PMID:11125103, RESID:AA0116]
 synonym: "(S,R)-2-amino-6-(4-amino-2-hydroxybutylamino)hexanoic acid" EXACT PSI-MI-alternate []
 synonym: "[K:hypu]" EXACT PSI-MI-alternate []
-synonym: "hypusine" EXACT PSI-MI-short []
 synonym: "hypusine" EXACT PSI-MI-alternate []
+synonym: "hypusine" EXACT PSI-MI-short []
 synonym: "KHY" EXACT PSI-MI-alternate []
 synonym: "N6-(4-amino-2-hydroxybutyl)-L-lysine" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -14773,8 +14773,8 @@ id: MI:2404
 name: oxidase assay
 def: "Enzymatic oxido-reductions where only O2 is an acceptor of hydrogen or electrons" [PMID:31273118]
 subset: PSI-MI_slim
-synonym: "oxidase" EXACT PSI-MI-alternate []
 synonym: "oxidase" EXACT PSI-MI-short []
+synonym: "oxidase" EXACT PSI-MI-alternate []
 is_a: MI:0979 ! oxidoreductase assay
 created_by: Licata
 creation_date: 2021-07-05T23:48:40Z
@@ -14964,4 +14964,13 @@ synonym: "mass photometry" EXACT PSI-MI-short []
 is_a: MI:0067 ! light scattering
 created_by: Licata
 creation_date: 2023-19-07T11:19:50Z
+
+[Term]
+id: MI:2423
+name: gene ref
+subset: PSI-MI_slim
+synonym: "gene reference" EXACT PSI-MI-short []
+xref: reference to the gene producing this interactor. {xref="PMID:14755292"}
+is_a: MI:0353 ! cross-reference type
+created_by: Licata
 
