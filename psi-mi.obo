@@ -6331,7 +6331,7 @@ is_a: MI:0240 ! fusion protein
 [Term]
 id: MI:0813
 name: proximity ligation assay
-def: "Upon binding of two proximity probes (usually antibodies conjugated to DNA) to the same target protein complex, the oligonucleotides on the proximity probes are brought close together. These antibody-conjugated oligonucleotides hybridize to two connector oligonucleotides that are ligated to form a circular DNA molecule. This newly formed DNA-molecule can be amplified by rolling circle amplification. The resulting single-stranded DNA-molecule collapses into a bundle, which is detectable through hybridization of fluorescently labeled complementary oligonucleotides." [PMID:15155907, PMID:\:17072308]
+def: "Upon binding of two proximity probes (usually antibodies conjugated to DNA) to the same target protein complex, the oligonucleotides on the proximity probes are brought close together. These antibody-conjugated oligonucleotides hybridize to two connector oligonucleotides that are ligated to form a circular DNA molecule. This newly formed DNA-molecule can be amplified by rolling circle amplification. The resulting single-stranded DNA-molecule collapses into a bundle, which is detectable through hybridization of fluorescently labeled complementary oligonucleotides." [PMID:15155907, PMID:17072308]
 subset: PSI-MI_slim
 synonym: "in situ proximity ligation assay" RELATED []
 synonym: "p elisa" EXACT []
@@ -7394,7 +7394,7 @@ is_a: MI:0943 ! detection by mass spectrometry
 [Term]
 id: MI:0945
 name: oxidoreductase activity electron transfer reaction
-def: "An oxidation-reduction (redox) reaction, a reversible chemical reaction in which the oxidation state of an atom or atoms within a molecule is altered. One substrate acts as a hydrogen or electron donor and becomes oxidized, while the other acts as hydrogen or electron acceptor and becomes reduced." [GO:GO\:0016491, PMID:14755292]
+def: "An oxidation-reduction (redox) reaction, a reversible chemical reaction in which the oxidation state of an atom or atoms within a molecule is altered. One substrate acts as a hydrogen or electron donor and becomes oxidized, while the other acts as hydrogen or electron acceptor and becomes reduced." [GO:0016491, PMID:14755292]
 subset: PSI-MI_slim
 synonym: "redox reaction" EXACT PSI-MI-short []
 is_a: MI:0414 ! enzymatic reaction
@@ -8643,7 +8643,7 @@ creation_date: 2011-07-05T09:52:28Z
 [Term]
 id: MI:1075
 name: beilstein
-def: "The Beilstein database is in the field of organic chemistry, in which compounds are uniquely identified by their Beilstein Registry Number." [PMID:ID\:11604014]
+def: "The Beilstein database is in the field of organic chemistry, in which compounds are uniquely identified by their Beilstein Registry Number." [PMID:11604014]
 subset: PSI-MI_slim
 synonym: "beilstein" EXACT PSI-MI-short []
 is_a: MI:2054 ! bioactive entity reference
@@ -10500,7 +10500,7 @@ subset: PSI-MI_slim
 synonym: "I2D" EXACT PSI-MI-alternate []
 synonym: "IID" EXACT PSI-MI-alternate []
 synonym: "Interologous Interaction Database" EXACT PSI-MI-alternate []
-xref: url:http\://iid.ophid.utoronto.ca/iid/
+xref: http://iid.ophid.utoronto.ca/iid/
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 created_by: orchard
@@ -11152,7 +11152,7 @@ creation_date: 2014-01-08T11:15:51Z
 [Term]
 id: MI:1327
 name: sulfurtransfer reaction
-def: "Reaction where a sulfate group is transferred between two proteins" [GO:GO\:0016783, PMID:14755292]
+def: "Reaction where a sulfate group is transferred between two proteins" [GO:0016783, PMID:14755292]
 subset: PSI-MI_slim
 synonym: "sulfurtransfer" EXACT PSI-MI-short []
 synonym: "sulphurtransfer reaction" EXACT []
@@ -12776,7 +12776,7 @@ synonym: "micro-RNA" EXACT PSI-MI-alternate []
 synonym: "micro-rna" EXACT PSI-MI-alternate []
 synonym: "miRNA" EXACT PSI-MI-alternate []
 synonym: "mirna" EXACT PSI-MI-short []
-xref: url: "https://en.wikipedia.org/wiki/MicroRNA"
+xref: https://en.wikipedia.org/wiki/MicroRNA
 is_a: MI:0320 ! ribonucleic acid
 created_by: ppm
 creation_date: 2016-01-20T16:25:10Z
@@ -13128,7 +13128,7 @@ def: "The effect of a modulator entity A on a modulated entity B that  increases
 subset: PSI-MI_slim
 synonym: "activates activity" EXACT PSI-MI-alternate []
 synonym: "up-regulates activity" EXACT PSI-MI-short []
-xref: GO:GO\:0044093
+xref: GO:0044093
 is_a: MI:2235 ! up-regulates
 created_by: ppm
 creation_date: 2017-01-19T13:50:43Z
@@ -13184,7 +13184,7 @@ def: "The effect of a modulator entity A on a modulated entity B that  decreases
 subset: PSI-MI_slim
 synonym: "down-regulates activity" EXACT PSI-MI-short []
 synonym: "inhibits activity" EXACT PSI-MI-alternate []
-xref: GO:GO\:0044093
+xref: GO:0044093
 is_a: MI:2240 ! down-regulates
 created_by: ppm
 creation_date: 2017-01-19T14:13:34Z
@@ -13489,7 +13489,7 @@ def: "SignaLink 2.0 is a signaling pathway resource with multi-layered regulator
 subset: PSI-MI_slim
 synonym: "SignaLink" EXACT PSI-MI-alternate []
 synonym: "signalink" EXACT PSI-MI-short []
-xref: url:http\://signalink.org
+xref: http://signalink.org
 is_a: MI:0461 ! interaction database
 created_by: ppm
 creation_date: 2017-01-23T11:41:20Z
@@ -13502,7 +13502,7 @@ subset: PSI-MI_slim
 synonym: "EDAM" EXACT PSI-MI-alternate []
 synonym: "edam" EXACT PSI-MI-short []
 synonym: "EMBRACE Data And Methods" EXACT PSI-MI-alternate []
-xref: url:http\://edamontology.org/
+xref: http://edamontology.org/
 is_a: MI:1336 ! experiment database
 created_by: ppm
 creation_date: 2017-01-26T15:09:47Z
@@ -13513,7 +13513,7 @@ name: tyrosinylation
 def: "Reversible reaction that add a tyrosine residue to an amino-acid." []
 subset: PSI-MI_slim
 synonym: "tyrosinylation" EXACT PSI-MI-short []
-xref: GO:GO\:0018322
+xref: GO:0018322
 is_a: MI:0414 ! enzymatic reaction
 created_by: ppm
 creation_date: 2017-01-26T15:21:43Z
@@ -13524,7 +13524,7 @@ name: tyrosination
 def: "Reversible reaction that add a tyrosine residues to the c-terminal end of alpha-tubulin." [PMID:10842328]
 subset: PSI-MI_slim
 synonym: "tyrosination" EXACT PSI-MI-short []
-xref: GO:GO\:0018166
+xref: GO:0018166
 is_a: MI:2272 ! tyrosinylation
 created_by: ppm
 creation_date: 2017-01-26T15:22:39Z
