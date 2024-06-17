@@ -11377,7 +11377,7 @@ name: chembl target
 def: "ChEMBL focuses on mapping the interactions of small molecules binding to their macromolecular targets." []
 subset: PSI-MI_slim
 xref: id-validation-regexp: "[0-9]+"
-xref: search-url:https\://github.com/HUPO-PSI/psi-mi-CV/blob/master/psi-mi.obo#L11380 "https://www.ebi.ac.uk/chembl/target_report_card/$%7Bac%7D’"
+xref: search-url: "https://www.ebi.ac.uk/chembl/target_report_card/$%7Bac%7D’"
 is_a: MI:0683 ! sequence database
 is_a: MI:1349 ! chembl
 created_by: orchard
