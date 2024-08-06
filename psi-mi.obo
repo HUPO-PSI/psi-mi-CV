@@ -6,7 +6,7 @@ subsetdef: Drugable "Drugable Genome Project"
 subsetdef: PSI-MI_slim "Subset of PSI-MI"
 subsetdef: PSI-MOD_slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
-synonymtypedef: PSI-MI-alternate "Alternate label curated by PSI-MI" EXACT
+synonymtypedef: PSI-MI-alternate "Alternate label curated by PSI-MI" EXACT {http://purl.obolibrary.org/obo/mi#PSI-MI-alternate=""}
 synonymtypedef: PSI-MI-short "Unique short label curated by PSI-MI" EXACT
 synonymtypedef: PSI-MOD-alternate "Alternate label curated by PSI-MOD" EXACT
 synonymtypedef: PSI-MOD-short "Unique short label curated by PSI-MOD" EXACT
@@ -35,7 +35,7 @@ remark: The last accession number used in this file is stored in a separate file
 remark: The maintenance of this file is ensured by Pablo Porras Millán pporras@ebi.ac.uk and Sandra Orchard orchard@ebi.ac.uk
 remark: The PSI MI schema defines short labels for controlled vocabulary terms
 ontology: mi
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))\n\n\nAnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> \"PMID:15833125\") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MI_1285> \"OBSOLETE: An effect in which individual perturbations of two different genes result in opposite mutant phenotypes (traits measured on the same scale but each on opposing sides relative to the wild type phenotype), and the resulting phenotype of their combination is equal to that of only one of the perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a < wt < b) AND (ab = a OR ab = b) \nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value.\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/MI_1285> \"orchard\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/MI_1285> \"2013-06-05T20:51:51Z\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MI_1285> \"PSI-MI\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MI_1285> \"MI:1285\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/MI_1285> <http://purl.obolibrary.org/obo/mi#PSI-MI_slim>)\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MI_1285> \"Term replaced by\nhttp://purl.obolibrary.org/obo/MI_1276\")\nAnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MI_1285> \"obsolete opposing epistasis\")\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))\n\n\nAnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> \"PMID:15833125\") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MI_1285> \"OBSOLETE: An effect in which individual perturbations of two different genes result in opposite mutant phenotypes (traits measured on the same scale but each on opposing sides relative to the wild type phenotype), and the resulting phenotype of their combination is equal to that of only one of the perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a < wt < b) AND (ab = a OR ab = b) \nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value.\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/MI_1285> \"orchard\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/MI_1285> \"2013-06-05T20:51:51Z\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MI_1285> \"PSI-MI\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MI_1285> \"MI:1285\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/MI_1285> <http://purl.obolibrary.org/obo/mi#PSI-MI_slim>)\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MI_1285> \"Term replaced by\nhttp://purl.obolibrary.org/obo/MI_1276\")\nAnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MI_1285> \"obsolete opposing epistasis\")\nAnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty> <http://purl.obolibrary.org/obo/mi#PSI-MI_slim>) <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/MI_2425> \"\")\n)
 
 [Term]
 id: MI:0000
@@ -1230,8 +1230,8 @@ name: n-acetyl-proline
 def: "Residue modification.\nOBSOLETE remap to MOD:00059." [PMID:11125103, RESID:AA0050]
 synonym: "(2S)-1-acetyl-2-pyrrolidinecarboxylic acid" EXACT PSI-MI-alternate []
 synonym: "[P:ac]" EXACT PSI-MI-alternate []
-synonym: "acetylproline" EXACT PSI-MI-short []
 synonym: "acetylproline" EXACT PSI-MI-alternate []
+synonym: "acetylproline" EXACT PSI-MI-short []
 synonym: "N-acetyl-L-proline" EXACT PSI-MI-alternate []
 synonym: "PAC" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -1596,8 +1596,8 @@ synonym: "[D:po]" EXACT PSI-MI-alternate []
 synonym: "beta-aspartyl phosphate" EXACT PSI-MI-alternate []
 synonym: "DPO" EXACT PSI-MI-alternate []
 synonym: "L-aspartic 4-phosphoric anhydride" EXACT PSI-MI-alternate []
-synonym: "phosphoaspartic acid" EXACT PSI-MI-short []
 synonym: "phosphoaspartic acid" EXACT PSI-MI-alternate []
+synonym: "phosphoaspartic acid" EXACT PSI-MI-short []
 is_obsolete: true
 
 [Term]
@@ -14773,11 +14773,31 @@ id: MI:2404
 name: Oxidase
 def: "Enxymatic Oxido-reductions where only O2 is an acceptor of hydrogen or electrons" [PMID:31273118]
 subset: PSI-MI_slim
-synonym: "oxidase" EXACT PSI-MI-short []
 synonym: "oxidase" EXACT PSI-MI-alternate []
+synonym: "oxidase" EXACT PSI-MI-short []
 is_a: MI:0979 ! oxidoreductase assay
 created_by: Licata
 creation_date: 2021-07-05T23:48:40Z
+
+[Term]
+id: MI:2424
+name: HuMap
+def: "HuMap is a a machine learning framework to identify protein complexes from mass spectrometry  and other large-scale interaction experiments. HuMap 2.0 is presented as a searchable web resource (http://humap2.proteincomplexes.org/) using data from 15,000 mass spectrometry experiments to identify nearly 7,000 physical assemblies. HuMap3.0 is in preparation." [PMID:33973408]
+subset: PSI-MI_slim
+synonym: "HuMap" EXACT PSI-MI-alternate []
+xref: id-validation-regexp: "[h|H]uMAP[2|3]_[0-9]+(\\.[0-9]+)?"
+is_a: MI:0489 ! source database
+created_by: Licata
+creation_date: 2024-07-29T10:24:37Z
+
+[Term]
+id: MI:2425
+name: ProteomeHD
+def: "A web-resource (https://www.proteomehd.net/index) that provides a co-regulation map of the human proteome built from ProteomeHD data (5,288 individual mass spectrometry experiments) and datasets from the Proteomics Identifications dataset using the machine learning algorithm treeClust to identify functional associations between co-regulated human proteins.\nhttps://www.proteomehd.net/proteomehd" [PMID:31690884]
+synonym: "ProteomeHD" EXACT PSI-MI-alternate []
+is_a: MI:1336 ! experiment database
+created_by: Licata
+creation_date: 2024-07-29T11:04:37Z
 
 [Term]
 id: MI_2406
