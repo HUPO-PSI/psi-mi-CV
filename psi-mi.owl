@@ -47446,60 +47446,55 @@ http://genolist.pasteur.fr/SubtiList/</owl:annotatedTarget>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MI_2423 -->
+    <!-- http://purl.obolibrary.org/obo/MI_2424 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2423">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0353"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2424">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0489"/>
+        <obo:IAO_0000115>HuMap is a a machine learning framework to identify protein complexes from mass spectrometry  and other large-scale interaction experiments. HuMap 2.0 is presented as a searchable web resource (http://humap2.proteincomplexes.org/) using data from 15,000 mass spectrometry experiments to identify nearly 7,000 physical assemblies. HuMap3.0 is in preparation.
+https://humap2.proteincomplexes.org/</obo:IAO_0000115>
         <oboInOwl:created_by>Licata</oboInOwl:created_by>
-        <oboInOwl:hasDbXref>reference to the gene producing this interactor.</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>gene reference</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>MI:2423</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>HuMap</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MI:2424</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
-        <rdfs:label xml:lang="en">gene ref</rdfs:label>
+        <rdfs:label xml:lang="en">HuMap</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2423"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>reference to the gene producing this interactor.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:14755292</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2424"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>HuMap is a a machine learning framework to identify protein complexes from mass spectrometry  and other large-scale interaction experiments. HuMap 2.0 is presented as a searchable web resource (http://humap2.proteincomplexes.org/) using data from 15,000 mass spectrometry experiments to identify nearly 7,000 physical assemblies. HuMap3.0 is in preparation.
+https://humap2.proteincomplexes.org/</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:33973408</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2423"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2424"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>gene reference</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-short"/>
+        <owl:annotatedTarget>HuMap</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
     </owl:Axiom>
-    <rdf:Description>
-        <mi:PSI-MI_slim></mi:PSI-MI_slim>
-    </rdf:Description>
-    <rdf:Description>
-        <mi:PSI-MI-short></mi:PSI-MI-short>
-    </rdf:Description>
-    <rdf:Description>
-        <mi:PSI-MI-short>
-            <rdf:Description/>
-        </mi:PSI-MI-short>
-    </rdf:Description>
-    <rdf:Description>
-        <mi:PSI-MI-short>
-            <rdf:Description/>
-        </mi:PSI-MI-short>
-    </rdf:Description>
-    <rdf:Description>
-        <mi:PSI-MI-short>
-            <rdf:Description/>
-        </mi:PSI-MI-short>
-    </rdf:Description>
-    <rdf:Description>
-        <mi:PSI-MI-short></mi:PSI-MI-short>
-    </rdf:Description>
-    <rdf:Description>
-        <mi:PSI-MI-short></mi:PSI-MI-short>
-    </rdf:Description>
-    <rdf:Description>
-        <mi:PSI-MI-short></mi:PSI-MI-short>
-    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_2425 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2425">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_1336"/>
+        <obo:IAO_0000115>A web-resource (https://www.proteomehd.net/index) that provides a co-regulation map of the human proteome built from ProteomeHD data (5,288 individual mass spectrometry experiments) and datasets from the Proteomics Identifications dataset using the machine learning algorithm treeClust to identify functional associations between co-regulated human proteins.
+https://www.proteomehd.net/proteomehd</obo:IAO_0000115>
+        <oboInOwl:created_by>Licata</oboInOwl:created_by>
+        <oboInOwl:creation_date>2024-07-08T10:27:01Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>ProteomeHD</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:2425</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label xml:lang="en">ProteomeHD</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2425"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A web-resource (https://www.proteomehd.net/index) that provides a co-regulation map of the human proteome built from ProteomeHD data (5,288 individual mass spectrometry experiments) and datasets from the Proteomics Identifications dataset using the machine learning algorithm treeClust to identify functional associations between co-regulated human proteins.
+https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:31690884</oboInOwl:hasDbXref>
+    </owl:Axiom>
 </rdf:RDF>
 
 
