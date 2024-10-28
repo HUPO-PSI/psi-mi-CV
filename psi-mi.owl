@@ -47450,9 +47450,9 @@ http://genolist.pasteur.fr/SubtiList/</owl:annotatedTarget>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2424">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0489"/>
-        <obo:IAO_0000115>HuMap is a a machine learning framework to identify protein complexes from mass spectrometry  and other large-scale interaction experiments. HuMap 2.0 is presented as a searchable web resource (http://humap2.proteincomplexes.org/) using data from 15,000 mass spectrometry experiments to identify nearly 7,000 physical assemblies. HuMap3.0 is in preparation.
-https://humap2.proteincomplexes.org/</obo:IAO_0000115>
+        <obo:IAO_0000115>HuMap is a a machine learning framework to identify protein complexes from mass spectrometry and other large-scale interaction experiments. HuMap 3.0 is presented as a searchable web resource (https://humap3.proteincomplexes.org/) using data from &gt;25,000 mass spectrometry experiments to identify nearly &gt;15,000 human protein complexes.</obo:IAO_0000115>
         <oboInOwl:created_by>Licata</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>search-url:</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HuMap</oboInOwl:hasExactSynonym>
         <oboInOwl:id>MI:2424</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
@@ -47461,9 +47461,14 @@ https://humap2.proteincomplexes.org/</obo:IAO_0000115>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2424"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>HuMap is a a machine learning framework to identify protein complexes from mass spectrometry  and other large-scale interaction experiments. HuMap 2.0 is presented as a searchable web resource (http://humap2.proteincomplexes.org/) using data from 15,000 mass spectrometry experiments to identify nearly 7,000 physical assemblies. HuMap3.0 is in preparation.
-https://humap2.proteincomplexes.org/</owl:annotatedTarget>
+        <owl:annotatedTarget>HuMap is a a machine learning framework to identify protein complexes from mass spectrometry and other large-scale interaction experiments. HuMap 3.0 is presented as a searchable web resource (https://humap3.proteincomplexes.org/) using data from &gt;25,000 mass spectrometry experiments to identify nearly &gt;15,000 human protein complexes.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:33973408</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2424"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>search-url:</owl:annotatedTarget>
+        <rdfs:comment>https://humap3.proteincomplexes.org/displayComplexes?complex_key=${ac}</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2424"/>
@@ -47516,9 +47521,93 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <owl:annotatedTarget>orthology-group</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_2427 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2427">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0353"/>
+        <obo:IAO_0000115>Used to link large ML assemblies to smaller curated complexes which are a subset of this. Added as qualifier to all entries linked by a common cross reference to an entry which represents a superset.</obo:IAO_0000115>
+        <oboInOwl:created_by>Licata</oboInOwl:created_by>
+        <oboInOwl:creation_date>2024-10-28T13:31:03Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>superset</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:2427</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label xml:lang="en">complex-cluster</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2427"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Used to link large ML assemblies to smaller curated complexes which are a subset of this. Added as qualifier to all entries linked by a common cross reference to an entry which represents a superset.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:25313161</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2427"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>superset</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-short"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_2428 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2428">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0647"/>
+        <obo:IAO_0000115>A unit of mass used to express molecular mass, especially for large molecules, such as proteins and polysaccharides. It is equal to 1000 daltons. A dalton is equal to one twelfth of the mass of an atom of carbon-12, or 1.660 33 × 10−27 kg.</obo:IAO_0000115>
+        <oboInOwl:created_by>Licata</oboInOwl:created_by>
+        <oboInOwl:creation_date>2024-10-28T14:31:03Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>Kda</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:2428</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label xml:lang="en">Kilodalton</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2428"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A unit of mass used to express molecular mass, especially for large molecules, such as proteins and polysaccharides. It is equal to 1000 daltons. A dalton is equal to one twelfth of the mass of an atom of carbon-12, or 1.660 33 × 10−27 kg.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:14755292</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2428"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Kda</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_2429 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2429">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0647"/>
+        <obo:IAO_0000115>Relative or absolute number of molecules in a sample. Used in the context of quantatative proteomics</obo:IAO_0000115>
+        <oboInOwl:created_by>Licata</oboInOwl:created_by>
+        <oboInOwl:creation_date>2024-10-28T14:51:03Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>molecule no.</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:2429</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label xml:lang="en">Number of molecules</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2429"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Relative or absolute number of molecules in a sample. Used in the context of quantatative proteomics</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:14755292</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2429"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>molecule no.</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
+    </owl:Axiom>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
