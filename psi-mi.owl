@@ -47541,7 +47541,7 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2427"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Used to link large ML assemblies to smaller curated complexes which are a subset of this. Added as qualifier to all entries linked by a common cross reference to an entry which represents a superset.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:25313161</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:14755292</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2427"/>
