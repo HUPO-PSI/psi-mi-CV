@@ -47450,7 +47450,7 @@ http://genolist.pasteur.fr/SubtiList/</owl:annotatedTarget>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2424">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0489"/>
-        <obo:IAO_0000115>HuMap is a a machine learning framework to identify protein complexes from mass spectrometry and other large-scale interaction experiments. HuMap 3.0 is presented as a searchable web resource (https://humap3.proteincomplexes.org/) using data from &gt;25,000 mass spectrometry experiments to identify nearly &gt;15,000 human protein complexes.</obo:IAO_0000115>
+        <obo:IAO_0000115>HuMap is a machine learning framework to identify protein complexes from mass spectrometry and other large-scale interaction experiments. HuMap 3.0 is presented as a searchable web resource (https://humap3.proteincomplexes.org/) using data from &gt;25,000 mass spectrometry experiments to identify nearly &gt;15,000 human protein complexes.</obo:IAO_0000115>
         <oboInOwl:created_by>Licata</oboInOwl:created_by>
         <oboInOwl:hasDbXref>search-url:</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HuMap</oboInOwl:hasExactSynonym>
@@ -47461,7 +47461,7 @@ http://genolist.pasteur.fr/SubtiList/</owl:annotatedTarget>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2424"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>HuMap is a a machine learning framework to identify protein complexes from mass spectrometry and other large-scale interaction experiments. HuMap 3.0 is presented as a searchable web resource (https://humap3.proteincomplexes.org/) using data from &gt;25,000 mass spectrometry experiments to identify nearly &gt;15,000 human protein complexes.</owl:annotatedTarget>
+        <owl:annotatedTarget>HuMap is a machine learning framework to identify protein complexes from mass spectrometry and other large-scale interaction experiments. HuMap 3.0 is presented as a searchable web resource (https://humap3.proteincomplexes.org/) using data from &gt;25,000 mass spectrometry experiments to identify nearly &gt;15,000 human protein complexes.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:33973408</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -47603,6 +47603,31 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2429"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>molecule no.</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_2430 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2430">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0489"/>
+        <obo:IAO_0000115>MuSIC (multi-scale integrated cell ) is a machine learning framework to identify protein complexes from mass spectrometry and other large-scale interaction experiments</obo:IAO_0000115>
+        <oboInOwl:created_by>Licata</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym>music</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MI:2430</oboInOwl:id>
+        <rdfs:label xml:lang="en">MuSIC</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2430"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>MuSIC (multi-scale integrated cell ) is a machine learning framework to identify protein complexes from mass spectrometry and other large-scale interaction experiments</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:34819669</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2430"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>music</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
     </owl:Axiom>
 </rdf:RDF>
