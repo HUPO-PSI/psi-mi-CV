@@ -15037,7 +15037,7 @@ created_by: Licata
 [Term]
 id: MI:2431
 name: biotin ligase tag
-def: "Biotin ligase tags that can be used as label as they confer some property that facilitates identification purification and monitoring to the labeled molecule." []
+def: "Biotin ligase tags that can be used as label as they confer some property that facilitates identification purification and monitoring to the labeled molecule." [PMID:22412018]
 subset: PSI-MI_slim
 is_a: MI:0507 ! tag
 created_by: eragueneau

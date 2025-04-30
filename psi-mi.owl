@@ -47652,6 +47652,12 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
         <rdfs:label xml:lang="en">biotin ligase tag</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2431"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Biotin ligase tags that can be used as label as they confer some property that facilitates identification purification and monitoring to the labeled molecule.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:22412018</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
