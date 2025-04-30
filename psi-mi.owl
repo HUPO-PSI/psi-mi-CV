@@ -21,7 +21,7 @@
         <rdfs:comment>The PSI MI schema defines short labels for controlled vocabulary terms</rdfs:comment>
         <rdfs:comment>The correct use of these vocabularies in the PSI Molecular Interaction XML schema is</rdfs:comment>
         <rdfs:comment>The last accession number used in this file is stored in a separate file,</rdfs:comment>
-        <rdfs:comment>The maintenance of this file is ensured by Luana Licata luana.licata@uniroma2.it and Sandra Orchard orchard@ebi.ac.uk</rdfs:comment>
+        <rdfs:comment xml:lang="ebi.ac.uk">The maintenance of this file is ensured by Luana Licata luana.licata@uniroma2.it and Sandra Orchard orchard</rdfs:comment>
         <rdfs:comment>coverage: This file collect controlled vocabularies describing different aspects of molecular interactions.</rdfs:comment>
         <rdfs:comment>formalized in a mapping file available at http://www.psidev.info/files/validator/xml/MI-CVMapping.xml.</rdfs:comment>
         <rdfs:comment>mapping an element of the PSI Molecular Interaction XML schema.</rdfs:comment>
@@ -46791,7 +46791,7 @@ ab (not=) E</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MI_2403 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2403">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0507"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2431"/>
         <obo:IAO_0000115>E. coli BirA* biotin ligase tag used in BioID experiments. This generally refers to a promiscuous mutant version of the biotin ligase with an R118H mutation.</obo:IAO_0000115>
         <oboInOwl:created_by>pporras</oboInOwl:created_by>
         <oboInOwl:creation_date>2021-03-22T14:27:04Z</oboInOwl:creation_date>
@@ -46799,6 +46799,7 @@ ab (not=) E</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>BirA* tag</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>bira biotin ligase tag</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>bira tag</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioID</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
         <oboInOwl:id>MI:2403</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
@@ -46833,6 +46834,12 @@ ab (not=) E</obo:IAO_0000115>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>bira tag</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-short"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2403"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>BioID</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
     </owl:Axiom>
     
 
@@ -47628,6 +47635,75 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2430"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>music</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2431">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0507"/>
+        <obo:IAO_0000115>Biotin ligase tags that can be used as label as they confer some property that facilitates identification purification and monitoring to the labeled molecule.</obo:IAO_0000115>
+        <oboInOwl:created_by>eragueneau</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-04-30T15:12:04Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:2431</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label xml:lang="en">biotin ligase tag</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2432 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2432">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2431"/>
+        <obo:IAO_0000115>An engineered biotin ligase that uses ATP to convert biotin into biotin–AMP, a reactive intermediate that covalently labels proximal proteins. BioID2, derived from Aquifex aeolicus biotin ligase, is ~30% smaller than BirA</obo:IAO_0000115>
+        <oboInOwl:created_by>eragueneau</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-04-30T15:12:04Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>BioID2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:2432</oboInOwl:id>
+        <rdfs:label>bioid2 tag</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2432"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An engineered biotin ligase that uses ATP to convert biotin into biotin–AMP, a reactive intermediate that covalently labels proximal proteins. BioID2, derived from Aquifex aeolicus biotin ligase, is ~30% smaller than BirA</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:26912792</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>BioID2</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2433 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2433">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2431"/>
+        <obo:IAO_0000115>An engineered biotin ligase that uses ATP to convert biotin into biotin–AMP, a reactive intermediate that covalently labels proximal proteins. TurboID has faster labeling kinetics than \bir\a and will operate at lower temperatures.</obo:IAO_0000115>
+        <oboInOwl:created_by>eragueneau</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-04-30T15:12:04Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>TurboID</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:2433</oboInOwl:id>
+        <rdfs:label>turbo id tag</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2433"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An engineered biotin ligase that uses ATP to convert biotin into biotin–AMP, a reactive intermediate that covalently labels proximal proteins. TurboID has faster labeling kinetics than \bir\a and will operate at lower temperatures.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:33139955</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2433"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>TurboID</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
     </owl:Axiom>
 </rdf:RDF>
