@@ -6,7 +6,7 @@ subsetdef: Drugable "Drugable Genome Project"
 subsetdef: PSI-MI_slim "Subset of PSI-MI"
 subsetdef: PSI-MOD_slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
-synonymtypedef: PSI-MI-alternate "Alternate label curated by PSI-MI" EXACT {http://purl.obolibrary.org/obo/mi#PSI-MI-alternate=""}
+synonymtypedef: PSI-MI-alternate "Alternate label curated by PSI-MI" EXACT
 synonymtypedef: PSI-MI-short "Unique short label curated by PSI-MI" EXACT
 synonymtypedef: PSI-MOD-alternate "Alternate label curated by PSI-MOD" EXACT
 synonymtypedef: PSI-MOD-short "Unique short label curated by PSI-MOD" EXACT
@@ -21,6 +21,7 @@ synonymtypedef: UniMod-interim "Interim label from UniMod" RELATED
 synonymtypedef: UniMod-label "Label (title) from UniMod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MI
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 remark: coverage: This file collect controlled vocabularies describing different aspects of molecular interactions.
 remark: CVversion: 2.5.5
 remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
@@ -32,10 +33,10 @@ remark: publisher: This file is published by the PSI MI working group see http:/
 remark: short labels are reported as PSI-MI-short synonyms that are created when a term is more than 20 characteres long.
 remark: The correct use of these vocabularies in the PSI Molecular Interaction XML schema is
 remark: The last accession number used in this file is stored in a separate file,
-remark: The maintenance of this file is ensured by Pablo Porras Millán pporras@ebi.ac.uk and Sandra Orchard orchard@ebi.ac.uk
+remark: The maintenance of this file is ensured by Luana Licata luana.licata@uniroma2.it and Sandra Orchard orchard
 remark: The PSI MI schema defines short labels for controlled vocabulary terms
 ontology: mi
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))\n\n\nAnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> \"PMID:15833125\") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MI_1285> \"OBSOLETE: An effect in which individual perturbations of two different genes result in opposite mutant phenotypes (traits measured on the same scale but each on opposing sides relative to the wild type phenotype), and the resulting phenotype of their combination is equal to that of only one of the perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a < wt < b) AND (ab = a OR ab = b) \nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value.\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/MI_1285> \"orchard\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/MI_1285> \"2013-06-05T20:51:51Z\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MI_1285> \"PSI-MI\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MI_1285> \"MI:1285\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/MI_1285> <http://purl.obolibrary.org/obo/mi#PSI-MI_slim>)\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MI_1285> \"Term replaced by\nhttp://purl.obolibrary.org/obo/MI_1276\")\nAnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MI_1285> \"obsolete opposing epistasis\")\nAnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty> <http://purl.obolibrary.org/obo/mi#PSI-MI_slim>) <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/MI_2425> \"\")\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/MI_0907>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/MI_0908>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/MI_0909>))\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))\n\n\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/MI_0907> (<http://purl.obolibrary.org/obo/MI_0907>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/MI_0907> ObjectUnionOf(<http://purl.obolibrary.org/obo/MI_0908> <http://purl.obolibrary.org/obo/MI_0909>))\n\n\nAnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> \"PMID:15833125\") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MI_1285> \"OBSOLETE: An effect in which individual perturbations of two different genes result in opposite mutant phenotypes (traits measured on the same scale but each on opposing sides relative to the wild type phenotype), and the resulting phenotype of their combination is equal to that of only one of the perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a < wt < b) AND (ab = a OR ab = b) \nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value.\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/MI_1285> \"orchard\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/MI_1285> \"2013-06-05T20:51:51Z\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MI_1285> \"PSI-MI\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MI_1285> \"MI:1285\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/MI_1285> <http://purl.obolibrary.org/obo/mi#PSI-MI_slim>)\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MI_1285> \"Term replaced by\nhttp://purl.obolibrary.org/obo/MI_1276\")\nAnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MI_1285> \"obsolete opposing epistasis\")\n)
 
 [Term]
 id: MI:0000
@@ -971,7 +972,7 @@ synonym: "membrane yeast two-hybrid" RELATED []
 synonym: "myth" RELATED []
 synonym: "split-ubiquitin" RELATED []
 synonym: "ub reconstruction" EXACT PSI-MI-short []
-is_a: MI:1320 ! membrane yeast two hybrid
+is_a: MI:2412 ! membrane two hybrid
 
 [Term]
 id: MI:0113
@@ -1055,8 +1056,8 @@ def: "Residue modification.\nOBSOLETE remap to MOD:00050." [PMID:11125103, RESID
 synonym: "(S)-2-(acetylamino)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "[A:ac]" EXACT PSI-MI-alternate []
 synonym: "AAC" EXACT PSI-MI-alternate []
-synonym: "acetylalanine" EXACT PSI-MI-alternate []
 synonym: "acetylalanine" EXACT PSI-MI-short []
+synonym: "acetylalanine" EXACT PSI-MI-alternate []
 synonym: "N-acetyl-L-alanine" EXACT PSI-MI-alternate []
 is_obsolete: true
 
@@ -1596,8 +1597,8 @@ synonym: "[D:po]" EXACT PSI-MI-alternate []
 synonym: "beta-aspartyl phosphate" EXACT PSI-MI-alternate []
 synonym: "DPO" EXACT PSI-MI-alternate []
 synonym: "L-aspartic 4-phosphoric anhydride" EXACT PSI-MI-alternate []
-synonym: "phosphoaspartic acid" EXACT PSI-MI-alternate []
 synonym: "phosphoaspartic acid" EXACT PSI-MI-short []
+synonym: "phosphoaspartic acid" EXACT PSI-MI-alternate []
 is_obsolete: true
 
 [Term]
@@ -3589,7 +3590,7 @@ is_obsolete: true
 [Term]
 id: MI:0444
 name: database citation
-def: "Database citation list names of databases commonly used to cross reference interaction data." [PMID:14755292]
+def: "Database citation list names of databases commonly used to cross reference interaction data. http://purl.obolibrary.org/obo/clo.owl" [PMID:14755292]
 subset: Drugable
 subset: PSI-MI_slim
 is_a: MI:0000 ! molecular interaction
@@ -3793,8 +3794,8 @@ name: dip
 def: "The database of interacting protein (DIP) database stores experimentally determined interactions between proteins. It combines information from a variety of sources to create a single, consistent set of protein-protein interactions.\nhttp://dip.doe-mbi.ucla.edu/" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "DIP" EXACT PSI-MI-alternate []
-xref: id-validation-regexp: "DIP[0-9]+[NE]"
-xref: search-url: "http://identifiers.org/dip/"
+xref: id-validation-regexp: "DIP[:-]?[0-9]+[NE]"
+xref: search-url: "http://identifiers.org/dip/${ac}"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 
@@ -3814,7 +3815,7 @@ subset: PSI-MI_slim
 synonym: "Genome Knowledge Base" EXACT PSI-MI-alternate []
 synonym: "GKB" EXACT PSI-MI-alternate []
 synonym: "Reactome" EXACT PSI-MI-alternate []
-xref: id-validation-regexp: "REACT_\\d+(\\.\\d+)?$"
+xref: id-validation-regexp: "((R-[A-Z]{3}-\\d+)|(REACT_\\d+))(\\.\\d+)?$"
 xref: search-url: "http://www.reactome.org/content/detail/${ac}"
 is_a: MI:1106 ! pathways database
 
@@ -4000,7 +4001,7 @@ def: "UniProt Archive (UniParc) is part of UniProt project. It is a non-redundan
 subset: PSI-MI_slim
 synonym: "UniParc" EXACT PSI-MI-alternate []
 xref: id-validation-regexp: "UPI[A-F0-9]{10}"
-xref: search-url: "http://www.ebi.uniprot.org/entry/${ac}"
+xref: search-url: "https://www.uniprot.org/uniparc/${ac}/entry"
 is_a: MI:1097 ! uniprot
 
 [Term]
@@ -4010,8 +4011,8 @@ def: "UniProt (Universal Protein Resource) is the world's most comprehensive cat
 subset: PSI-MI_slim
 synonym: "UniProtKB" EXACT PSI-MI-alternate []
 synonym: "uniprotkb" EXACT PSI-MI-short []
-xref: id-validation-regexp: "[OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2}-PRO_[0-9]{10}"
-xref: search-url: "http://www.uniprot.org/uniprot/${ac}"
+xref: id-validation-regexp: "(([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})(-[0-9]+)?(-PRO_[0-9]{10})?)"
+xref: search-url: "https://www.uniprot.org/uniprotkb/${ac}/entry"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 is_a: MI:1097 ! uniprot
@@ -7322,7 +7323,7 @@ def: "The Electron Microscopy Data Bank (EMDB) contains experimentally determine
 subset: PSI-MI_slim
 synonym: "Electron Microscopy Data Bank" EXACT PSI-MI-alternate []
 synonym: "eMDB" EXACT PSI-MI-short []
-xref: search-url: "https://www.ebi.ac.uk/pdbe/entry/emdb/${ac}"
+xref: search-url: "https://www.ebi.ac.uk/emdb/${ac}"
 is_a: MI:0472 ! pdbe
 
 [Term]
@@ -7580,7 +7581,7 @@ subset: Drugable
 subset: PSI-MI_slim
 synonym: "chembl" EXACT []
 xref: id-validation-regexp: "[0-9]+"
-xref: search-url: "https://github.com/HUPO-PSI/psi-mi-CV/blob/master/psi-mi.obo#L7583"
+xref: search-url: "http://www.ebi.ac.uk/chembldb/index.php/compound/inspect/${ac}"
 is_a: MI:1349 ! chembl
 is_a: MI:2054 ! bioactive entity reference
 created_by: orchard
@@ -8881,8 +8882,8 @@ def: "UniProt (Universal Protein Resource) is the world's most comprehensive cat
 subset: PSI-MI_slim
 synonym: "swiss-prot" EXACT PSI-MI-short []
 synonym: "UniProt" EXACT PSI-MI-alternate []
-xref: id-validation-regexp: "[OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2}-PRO_[0-9]{10}"
-xref: search-url: "http://www.uniprot.org/uniprot/${ac}"
+xref: id-validation-regexp: "(([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})(-[0-9]+)?(-PRO_[0-9]{10})?)"
+xref: search-url: "https://www.uniprot.org/uniprotkb/${ac}/entry"
 is_a: MI:0486 ! uniprot knowledge base
 created_by: orchard
 creation_date: 2011-07-06T08:17:34Z
@@ -8894,8 +8895,8 @@ def: "UniProt (Universal Protein Resource) is the world's most comprehensive cat
 subset: PSI-MI_slim
 synonym: "trembl" EXACT PSI-MI-short []
 synonym: "UniProt" EXACT PSI-MI-alternate []
-xref: id-validation-regexp: "[OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2}-PRO_[0-9]{10}"
-xref: search-url: "http://www.uniprot.org/uniprot/${ac}"
+xref: id-validation-regexp: "(([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})(-[0-9]+)?(-PRO_[0-9]{10})?)"
+xref: search-url: "https://www.uniprot.org/uniprotkb/${ac}/entry"
 is_a: MI:0486 ! uniprot knowledge base
 created_by: orchard
 creation_date: 2011-07-06T08:20:24Z
@@ -11082,7 +11083,7 @@ name: membrane yeast two hybrid
 def: "Traditional yeast two hybrid assays are not suitable for the analysis of membrane proteins, as they require the interactions to occur in the nucleus. Methods have been specifically developed to assay for interactions of membrane proteins with both cytosolic or membrane-bound partners." [PMID:2261051]
 subset: PSI-MI_slim
 synonym: "MYTH" EXACT []
-is_a: MI:0232 ! transcriptional complementation assay
+is_a: MI:2412 ! membrane two hybrid
 created_by: orchard
 creation_date: 2014-01-08T10:14:46Z
 
@@ -11093,7 +11094,7 @@ def: "Upon interaction of N-terminal generated Ire1p-fusions, the Ire1p kinase d
 subset: PSI-MI_slim
 synonym: "endoplasmic reticulum membrane yeast-two hybrid" RELATED []
 synonym: "ER-MYTH" RELATED []
-is_a: MI:1320 ! membrane yeast two hybrid
+is_a: MI:2412 ! membrane two hybrid
 created_by: orchard
 creation_date: 2014-01-08T10:17:38Z
 
@@ -11261,7 +11262,7 @@ name: efo
 def: "The Experimental Factor Ontology provides a systematic description of many experimental variables, combining parts of several biological ontologies to additional new terms." [pmid:20200009]
 subset: PSI-MI_slim
 synonym: "Experimental facto ontology" EXACT []
-xref: id-validation-regexp: "\\d{7}$"
+xref: id-validation-regexp: "([A-Z]+:)?\\d{7}$"
 xref: search-url: "http://www.ebi.ac.uk/ols/ontologies/efo/terms?obo_id=${ac}"
 is_a: MI:1336 ! experiment database
 created_by: orchard
@@ -11376,8 +11377,8 @@ id: MI:1348
 name: chembl target
 def: "ChEMBL focuses on mapping the interactions of small molecules binding to their macromolecular targets." []
 subset: PSI-MI_slim
-xref: id-validation-regexp: "[0-9]+"
-xref: search-url: "https://www.ebi.ac.uk/chembl/target_report_card/$%7Bac%7D’"
+xref: regexp: "CHEMBL:[0-9]+"
+xref: search-url: "http://www.ebi.ac.uk/chembldb/index.php/target/inspect/${ac}"
 is_a: MI:0683 ! sequence database
 is_a: MI:1349 ! chembl
 created_by: orchard
@@ -14335,7 +14336,7 @@ synonym: "Electron Microscopy Public Image Archive" EXACT PSI-MI-alternate []
 synonym: "EMPIAR" EXACT PSI-MI-alternate []
 synonym: "empiar" EXACT PSI-MI-short []
 xref: id-validation-regex: "EMPIAR-[0-9]{5}"
-xref: search-url: "https://dx.doi.org/10.6019/${ac}"
+xref: search-url: "https://www.ebi.ac.uk/empiar/${ac}"
 is_a: MI:0936 ! emdb
 created_by: pporras
 creation_date: 2019-12-17T09:31:30Z
@@ -14760,52 +14761,303 @@ id: MI:2403
 name: bira tag
 def: "E. coli BirA* biotin ligase tag used in BioID experiments. This generally refers to a promiscuous mutant version of the biotin ligase with an R118H mutation." [PMID:22412018]
 subset: PSI-MI_slim
+synonym: "BioID" EXACT PSI-MI-alternate []
 synonym: "bira biotin ligase tag" EXACT PSI-MI-alternate []
 synonym: "bira tag" EXACT PSI-MI-short []
 synonym: "BirA* biotin ligase tag" EXACT PSI-MI-alternate []
 synonym: "BirA* tag" EXACT PSI-MI-alternate []
-is_a: MI:0507 ! tag
+is_a: MI:2431 ! biotin ligase tag
 created_by: pporras
 creation_date: 2021-03-22T14:27:04Z
 
 [Term]
 id: MI:2404
-name: Oxidase
-def: "Enxymatic Oxido-reductions where only O2 is an acceptor of hydrogen or electrons" [PMID:31273118]
+name: oxidase assay
+def: "Enzymatic oxido-reductions where only O2 is an acceptor of hydrogen or electrons" [PMID:31273118]
 subset: PSI-MI_slim
-synonym: "oxidase" EXACT PSI-MI-alternate []
 synonym: "oxidase" EXACT PSI-MI-short []
+synonym: "oxidase" EXACT PSI-MI-alternate []
 is_a: MI:0979 ! oxidoreductase assay
 created_by: Licata
 creation_date: 2021-07-05T23:48:40Z
 
 [Term]
+id: MI:2405
+name: circular RNA
+def: "Circular RNAs are stable circular transcripts generated when a pre-mRNA undergoes “backsplicing” to join a splice donor to an upstream splice acceptor. They can originate from exons, introns or lncRNAs." [PMID:23446348]
+subset: PSI-MI_slim
+synonym: "circRNA" EXACT PSI-MI-short []
+is_a: MI:0320 ! ribonucleic acid
+created_by: Licata
+creation_date: 2021-12-15T11:55:10Z
+
+[Term]
+id: MI:2406
+name: ribozyme
+def: "Ribozymes (ribonucleic acid enzymes) are folded catalytic RNA molecules that perform important biological functions." [PMID:34415304]
+subset: PSI-MI_slim
+synonym: "ribozyme" EXACT PSI-MI-short []
+is_a: MI:0500 ! biological role
+created_by: Licata
+creation_date: 2022-03-01T16:49:20Z
+
+[Term]
+id: MI:2407
+name: Uberon
+def: "Uberon is an integrated cross-species anatomy ontology representing a variety of entities classified according to traditional anatomical criteria such as structure, function and developmental lineage. \nhttps://www.ebi.ac.uk/ols/ontologies/uberon" [PMID:22293552]
+subset: PSI-MI_slim
+synonym: "uberon" EXACT PSI-MI-short []
+is_a: MI:0473 ! participant database
+created_by: Licata
+
+[Term]
+id: MI:2408
+name: CoVoc Coronavirus Vocabulary
+def: "The COVID-19 Vocabulary (COVoc) is an ontology containing terms related to the research of the COVID-19 pandemic. This includes host organisms, pathogenicity, gene and gene products, barrier gestures, treatments and more.\nhttps://www.ebi.ac.uk/ols/ontologies/COVOC" []
+subset: PSI-MI_slim
+synonym: "COVID-19 Vocabulary" EXACT PSI-MI-alternate []
+synonym: "CoVoc" EXACT PSI-MI-short []
+is_a: MI:0473 ! participant database
+created_by: Licata
+
+[Term]
+id: MI:2409
+name: Plant Ontology
+def: "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.\nhttps://www.ebi.ac.uk/ols/ontologies/po" [PMID:23220694]
+subset: PSI-MI_slim
+synonym: "plant ontology" EXACT PSI-MI-short []
+synonym: "PO" EXACT PSI-MI-alternate []
+is_a: MI:0473 ! participant database
+created_by: Licata
+
+[Term]
+id: MI:2410
+name: mondo
+def: "A semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology.\nhttps://www.ebi.ac.uk/ols/ontologies/mondo" [PMID:31701156]
+subset: PSI-MI_slim
+synonym: "mondo" EXACT PSI-MI-short []
+synonym: "mondo" EXACT PSI-MI-alternate []
+is_a: MI:0473 ! participant database
+created_by: Licata
+creation_date: 2022-06-30T16:05:45Z
+
+[Term]
+id: MI:2411
+name: mac tag
+def: "The protein of interest is expressed as a fusion to a MAC-tag, which contains a twin-strep affinity tag and BirA* in one construct, requires generation of only one isogenic cell line and allows one-step protein purification by Strep-Tactin matrix for both AP–MS and BioID pipelines." [PMID:32778839]
+subset: PSI-MI_slim
+synonym: "mac-tag" EXACT PSI-MI-short []
+synonym: "mac-tag" EXACT PSI-MI-alternate []
+is_a: MI:0507 ! tag
+created_by: Licata
+creation_date: 2022-07-28T16:04:45Z
+
+[Term]
+id: MI:2412
+name: membrane two hybrid
+def: "Protein complementation methods specifically developed to assay for interactions of membrane proteins with both cytosolic or membrane-bound partners." [PMID:24658140]
+subset: PSI-MI_slim
+synonym: "MTH" EXACT [] {EXACT="PSI-MI-short"}
+is_a: MI:0232 ! transcriptional complementation assay
+created_by: Licata
+creation_date: 2022-02-03T16:27:45Z
+
+[Term]
+id: MI:2413
+name: mammalian membrane two hybrid
+def: "A membrane bait protein is tagged with the C-terminal half of ubiquitin (Cub) and a chimeric transcription factor, and a cytosolic or membrane-bound prey is tagged with the N-terminal half of ubiquitin (Nub). Upon interaction of bait and prey, the split halves form pseudoubiquitin, which is recognized by cytosolic deubiquitinating enzymes, resulting in cleavage of the transcription factor and expression of a reporter gene." [PMID:24658140]
+subset: PSI-MI_slim
+synonym: "MAMTH" EXACT PSI-MI-short []
+is_a: MI:0112 ! ubiquitin reconstruction
+created_by: Licata
+creation_date: 2023-02-03T10:18:35Z
+
+[Term]
+id: MI:2414
+name: Cellosaurus
+def: "The Cellosaurus is a knowledge resource on cell lines. It aims to describe all cell lines used in biomedical research." [PMID:29805321]
+subset: PSI-MI_slim
+synonym: "cellosaurus" EXACT PSI-MI-short []
+is_a: MI:0473 ! participant database
+created_by: Licata
+creation_date: 2023-02-04T11:18:35Z
+
+[Term]
+id: MI:2415
+name: cell line ontology
+def: "The Cell Line Ontology (CLO) is a community-based ontology of cell lines. The CLO is developed to unify publicly available cell line entry data from multiple sources to a standardized logically defined format based on consensus design patterns." [PMID:25852852]
+subset: PSI-MI_slim
+synonym: "Cell Line Ontology" EXACT PSI-MI-short []
+synonym: "CLO" EXACT PSI-MI-alternate []
+is_a: MI:0473 ! participant database
+created_by: Licata
+creation_date: 2023-02-04T11:50:35Z
+
+[Term]
+id: MI:2416
+name: ensemblbacteria
+def: "Ensembl Bacteria is a browser for bacterial and archaeal genomes.\nhttps://bacteria.ensembl.org/" [PMID:34791415]
+subset: PSI-MI_slim
+synonym: "Ensembl Bacteria" EXACT PSI-MI-alternate []
+synonym: "ensembl bacteria" EXACT PSI-MI-short []
+is_a: MI:1013 ! ensemblgenomes
+created_by: Licata
+creation_date: 2023-02-04T12:00:05Z
+
+[Term]
+id: MI:2417
+name: ensemblfungi
+def: "Ensembl Fungi is a browser for fungal genomes. https://fungi.ensembl.org/" [PMID:34791415]
+subset: PSI-MI_slim
+synonym: "Ensembl Fungi" EXACT PSI-MI-short []
+synonym: "ensembl fungi" EXACT PSI-MI-alternate []
+is_a: MI:1013 ! ensemblgenomes
+created_by: Licata
+creation_date: 2023-02-04T12:10:25Z
+
+[Term]
+id: MI:2418
+name: ensemblmetazoa
+def: "Ensembl Metazoa is a is a browser for genomes of metazoan species of scientific interest. https://metazoa.ensembl.org/" [PMID:34791415]
+subset: PSI-MI_slim
+synonym: "Ensembl Metazoa" EXACT PSI-MI-short []
+synonym: "ensembl metazoa" EXACT PSI-MI-alternate []
+is_a: MI:1013 ! ensemblgenomes
+created_by: Licata
+creation_date: 2023-02-04T12:20:05Z
+
+[Term]
+id: MI:2419
+name: ensemblplants
+def: "Ensembl Plants is a browser for plant genomes. \nhttps://plants.ensembl.org/" [PMID:27987162]
+subset: PSI-MI_slim
+synonym: "Ensembl Plants" EXACT PSI-MI-short []
+synonym: "ensembl plants" EXACT PSI-MI-alternate []
+is_a: MI:1013 ! ensemblgenomes
+created_by: Licata
+creation_date: 2023-02-04T12:33:15Z
+
+[Term]
+id: MI:2420
+name: ensemblprotists
+def: "Ensembl Protists is a browser for protist genomes. https://protists.ensembl.org/" [PMID:34791415]
+subset: PSI-MI_slim
+synonym: "Ensembl Protists" EXACT PSI-MI-short []
+synonym: "ensembl protists" EXACT PSI-MI-alternate []
+is_a: MI:1013 ! ensemblgenomes
+created_by: Licata
+creation_date: 2023-02-04T12:40:07Z
+
+[Term]
+id: MI:2421
+name: subtilist
+def: "SubtiList is the reference database dedicated to the genome of Bacillus subtilis, the paradigm of Gram-positive endospore-forming bacteria.\nhttp://genolist.pasteur.fr/SubtiList/" [PMID:11752255]
+subset: PSI-MI_slim
+synonym: "Subtilist" EXACT PSI-MI-short []
+is_a: MI:1094 ! genome databases
+created_by: Licata
+
+[Term]
+id: MI:2422
+name: mass photometry
+def: "Mass photometry measures mass at the single molecule level in solution and enables the quantification of protein–protein interactions in solution with sufficient sensitivity to accurately determine stoichiometry and rate of reactions." [PMID:32167227]
+subset: PSI-MI_slim
+synonym: "mass photometry" EXACT PSI-MI-short []
+is_a: MI:0067 ! light scattering
+created_by: Licata
+creation_date: 2023-19-07T11:19:50Z
+
+[Term]
 id: MI:2424
 name: HuMap
-def: "HuMap is a a machine learning framework to identify protein complexes from mass spectrometry  and other large-scale interaction experiments. HuMap 2.0 is presented as a searchable web resource (http://humap2.proteincomplexes.org/) using data from 15,000 mass spectrometry experiments to identify nearly 7,000 physical assemblies. HuMap3.0 is in preparation." [PMID:33973408]
+def: "HuMap is a machine learning framework to identify protein complexes from mass spectrometry and other large-scale interaction experiments. HuMap 3.0 is presented as a searchable web resource (https://humap3.proteincomplexes.org/) using data from >25,000 mass spectrometry experiments to identify nearly >15,000 human protein complexes." [PMID:33973408]
 subset: PSI-MI_slim
 synonym: "HuMap" EXACT PSI-MI-alternate []
-xref: id-validation-regexp: "[h|H]uMAP[2|3]_[0-9]+(\\.[0-9]+)?"
+xref: search-url: {comment="https://humap3.proteincomplexes.org/displayComplexes?complex_key=${ac}"}
 is_a: MI:0489 ! source database
 created_by: Licata
-creation_date: 2024-07-29T10:24:37Z
 
 [Term]
 id: MI:2425
 name: ProteomeHD
 def: "A web-resource (https://www.proteomehd.net/index) that provides a co-regulation map of the human proteome built from ProteomeHD data (5,288 individual mass spectrometry experiments) and datasets from the Proteomics Identifications dataset using the machine learning algorithm treeClust to identify functional associations between co-regulated human proteins.\nhttps://www.proteomehd.net/proteomehd" [PMID:31690884]
-synonym: "ProteomeHD" EXACT PSI-MI-alternate []
+subset: PSI-MI_slim
+synonym: "ProteomeHD" EXACT []
 is_a: MI:1336 ! experiment database
 created_by: Licata
-creation_date: 2024-07-29T11:04:37Z
+creation_date: 2024-07-08T10:27:01Z
 
 [Term]
-id: MI_2406
-name: ribozyme
-def: "Ribozymes (ribonucleic acid enzymes) are folded catalytic RNA molecules that perform important biological functions." [PMID:34415304]
+id: MI:2426
+name: orthology-group
+def: "Reference to an orthology database group. Gathers orthologous entities across species in a single identifier for their group" []
 subset: PSI-MI_slim
-synonym: "ribozyme" EXACT [] {comment="PSI-MI-short"}
-is_a: MI:0500 ! biological role
+synonym: "orthology-group" EXACT PSI-MI-alternate []
+is_a: MI:0353 ! cross-reference type
 created_by: Licata
-creation_date: 2022-02-28T18:41:20Z
+
+[Term]
+id: MI:2427
+name: complex-cluster
+def: "Used to link large ML assemblies to smaller curated complexes which are a subset of this. Added as qualifier to all entries linked by a common cross reference to an entry which represents a superset." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "superset" EXACT PSI-MI-short []
+is_a: MI:0353 ! cross-reference type
+created_by: Licata
+creation_date: 2024-10-28T13:31:03Z
+
+[Term]
+id: MI:2428
+name: Kilodalton
+def: "A unit of mass used to express molecular mass, especially for large molecules, such as proteins and polysaccharides. It is equal to 1000 daltons. A dalton is equal to one twelfth of the mass of an atom of carbon-12, or 1.660 33 × 10−27 kg." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "Kda" EXACT PSI-MI-alternate []
+is_a: MI:0647 ! parameter unit
+created_by: Licata
+creation_date: 2024-10-28T14:31:03Z
+
+[Term]
+id: MI:2429
+name: Number of molecules
+def: "Relative or absolute number of molecules in a sample. Used in the context of quantatative proteomics" [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "molecule no." EXACT PSI-MI-alternate []
+is_a: MI:0647 ! parameter unit
+created_by: Licata
+creation_date: 2024-10-28T14:51:03Z
+
+[Term]
+id: MI:2430
+name: MuSIC
+def: "MuSIC (multi-scale integrated cell ) is a machine learning framework to identify protein complexes from mass spectrometry and other large-scale interaction experiments" [PMID:34819669]
+synonym: "music" EXACT PSI-MI-alternate []
+is_a: MI:0489 ! source database
+created_by: Licata
+
+[Term]
+id: MI:2431
+name: biotin ligase tag
+def: "Biotin ligase tags that can be used as label as they confer some property that facilitates identification purification and monitoring to the labeled molecule." []
+subset: PSI-MI_slim
+is_a: MI:0507 ! tag
+created_by: eragueneau
+creation_date: 2025-04-30T15:12:04Z
+
+[Term]
+id: MI:2432
+name: bioid2 tag
+def: "An engineered biotin ligase that uses ATP to convert biotin into biotin–AMP, a reactive intermediate that covalently labels proximal proteins. BioID2, derived from Aquifex aeolicus biotin ligase, is ~30% smaller than BirA" [PMID:26912792]
+synonym: "BioID2" EXACT PSI-MI-alternate []
+is_a: MI:2431 ! biotin ligase tag
+created_by: eragueneau
+creation_date: 2025-04-30T15:12:04Z
+
+[Term]
+id: MI:2433
+name: turbo id tag
+def: "An engineered biotin ligase that uses ATP to convert biotin into biotin–AMP, a reactive intermediate that covalently labels proximal proteins. TurboID has faster labeling kinetics than \\bir\\a and will operate at lower temperatures." [PMID:33139955]
+synonym: "TurboID" EXACT PSI-MI-alternate []
+is_a: MI:2431 ! biotin ligase tag
+created_by: eragueneau
+creation_date: 2025-04-30T15:12:04Z
 
