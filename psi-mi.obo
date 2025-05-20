@@ -15063,10 +15063,19 @@ creation_date: 2025-04-30T15:12:04Z
 
 [Term]
 id: MI:2434
-name: polypeptide cleavage site
-def: "The location on a polypeptide chain where peptide bonds are broken down by hydrolysis." [PMID:14755292]
+name: molecule cleavage site
+def: "The location on a molecule where the molecule is broken down by enzymatic or chemical activity." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0252 ! biological feature
 created_by: jmedina
-creation_date: 2025-05-20T10:10:54Z
+creation_date: 2025-05-20T13:24:33Z
+
+[Term]
+id: MI:2435
+name: polypeptide cleavage site
+def: "The location on a polypeptide chain where peptide bonds are broken down by hydrolysis." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:2434 ! molecule cleavage site
+created_by: jmedina
+creation_date: 2025-05-20T13:24:33Z
 
