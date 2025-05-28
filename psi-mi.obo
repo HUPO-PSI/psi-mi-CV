@@ -14973,7 +14973,7 @@ name: HuMap
 def: "HuMap is a machine learning framework to identify protein complexes from mass spectrometry and other large-scale interaction experiments. HuMap 3.0 is presented as a searchable web resource (https://humap3.proteincomplexes.org/) using data from >25,000 mass spectrometry experiments to identify nearly >15,000 human protein complexes." [PMID:33973408]
 subset: PSI-MI_slim
 synonym: "HuMap" EXACT PSI-MI-alternate []
-xref: search-url: {comment="https://humap3.proteincomplexes.org/displayComplexes?complex_key=${ac}"}
+xref: search-url: "https://humap3.proteincomplexes.org/displayComplexes?complex_key=${ac}"
 is_a: MI:0489 ! source database
 created_by: Licata
 

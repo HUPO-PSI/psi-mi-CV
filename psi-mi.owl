@@ -47475,7 +47475,7 @@ http://genolist.pasteur.fr/SubtiList/</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2424"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>search-url:</owl:annotatedTarget>
-        <rdfs:comment>https://humap3.proteincomplexes.org/displayComplexes?complex_key=${ac}</rdfs:comment>
+        <rdfs:label>https://humap3.proteincomplexes.org/displayComplexes?complex_key=${ac}</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2424"/>
