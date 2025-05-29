@@ -14973,7 +14973,7 @@ name: HuMap
 def: "HuMap is a machine learning framework to identify protein complexes from mass spectrometry and other large-scale interaction experiments. HuMap 3.0 is presented as a searchable web resource (https://humap3.proteincomplexes.org/) using data from >25,000 mass spectrometry experiments to identify nearly >15,000 human protein complexes." [PMID:33973408]
 subset: PSI-MI_slim
 synonym: "HuMap" EXACT PSI-MI-alternate []
-xref: search-url: {comment="https://humap3.proteincomplexes.org/displayComplexes?complex_key=${ac}"}
+xref: search-url: "https://humap3.proteincomplexes.org/displayComplexes?complex_key=${ac}"
 is_a: MI:0489 ! source database
 created_by: Licata
 
@@ -15060,4 +15060,22 @@ synonym: "TurboID" EXACT PSI-MI-alternate []
 is_a: MI:2431 ! biotin ligase tag
 created_by: eragueneau
 creation_date: 2025-04-30T15:12:04Z
+
+[Term]
+id: MI:2434
+name: molecule cleavage site
+def: "The location on a molecule where the molecule is broken down by enzymatic or chemical activity." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:0252 ! biological feature
+created_by: jmedina
+creation_date: 2025-05-20T13:24:33Z
+
+[Term]
+id: MI:2435
+name: polypeptide cleavage site
+def: "The location on a polypeptide chain where peptide bonds are broken down by hydrolysis." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:2434 ! molecule cleavage site
+created_by: jmedina
+creation_date: 2025-05-20T13:24:33Z
 

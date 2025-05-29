@@ -47475,7 +47475,7 @@ http://genolist.pasteur.fr/SubtiList/</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2424"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>search-url:</owl:annotatedTarget>
-        <rdfs:comment>https://humap3.proteincomplexes.org/displayComplexes?complex_key=${ac}</rdfs:comment>
+        <rdfs:label>https://humap3.proteincomplexes.org/displayComplexes?complex_key=${ac}</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2424"/>
@@ -47711,6 +47711,48 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>TurboID</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2434 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2434">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0252"/>
+        <obo:IAO_0000115>The location on a molecule where the molecule is broken down by enzymatic or chemical activity.</obo:IAO_0000115>
+        <oboInOwl:created_by>jmedina</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-05-20T13:24:33Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:2434</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label>molecule cleavage site</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2434"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The location on a molecule where the molecule is broken down by enzymatic or chemical activity.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:14755292</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2435 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2435">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2434"/>
+        <obo:IAO_0000115>The location on a polypeptide chain where peptide bonds are broken down by hydrolysis.</obo:IAO_0000115>
+        <oboInOwl:created_by>jmedina</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-05-20T13:24:33Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:2435</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label>polypeptide cleavage site</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2435"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The location on a polypeptide chain where peptide bonds are broken down by hydrolysis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:14755292</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
 
