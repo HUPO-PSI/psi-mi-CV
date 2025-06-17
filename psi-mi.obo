@@ -33,7 +33,7 @@ remark: publisher: This file is published by the PSI MI working group see http:/
 remark: short labels are reported as PSI-MI-short synonyms that are created when a term is more than 20 characteres long.
 remark: The correct use of these vocabularies in the PSI Molecular Interaction XML schema is
 remark: The last accession number used in this file is stored in a separate file,
-remark: The maintenance of this file is ensured by Luana Licata luana.licata@uniroma2.it and Sandra Orchard orchard
+remark: The maintenance of this file is ensured by Luana Licata luana.licata@uniroma2.it and Sandra Orchard orchard@ebi.ac.uk
 remark: The PSI MI schema defines short labels for controlled vocabulary terms
 ontology: mi
 owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/MI_0907>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/MI_0908>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/MI_0909>))\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))\n\n\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/MI_0907> (<http://purl.obolibrary.org/obo/MI_0907>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/MI_0907> ObjectUnionOf(<http://purl.obolibrary.org/obo/MI_0908> <http://purl.obolibrary.org/obo/MI_0909>))\n\n\nAnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> \"PMID:15833125\") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MI_1285> \"OBSOLETE: An effect in which individual perturbations of two different genes result in opposite mutant phenotypes (traits measured on the same scale but each on opposing sides relative to the wild type phenotype), and the resulting phenotype of their combination is equal to that of only one of the perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a < wt < b) AND (ab = a OR ab = b) \nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value.\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/MI_1285> \"orchard\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/MI_1285> \"2013-06-05T20:51:51Z\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MI_1285> \"PSI-MI\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MI_1285> \"MI:1285\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/MI_1285> <http://purl.obolibrary.org/obo/mi#PSI-MI_slim>)\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MI_1285> \"Term replaced by\nhttp://purl.obolibrary.org/obo/MI_1276\")\nAnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MI_1285> \"obsolete opposing epistasis\")\n)
@@ -7157,10 +7157,10 @@ is_a: MI:0018 ! two hybrid
 [Term]
 id: MI:0917
 name: matrixdb
-def: "Knowledgebase of the extracellular matrix storing experimentally determined interactions involving extracellular biomolecules. It includes protein-protein, protein-polysaccharide, and protein-lipid interactions." [PMID:19147664]
+def: "Knowledgebase of the extracellular matrix storing experimentally determined interactions involving extracellular biomolecules. It includes protein-protein, protein-polysaccharide, and protein-lipid interactions.\nhttps://matrixdb.univ-lyon1.fr" [PMID:19147664]
 subset: PSI-MI_slim
 synonym: "MatrixDB" EXACT PSI-MI-alternate []
-xref: search-url: "http://matrixdb.univ-lyon1.fr/cgi-bin/current/newPort?type=biomolecule&value=${ac}"
+xref: search-url: "https://matrixdb.univ-lyon1.fr/biomolecule/${ac}"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 
@@ -15078,4 +15078,34 @@ subset: PSI-MI_slim
 is_a: MI:2434 ! molecule cleavage site
 created_by: jmedina
 creation_date: 2025-05-20T13:24:33Z
+
+[Term]
+id: MI:2436
+name: initiator methionine
+def: "Cleaved initiator methionine." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:0252 ! biological feature
+created_by: jmedina
+creation_date: 2025-06-17T09:25:36Z
+
+[Term]
+id: MI:2437
+name: holdup assay
+def: "In a Holdup assay, a resin is saturated at high concentration with either a control or a bait molecule (e.g., purified protein/domain, synthetic peptide, or oligonucleotide). The loaded resins are incubated with a prey solution containing either individual purified proteins/domains or complex mixtures (protein/peptide pools, cell extracts). The bait is present in substantial molar excess relative to all potential preys, ensuring non-saturating binding conditions. Each significantly interacting prey is thus depleted from the solution by the resin, in a proportion related to its own affinity constant for the bait. After incubation, the liquid phases containing the unbound fractions are recovered, without any washing step to maintain thermodynamic equilibrium. For each prey, its amount in the unbound fraction of the bait sample is quantified relatively to its amount in the unbound fraction of the control sample, using analytical methods such as intrinsic fluorescence, Western-blot, or mass-spectrometry. This relative quantification enables calculation of dissociation constants (Kd), with rigorously validated accuracy and precision. The throughput of the Holdup assay is determined both by the number of baits that can be processed in parallel, and by the number of preys that can be resolved and quantified individually by the chosen analytical method (up to few thousands at once when using mass spectrometry).Interestingly, the assay not only provides quantitative Kd values for all preys that show significant depletion, but also warrants, for all the other preys that were well-quantified but not significantly depleted, that their affinity for the bait is lower than the assay’s known detection threshold.\nIn this regard, the assay provides a \"negatome\" (list of all assayed preys that did not detectably bind to the bait). This negatome cannot, however, be considered as a universal information since it varies depending on the detection threshold of the assay, in the particular conditions it has been performed (i).\n\n(i) The above remark is true for any binding assay: the negatome is fully dependent on the detection limit of the experiment, and therefore it cannot be considered a universal information. It is assay-dependent and its comparison from one assay to another, or from one database to another, may generate misinterpretations." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:0004 ! affinity chromatography technology
+created_by: jmedina
+creation_date: 2025-06-17T09:28:11Z
+
+[Term]
+id: MI:2438
+name: iedb
+def: "The Immune Epitope Database (IEDB) catalogs experimental data on antibody and T cell epitopes studied in humans and other animal species in the context of infectious disease, allergy, autoimmunity and transplantation.\nhttps://www.iedb.org" [PMID:39558162]
+subset: PSI-MI_slim
+synonym: "IEDB" EXACT []
+xref: id-validation-regexp: "(([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})(-[0-9]+)?(-PRO_[0-9]{10})?)"
+xref: search-url: "https://www.iedb.org/epitope/${ac}"
+is_a: MI:0447 ! feature database
+created_by: jmedina
+creation_date: 2025-06-17T09:37:05Z
 
