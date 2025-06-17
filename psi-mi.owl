@@ -47834,7 +47834,7 @@ https://www.iedb.org</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2438"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>id-validation-regexp:</owl:annotatedTarget>
-        <rdfs:label>(([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})(-[0-9]+)?(-PRO_[0-9]{10})?)</rdfs:label>
+        <rdfs:label>^[0-9]+$</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2438"/>

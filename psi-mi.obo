@@ -15103,7 +15103,7 @@ name: iedb
 def: "The Immune Epitope Database (IEDB) catalogs experimental data on antibody and T cell epitopes studied in humans and other animal species in the context of infectious disease, allergy, autoimmunity and transplantation.\nhttps://www.iedb.org" [PMID:39558162]
 subset: PSI-MI_slim
 synonym: "IEDB" EXACT []
-xref: id-validation-regexp: "(([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})(-[0-9]+)?(-PRO_[0-9]{10})?)"
+xref: id-validation-regexp: "^[0-9]+$"
 xref: search-url: "https://www.iedb.org/epitope/${ac}"
 is_a: MI:0447 ! feature database
 created_by: jmedina
