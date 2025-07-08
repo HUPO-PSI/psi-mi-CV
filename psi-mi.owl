@@ -21,7 +21,7 @@
         <rdfs:comment>The PSI MI schema defines short labels for controlled vocabulary terms</rdfs:comment>
         <rdfs:comment>The correct use of these vocabularies in the PSI Molecular Interaction XML schema is</rdfs:comment>
         <rdfs:comment>The last accession number used in this file is stored in a separate file,</rdfs:comment>
-        <rdfs:comment xml:lang="ebi.ac.uk">The maintenance of this file is ensured by Luana Licata luana.licata@uniroma2.it and Sandra Orchard orchard@ebi.ac.uk</rdfs:comment>
+        <rdfs:comment>The maintenance of this file is ensured by Luana Licata luana.licata@uniroma2.it and Sandra Orchard orchard@ebi.ac.uk</rdfs:comment>
         <rdfs:comment>coverage: This file collect controlled vocabularies describing different aspects of molecular interactions.</rdfs:comment>
         <rdfs:comment>formalized in a mapping file available at http://www.psidev.info/files/validator/xml/MI-CVMapping.xml.</rdfs:comment>
         <rdfs:comment>mapping an element of the PSI Molecular Interaction XML schema.</rdfs:comment>
@@ -47465,7 +47465,7 @@ http://genolist.pasteur.fr/SubtiList/</owl:annotatedTarget>
         <oboInOwl:hasExactSynonym>HuMap</oboInOwl:hasExactSynonym>
         <oboInOwl:id>MI:2424</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
-        <rdfs:label xml:lang="en">HuMap</rdfs:label>
+        <rdfs:label>HuMap</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2424"/>
@@ -47500,7 +47500,7 @@ https://www.proteomehd.net/proteomehd</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
         <oboInOwl:id>MI:2425</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
-        <rdfs:label xml:lang="en">ProteomeHD</rdfs:label>
+        <rdfs:label>ProteomeHD</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2425"/>
@@ -47522,7 +47522,7 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
         <oboInOwl:id>MI:2426</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
-        <rdfs:label xml:lang="en">orthology-group</rdfs:label>
+        <rdfs:label>orthology-group</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2426"/>
@@ -47544,7 +47544,7 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
         <oboInOwl:id>MI:2427</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
-        <rdfs:label xml:lang="en">complex-cluster</rdfs:label>
+        <rdfs:label>complex-cluster</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2427"/>
@@ -47572,7 +47572,7 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
         <oboInOwl:id>MI:2428</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
-        <rdfs:label xml:lang="en">Kilodalton</rdfs:label>
+        <rdfs:label>Kilodalton</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2428"/>
@@ -47600,7 +47600,7 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
         <oboInOwl:id>MI:2429</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
-        <rdfs:label xml:lang="en">Number of molecules</rdfs:label>
+        <rdfs:label>Number of molecules</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2429"/>
@@ -47625,7 +47625,7 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <oboInOwl:created_by>Licata</oboInOwl:created_by>
         <oboInOwl:hasExactSynonym>music</oboInOwl:hasExactSynonym>
         <oboInOwl:id>MI:2430</oboInOwl:id>
-        <rdfs:label xml:lang="en">MuSIC</rdfs:label>
+        <rdfs:label>MuSIC</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2430"/>
@@ -47652,7 +47652,7 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
         <oboInOwl:id>MI:2431</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
-        <rdfs:label xml:lang="en">biotin ligase tag</rdfs:label>
+        <rdfs:label>biotin ligase tag</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2431"/>
