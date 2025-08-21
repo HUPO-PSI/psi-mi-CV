@@ -47836,6 +47836,27 @@ https://www.iedb.org</owl:annotatedTarget>
         <owl:annotatedTarget>search-url:</owl:annotatedTarget>
         <rdfs:label>https://www.iedb.org/epitope/${ac}</rdfs:label>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2439 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2439">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0473"/>
+        <obo:IAO_0000115>The ABCD (AntiBodies Chemically Defined) database is a manually curated depository of sequenced antibodies(https://web.expasy.org/abcd/), developed by the Geneva Antibody Facility at the University of Geneva, in collaboration with the CALIPHO and Swiss-Prot groups at SIB Swiss Institute of Bioinformatics.</obo:IAO_0000115>
+        <oboInOwl:created_by>jmedina</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-08-21T08:46:11Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:2439</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label>ABCD</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2439"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The ABCD (AntiBodies Chemically Defined) database is a manually curated depository of sequenced antibodies(https://web.expasy.org/abcd/), developed by the Geneva Antibody Facility at the University of Geneva, in collaboration with the CALIPHO and Swiss-Prot groups at SIB Swiss Institute of Bioinformatics.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:31410491</oboInOwl:hasDbXref>
+    </owl:Axiom>
 </rdf:RDF>
 
 

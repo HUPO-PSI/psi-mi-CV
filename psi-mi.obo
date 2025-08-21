@@ -15109,3 +15109,12 @@ is_a: MI:0447 ! feature database
 created_by: jmedina
 creation_date: 2025-06-17T09:37:05Z
 
+[Term]
+id: MI:2439
+name: ABCD
+def: "The ABCD (AntiBodies Chemically Defined) database is a manually curated depository of sequenced antibodies(https://web.expasy.org/abcd/), developed by the Geneva Antibody Facility at the University of Geneva, in collaboration with the CALIPHO and Swiss-Prot groups at SIB Swiss Institute of Bioinformatics." [PMID:31410491]
+subset: PSI-MI_slim
+is_a: MI:0473 ! participant database
+created_by: jmedina
+creation_date: 2025-08-21T08:46:11Z
+
