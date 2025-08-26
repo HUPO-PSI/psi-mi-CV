@@ -15118,3 +15118,30 @@ is_a: MI:0473 ! participant database
 created_by: jmedina
 creation_date: 2025-08-21T08:46:11Z
 
+[Term]
+id: MI:2440
+name: interacting antibody
+def: "An immunoglobulin molecule having a specific amino acid sequence that gives each antibody the ability to adhere to and interact with the antigen that induced its synthesis and with molecules containing structures similar to that antigen.\n(http://purl.obolibrary.org/obo/XCO_0000194)" []
+subset: PSI-MI_slim
+is_a: MI:0383 ! biopolymer
+created_by: jmedina
+creation_date: 2025-08-26T12:43:16Z
+
+[Term]
+id: MI:2441
+name: interacting lipid
+def: "The term “lipid” is broadly defined as a substance of biological origin that is soluble in nonpolar solvents. Lipids include saponifiable classes such as glycerides (fats and oils) and phospholipids, as well as nonsaponifiable classes such as steroids." [PMID:26467479]
+subset: PSI-MI_slim
+is_a: MI:0313 ! interactor type
+created_by: jmedina
+creation_date: 2025-08-26T12:46:07Z
+
+[Term]
+id: MI:2442
+name: interacting lipid bilayer
+def: "A structural arrangement consisting predominantly of lipid molecules organized into one or more continuous layers." []
+subset: PSI-MI_slim
+is_a: MI:0313 ! interactor type
+created_by: jmedina
+creation_date: 2025-08-26T12:48:32Z
+
