@@ -15146,3 +15146,11 @@ is_a: MI:2441 ! lipid
 created_by: jmedina
 creation_date: 2025-08-26T12:48:32Z
 
+[Term]
+id: MI:2443
+name: QSProteome
+subset: PSI-MI_slim
+xref: search-url: "https://qsproteome.org/entry/${ac}"
+is_a: MI:0489 ! source database
+created_by: jmedina
+creation_date: 2025-10-07T15:02:41Z

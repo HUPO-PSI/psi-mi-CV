@@ -47910,6 +47910,26 @@ https://www.iedb.org</owl:annotatedTarget>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
         <rdfs:label>lipid bilayer</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_2443 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2443">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0489"/>
+        <oboInOwl:created_by>jmedina</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-10-07T15:02:41Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>search-url:</oboInOwl:hasDbXref>
+        <oboInOwl:id>MI:2443</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label>QSProteome</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2443"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>search-url:</owl:annotatedTarget>
+        <rdfs:label>https://qsproteome.org/entry/${ac}</rdfs:label>
+    </owl:Axiom>
 </rdf:RDF>
 
 
