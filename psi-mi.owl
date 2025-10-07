@@ -46793,7 +46793,7 @@ ab (not=) E</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MI_2403 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2403">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2431"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_2431"/>
         <obo:IAO_0000115>E. coli BirA* biotin ligase tag used in BioID experiments. This generally refers to a promiscuous mutant version of the biotin ligase with an R118H mutation.</obo:IAO_0000115>
         <oboInOwl:created_by>pporras</oboInOwl:created_by>
         <oboInOwl:creation_date>2021-03-22T14:27:04Z</oboInOwl:creation_date>
@@ -47642,9 +47642,9 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2431 -->
+    <!-- http://purl.obolibrary.org/obo/MI_2431 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2431">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2431">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0507"/>
         <obo:IAO_0000115>Biotin ligase tags that can be used as label as they confer some property that facilitates identification purification and monitoring to the labeled molecule.</obo:IAO_0000115>
         <oboInOwl:created_by>eragueneau</oboInOwl:created_by>
@@ -47655,7 +47655,7 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <rdfs:label>biotin ligase tag</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2431"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2431"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Biotin ligase tags that can be used as label as they confer some property that facilitates identification purification and monitoring to the labeled molecule.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:22412018</oboInOwl:hasDbXref>
@@ -47663,10 +47663,10 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2432 -->
+    <!-- http://purl.obolibrary.org/obo/MI_2432 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2432">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2431"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2432">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_2431"/>
         <obo:IAO_0000115>An engineered biotin ligase that uses ATP to convert biotin into biotin–AMP, a reactive intermediate that covalently labels proximal proteins. BioID2, derived from Aquifex aeolicus biotin ligase, is ~30% smaller than BirA</obo:IAO_0000115>
         <oboInOwl:created_by>eragueneau</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-04-30T15:12:04Z</oboInOwl:creation_date>
@@ -47676,13 +47676,13 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <rdfs:label>bioid2 tag</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2432"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2432"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An engineered biotin ligase that uses ATP to convert biotin into biotin–AMP, a reactive intermediate that covalently labels proximal proteins. BioID2, derived from Aquifex aeolicus biotin ligase, is ~30% smaller than BirA</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:26912792</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2432"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2432"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>BioID2</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
@@ -47690,10 +47690,10 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2433 -->
+    <!-- http://purl.obolibrary.org/obo/MI_2433 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2433">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2431"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2433">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_2431"/>
         <obo:IAO_0000115>An engineered biotin ligase that uses ATP to convert biotin into biotin–AMP, a reactive intermediate that covalently labels proximal proteins. TurboID has faster labeling kinetics than \bir\a and will operate at lower temperatures.</obo:IAO_0000115>
         <oboInOwl:created_by>eragueneau</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-04-30T15:12:04Z</oboInOwl:creation_date>
@@ -47703,13 +47703,13 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <rdfs:label>turbo id tag</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2433"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2433"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An engineered biotin ligase that uses ATP to convert biotin into biotin–AMP, a reactive intermediate that covalently labels proximal proteins. TurboID has faster labeling kinetics than \bir\a and will operate at lower temperatures.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:33139955</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2433"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2433"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>TurboID</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
@@ -47717,9 +47717,9 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2434 -->
+    <!-- http://purl.obolibrary.org/obo/MI_2434 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2434">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2434">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0252"/>
         <obo:IAO_0000115>The location on a molecule where the molecule is broken down by enzymatic or chemical activity.</obo:IAO_0000115>
         <oboInOwl:created_by>jmedina</oboInOwl:created_by>
@@ -47730,7 +47730,7 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <rdfs:label>molecule cleavage site</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2434"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2434"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The location on a molecule where the molecule is broken down by enzymatic or chemical activity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:14755292</oboInOwl:hasDbXref>
@@ -47738,10 +47738,10 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2435 -->
+    <!-- http://purl.obolibrary.org/obo/MI_2435 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2435">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2434"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2435">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_2434"/>
         <obo:IAO_0000115>The location on a polypeptide chain where peptide bonds are broken down by hydrolysis.</obo:IAO_0000115>
         <oboInOwl:created_by>jmedina</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-05-20T13:24:33Z</oboInOwl:creation_date>
@@ -47751,7 +47751,7 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <rdfs:label>polypeptide cleavage site</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2435"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2435"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The location on a polypeptide chain where peptide bonds are broken down by hydrolysis.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:14755292</oboInOwl:hasDbXref>
@@ -47759,9 +47759,9 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2436 -->
+    <!-- http://purl.obolibrary.org/obo/MI_2436 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2436">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2436">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0252"/>
         <obo:IAO_0000115>Cleaved initiator methionine.</obo:IAO_0000115>
         <oboInOwl:created_by>jmedina</oboInOwl:created_by>
@@ -47772,7 +47772,7 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <rdfs:label>initiator methionine</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2436"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2436"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Cleaved initiator methionine.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:14755292</oboInOwl:hasDbXref>
@@ -47780,9 +47780,9 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2437 -->
+    <!-- http://purl.obolibrary.org/obo/MI_2437 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2437">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2437">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0004"/>
         <obo:IAO_0000115>A method for high-throughput measurement of protein-ligand binding affinities. A resin is saturated at high concentration with either a control or a bait molecule. The loaded resins are incubated with a prey solution containing either individual purified proteins/domains or complex mixtures. The bait is present in substantial molar excess relative to all potential preys, ensuring non-saturating binding conditions. Each significantly interacting prey is depleted from the solution by the resin, in a proportion related to its own affinity constant for the bait. After incubation, the liquid phases containing the unbound fractions are recovered, without any washing step to maintain thermodynamic equilibrium. For each prey, its amount in the unbound fraction of the bait sample is quantified relatively to its amount in the unbound fraction of the control sample. This relative quantification enables calculation of dissociation constants (Kd), with rigorously validated accuracy and precision. Prey that are well-quantified but not significantly depleted (their affinity for the bait is lower than the assay’s known detection threshold) may be regarded as a negative interaction.</obo:IAO_0000115>
         <oboInOwl:created_by>jmedina</oboInOwl:created_by>
@@ -47793,7 +47793,7 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
         <rdfs:label>holdup assay</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2437"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2437"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A method for high-throughput measurement of protein-ligand binding affinities. A resin is saturated at high concentration with either a control or a bait molecule. The loaded resins are incubated with a prey solution containing either individual purified proteins/domains or complex mixtures. The bait is present in substantial molar excess relative to all potential preys, ensuring non-saturating binding conditions. Each significantly interacting prey is depleted from the solution by the resin, in a proportion related to its own affinity constant for the bait. After incubation, the liquid phases containing the unbound fractions are recovered, without any washing step to maintain thermodynamic equilibrium. For each prey, its amount in the unbound fraction of the bait sample is quantified relatively to its amount in the unbound fraction of the control sample. This relative quantification enables calculation of dissociation constants (Kd), with rigorously validated accuracy and precision. Prey that are well-quantified but not significantly depleted (their affinity for the bait is lower than the assay’s known detection threshold) may be regarded as a negative interaction.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:14755292</oboInOwl:hasDbXref>
@@ -47801,9 +47801,9 @@ https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2438 -->
+    <!-- http://purl.obolibrary.org/obo/MI_2438 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2438">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2438">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0447"/>
         <obo:IAO_0000115>The Immune Epitope Database (IEDB) catalogs experimental data on antibody and T cell epitopes studied in humans and other animal species in the context of infectious disease, allergy, autoimmunity and transplantation.
 https://www.iedb.org</obo:IAO_0000115>
@@ -47818,20 +47818,20 @@ https://www.iedb.org</obo:IAO_0000115>
         <rdfs:label>iedb</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2438"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2438"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The Immune Epitope Database (IEDB) catalogs experimental data on antibody and T cell epitopes studied in humans and other animal species in the context of infectious disease, allergy, autoimmunity and transplantation.
 https://www.iedb.org</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:39558162</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2438"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2438"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>id-validation-regexp:</owl:annotatedTarget>
         <rdfs:label>^[0-9]+$</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2438"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2438"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>search-url:</owl:annotatedTarget>
         <rdfs:label>https://www.iedb.org/epitope/${ac}</rdfs:label>
@@ -47839,9 +47839,9 @@ https://www.iedb.org</owl:annotatedTarget>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2439 -->
+    <!-- http://purl.obolibrary.org/obo/MI_2439 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2439">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2439">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0473"/>
         <obo:IAO_0000115>The ABCD (AntiBodies Chemically Defined) database is a manually curated depository of sequenced antibodies(https://web.expasy.org/abcd/), developed by the Geneva Antibody Facility at the University of Geneva, in collaboration with the CALIPHO and Swiss-Prot groups at SIB Swiss Institute of Bioinformatics.</obo:IAO_0000115>
         <oboInOwl:created_by>jmedina</oboInOwl:created_by>
@@ -47852,7 +47852,7 @@ https://www.iedb.org</owl:annotatedTarget>
         <rdfs:label>ABCD</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2439"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2439"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The ABCD (AntiBodies Chemically Defined) database is a manually curated depository of sequenced antibodies(https://web.expasy.org/abcd/), developed by the Geneva Antibody Facility at the University of Geneva, in collaboration with the CALIPHO and Swiss-Prot groups at SIB Swiss Institute of Bioinformatics.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:31410491</oboInOwl:hasDbXref>
@@ -47860,9 +47860,9 @@ https://www.iedb.org</owl:annotatedTarget>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2440 -->
+    <!-- http://purl.obolibrary.org/obo/MI_2440 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2440">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2440">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0315"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0326"/>
         <obo:IAO_0000115>An immunoglobulin molecule having a specific amino acid sequence that gives each antibody the ability to adhere to and interact with the antigen that induced its synthesis and with molecules containing structures similar to that antigen.
@@ -47877,9 +47877,9 @@ https://www.iedb.org</owl:annotatedTarget>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2441 -->
+    <!-- http://purl.obolibrary.org/obo/MI_2441 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2441">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2441">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_1100"/>
         <obo:IAO_0000115>The term “lipid” is broadly defined as a substance of biological origin that is soluble in nonpolar solvents. Lipids include saponifiable classes such as glycerides (fats and oils) and phospholipids, as well as nonsaponifiable classes such as steroids.</obo:IAO_0000115>
         <oboInOwl:created_by>jmedina</oboInOwl:created_by>
@@ -47890,7 +47890,7 @@ https://www.iedb.org</owl:annotatedTarget>
         <rdfs:label>lipid</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2441"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2441"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The term “lipid” is broadly defined as a substance of biological origin that is soluble in nonpolar solvents. Lipids include saponifiable classes such as glycerides (fats and oils) and phospholipids, as well as nonsaponifiable classes such as steroids.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:26467479</oboInOwl:hasDbXref>
@@ -47898,10 +47898,10 @@ https://www.iedb.org</owl:annotatedTarget>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2442 -->
+    <!-- http://purl.obolibrary.org/obo/MI_2442 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2442">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2441"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2442">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_2441"/>
         <obo:IAO_0000115>A structural arrangement consisting predominantly of lipid molecules organized into one or more continuous layers.</obo:IAO_0000115>
         <oboInOwl:created_by>jmedina</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-08-26T12:48:32Z</oboInOwl:creation_date>
