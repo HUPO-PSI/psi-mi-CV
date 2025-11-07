@@ -15111,9 +15111,10 @@ creation_date: 2025-06-17T09:37:05Z
 
 [Term]
 id: MI:2439
-name: ABCD
+name: abcd
 def: "The ABCD (AntiBodies Chemically Defined) database is a manually curated depository of sequenced antibodies(https://web.expasy.org/abcd/), developed by the Geneva Antibody Facility at the University of Geneva, in collaboration with the CALIPHO and Swiss-Prot groups at SIB Swiss Institute of Bioinformatics." [PMID:31410491]
 subset: PSI-MI_slim
+synonym: "ABCD" EXACT []
 is_a: MI:0473 ! participant database
 created_by: jmedina
 creation_date: 2025-08-21T08:46:11Z
@@ -15148,9 +15149,12 @@ creation_date: 2025-08-26T12:48:32Z
 
 [Term]
 id: MI:2443
-name: QSProteome
+name: qsproteome
+def: "QSProteome is a centralized, community-driven structural biology resource that hosts over 35,000 predicted oligomeric protein complex models, covering more than 42,000 genes across multiple species. It prevents redundant modeling by allowing researchers to track existing predictions and provides clear quality metrics (pLDDT, ipTM, PAE) to assess model reliability. Each entry includes interactive 3D visualization, functional annotations, and links to databases such as BioCyc, ComplexPortal, PDB, and UniProt, integrating computational predictions with experimental data. The platform also supports community curation, enabling users to refine models and contribute to the expanding structural proteome.\nhttps://qsproteome.org/" []
 subset: PSI-MI_slim
+synonym: "QSProteome" EXACT []
 xref: search-url: "https://qsproteome.org/entry/${ac}"
 is_a: MI:0489 ! source database
 created_by: jmedina
 creation_date: 2025-10-07T15:02:41Z
+

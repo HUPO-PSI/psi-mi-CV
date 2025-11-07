@@ -47846,10 +47846,11 @@ https://www.iedb.org</owl:annotatedTarget>
         <obo:IAO_0000115>The ABCD (AntiBodies Chemically Defined) database is a manually curated depository of sequenced antibodies(https://web.expasy.org/abcd/), developed by the Geneva Antibody Facility at the University of Geneva, in collaboration with the CALIPHO and Swiss-Prot groups at SIB Swiss Institute of Bioinformatics.</obo:IAO_0000115>
         <oboInOwl:created_by>jmedina</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-08-21T08:46:11Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>ABCD</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
         <oboInOwl:id>MI:2439</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
-        <rdfs:label>ABCD</rdfs:label>
+        <rdfs:label>abcd</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2439"/>
@@ -47917,12 +47918,15 @@ https://www.iedb.org</owl:annotatedTarget>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2443">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0489"/>
+        <obo:IAO_0000115>QSProteome is a centralized, community-driven structural biology resource that hosts over 35,000 predicted oligomeric protein complex models, covering more than 42,000 genes across multiple species. It prevents redundant modeling by allowing researchers to track existing predictions and provides clear quality metrics (pLDDT, ipTM, PAE) to assess model reliability. Each entry includes interactive 3D visualization, functional annotations, and links to databases such as BioCyc, ComplexPortal, PDB, and UniProt, integrating computational predictions with experimental data. The platform also supports community curation, enabling users to refine models and contribute to the expanding structural proteome.
+https://qsproteome.org/</obo:IAO_0000115>
         <oboInOwl:created_by>jmedina</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-10-07T15:02:41Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>search-url:</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>QSProteome</oboInOwl:hasExactSynonym>
         <oboInOwl:id>MI:2443</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
-        <rdfs:label>QSProteome</rdfs:label>
+        <rdfs:label>qsproteome</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2443"/>
