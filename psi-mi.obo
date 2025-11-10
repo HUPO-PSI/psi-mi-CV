@@ -15150,7 +15150,7 @@ creation_date: 2025-08-26T12:48:32Z
 [Term]
 id: MI:2443
 name: qsproteome
-def: "QSProteome is a centralized, community-driven structural biology resource that hosts over 35,000 predicted oligomeric protein complex models, covering more than 42,000 genes across multiple species. It prevents redundant modeling by allowing researchers to track existing predictions and provides clear quality metrics (pLDDT, ipTM, PAE) to assess model reliability. Each entry includes interactive 3D visualization, functional annotations, and links to databases such as BioCyc, ComplexPortal, PDB, and UniProt, integrating computational predictions with experimental data. The platform also supports community curation, enabling users to refine models and contribute to the expanding structural proteome.\nhttps://qsproteome.org/" []
+def: "QSProteome is a centralized, community-driven structural biology resource that hosts over 35,000 predicted oligomeric protein complex models, covering more than 42,000 genes across multiple species. It prevents redundant modeling by allowing researchers to track existing predictions and provides clear quality metrics (pLDDT, ipTM, PAE) to assess model reliability. Each entry includes interactive 3D visualization, functional annotations, and links to databases such as BioCyc, ComplexPortal, PDB, and UniProt, integrating computational predictions with experimental data. The platform also supports community curation, enabling users to refine models and contribute to the expanding structural proteome.\nhttps://qsproteome.org/" [PMID:41000884]
 subset: PSI-MI_slim
 synonym: "QSProteome" EXACT []
 xref: search-url: "https://qsproteome.org/entry/${ac}"

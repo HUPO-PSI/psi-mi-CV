@@ -47930,6 +47930,13 @@ https://qsproteome.org/</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2443"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>QSProteome is a centralized, community-driven structural biology resource that hosts over 35,000 predicted oligomeric protein complex models, covering more than 42,000 genes across multiple species. It prevents redundant modeling by allowing researchers to track existing predictions and provides clear quality metrics (pLDDT, ipTM, PAE) to assess model reliability. Each entry includes interactive 3D visualization, functional annotations, and links to databases such as BioCyc, ComplexPortal, PDB, and UniProt, integrating computational predictions with experimental data. The platform also supports community curation, enabling users to refine models and contribute to the expanding structural proteome.
+https://qsproteome.org/</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:41000884</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2443"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>search-url:</owl:annotatedTarget>
         <rdfs:label>https://qsproteome.org/entry/${ac}</rdfs:label>
