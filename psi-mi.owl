@@ -47867,7 +47867,7 @@ https://www.iedb.org</owl:annotatedTarget>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0315"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0326"/>
         <obo:IAO_0000115>An immunoglobulin molecule having a specific amino acid sequence that gives each antibody the ability to adhere to and interact with the antigen that induced its synthesis and with molecules containing structures similar to that antigen.
-(http://purl.obolibrary.org/obo/XCO_0000194)</obo:IAO_0000115>
+http://purl.obolibrary.org/obo/XCO_0000194</obo:IAO_0000115>
         <oboInOwl:created_by>jmedina</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-08-26T12:43:16Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
