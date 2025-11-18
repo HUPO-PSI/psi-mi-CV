@@ -15122,7 +15122,7 @@ creation_date: 2025-08-21T08:46:11Z
 [Term]
 id: MI:2440
 name: antibody
-def: "An immunoglobulin molecule having a specific amino acid sequence that gives each antibody the ability to adhere to and interact with the antigen that induced its synthesis and with molecules containing structures similar to that antigen.\n(http://purl.obolibrary.org/obo/XCO_0000194)" []
+def: "An immunoglobulin molecule having a specific amino acid sequence that gives each antibody the ability to adhere to and interact with the antigen that induced its synthesis and with molecules containing structures similar to that antigen.\nhttp://purl.obolibrary.org/obo/XCO_0000194" []
 subset: PSI-MI_slim
 is_a: MI:0315 ! protein complex
 is_a: MI:0326 ! protein
