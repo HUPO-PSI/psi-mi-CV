@@ -9136,7 +9136,7 @@ http://www.kazusa.or.jp/huge/</owl:annotatedTarget>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0251">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0353"/>
-        <obo:IAO_0000115>Reference of a protein object pointing to its genomic or nucleic acid sequence.</obo:IAO_0000115>
+        <obo:IAO_0000115>Reference pointing to a protein object from its genomic or nucleic acid sequence.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
         <oboInOwl:id>MI:0251</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
@@ -9145,7 +9145,7 @@ http://www.kazusa.or.jp/huge/</owl:annotatedTarget>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0251"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Reference of a protein object pointing to its genomic or nucleic acid sequence.</owl:annotatedTarget>
+        <owl:annotatedTarget>Reference pointing to a protein object from its genomic or nucleic acid sequence.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:14755292</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -46843,7 +46843,7 @@ ab (not=) E</obo:IAO_0000115>
         <owl:annotatedTarget>BioID</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
     </owl:Axiom>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/MI_2404 -->
@@ -47452,6 +47452,21 @@ http://genolist.pasteur.fr/SubtiList/</owl:annotatedTarget>
         <owl:annotatedTarget>mass photometry</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-short"/>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_2423 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2423">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0353"/>
+        <obo:IAO_0000115>Reference to the gene encoding for the observed nucleic acid or protein</obo:IAO_0000115>
+        <oboInOwl:created_by>eragueneau</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-01-26T09:53:02Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:2423</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label>gene reference</rdfs:label>
+    </owl:Class>
     
 
 

@@ -1231,8 +1231,8 @@ name: n-acetyl-proline
 def: "Residue modification.\nOBSOLETE remap to MOD:00059." [PMID:11125103, RESID:AA0050]
 synonym: "(2S)-1-acetyl-2-pyrrolidinecarboxylic acid" EXACT PSI-MI-alternate []
 synonym: "[P:ac]" EXACT PSI-MI-alternate []
-synonym: "acetylproline" EXACT PSI-MI-alternate []
 synonym: "acetylproline" EXACT PSI-MI-short []
+synonym: "acetylproline" EXACT PSI-MI-alternate []
 synonym: "N-acetyl-L-proline" EXACT PSI-MI-alternate []
 synonym: "PAC" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -1736,8 +1736,8 @@ name: n6-(4-amino-2-hydroxybutyl)-lysine
 def: "Residue modification.\nOBSOLETE remap to MOD:00125." [PMID:11125103, RESID:AA0116]
 synonym: "(S,R)-2-amino-6-(4-amino-2-hydroxybutylamino)hexanoic acid" EXACT PSI-MI-alternate []
 synonym: "[K:hypu]" EXACT PSI-MI-alternate []
-synonym: "hypusine" EXACT PSI-MI-alternate []
 synonym: "hypusine" EXACT PSI-MI-short []
+synonym: "hypusine" EXACT PSI-MI-alternate []
 synonym: "KHY" EXACT PSI-MI-alternate []
 synonym: "N6-(4-amino-2-hydroxybutyl)-L-lysine" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -2246,7 +2246,7 @@ is_a: MI:0313 ! interactor type
 [Term]
 id: MI:0251
 name: gene product
-def: "Reference of a protein object pointing to its genomic or nucleic acid sequence." [PMID:14755292]
+def: "Reference pointing to a protein object from its genomic or nucleic acid sequence." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0353 ! cross-reference type
 
@@ -14775,8 +14775,8 @@ id: MI:2404
 name: oxidase assay
 def: "Enzymatic oxido-reductions where only O2 is an acceptor of hydrogen or electrons" [PMID:31273118]
 subset: PSI-MI_slim
-synonym: "oxidase" EXACT PSI-MI-short []
 synonym: "oxidase" EXACT PSI-MI-alternate []
+synonym: "oxidase" EXACT PSI-MI-short []
 is_a: MI:0979 ! oxidoreductase assay
 created_by: Licata
 creation_date: 2021-07-05T23:48:40Z
@@ -14966,6 +14966,15 @@ synonym: "mass photometry" EXACT PSI-MI-short []
 is_a: MI:0067 ! light scattering
 created_by: Licata
 creation_date: 2023-19-07T11:19:50Z
+
+[Term]
+id: MI:2423
+name: gene reference
+def: "Reference to the gene encoding for the observed nucleic acid or protein" []
+subset: PSI-MI_slim
+is_a: MI:0353 ! cross-reference type
+created_by: eragueneau
+creation_date: 2026-01-26T09:53:02Z
 
 [Term]
 id: MI:2424
