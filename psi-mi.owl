@@ -47461,12 +47461,18 @@ http://genolist.pasteur.fr/SubtiList/</owl:annotatedTarget>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0353"/>
         <obo:IAO_0000115>Reference to the gene encoding for the observed nucleic acid or protein</obo:IAO_0000115>
         <oboInOwl:created_by>eragueneau</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-01-26T09:53:02Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date>2026-01-26T09:53:02Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
         <oboInOwl:id>MI:2423</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
         <rdfs:label>gene reference</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2423"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Reference to the gene encoding for the observed nucleic acid or protein</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:14755292</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 

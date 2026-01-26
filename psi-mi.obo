@@ -14970,7 +14970,7 @@ creation_date: 2023-19-07T11:19:50Z
 [Term]
 id: MI:2423
 name: gene reference
-def: "Reference to the gene encoding for the observed nucleic acid or protein" []
+def: "Reference to the gene encoding for the observed nucleic acid or protein" [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0353 ! cross-reference type
 created_by: eragueneau
