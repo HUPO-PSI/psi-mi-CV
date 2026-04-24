@@ -3742,7 +3742,7 @@ def: "The RCSB PDB provides a variety of tools and resources for studying the st
 subset: Drugable
 subset: PSI-MI_slim
 synonym: "PDB" EXACT PSI-MI-alternate []
-xref: id-validation-regexp: "[0-9][a-zA-Z0-9]{3}"
+xref: id-validation-regexp: "[0-9][a-zA-Z0-9]{3}|pdb_[a-zA-Z0-9]{8}"
 xref: search-url: "http://www.pdb.org/pdb/explore/explore.do?structureId=${ac}"
 is_a: MI:0805 ! wwpdb
 
@@ -3870,7 +3870,7 @@ subset: PSI-MI_slim
 synonym: "e-MSD" EXACT []
 synonym: "MSD" RELATED []
 synonym: "PQS" EXACT PSI-MI-alternate []
-xref: id-validation-regexp: "[0-9][a-zA-Z0-9]{3}"
+xref: id-validation-regexp: "[0-9][a-zA-Z0-9]{3}|pdb_[a-zA-Z0-9]{8}"
 xref: search-url: "http://www.ebi.ac.uk/pdbe/entry/pdb/${ac}"
 is_a: MI:0805 ! wwpdb
 
@@ -6262,7 +6262,7 @@ def: "The Worldwide Protein Data Bank (wwPDB) consists of organizations that act
 subset: Drugable
 subset: PSI-MI_slim
 synonym: "wwPDB" EXACT PSI-MI-alternate []
-xref: id-validation-regexp: "[0-9][a-zA-Z0-9]{3}"
+xref: id-validation-regexp: "[0-9][a-zA-Z0-9]{3}|pdb_[a-zA-Z0-9]{8}"
 xref: search-url: "http://www.pdbe.org/${ac}"
 is_a: MI:0447 ! feature database
 is_a: MI:0461 ! interaction database
@@ -6274,7 +6274,7 @@ name: pdbj
 def: "PDBj(Protein Data Bank Japan) maintains the database for the protein structures with financial assistance from the Institute for Bioinformatics Research and Development of Japan Science and Technology Corporation(BIRD-JST), collaborating with the Research Collaboration for Structural Bioinformatics(RCSB) and the MSD in the European Bioinformatics Institute(MSD-EBI) in EU. All three organizations serve as deposition, data processing and distribution sites.\nhttp://www.pdbj.org/" [PMID:12099029]
 subset: PSI-MI_slim
 synonym: "PDBj" EXACT PSI-MI-alternate []
-xref: id-validation-regexp: "[0-9][a-zA-Z0-9]{3}"
+xref: id-validation-regexp: "[0-9][a-zA-Z0-9]{3}|pdb_[a-zA-Z0-9]{8}"
 xref: search-url: "http://pdbjs3.protein.osaka-u.ac.jp/xPSSS/DetailServlet?PDBID=${ac}&PAGEID=Summary"
 is_a: MI:0805 ! wwpdb
 
@@ -14970,7 +14970,7 @@ creation_date: 2023-19-07T11:19:50Z
 [Term]
 id: MI:2424
 name: HuMap
-def: "HuMap is a machine learning framework to identify protein complexes from mass spectrometry and other large-scale interaction experiments. HuMap 3.0 is presented as a searchable web resource (https://humap3.proteincomplexes.org/) using data from >25,000 mass spectrometry experiments to identify nearly >15,000 human protein complexes." [PMID:33973408]
+def: "HuMap is a machine learning framework to identify protein complexes from mass spectrometry and other large-scale interaction experiments. HuMap 3.0 is presented as a searchable web resource (https://humap3.proteincomplexes.org/) using data from >25,000 mass spectrometry experiments to identify nearly >15,000 human protein complexes." [PMID:40425816]
 subset: PSI-MI_slim
 synonym: "HuMap" EXACT PSI-MI-alternate []
 xref: search-url: "https://humap3.proteincomplexes.org/displayComplexes?complex_key=${ac}"
@@ -15157,4 +15157,15 @@ xref: search-url: "https://qsproteome.org/entry/${ac}"
 is_a: MI:0489 ! source database
 created_by: jmedina
 creation_date: 2025-10-07T15:02:41Z
+
+[Term]
+id: MI:2444
+name: YeastMap
+def: "yeast.MAP is a machine-learning framework for identifying Saccharomyces cerevisiae protein complexes from mass spectrometry and other large-scale interaction datasets. Available as a searchable web resource (https://yeast.proteincomplexes.org/), yeast.MAP integrates large-scale AP-MS datasets (Michaelis et al., Nature, 2023), AP-MS evidence scored using a weighted matrix model (Hart et al., BMC Bioinformatics, 2007), and proteome-scale RoseTTAFold structure predictions (Humphreys et al., Science, 2021)." []
+subset: PSI-MI_slim
+synonym: "YeastMap" EXACT PSI-MI-alternate []
+xref: search-url: "https://yeast.proteincomplexes.org/displayComplexes?complex_key=${ac}"
+is_a: MI:0489 ! source database
+created_by: jmedina
+creation_date: 2026-04-24T11:48:39Z
 
