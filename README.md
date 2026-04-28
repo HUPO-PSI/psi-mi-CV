@@ -11,22 +11,12 @@ Otherwise, you can make you own contributions to the PSI-MI controlled vocabular
 ### Configure Protege
 
 The first time you use Protege, you must update the settings.
-1. Go to Settings
-2. Go to tab 'New entities' and set the following properties:
-   1. Entity IRI
-      1. Start with: Active ontology IRI
-      2. Followed by: /
-      3. End with: 'Auto-generated ID'
-   2. Entity Label: Same as label rendered
-   3. Auto-generated ID: Numeric
-      1. Prefix: MI_
-3. Go to tab 'New entities metadata' and set the following properties:
-   1. Annotate new entities with creator (user): checked
-   2. Creator property: 'http://www.geneontology.org/formats/oboInOwl#created_by'
-   3. Creator value: Use user name
-   4. Annotate new entities with creation date/time: checked
-   5. Date Property: http://www.geneontology.org/formats/oboInOwl#creation_date
-   6. Date value format: ISO-8601
+
+Go to Settings, and to tab 'New entities' and set the different properties as follows.
+![settings-1.png](assets/settings-1.png)
+
+Then, go to tab 'New entities metadata' and set the properties as follows.
+![settings-2.png](assets/settings-2.png)
 
 ### Open PSI-MI ontology
 
