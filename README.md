@@ -28,6 +28,36 @@ Go to 'File > Open...', and open the 'psi-mi.owl' file.
 
 On the 'Entities' tab you can find all the PSI-MI entities. Here you can update any of them, delete existing entities or add new ones.
 
+#### Create new entities
+
+To add a new entity, as a child entity of an existing entity, right-click on the parent entity, and click 'Add subclass...'.
+Set a name for the new entity and leave the IRI field empty, as it should be auto-generated. The new entity will be created with label,
+created_by and creation_date annotations.
+
+![add-subclass.png](assets/add-subclass.png)
+
+If the MI Id is not correct (it is not the expected next Id), then you need to change the Auto-generated ID Start value in
+'Settings > New Entities'.
+
+Sometimes labels have a language tab added to them.
+
+![label-with-language-tag.png](assets/label-with-language-tag.png)
+
+This is not needed and it may cause issues, so make sure to keep the language tag empty.
+
+![label-without-language-tag.png](assets/label-without-language-tag.png)
+
+Similarly, creation_date annotations sometimes have a Datatype added to them.
+
+![creation-date-with-datatype.png](assets/creation-date-with-datatype.png)
+
+Also make sure this is left empty.
+
+![creation-date-without-datatype.png](assets/creation-date-without-datatype.png)
+
+If you're gonna create an entity similar to an existing one, you can right-click on an existing entity, and then click 'Duplicate class...'.
+Then, you can update all the annotations that need updating. Also check that you don't have duplicated created_by and creation_date annotations.
+
 #### Annotation values
 
 To add a new annotation for an entity, click the plus button.
@@ -53,24 +83,6 @@ Some fields, like 'label', use a literal value.
 Other fields, like 'has_synonym_type', refer to other entries in the ontology, and use 'Entity IRI'.
 
 ![entity-iri-value.png](assets/entity-iri-value.png)
-
-#### Things to look out for
-
-Sometimes labels have a language tab added to them.
-
-![label-with-language-tag.png](assets/label-with-language-tag.png)
-
-This is not needed and it may cause issues, so make sure to keep the language tag empty.
-
-![label-without-language-tag.png](assets/label-without-language-tag.png)
-
-Similarly, creation_date annotations sometimes have a Datatype added to them.
-
-![creation-date-with-datatype.png](assets/creation-date-with-datatype.png)
-
-Also make sure this is left empty.
-
-![creation-date-without-datatype.png](assets/creation-date-without-datatype.png)
 
 ### Save changes
 
