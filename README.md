@@ -33,11 +33,11 @@ To add a new annotation for an entity, click the plus button.
 
 To update an annotation value, click the circle button (on the right).
 To delete an annotation, click the 'X' button (in the middle).
-To add or edit nested annotations to an existing annotation, click the '@' button (on the left).
-![annotations.png](assets/annotations.png)
-
-Then, click the plus button to add annotations, or click the circle or 'X' buttons to edit or delete annotations.
 ![buttons.png](assets/buttons.png)
+
+To add or edit nested annotations to an existing annotation, click the '@' button (on the left).
+Then, click the plus button to add annotations, or click the circle or 'X' buttons to edit or delete annotations.
+![annotations.png](assets/annotations.png)
 
 Some fields, like 'label', use a literal value.
 ![literal-value.png](assets/literal-value.png)
