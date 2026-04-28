@@ -58,7 +58,7 @@ Also make sure this is left empty.
 If you're gonna create an entity similar to an existing one, you can right-click on an existing entity, and then click 'Duplicate class...'.
 Then, you can update all the annotations that need updating. Also check that you don't have duplicated created_by and creation_date annotations.
 
-#### Annotation values
+#### Annotations
 
 To add a new annotation for an entity, click the plus button.
 
