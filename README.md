@@ -96,7 +96,7 @@ Make sure file 'last-id.txt' has been updated with the MI id of the latest entry
 
 ### Update OLS with your changes
 
-OLS updates their entries periodically (weekly or more frequently), reading the PSI-MI controlled vocabulary terms
+OLS updates their entries weekly, reading the PSI-MI controlled vocabulary terms
 from the master branch https://github.com/HUPO-PSI/psi-mi-CV/tree/master.
 
 To commit your changes and propagate them to OLS, make your changes on a different branch (or fork), develop if you have the right access
