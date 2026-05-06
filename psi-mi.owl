@@ -47974,7 +47974,7 @@ https://qsproteome.org/</owl:annotatedTarget>
         <oboInOwl:creation_date>2026-04-24T11:48:39Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>search-url:</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>YeastMap</oboInOwl:hasExactSynonym>
-        <oboInOwl:id>MI:2424</oboInOwl:id>
+        <oboInOwl:id>MI:2444</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
         <rdfs:label>YeastMap</rdfs:label>
     </owl:Class>
@@ -47985,7 +47985,7 @@ https://qsproteome.org/</owl:annotatedTarget>
         <rdfs:label>https://yeast.proteincomplexes.org/displayComplexes?complex_key=${ac}</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2424"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2444"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>YeastMap</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
