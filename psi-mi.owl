@@ -47965,9 +47965,9 @@ https://qsproteome.org/</owl:annotatedTarget>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mi.owl/MI_2444 -->
+    <!-- http://purl.obolibrary.org/obo/MI_2444 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mi.owl/MI_2444">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2444">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0489"/>
         <obo:IAO_0000115>yeast.MAP is a machine-learning framework for identifying Saccharomyces cerevisiae protein complexes from mass spectrometry and other large-scale interaction datasets. Available as a searchable web resource (https://yeast.proteincomplexes.org/), yeast.MAP integrates large-scale AP-MS datasets (Michaelis et al., Nature, 2023), AP-MS evidence scored using a weighted matrix model (Hart et al., BMC Bioinformatics, 2007), and proteome-scale RoseTTAFold structure predictions (Humphreys et al., Science, 2021).</obo:IAO_0000115>
         <oboInOwl:created_by>jmedina</oboInOwl:created_by>
@@ -47979,7 +47979,7 @@ https://qsproteome.org/</owl:annotatedTarget>
         <rdfs:label>YeastMap</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/mi.owl/MI_2444"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2444"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>search-url:</owl:annotatedTarget>
         <rdfs:label>https://yeast.proteincomplexes.org/displayComplexes?complex_key=${ac}</rdfs:label>
