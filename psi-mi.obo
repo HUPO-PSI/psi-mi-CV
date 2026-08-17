@@ -1056,8 +1056,8 @@ def: "Residue modification.\nOBSOLETE remap to MOD:00050." [PMID:11125103, RESID
 synonym: "(S)-2-(acetylamino)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "[A:ac]" EXACT PSI-MI-alternate []
 synonym: "AAC" EXACT PSI-MI-alternate []
-synonym: "acetylalanine" EXACT PSI-MI-short []
 synonym: "acetylalanine" EXACT PSI-MI-alternate []
+synonym: "acetylalanine" EXACT PSI-MI-short []
 synonym: "N-acetyl-L-alanine" EXACT PSI-MI-alternate []
 is_obsolete: true
 
@@ -14989,7 +14989,7 @@ created_by: Licata
 [Term]
 id: MI:2425
 name: ProteomeHD
-def: "A web-resource (https://www.proteomehd.net/index) that provides a co-regulation map of the human proteome built from ProteomeHD data (5,288 individual mass spectrometry experiments) and datasets from the Proteomics Identifications dataset using the machine learning algorithm treeClust to identify functional associations between co-regulated human proteins.\nhttps://www.proteomehd.net/proteomehd" [PMID:31690884]
+def: "A web-resource (https://www.proteomehd.net) that provides a co-regulation map of the human proteome built from ProteomeHD data (5,288 individual mass spectrometry experiments) and datasets from the Proteomics Identifications dataset using the machine learning algorithm treeClust to identify functional associations between co-regulated human proteins.\nhttps://www.proteomehd.net" [PMID:31690884]
 subset: PSI-MI_slim
 synonym: "ProteomeHD" EXACT []
 is_a: MI:1336 ! experiment database

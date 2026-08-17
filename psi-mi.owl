@@ -47513,8 +47513,8 @@ http://genolist.pasteur.fr/SubtiList/</owl:annotatedTarget>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2425">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_1336"/>
-        <obo:IAO_0000115>A web-resource (https://www.proteomehd.net/index) that provides a co-regulation map of the human proteome built from ProteomeHD data (5,288 individual mass spectrometry experiments) and datasets from the Proteomics Identifications dataset using the machine learning algorithm treeClust to identify functional associations between co-regulated human proteins.
-https://www.proteomehd.net/proteomehd</obo:IAO_0000115>
+        <obo:IAO_0000115>A web-resource (https://www.proteomehd.net) that provides a co-regulation map of the human proteome built from ProteomeHD data (5,288 individual mass spectrometry experiments) and datasets from the Proteomics Identifications dataset using the machine learning algorithm treeClust to identify functional associations between co-regulated human proteins.
+https://www.proteomehd.net</obo:IAO_0000115>
         <oboInOwl:created_by>Licata</oboInOwl:created_by>
         <oboInOwl:creation_date>2024-07-08T10:27:01Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>ProteomeHD</oboInOwl:hasExactSynonym>
@@ -47526,8 +47526,8 @@ https://www.proteomehd.net/proteomehd</obo:IAO_0000115>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2425"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A web-resource (https://www.proteomehd.net/index) that provides a co-regulation map of the human proteome built from ProteomeHD data (5,288 individual mass spectrometry experiments) and datasets from the Proteomics Identifications dataset using the machine learning algorithm treeClust to identify functional associations between co-regulated human proteins.
-https://www.proteomehd.net/proteomehd</owl:annotatedTarget>
+        <owl:annotatedTarget>A web-resource (https://www.proteomehd.net) that provides a co-regulation map of the human proteome built from ProteomeHD data (5,288 individual mass spectrometry experiments) and datasets from the Proteomics Identifications dataset using the machine learning algorithm treeClust to identify functional associations between co-regulated human proteins.
+https://www.proteomehd.net</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:31690884</oboInOwl:hasDbXref>
     </owl:Axiom>
     
