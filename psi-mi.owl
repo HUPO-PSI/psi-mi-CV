@@ -270,13 +270,17 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by">
+        <rdfs:label>created by</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date">
+        <rdfs:label>creation date</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -374,7 +378,9 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
+        <rdfs:label>id</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -46797,11 +46803,11 @@ ab (not=) E</obo:IAO_0000115>
         <obo:IAO_0000115>E. coli BirA* biotin ligase tag used in BioID experiments. This generally refers to a promiscuous mutant version of the biotin ligase with an R118H mutation.</obo:IAO_0000115>
         <oboInOwl:created_by>pporras</oboInOwl:created_by>
         <oboInOwl:creation_date>2021-03-22T14:27:04Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>BioID</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BirA* biotin ligase tag</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BirA* tag</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>bira biotin ligase tag</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>bira tag</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>BioID</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
         <oboInOwl:id>MI:2403</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
@@ -46812,6 +46818,12 @@ ab (not=) E</obo:IAO_0000115>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>E. coli BirA* biotin ligase tag used in BioID experiments. This generally refers to a promiscuous mutant version of the biotin ligase with an R118H mutation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:22412018</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2403"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>BioID</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2403"/>
@@ -46837,13 +46849,7 @@ ab (not=) E</obo:IAO_0000115>
         <owl:annotatedTarget>bira tag</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-short"/>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2403"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>BioID</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
-    </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/MI_2404 -->
@@ -47484,6 +47490,7 @@ http://genolist.pasteur.fr/SubtiList/</owl:annotatedTarget>
         <oboInOwl:created_by>Licata</oboInOwl:created_by>
         <oboInOwl:hasDbXref>search-url:</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HuMap</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
         <oboInOwl:id>MI:2424</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
         <rdfs:label>HuMap</rdfs:label>
@@ -47645,6 +47652,7 @@ https://www.proteomehd.net</owl:annotatedTarget>
         <obo:IAO_0000115>MuSIC (multi-scale integrated cell ) is a machine learning framework to identify protein complexes from mass spectrometry and other large-scale interaction experiments</obo:IAO_0000115>
         <oboInOwl:created_by>Licata</oboInOwl:created_by>
         <oboInOwl:hasExactSynonym>music</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
         <oboInOwl:id>MI:2430</oboInOwl:id>
         <rdfs:label>MuSIC</rdfs:label>
     </owl:Class>
@@ -47945,6 +47953,7 @@ https://qsproteome.org/</obo:IAO_0000115>
         <oboInOwl:creation_date>2025-10-07T15:02:41Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>search-url:</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>QSProteome</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
         <oboInOwl:id>MI:2443</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
         <rdfs:label>qsproteome</rdfs:label>
@@ -47974,6 +47983,7 @@ https://qsproteome.org/</owl:annotatedTarget>
         <oboInOwl:creation_date>2026-04-24T11:48:39Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>search-url:</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>YeastMap</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
         <oboInOwl:id>MI:2444</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
         <rdfs:label>YeastMap</rdfs:label>
@@ -47988,6 +47998,43 @@ https://qsproteome.org/</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2444"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>YeastMap</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_2445 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2445">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0489"/>
+        <obo:IAO_0000115>AlphaFold DB is an open-access database of more than 200 million predicted protein structures. The predictions are generated by AlphaFold, system that estimates a protein&apos;s 3D structure from its amino acid sequence. In many cases, its predictions are comparable in accuracy to experimentally determined structures.
+https://alphafold.ebi.ac.uk/</obo:IAO_0000115>
+        <oboInOwl:created_by>opaleny</oboInOwl:created_by>
+        <oboInOwl:creation_date>2026-09-11T08:41:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>search-url:</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>AlphaFold</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>AlphaFold DB</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:2445</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label>alphafold</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2445"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>search-url:</owl:annotatedTarget>
+        <rdfs:label>https://alphafold.ebi.ac.uk/entry/${ac}</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2445"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>AlphaFold</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_2445"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>AlphaFold DB</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
     </owl:Axiom>
 </rdf:RDF>
