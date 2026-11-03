@@ -25657,7 +25657,7 @@ that will react with lysine residues to form a stable amide bond. The other end 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0461"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0973"/>
         <obo:IAO_0000115>Knowledgebase of the extracellular matrix storing experimentally determined interactions involving extracellular biomolecules. It includes protein-protein, protein-polysaccharide, and protein-lipid interactions.
-https://matrixdb.univ-lyon1.fr</obo:IAO_0000115>
+https://matrixdb.expasy.org</obo:IAO_0000115>
         <oboInOwl:hasDbXref>search-url:</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>MatrixDB</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
@@ -25669,14 +25669,14 @@ https://matrixdb.univ-lyon1.fr</obo:IAO_0000115>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0917"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Knowledgebase of the extracellular matrix storing experimentally determined interactions involving extracellular biomolecules. It includes protein-protein, protein-polysaccharide, and protein-lipid interactions.
-https://matrixdb.univ-lyon1.fr</owl:annotatedTarget>
+https://matrixdb.expasy.org</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:19147664</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0917"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>search-url:</owl:annotatedTarget>
-        <rdfs:label>https://matrixdb.univ-lyon1.fr/biomolecule/${ac}</rdfs:label>
+        <rdfs:label>https://matrixdb.expasy.org/biomolecule/${ac}</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0917"/>

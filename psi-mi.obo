@@ -7157,10 +7157,10 @@ is_a: MI:0018 ! two hybrid
 [Term]
 id: MI:0917
 name: matrixdb
-def: "Knowledgebase of the extracellular matrix storing experimentally determined interactions involving extracellular biomolecules. It includes protein-protein, protein-polysaccharide, and protein-lipid interactions.\nhttps://matrixdb.univ-lyon1.fr" [PMID:19147664]
+def: "Knowledgebase of the extracellular matrix storing experimentally determined interactions involving extracellular biomolecules. It includes protein-protein, protein-polysaccharide, and protein-lipid interactions.\nhttps://matrixdb.expasy.org" [PMID:19147664]
 subset: PSI-MI_slim
 synonym: "MatrixDB" EXACT PSI-MI-alternate []
-xref: search-url: "https://matrixdb.univ-lyon1.fr/biomolecule/${ac}"
+xref: search-url: "https://matrixdb.expasy.org/biomolecule/${ac}"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 
