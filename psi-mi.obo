@@ -1597,8 +1597,8 @@ synonym: "[D:po]" EXACT PSI-MI-alternate []
 synonym: "beta-aspartyl phosphate" EXACT PSI-MI-alternate []
 synonym: "DPO" EXACT PSI-MI-alternate []
 synonym: "L-aspartic 4-phosphoric anhydride" EXACT PSI-MI-alternate []
-synonym: "phosphoaspartic acid" EXACT PSI-MI-short []
 synonym: "phosphoaspartic acid" EXACT PSI-MI-alternate []
+synonym: "phosphoaspartic acid" EXACT PSI-MI-short []
 is_obsolete: true
 
 [Term]
@@ -1736,8 +1736,8 @@ name: n6-(4-amino-2-hydroxybutyl)-lysine
 def: "Residue modification.\nOBSOLETE remap to MOD:00125." [PMID:11125103, RESID:AA0116]
 synonym: "(S,R)-2-amino-6-(4-amino-2-hydroxybutylamino)hexanoic acid" EXACT PSI-MI-alternate []
 synonym: "[K:hypu]" EXACT PSI-MI-alternate []
-synonym: "hypusine" EXACT PSI-MI-alternate []
 synonym: "hypusine" EXACT PSI-MI-short []
+synonym: "hypusine" EXACT PSI-MI-alternate []
 synonym: "KHY" EXACT PSI-MI-alternate []
 synonym: "N6-(4-amino-2-hydroxybutyl)-L-lysine" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -14775,8 +14775,8 @@ id: MI:2404
 name: oxidase assay
 def: "Enzymatic oxido-reductions where only O2 is an acceptor of hydrogen or electrons" [PMID:31273118]
 subset: PSI-MI_slim
-synonym: "oxidase" EXACT PSI-MI-alternate []
 synonym: "oxidase" EXACT PSI-MI-short []
+synonym: "oxidase" EXACT PSI-MI-alternate []
 is_a: MI:0979 ! oxidoreductase assay
 created_by: Licata
 creation_date: 2021-07-05T23:48:40Z
@@ -15189,4 +15189,32 @@ xref: search-url: "https://alphafold.ebi.ac.uk/entry/${ac}"
 is_a: MI:0489 ! source database
 created_by: opaleny
 creation_date: 2026-09-11T08:41:43Z
+
+[Term]
+id: MI:2446
+name: enhanced one hybrid
+def: "Upgraded, high-throughput version of the yeast one hybrid assay. It uses a robotic mating platform to cross DNA-bait yeast strains with an arrayed collection of TF-prey strains." [PMID:22037705, PMID:36427139]
+subset: PSI-MI_slim
+synonym: "enhanced 1 hybrid" EXACT [] {name="PSI-MI-short"}
+synonym: "enhanced one-hybrid" EXACT [] {name="PSI-MI-alternate"}
+synonym: "enhanced yeast one hybrid" EXACT [] {name="PSI-MI-alternate"}
+synonym: "enhanced yeast one-hybrid" EXACT [] {name="PSI-MI-alternate"}
+synonym: "eY1H" EXACT [] {name="PSI-MI-alternate"}
+is_a: MI:0432 ! one hybrid
+created_by: antonazzo
+creation_date: 2026-10-12T15:41:57Z
+
+[Term]
+id: MI:2447
+name: paired one hybrid
+def: "A variation of the yeast one hybrid assay that evaluates pairs of proteins for synergistic or antagonistic binding to DNA. The assay detects how two coexpressed proteins jointly influence association with a DNA sequence integrated upstream of reporter genes. One or both proteins carry a transcriptional activation domain, and reporter activity measured for the pair is compared with that measured for each protein separately to identify cooperative or antagonistic effects on DNA association." [PMID:37853017]
+subset: PSI-MI_slim
+synonym: "paired 1 hybrid" EXACT [] {name="PSI-MI-short"}
+synonym: "paired one-hybrid" EXACT [] {name="PSI-MI-alternate"}
+synonym: "paired yeast one hybrid" EXACT [] {name="PSI-MI-alternate"}
+synonym: "paired yeast one-hybrid" EXACT [] {name="PSI-MI-alternate"}
+synonym: "pY1H" EXACT [] {name="PSI-MI-alternate"}
+is_a: MI:0432 ! one hybrid
+created_by: antonazzo
+creation_date: 2026-10-12T15:42:13Z
 
